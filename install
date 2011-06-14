@@ -1,0 +1,19 @@
+#!/bin/bash
+srcdir="$(dirname $(readlink -f $0))"
+nroot="$srcdir/root"
+dest="$(readlink -f "$1")"
+
+[[ "$nroot" == "$dest" ]] && exit 1
+
+cd "$srcdir"
+
+./mount -v
+
+cd "$nroot"
+
+cp -a . "$dest"
+
+cd "$srcdir"
+
+./mount -v -u
+

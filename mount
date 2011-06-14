@@ -10,13 +10,17 @@ _toslash() {
 mount_all() {
     mkdir -p "$nroot"
     mount "$srcdir/root.img" "$nroot"
-    for dir in frac/* vfs/* ;do
+
+    mount_lst=(frac/*)
+    [[ -z $no_vfs ]] && mount_lst=("${mount_lst[@]}" vfs/*)
+
+    for dir in "${mount_lst[@]}" ;do
 	ndir="root/$(_toslash ${dir##*/})"
 	mkdir -p "$ndir"
 	mount --bind "$dir" "$ndir"
     done
 
-    for dir in $(cat tmpfs) ;do
+    [[ -z $no_vfs ]] && for dir in $(cat tmpfs) ;do
 	ndir="root/$dir"
 	mkdir -p "$ndir"
 	mount -t tmpfs -o nodev,nosuid,mode=1777 none "$ndir"
@@ -24,12 +28,13 @@ mount_all() {
 }
 
 umount_all() {
-    for dir in $(cat tmpfs) ;do
+    [[ -z $no_vfs ]] && for dir in $(cat tmpfs) ;do
 	ndir="root/$dir"
 	umount "$ndir"
     done
 
-    mount_lst=(frac/* vfs/*)
+    mount_lst=(frac/*)
+    [[ -z $no_vfs ]] && mount_lst=("${mount_lst[@]}" vfs/*)
 
     for ((i = ${#mount_lst[@]} - 1;i >= 0;i--)) ;do
 	ndir="root/$(_toslash ${mount_lst[i]##*/})"
@@ -38,9 +43,22 @@ umount_all() {
     umount "$nroot"
 }
 
-if [[ $1 == -u ]] ;then
-    umount_all
-else
-    mount_all
-fi
+cmd=mount_all
+unset no_vfs
 
+for arg in "$@" ;do
+    case "$arg" in
+	-u)
+	    cmd=umount_all
+	    ;;
+	-v)
+	    no_vfs=1
+	    ;;
+	*)
+	    echo "unrecognized arguement $arg" >&2
+	    exit 1
+	    ;;
+    esac
+done
+
+$cmd
