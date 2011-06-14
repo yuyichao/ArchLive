@@ -1,0 +1,212 @@
+part_bsd: part_msdos
+gcry_sha512: crypto
+gcry_md4: crypto
+gcry_md5: crypto
+gpxe_ns83820: gpxe_legacy pci gpxe
+cs5536: pci
+raid:
+part_sun:
+gpxe_dmfe: gpxe_legacy pci gpxe
+xzio: gcry_crc
+gpxe_infiniband: gpxe
+video:
+hfsplus: fshelp
+font: bufio video
+udf: fshelp
+gpxe_spi:
+gettext:
+extcmd:
+iso9660: fshelp
+gcry_sha256: crypto
+gpxe_rtl8139: gpxe_nvs gpxe gpxe_spi_bit gpxe_threewire
+gfxterm: extcmd bitmap bitmap_scale font video
+cpio:
+search_fs_file:
+cpuid: extcmd
+terminfo: extcmd
+gpxe_3c90x: gpxe_nvs gpxe
+search: extcmd search_label search_fs_uuid search_fs_file
+hashsum: extcmd crypto normal
+xnu_uuid: gcry_md5
+drivemap: extcmd boot mmap
+gpxe_sis900: gpxe_legacy pci gpxe
+password: crypto normal
+read:
+search_label:
+memrw: extcmd
+video_fb: video
+test:
+hexdump: extcmd
+scsi:
+biosdisk:
+gpxe_3c5x9: gpxe_legacy gpxe
+btrfs: gzio
+tar:
+ufs1:
+memdisk:
+ufs2:
+part_gpt:
+gpxe_spi_bit: gpxe_bitbash
+configfile: normal
+test_blockarg: extcmd normal
+gpxe_davicom: gpxe_legacy pci gpxe
+xfs: fshelp
+tga: bufio bitmap
+ntfs: fshelp
+loopback: extcmd
+gcry_crc: crypto
+datetime:
+afs_be: fshelp
+befs_be: fshelp
+testload:
+video_cirrus: video_fb pci video
+part_msdos:
+gpxe_3c529: gpxe_3c5x9 gpxe_legacy
+gcry_tiger: crypto
+gcry_sha1: crypto
+functional_test: extcmd
+ata_pthru: ata
+afs: fshelp
+videoinfo: video
+gcry_cast5: crypto
+play:
+at_keyboard: keylayouts boot
+trig:
+vbe: video_fb video
+usbserial_ftdi: usb serial usbserial_common
+sleep: extcmd normal
+mdraid09: raid
+cmostest:
+cat: extcmd
+sendkey: extcmd boot
+reiserfs: fshelp
+part_apple:
+mdraid1x: raid
+gcry_twofish: crypto
+bsd: extcmd cpuid vbe serial boot mmap video aout relocator elf
+gcry_blowfish: crypto
+fat:
+crypto:
+video_bochs: video_fb pci video
+pxecmd: pxe
+jpeg: bufio bitmap
+gzio:
+reboot:
+password_pbkdf2: pbkdf2 normal crypto gcry_sha512
+linux16: boot mmap relocator video
+jfs:
+videotest: gfxmenu font video
+minix2:
+raid5rec: raid
+gpxe_bitbash:
+gpxe_ne2k_isa: gpxe_legacy gpxe
+efiemu: normal gcry_crc acpi
+terminal:
+hello: extcmd
+multiboot: vbe boot lsapm mmap video relocator
+gpxe_tulip: gpxe_legacy pci gpxe
+gpxe_pnic: gpxe
+setpci: extcmd pci
+echo: extcmd
+example_functional_test: functional_test
+xnu: extcmd efiemu bitmap bitmap_scale normal boot video relocator
+usbms: usb scsi
+lvm:
+part_acorn:
+bitmap_scale: bitmap
+befs: fshelp
+minicmd:
+sfs: fshelp
+ata: pci scsi
+blocklist:
+gfxmenu: gfxterm bitmap bitmap_scale normal trig font video
+chain: boot video
+gcry_serpent: crypto
+halt: extcmd acpi
+gpxe_nvs:
+multiboot2: vbe boot lsapm acpi mmap video relocator
+keystatus: extcmd
+serial: extcmd terminfo
+ext2: fshelp
+png: bufio bitmap
+usbserial_common: usb serial
+hdparm: extcmd
+nilfs2: fshelp
+minix:
+lsapm:
+usbtest: usb
+raid6rec: raid
+true:
+part_amiga:
+gcry_rijndael: crypto
+affs: fshelp
+ohci: cs5536 pci usb boot
+gpxe_threewire: gpxe
+gcry_rmd160: crypto
+cmp:
+normal: extcmd gfxterm crypto boot terminal
+gcry_whirlpool: crypto
+gpxe_natsemi: gpxe_nvs gpxe gpxe_spi_bit gpxe_threewire
+gcry_rfc2268: crypto
+aout:
+gpxe_epic100: gpxe_legacy gpxe
+hfs:
+gpxe_eepro100: gpxe_legacy gpxe
+regexp: extcmd normal
+setjmp:
+probe: extcmd
+linux: vbe normal boot mmap video relocator
+boot:
+msdospart: parttool
+elf:
+lsacpi: extcmd acpi
+gpxe_legacy: gpxe
+gpxe_eepro: gpxe_legacy gpxe
+gcry_seed: crypto
+usbserial_pl2303: usb serial usbserial_common
+gpxe_w89c840: gpxe_legacy gpxe
+gpxe: pci gpxe_nvs
+ntfscomp: ntfs
+zfsinfo: zfs
+vga_text:
+usb_keyboard: keylayouts usb
+gpxe_i2c_bit: gpxe_bitbash gpxe
+acpi: extcmd mmap
+ntldr: boot video relocator
+gpxe_ipoib: gpxe_infiniband gpxe
+pci:
+iorw: extcmd
+date: normal datetime
+bufio:
+relocator:
+ls: extcmd normal
+gcry_arcfour: crypto
+dm_nv: raid
+search_fs_uuid:
+loadenv: extcmd
+pxe: bufio
+lua: setjmp normal
+legacycfg: linux crypto normal password gcry_md5
+kernel:
+gcry_des: crypto
+915resolution:
+parttool: normal
+datehook: normal datetime
+gpxe_smc9000: gpxe_legacy gpxe
+bitmap:
+pbkdf2: crypto
+lsmmap:
+gptsync:
+keylayouts:
+uhci: pci usb
+help: extcmd normal
+lspci: extcmd pci
+usb: pci
+gpxe_ns8390: gpxe_legacy gpxe
+gcry_camellia: crypto
+fshelp:
+zfs:
+vga: video_fb video
+part_sunpc:
+gpxe_3c595: gpxe_legacy gpxe
+mmap: boot

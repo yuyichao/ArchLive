@@ -1,0 +1,9 @@
+%FILES%
+usr/
+usr/bin/
+usr/bin/package-query
+usr/share/
+usr/share/man/
+usr/share/man/man8/
+usr/share/man/man8/package-query.8.gz
+

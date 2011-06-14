@@ -1,0 +1,36 @@
+%NAME%
+libfetch
+
+%VERSION%
+2.33-3
+
+%DESC%
+URL based download library
+
+%URL%
+http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/net/libfetch/
+
+%LICENSE%
+BSD
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1303219920
+
+%INSTALLDATE%
+1308067381
+
+%PACKAGER%
+Dan McGee <dan@archlinux.org>
+
+%SIZE%
+221184
+
+%REASON%
+1
+
+%DEPENDS%
+openssl>=1.0.0
+

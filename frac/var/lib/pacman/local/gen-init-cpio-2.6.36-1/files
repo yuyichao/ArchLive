@@ -1,0 +1,4 @@
+%FILES%
+sbin/
+sbin/gen_init_cpio
+

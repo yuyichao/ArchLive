@@ -1,0 +1,5 @@
+# of module          name                 type                 compatible
+ethoc                *                    *                    opencores,ethoc
+i2c-ocores           *                    *                    opencores,i2c-ocores
+xilinx_spi           *                    *                    xlnx,xps-spi-2.00.a
+xilinx_spi           *                    *                    xlnx,xps-spi-2.00.b

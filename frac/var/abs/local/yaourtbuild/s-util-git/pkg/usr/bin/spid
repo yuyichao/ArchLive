@@ -1,0 +1,6 @@
+#!/bin/bash
+HELP_INFO="This command simply show its pid."
+
+. s_init.sh
+
+echo $$

@@ -1,0 +1,33 @@
+%NAME%
+pacman-mirrorlist
+
+%VERSION%
+20110324-1
+
+%DESC%
+Arch Linux mirror list for use by pacman
+
+%URL%
+http://www.archlinux.org/mirrorlist/
+
+%LICENSE%
+GPL
+
+%ARCH%
+any
+
+%BUILDDATE%
+1300944337
+
+%INSTALLDATE%
+1308067381
+
+%PACKAGER%
+Dan McGee <dan@archlinux.org>
+
+%SIZE%
+24576
+
+%REASON%
+1
+

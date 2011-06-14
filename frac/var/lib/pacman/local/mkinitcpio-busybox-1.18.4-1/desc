@@ -1,0 +1,36 @@
+%NAME%
+mkinitcpio-busybox
+
+%VERSION%
+1.18.4-1
+
+%DESC%
+base initramfs tools
+
+%URL%
+http://www.busybox.net/
+
+%LICENSE%
+GPL
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1305369541
+
+%INSTALLDATE%
+1308067904
+
+%PACKAGER%
+Thomas Bächler <thomas@archlinux.org>
+
+%SIZE%
+356352
+
+%REASON%
+1
+
+%DEPENDS%
+glibc
+

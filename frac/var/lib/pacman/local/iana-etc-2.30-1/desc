@@ -1,0 +1,33 @@
+%NAME%
+iana-etc
+
+%VERSION%
+2.30-1
+
+%DESC%
+/etc/protocols and /etc/services provided by IANA
+
+%URL%
+http://sethwklein.net/iana-etc
+
+%LICENSE%
+custom
+
+%ARCH%
+any
+
+%BUILDDATE%
+1279926640
+
+%INSTALLDATE%
+1308067393
+
+%PACKAGER%
+Thomas Bächler <thomas@archlinux.org>
+
+%SIZE%
+917504
+
+%REASON%
+1
+

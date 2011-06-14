@@ -1,0 +1,36 @@
+%NAME%
+expat
+
+%VERSION%
+2.0.1-6
+
+%DESC%
+An XML parser library
+
+%URL%
+http://expat.sourceforge.net
+
+%LICENSE%
+custom
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1292247489
+
+%INSTALLDATE%
+1308067381
+
+%PACKAGER%
+Stéphane Gaudreault <stephane@archlinux.org>
+
+%SIZE%
+626688
+
+%REASON%
+1
+
+%DEPENDS%
+glibc
+

@@ -1,0 +1,36 @@
+%NAME%
+glib2
+
+%VERSION%
+2.28.8-1
+
+%DESC%
+Common C routines used by GTK+ and other libs
+
+%URL%
+http://www.gtk.org/
+
+%LICENSE%
+LGPL
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1307351519
+
+%INSTALLDATE%
+1308067547
+
+%PACKAGER%
+Ionut Biru <ibiru@archlinux.org>
+
+%SIZE%
+10219520
+
+%REASON%
+1
+
+%DEPENDS%
+pcre>=8.12
+

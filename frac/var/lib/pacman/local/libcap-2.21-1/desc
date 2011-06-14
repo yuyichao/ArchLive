@@ -1,0 +1,37 @@
+%NAME%
+libcap
+
+%VERSION%
+2.21-1
+
+%DESC%
+POSIX 1003.1e capabilities
+
+%URL%
+http://www.kernel.org/pub/linux/libs/security/linux-privs/
+
+%LICENSE%
+GPL
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1304301066
+
+%INSTALLDATE%
+1308067379
+
+%PACKAGER%
+Allan McRae <allan@archlinux.org>
+
+%SIZE%
+249856
+
+%REASON%
+1
+
+%DEPENDS%
+glibc
+attr
+

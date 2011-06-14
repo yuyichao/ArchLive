@@ -1,0 +1,33 @@
+%NAME%
+yajl
+
+%VERSION%
+2.0.2-1
+
+%DESC%
+Yet Another JSON Library.
+
+%URL%
+http://lloyd.github.com/yajl/
+
+%LICENSE%
+ISC
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1304103817
+
+%INSTALLDATE%
+1308068078
+
+%PACKAGER%
+Dave Reisner <d@falconindy.com>
+
+%SIZE%
+241664
+
+%REASON%
+1
+

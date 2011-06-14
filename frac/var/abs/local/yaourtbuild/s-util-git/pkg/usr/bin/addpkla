@@ -1,0 +1,51 @@
+#!/bin/bash
+s_shelp()
+{
+    cat <<EOF
+This command add a permission of a certain action to polkit. It will automatically call sudo.
+USAGE:
+	$(basename $0) [OPTIONS] policies
+OPTIONS:
+	-u/--user USER: to add a permission for USER
+	-v/--version: show the version number
+	-h/--help: show this help and exit
+EOF
+}
+
+. s_init.sh
+
+for ((i = 0;i < ${#args[@]};)) ;do
+    case "${args[i]}" in
+	-u|--user)
+	    darg $i
+	    S_USERNAME="${args[i]}"
+	    darg $i
+	    ;;
+	-*)
+	    echo "Warning: Unrecognized argument ${args[i]}" >&2
+	    darg $i
+	    ;;
+	*)
+	    let 'i++'
+	    ;;
+	esac
+done
+
+[[ -z $S_USERNAME ]] && S_USERNAME=$(whoami)
+
+if [ $(id -u) != "0" ] ;then
+    sudo $0 -u "${S_USERNAME}" "${args[@]}"
+    exit
+fi
+
+for arg in "${args[@]}"
+do
+    cat >> /etc/polkit-1/localauthority/50-local.d/${arg}.pkla <<EOF
+[${arg}]
+Identity=unix-user:${S_USERNAME}
+Action=${arg}
+ResultAny=no
+ResultInactive=no
+ResultActive=yes
+EOF
+done

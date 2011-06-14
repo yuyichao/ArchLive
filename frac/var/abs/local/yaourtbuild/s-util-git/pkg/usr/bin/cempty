@@ -1,0 +1,22 @@
+#!/bin/bash
+HELP_INFO='This script delete all the empty folders recursively.'
+
+. s_init.sh
+
+[[ "${#args[@]}" == 0 ]] && find -depth -type d -exec rmdir {} \; 2> /dev/null
+
+for ((i = 0;i < ${#args[@]};i++)) ;do
+    [ -z "${args[i]}" ] && continue
+    if [ -d "${args[i]}" ] ;then
+	path="${args[i]}"
+    elif [ -f "${args[i]}" ] ;then
+	path="${args[i]%/*}"
+	if [ -z "$path" ] ;then
+	    path=.
+	fi
+    else
+	continue
+    fi
+    [ -z "$path" -o ! -d "$path" ] && continue
+    find "$path" -depth -type d -exec rmdir {} \; 2> /dev/null
+done

@@ -1,0 +1,36 @@
+%NAME%
+ncurses
+
+%VERSION%
+5.9-1
+
+%DESC%
+System V Release 4.0 curses emulation library
+
+%URL%
+http://www.gnu.org/software/ncurses/
+
+%LICENSE%
+MIT
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1302353007
+
+%INSTALLDATE%
+1308067378
+
+%PACKAGER%
+Allan McRae <allan@archlinux.org>
+
+%SIZE%
+10027008
+
+%REASON%
+1
+
+%DEPENDS%
+glibc
+

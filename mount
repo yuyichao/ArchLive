@@ -1,0 +1,46 @@
+#!/bin/bash
+srcdir="$(dirname $(readlink -f $0))"
+cd "$srcdir"
+nroot="$srcdir/root"
+
+_toslash() {
+    echo $1 | tr _ /
+}
+
+mount_all() {
+    mkdir -p "$nroot"
+    mount "$srcdir/root.img" "$nroot"
+    for dir in frac/* vfs/* ;do
+	ndir="root/$(_toslash ${dir##*/})"
+	mkdir -p "$ndir"
+	mount --bind "$dir" "$ndir"
+    done
+
+    for dir in $(cat tmpfs) ;do
+	ndir="root/$dir"
+	mkdir -p "$ndir"
+	mount -t tmpfs -o nodev,nosuid,mode=1777 none "$ndir"
+    done
+}
+
+umount_all() {
+    for dir in $(cat tmpfs) ;do
+	ndir="root/$dir"
+	umount "$ndir"
+    done
+
+    mount_lst=(frac/* vfs/*)
+
+    for ((i = ${#mount_lst[@]} - 1;i >= 0;i--)) ;do
+	ndir="root/$(_toslash ${mount_lst[i]##*/})"
+	umount "$ndir"
+    done
+    umount "$nroot"
+}
+
+if [[ $1 == -u ]] ;then
+    umount_all
+else
+    mount_all
+fi
+

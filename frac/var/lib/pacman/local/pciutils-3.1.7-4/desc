@@ -1,0 +1,42 @@
+%NAME%
+pciutils
+
+%VERSION%
+3.1.7-4
+
+%DESC%
+PCI bus configuration space access library and tools
+
+%GROUPS%
+base
+
+%URL%
+http://mj.ucw.cz/pciutils.html
+
+%LICENSE%
+GPL2
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1300288723
+
+%INSTALLDATE%
+1308067547
+
+%PACKAGER%
+Jan de Groot <jgc@archlinux.org>
+
+%SIZE%
+1089536
+
+%REASON%
+1
+
+%DEPENDS%
+glibc
+
+%OPTDEPENDS%
+sh: required by update-pciids
+

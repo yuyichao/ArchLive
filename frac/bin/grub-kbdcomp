@@ -1,0 +1,12 @@
+#!/bin/sh
+
+transform="s,grub,grub,"
+
+prefix="/usr"
+exec_prefix="${prefix}"
+bindir="/bin"
+
+grub_mklayout=${bindir}/`echo grub-mklayout | sed ${transform}`
+
+ckbcomp "$@" | $grub_mklayout -o "$1".gkb
+

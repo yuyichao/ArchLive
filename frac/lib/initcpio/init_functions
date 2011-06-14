@@ -1,0 +1,144 @@
+# This file contains common functions used in init and in hooks
+
+msg () {
+    [ "${quiet}" != "y" ] && echo $@
+}
+err () {
+    echo "ERROR: $@"
+}
+
+poll_device() {
+    device="$1"
+    if [ "$2" -ge 0 ]; then
+        seconds="$2"
+    else
+        seconds=5
+    fi
+    if [ "${udevd_running}" -eq 1 ]; then
+        msg "Waiting ${seconds} seconds for device ${device} ..."
+        while [ ! -b "${device}" -a ${seconds} -gt 0 ]; do
+            sleep 1
+            seconds=$((${seconds}-1))
+        done
+    fi
+    [ -b "${device}" ]
+}
+
+launch_interactive_shell() {
+    export PS1='[ramfs \W]\$ '
+    [ "$1" = "--exec" ] && exec /bin/sh -i
+    /bin/sh -i
+}
+
+parse_cmdline() {
+    local w in_quotes lhs rhs
+    in_quotes=0
+    for w in $(cat /proc/cmdline); do
+        if [ ${in_quotes} -eq 0 ]; then
+            case "${w}" in
+                \#*) break ;; # ignore everything after a # in the commandline
+                # The kernel passes those to init on its own
+                [0123456Ss]) ;;
+                single) ;;
+                rw) readwrite="yes" ;;
+                ro) readwrite="no" ;;
+                # only export stuff that does work with ash :)
+                *=*) rhs="$(echo "${w}" | cut -d= -f2-)"
+                    lhs="$(echo "${w}" | cut -d= -f1 | sed 's|\.|_|g;s|-|_|g;')"
+                    if [ "${rhs:0:1}" = "\"" ]; then
+                        if [ "${rhs:$((${#rhs}-1))}" = "\"" ]; then
+                            rhs="${rhs:1:$((${#rhs}-2))}"
+                        else
+                            rhs="${rhs:1}"
+                            in_quotes=1
+                            continue
+                        fi
+                    fi
+                    (echo "${lhs}" | grep -qe '^[0-9]' -e '[^a-zA-Z0-9_]') || eval ${lhs}=\${rhs}
+                    ;;
+                *)  lhs="$(echo "${w}" | sed 's|\.|_|g;s|-|_|g;')"
+                    (echo "${lhs}" | grep -qe '^[0-9]' -e '[^a-zA-Z0-9_]') || eval ${lhs}=y
+                    ;;
+            esac
+        else
+            if [ "${w:$((${#w}-1))}" = "\"" ]; then
+                rhs="${rhs} ${w:0:$((${#w}-1))}"
+                in_quotes=0
+                (echo "${lhs}" | grep -qe '^[0-9]' -e '[^a-zA-Z0-9_]') || eval ${lhs}=\${rhs}
+            else
+                rhs="${rhs} ${w}"
+            fi
+        fi
+    done
+}
+
+default_mount_handler() {
+    # resolve tag name to block device
+    if [ "${root:0:5}" = 'UUID=' ] || [ "${root:0:6}" = 'LABEL=' ]; then
+        device=$(blkid -t "$root" -o device)
+        if [ -n "$device" ]; then
+            root=$device
+        fi
+        unset device
+    fi
+
+    if [ ${root:0:5} != "/dev/" ] || ! poll_device "${root}" ${rootdelay}; then
+        msg "Root device '${root}' doesn't exist. Attempting to create it."
+        major=""
+        minor=""
+        if [ ${devtmpfs_mounted} -eq 0 -a ${root:0:5} = "/dev/" ]; then
+            # It might be a block device (/dev/sda) -> /sys/class/block/sda/dev
+            if [ -e /sys/class/block/${root:5}/dev ]; then
+                IFS=':' read major minor < "/sys/class/block/${root:5}/dev"
+                break
+            fi
+        # It might be a major/minor pair (8:1)
+        elif echo ${root} | grep -q :; then
+            major="$(echo ${root} | cut -d: -f1)"
+            minor="$(echo ${root} | cut -d: -f2)"
+            root="/dev/root"
+        # It might be major/minor encoded as a single hex-number (lilo-style) (801)
+        elif [ ${#root} -le 4 -a ${#root} -gt 2 ] && echo "${root}" | grep -qe '^[A-Fa-f0-9]*$'; then
+            str_offset=$((${#root}-2))
+            major=$((0x${root:0:${str_offset}}))
+            minor=$((0x${root:${str_offset}}))
+            root="/dev/root"
+        fi
+        if [ -n "${major}" -a -n "${minor}" ]; then
+            msg "Creating root device ${root} with major ${major} and minor ${minor}."
+            mknod ${root} b ${major} ${minor}
+        else
+            err "Unable to determine major/minor number of root device '${root}'."
+            echo "You are being dropped to a recovery shell"
+            echo "    Type 'exit' to try and continue booting"
+            launch_interactive_shell
+            msg "Trying to continue (this will most likely fail) ..."
+        fi
+    fi
+    # We didn't build filesystem support into busybox,
+    # instead we use util-linux-ng's blkid for best compatibility
+    if [ -n "${rootfstype}" ]; then
+        fstype="${rootfstype}"
+    else
+        fstype=$(sbin/blkid -u filesystem -o value -s TYPE -p "${root}")
+        if [ -z "${fstype}" ]; then
+            err "Unable to determine the file system type of ${root}:"
+            echo "Either it contains no filesystem, an unknown filesystem,"
+            echo "or more than one valid file system signature was found."
+            echo
+            echo "Try adding"
+            echo "    rootfstype=your_filesystem_type"
+            echo "to the kernel command line."
+            echo
+            echo "You are now being dropped into an emergency shell."
+            launch_interactive_shell
+            msg "Trying to continue (this will most likely fail) ..."
+        fi
+    fi
+    if [ "${readwrite}" = "yes" ]; then
+        rwopt="rw"
+    else
+        rwopt="ro"
+    fi
+    mount ${fstype:+-t ${fstype}} -o ${rwopt}${rootflags:+,${rootflags}} "${root}" "$1"
+}

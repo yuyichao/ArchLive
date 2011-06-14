@@ -1,0 +1,415 @@
+#!/bin/bash
+#
+# Yaourt (Yet Another Outil Utilisateur): More than a Pacman frontend
+#
+# Copyright (c) 2008-2010 Julien MISCHKOWITZ <wain@archlinux.fr>
+# Copyright (c) 2010-2011 tuxce <tuxce.net@gmail.com>
+#
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of the GNU Library General Public License as published
+# by the Free Software Foundation; either version 2, or (at your option)
+# any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+export TEXTDOMAINDIR='/usr/share/locale'
+export TEXTDOMAIN=yaourt
+
+NAME='yaourt'
+VERSION='0.10.1'
+. '/usr/lib/yaourt/util.sh'
+
+###################################
+### General functions           ###
+###################################
+
+usage(){
+	echo "$(gettext 'Usage: yaourt <operation> [...]')"
+	echo "$(gettext 'operations:')"
+	echo -e "\t$(gettext 'yaourt (search pattern|package file)')"
+	echo -e "\t$(gettext 'yaourt {-h --help}')"
+	echo -e "\t$(gettext 'yaourt {-V --version}')"
+	echo -e "\t$(gettext 'yaourt {-Q --query}       [options] [package(s)]')"
+	echo -e "\t$(gettext 'yaourt {-R --remove}      [options] <package(s)>')"
+	echo -e "\t$(gettext 'yaourt {-S --sync}        [options] [package(s)]')"
+	echo -e "\t$(gettext 'yaourt {-U --upgrade}     [options] <package(s)>')"
+	echo -e "\t$(gettext 'yaourt {-C --clean}       [options]')"
+	echo -e "\t$(gettext 'yaourt {-B --backup}      [save directory|restore file]')"
+	echo -e "\t$(gettext 'yaourt {-G --getpkgbuild} [options] <package(s)>')"
+	echo -e "\t$(gettext 'yaourt {--stats}')"
+}
+version(){
+	echo "yaourt $VERSION"
+	echo "$(gettext 'homepage: http://archlinux.fr/yaourt-en')"
+}
+
+
+###################################
+### Package database functions  ###
+###################################
+prepare_orphan_list(){
+	(( ! SHOWORPHANS )) && return
+	# Prepare orphan list before upgrade and remove action
+	mkdir -p "$YAOURTTMPDIR/orphans"
+	ORPHANS_BEFORE="$YAOURTTMPDIR/orphans/orphans_before.$$"
+	ORPHANS_AFTER="$YAOURTTMPDIR/orphans/orphans_after.$$"
+	INSTALLED_BEFORE="$YAOURTTMPDIR/orphans/installed_before.$$"
+	INSTALLED_AFTER="$YAOURTTMPDIR/orphans/installed_after.$$"
+	# search orphans before removing or upgrading
+	pacman_parse -Qdqt | LC_ALL=C sort > $ORPHANS_BEFORE
+	# store package list before
+	pacman_parse -Q | LC_ALL=C sort > "$INSTALLED_BEFORE.full"
+	awk '{print $1}' "$INSTALLED_BEFORE.full"> $INSTALLED_BEFORE
+}
+show_new_orphans(){
+	(( ! SHOWORPHANS )) && return
+	# search for new orphans after upgrading or after removing (exclude new installed package)
+	pacman_parse -Qdqt | LC_ALL=C sort > "$ORPHANS_AFTER.tmp"
+	pacman_parse -Q | LC_ALL=C sort > "$INSTALLED_AFTER.full"
+	awk '{print $1}' "$INSTALLED_AFTER.full" > $INSTALLED_AFTER
+
+	LC_ALL=C comm -1 -3 "$INSTALLED_BEFORE" "$INSTALLED_AFTER" > "$INSTALLED_AFTER.newonly"
+	LC_ALL=C comm -2 -3 "$ORPHANS_AFTER.tmp" "$INSTALLED_AFTER.newonly" > $ORPHANS_AFTER
+
+	# show new orphans after removing/upgrading
+	local neworphans=$(LC_ALL=C comm -1 -3 "$ORPHANS_BEFORE" "$ORPHANS_AFTER" | tr '\n' ' ')
+	if [[ "$neworphans" ]]; then
+		msg "$(gettext 'Packages no longer required by any installed package:')"
+		echo_wrap 4 "$neworphans"
+	fi
+
+	# Test local database
+	testdb 
+
+	# save original of backup files (pacnew/pacsave)
+	if [[ "$MAJOR" != "remove" ]] && (( AUTOSAVEBACKUPFILE )) && ! \
+		diff "$INSTALLED_BEFORE.full" "$INSTALLED_AFTER.full" > /dev/null; then
+		msg "$(gettext 'Searching for original config files to save')"
+		launch_with_su pacdiffviewer --backup
+	fi
+
+}
+###################################
+### Handle actions              ###
+###################################
+
+# Search for packages
+# usage: search ($interactive)
+# interactive:1 -> line number
+# return: global var PKGSFOUND
+search ()
+{
+	local interactive=${1:-0}
+	local search_option="${PACMAN_Q_ARG[@]}"
+	if [[ "$MAJOR" = "query" ]]; then
+		search_option+=" -Q"
+		((AUR && FOREIGN)) && search_option+=" -A"
+	else
+		DATE=0
+		search_option+=" -S"
+	fi
+	if (( SEARCH )); then
+		search_option+=" -s"
+	else
+		[[ $ARGS ]] && (( ! GROUP )) && search_option+=" -i"
+	fi
+	(( AURSEARCH )) && search_option+=" -A"
+	(( DATE )) && search_option+=" --sort 1"
+	(( QUIET )) && { pkgquery $search_option -f "%n" -- "${ARGS[@]}";return; }
+	(( interactive )) && search_option+=" --number"
+	{ readarray -t PKGSFOUND < <(pkgquery --get-res $search_option -- "${ARGS[@]}" 3>&1 1>&2 ); } 2>&1
+}
+	
+# Handle special query
+yaourt_query_type ()
+{
+	local arg
+	title $(gettext 'query packages')
+	loadlibrary alpm_query
+	for arg in ${ARGS[@]}; do
+		searchforpackageswhich "$QUERYTYPE" "$arg"
+	done
+}
+
+yaourt_install_packages ()
+{
+	loadlibrary abs
+	loadlibrary aur
+	prepare_orphan_list
+	SP_ARG="" sync_packages "${ARGS[@]}"
+	show_new_orphans
+	#show package which have not been installed
+	if [[ $ERROR_PKGS ]]; then
+		warning "$(gettext 'Following packages have not been installed:')"
+		echo_wrap 4 "${ERROR_PKGS[*]}"
+		return 1
+	fi
+}
+	
+# Handle sync
+yaourt_sync ()
+{
+	local arg
+	(( PRINT && REFRESH )) && pacman_cmd 1
+	(( PRINT && ! REFRESH )) && pacman_cmd 0
+	if (( GROUP || LIST || SEARCH)); then
+		(( LIST )) && {
+			title $(gettext 'listing all packages in repo(s)')
+			msg $(gettext 'Listing all packages in repo(s)')
+		}
+		(( GROUP )) && title $(gettext 'show groups')
+		search 0
+		return
+	elif (( SYSUPGRADE )); then
+		loadlibrary abs
+		loadlibrary aur
+		prepare_orphan_list
+		sysupgrade
+		# Upgrade devel packages
+		(( DEVEL )) && upgrade_devel_package
+		show_new_orphans
+		return
+	fi
+	[[ ! $ARGS ]] && (( ! REFRESH )) && pacman_cmd 1; 
+	if [[ $QUERYTYPE ]]; then
+		yaourt_query_type
+		return
+	elif (( INFO )); then
+		loadlibrary aur
+		for arg in ${ARGS[@]}; do
+			title $(_gettext 'Informations for %s' $arg)
+			local _repo="${arg%/*}"
+			if [[ "$_repo" = "$arg" || "$_repo" != "aur" ]]; then
+				pacman_out -S "${PACMAN_S_ARG[@]}" "$arg" 2> /dev/null ||\
+					 info_from_aur "${arg#*/}"
+			else
+				info_from_aur "${arg#*/}"
+			fi
+		done
+		return
+	fi
+	yaourt_install_packages
+}
+
+# Handle query
+yaourt_query ()
+{
+	[[ -n $BACKUPFILE ]] && if [[ -r "$BACKUPFILE" ]]; then   # -Q --backupfile
+		loadlibrary alpm_backup 
+		is_an_alpm_backup "$BACKUPFILE" || die 1
+		program_arg $((A_PC | A_PKC)) "-b" "$backupdir"
+	else
+		error $(_gettext 'Unable to read %s file' "$BACKUPFILE")
+		die 1
+	fi
+	if (( CHANGELOG || LIST || INFO || FILE )); then
+		pacman_out -Q "${PACMAN_Q_ARG[@]}" "${ARGS[@]}"
+		return $?
+	fi
+	if (( DEPENDS && UNREQUIRED )); then
+		loadlibrary alpm_query
+		search_forgotten_orphans
+	elif [[ $QUERYTYPE ]]; then
+		yaourt_query_type
+	else
+		#title $(gettext "Query installed packages")
+		#msg $(gettext "Query installed packages")
+		AURSEARCH=0 search 0
+	fi
+}
+
+# Handle interactive search
+yaourt_interactive ()
+{
+	local line packages
+	SEARCH=1 search 1 
+	[[ $PKGSFOUND ]] || die 0
+	prompt $(gettext 'Enter n° of packages to be installed (ex: 1 2 3 or 1-3)')
+	read -ea packagesnum
+	[[ $packagesnum ]] || die 0
+	for line in ${packagesnum[@]/,/ }; do
+		(( line )) || die 1	# not a number, range neither 
+		(( ${line%-*}-1 < ${#PKGSFOUND[@]} )) || die 1	# > no package corresponds
+		if [[ ${line/-/} != $line ]]; then
+			for ((i=${line%-*}-1; i<${line#*-}; i++)); do
+				packages+=(${PKGSFOUND[$i]});
+			done
+		else
+			packages+=(${PKGSFOUND[$((line - 1))]})
+		fi
+	done
+	echo 
+	ARGS=("${packages[@]}")
+	yaourt_install_packages
+}
+
+# No action specified
+yaourt_no_action ()
+{
+	local file
+	declare -a filelist
+	[[ $ARGS ]] || pacman_cmd 0
+	# If no action and files as argument, act like -U *
+	for file in "${ARGS[@]}"; do
+		[[ "${file%.pkg.tar.*}" != "$file" && -r "$file" ]] && filelist+=("$file")
+	done
+	if [[ $filelist ]]; then
+		ARGS=( "${filelist[@]}" )
+		su_pacman -U "${ARGS[@]}"
+		die $?
+	else
+		# Interactive search else.
+		MAJOR="interactivesearch"
+	fi
+}
+
+###################################
+### MAIN PROGRAM                ###
+###################################
+# Basic init and librairies
+
+unset MAJOR AUR SEARCH BUILD REFRESH SYSUPGRADE CLEAN \
+	IGNOREGRP IGNOREPKG CHANGELOG LIST INFO DATE UNREQUIRED \
+	FOREIGN GROUP QUERYTYPE QUIET DEPENDS PRINT \
+	AURVOTEINSTALLED CUSTOMIZEPKGINSTALLED \
+	PACMAN_CMD
+
+# Grab environement options
+{
+	type -p aurvote && AURVOTEINSTALLED=1
+	type -p customizepkg && CUSTOMIZEPKGINSTALLED=1
+} &> /dev/null
+
+# makepkg check root
+(( ! UID )) && program_arg $A_M "--asroot"
+
+# Explode arguments (-Su -> -S -u)
+ARGSANS=("$@")
+explode_args "$@"
+set -- "${OPTS[@]}"
+unset OPTS
+
+while [[ $1 ]]; do
+	case "$1" in
+		-D|--database|-R|--remove|-U|--upgrade|-w|--downloadonly) PACMAN_CMD=1;;
+		-o|--owns|--changelog|--check|--file) [[ ! $PACMAN_CMD ]] && PACMAN_CMD=0;;
+		--config|--dbpath|-r|--root) program_arg $((A_PC | A_PKC)) "$1" "$2"; shift;;
+		--cachedir|--logfile|--arch) program_arg $A_PC "$1" "$2"; shift;;
+		--noprogressbar|--noscriptlet) program_arg $A_PC "$1";;
+		--asdeps|--needed)  program_arg $A_PS $1;;
+		-c|--clean)         (( CLEAN ++ )); (( CHANGELOG++ ));;
+		--deps)             ((DEPENDS++)); program_arg $A_PQ $1;;
+		-d)                 ((DEPENDS++)); program_arg $((A_PS | A_M | A_PQ)) $1;;
+		-e|--explicit)      program_arg $A_PQ $1;;
+		-m|--foreign)       FOREIGN=1; program_arg $A_PQ $1;;
+		-g|--groups)        GROUP=1; program_arg $A_PQ $1;;
+		-i|--info)          INFO=1; program_arg $((A_PQ | A_PS)) $1;;
+		-l|--list)          LIST=1; program_arg $A_PQ $1;;
+		--noconfirm)        NOCONFIRM=1;;
+		--nodeps)           program_arg $((A_PS | A_M )) $1;;
+		-Q|--query)         MAJOR="query";;
+		-y|--refresh)       (( REFRESH ++ ));;
+		-S|--sync)          MAJOR="sync";;
+		--sysupgrade)       SYSUPGRADE=1; (( UPGRADES ++ ));;
+		-t|--unrequired)    UNREQUIRED=1; program_arg $A_PQ $1;;
+		-u|--upgrades)      (( UPGRADES ++ )); program_arg $A_PQ $1;;
+		--holdver)          program_arg $A_M $1;;
+		-A|--ignorearch)    program_arg $A_M $1;;
+		--ignore)           program_arg $A_PS $1 "$2"; shift; IGNOREPKG+=("$1");;
+		--ignoregroup)      program_arg $A_PS $1 "$2"; shift; IGNOREGRP+=("$1");;
+		-a|--aur)           AUR=1; AURUPGRADE=1; AURSEARCH=1;;
+		-B|--backup)        MAJOR="backup";;
+		--backupfile)       shift; BACKUPFILE="$1";;
+		-b|--build)         ((BUILD++));;
+		-C)                 MAJOR="clean";;
+		--conflicts|--depends|--provides|--replaces) QUERYTYPE=${1:2};;
+		--date)             DATE=1;;
+		--devel)            DEVEL=1;;
+		--export)           EXPORT=1; EXPORTSRC=1; shift; EXPORTDIR="$1";;
+		-f|--force)         FORCE=1;;
+		-G|--getpkgbuild)   MAJOR="getpkgbuild";;
+		-h|--help)          usage; exit 0;;
+		--insecure)         program_arg $((A_PKC | A_CC)) $1;;
+		--lightbg)          USECOLOR=2;;
+		--nocolor)          USECOLOR=0;;
+		-p|--print)         PRINT=1; FILE=1; program_arg $A_PQ $1;;
+		--file)             FILE=1; program_arg $A_PQ $1;;
+		--print-format)     ;; # --print-format needs --print
+		--pkg)              program_arg $((A_M)) $1 "$2"; shift;;
+		-s|--search)        SEARCH=1; program_arg $A_PQ $1;;
+		--stats)            MAJOR="stats";;
+		--sucre)            MAJOR="sync"
+			FORCE=1; SYSUPGRADE=1; REFRESH=2;
+			AURUPGRADE=1; DEVEL=1; NOCONFIRM=2;;
+		--tmp)              shift; TMPDIR="$1";;
+		-V|version)         version; exit 0;;
+		-q|--quiet)         QUIET=1; DETAILUPGRADE=0; program_arg $A_PS $1;;
+		--)                 shift; ARGS+=("$@"); break;;
+		-*)                 [[ ! $PACMAN_CMD ]] && PACMAN_CMD=0;;
+		*)                  ARGS+=("$1") ;; 
+	esac
+	shift
+done
+
+# Init path & colors 
+init_paths
+[[ -t 1 ]] || { USECOLOR=0; TERMINALTITLE=0; }
+((!USECOLOR)) && program_arg $((A_M | A_PKC)) "--nocolor" 
+init_color
+[[ $PACMAN_CMD ]] && pacman_cmd $PACMAN_CMD
+
+# No options
+[[ -z $MAJOR ]] && yaourt_no_action
+# Complete options
+(( ! SYSUPGRADE && UPGRADES )) && [[ $MAJOR = "sync" ]] && SYSUPGRADE=1 # -Su
+if (( NOCONFIRM )); then
+	EDITFILES=0
+	BUILD_NOCONFIRM=1
+	AURVOTE=0
+	program_arg $((A_PS | A_M)) "--noconfirm"
+fi
+((FORCE)) && program_arg $((A_PS | A_M)) "--force"
+
+# Refresh
+[[ "$MAJOR" = "sync" ]] &&
+  (( REFRESH && !PRINT )) &&
+  (( !SYSUPGRADE || DETAILUPGRADE )) &&
+  pacman_refresh $REFRESH
+
+# Action
+case "$MAJOR" in
+	clean)
+		(( CLEAN )) && _arg="-c" || _arg=""
+		launch_with_su pacdiffviewer $_arg
+		;;
+
+	stats)
+		loadlibrary alpm_stats
+		yaourt_stats
+		;;
+
+	getpkgbuild)
+		title "$(gettext 'get PKGBUILD')"
+		loadlibrary pkgbuild
+		get_pkgbuild "${ARGS[@]}"
+		;;
+
+	backup) 
+		loadlibrary alpm_backup
+		yaourt_backup "${ARGS[0]}"
+		;;
+	
+	sync) yaourt_sync ;;
+	query) yaourt_query ;;
+	interactivesearch) yaourt_interactive ;;
+		
+	*) pacman_cmd 0 ;;
+esac
+
+# vim: set ts=4 sw=4 noet: 

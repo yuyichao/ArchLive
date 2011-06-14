@@ -1,0 +1,10 @@
+#!/bin/bash
+HELP_INFO='This command use xdg-open to open arbitrary file with default program and redirect all annoy console output to /dev/null'
+
+. s_init.sh
+
+if [ $(uname) == "Darwin" ]; then #mac os x
+    open "${args[@]}" < /dev/null &>/dev/null
+else
+    xdg-open "${args[@]}" </dev/null &>/dev/null
+fi

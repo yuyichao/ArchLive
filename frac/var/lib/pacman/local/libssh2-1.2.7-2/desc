@@ -1,0 +1,36 @@
+%NAME%
+libssh2
+
+%VERSION%
+1.2.7-2
+
+%DESC%
+A library implementing the SSH2 protocol as defined by Internet Drafts
+
+%URL%
+http://www.libssh2.org/
+
+%LICENSE%
+BSD
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1305781423
+
+%INSTALLDATE%
+1308067408
+
+%PACKAGER%
+Angel Velásquez <angvp@archlinux.org>
+
+%SIZE%
+1187840
+
+%REASON%
+1
+
+%DEPENDS%
+openssl
+

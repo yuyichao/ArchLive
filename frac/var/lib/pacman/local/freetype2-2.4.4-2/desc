@@ -1,0 +1,36 @@
+%NAME%
+freetype2
+
+%VERSION%
+2.4.4-2
+
+%DESC%
+TrueType font rendering library
+
+%URL%
+http://freetype.sourceforge.net
+
+%LICENSE%
+GPL
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1294654980
+
+%INSTALLDATE%
+1308068038
+
+%PACKAGER%
+Jan de Groot <jgc@archlinux.org>
+
+%SIZE%
+2678784
+
+%REASON%
+1
+
+%DEPENDS%
+zlib
+

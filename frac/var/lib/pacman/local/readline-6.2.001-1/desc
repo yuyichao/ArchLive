@@ -1,0 +1,37 @@
+%NAME%
+readline
+
+%VERSION%
+6.2.001-1
+
+%DESC%
+GNU readline library
+
+%URL%
+http://tiswww.case.edu/php/chet/readline/rltop.html
+
+%LICENSE%
+GPL
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1298946072
+
+%INSTALLDATE%
+1308067378
+
+%PACKAGER%
+Allan McRae <allan@archlinux.org>
+
+%SIZE%
+1253376
+
+%REASON%
+1
+
+%DEPENDS%
+glibc
+ncurses
+

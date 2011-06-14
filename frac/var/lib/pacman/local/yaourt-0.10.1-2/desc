@@ -1,0 +1,42 @@
+%NAME%
+yaourt
+
+%VERSION%
+0.10.1-2
+
+%DESC%
+A pacman wrapper with extended features and AUR support
+
+%URL%
+http://www.archlinux.fr/yaourt-en/
+
+%LICENSE%
+GPL
+
+%ARCH%
+any
+
+%BUILDDATE%
+1300999881
+
+%INSTALLDATE%
+1308068078
+
+%PACKAGER%
+tuxce <tuxce.net@gmail.com>
+
+%SIZE%
+233472
+
+%DEPENDS%
+diffutils
+pacman>=3.5
+package-query>=0.7
+gettext
+
+%OPTDEPENDS%
+aurvote: vote for favorite packages from AUR for inclusion in [community]
+customizepkg: automatically modify PKGBUILD during install/upgrade
+rsync: retrieve PKGBUILD from official repositories
+pacman-color: fully colorized output
+

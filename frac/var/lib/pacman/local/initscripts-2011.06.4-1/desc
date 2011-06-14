@@ -1,0 +1,51 @@
+%NAME%
+initscripts
+
+%VERSION%
+2011.06.4-1
+
+%DESC%
+System initialization/bootup scripts
+
+%GROUPS%
+base
+
+%URL%
+http://www.archlinux.org
+
+%LICENSE%
+GPL2
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1307658830
+
+%INSTALLDATE%
+1308067548
+
+%PACKAGER%
+Tom Gundersen <teg@jklm.no>
+
+%SIZE%
+102400
+
+%DEPENDS%
+glibc
+bash
+grep
+coreutils
+udev>=171
+iproute2
+ncurses
+kbd
+findutils
+sysvinit
+
+%OPTDEPENDS%
+bridge-utils: Network bridging support
+dhcpcd: DHCP network configuration
+net-tools: legacy network support
+wireless_tools: Wireless networking
+

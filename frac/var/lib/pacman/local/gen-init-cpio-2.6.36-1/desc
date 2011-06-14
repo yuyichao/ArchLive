@@ -1,0 +1,36 @@
+%NAME%
+gen-init-cpio
+
+%VERSION%
+2.6.36-1
+
+%DESC%
+Program to compress initramfs images
+
+%URL%
+http://www.kernel.org/
+
+%LICENSE%
+GPL2
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1291628424
+
+%INSTALLDATE%
+1308067904
+
+%PACKAGER%
+Allan McRae <allan@archlinux.org>
+
+%SIZE%
+24576
+
+%REASON%
+1
+
+%DEPENDS%
+glibc
+

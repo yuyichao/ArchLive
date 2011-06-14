@@ -1,0 +1,37 @@
+%NAME%
+dhcpcd
+
+%VERSION%
+5.2.12-1
+
+%DESC%
+RFC2131 compliant DHCP client daemon
+
+%GROUPS%
+base
+
+%URL%
+http://roy.marples.name/dhcpcd/
+
+%LICENSE%
+BSD
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1302200351
+
+%INSTALLDATE%
+1308067840
+
+%PACKAGER%
+Ronald van Haren <ronald@archlinux.org>
+
+%SIZE%
+245760
+
+%DEPENDS%
+glibc
+sh
+

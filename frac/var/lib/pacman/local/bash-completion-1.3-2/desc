@@ -1,0 +1,33 @@
+%NAME%
+bash-completion
+
+%VERSION%
+1.3-2
+
+%DESC%
+Programmable completion for the bash shell
+
+%URL%
+http://bash-completion.alioth.debian.org/
+
+%LICENSE%
+GPL
+
+%ARCH%
+any
+
+%BUILDDATE%
+1297463665
+
+%INSTALLDATE%
+1308067879
+
+%PACKAGER%
+Eric Belanger <eric@archlinux.org>
+
+%SIZE%
+1024000
+
+%DEPENDS%
+bash
+

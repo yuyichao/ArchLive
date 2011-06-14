@@ -1,0 +1,11 @@
+#!/bin/bash
+srcdir="$(dirname $(readlink -f $0))"
+nroot="$srcdir/root"
+config=/etc/pacman.conf
+db=/var/lib/pacman/
+log=/var/log/pacman.log
+cache=/var/cache/pacman/pkg
+
+[[ -f "$nroot/$config" ]] && config="$nroot/$config"
+
+pacman -r "$nroot" -b "$nroot/$db" --logfile "$nroot/$log" --config "$config" --cachedir "$nroot/$cache" $@

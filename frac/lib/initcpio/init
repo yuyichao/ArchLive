@@ -1,0 +1,122 @@
+#!/bin/busybox ash
+# Install busybox's applets as symlinks
+/bin/busybox --install -s
+
+. /init_functions
+
+/bin/mount -t proc proc /proc -o nosuid,noexec,nodev
+/bin/mount -t sysfs sys /sys -o nosuid,noexec,nodev
+if grep -q devtmpfs /proc/filesystems 2>/dev/null; then
+  /bin/mount -n -t devtmpfs udev /dev -o mode=0755,size=10M,nosuid
+  devtmpfs_mounted=1
+else
+  /bin/mount -n -t tmpfs udev /dev -o mode=0755,size=10M,nosuid
+  devtmpfs_mounted=0
+  # We don't have devtmpfs, so add the most important standard devices
+  /bin/mknod /dev/null c 1 3
+  /bin/mknod /dev/zero c 1 5
+  /bin/mknod /dev/console c 5 1
+  # /dev/mem is needed if we want to load uvesafb before triggering uevents
+  /bin/mknod /dev/mem c 1 1
+fi
+/bin/mount -t tmpfs run /run -o nosuid,noexec,nodev,mode=755,size=10M
+
+root=""
+init=""
+echo "/sbin/modprobe" > /proc/sys/kernel/modprobe
+
+# set default mount handler
+mount_handler="default_mount_handler"
+
+# parse the kernel command line
+parse_cmdline
+
+# if available, start udevd at this stage
+if [ -x /sbin/udevd ]; then
+    msg ":: Starting udevd..."
+    /sbin/udevd --daemon --resolve-names=never
+    udevd_running=1
+    msg "done."
+else
+    udevd_running=0
+fi
+
+if [ -n "${disablehooks}" ]; then
+    for d in $(echo "${disablehooks}" | sed 's|,| |g'); do
+        eval "hook_${d}=disabled"
+    done
+fi
+
+if [ -n "${earlymodules}" ]; then
+    /sbin/modprobe -qab ${earlymodules//,/ }
+fi
+
+. /config
+
+/sbin/modprobe -qab $MODULES
+
+# If rootdelay is empty or not a non-negative integer, set it to 10
+if [ -z "${rootdelay}" ] || ! [ "${rootdelay}" -ge 0 ]; then
+    rootdelay=10
+fi
+
+if [ -e "/hooks" ]; then
+    for h in ${HOOKS}; do
+        TST=""
+        eval "TST=\$hook_${h}"
+        if [ "${TST}" != "disabled" ]; then
+            run_hook () { msg "${h}: no run function defined"; }
+            if [ -e "/hooks/${h}" ]; then
+               . /hooks/${h}
+               msg ":: Running Hook [${h}]"
+               run_hook
+            fi
+        fi
+    done
+fi
+
+if [ "${break}" = "y" ]; then
+    echo ":: Break requested, type 'exit' to resume operation"
+    launch_interactive_shell
+fi
+
+if [ -f "/message" ]; then
+    msg "$(cat /message)"
+fi
+
+# Mount root at /new_root
+mkdir -p /new_root
+${mount_handler} /new_root
+
+[ -z "${init}" ] && init="/sbin/init"
+if [ "$(stat -c %D /)" = "$(stat -c %D /new_root)" ]; then
+    # Nothing got mounted on /new_root. This is the end, we don't know what to do anymore
+    # We fall back into a shell, but the shell has now PID 1
+    # This way, manual recovery is still possible.
+    err "Failed to mount the real root device."
+    echo "Bailing out, you are on your own. Good luck."
+    echo
+    launch_interactive_shell --exec
+elif [ ! -x "/new_root${init}" ]; then
+    # Successfully mounted /new_root, but ${init} is missing
+    # The same logic as above applies
+    err "Root device mounted successfully, but ${init} does not exist."
+    echo "Bailing out, you are on your own. Good luck."
+    echo
+    launch_interactive_shell --exec
+fi
+
+# Stop udevd if is running
+if [ "${udevd_running}" -eq 1 ]; then
+    /sbin/udevadm control --exit
+    /sbin/udevadm info --cleanup-db
+fi
+
+for d in proc sys dev run; do
+    if [ -d /new_root/${d} ]; then
+        /bin/mount --move /${d} /new_root/${d}
+    else
+        /bin/umount /${d}
+    fi
+done
+exec env -i TERM=$TERM /sbin/switch_root -c /dev/console /new_root ${init} "$@"

@@ -1,0 +1,36 @@
+%NAME%
+run-parts
+
+%VERSION%
+3.4.4-1
+
+%DESC%
+run scripts or programs in a directory
+
+%URL%
+http://packages.qa.debian.org/d/debianutils.html
+
+%LICENSE%
+GPL
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1303455473
+
+%INSTALLDATE%
+1308067407
+
+%PACKAGER%
+Pierre Schmitz <pierre@archlinux.de>
+
+%SIZE%
+45056
+
+%REASON%
+1
+
+%DEPENDS%
+glibc
+
