@@ -30,6 +30,9 @@ C++ libraries
 Compression
 * Gzip: (gzip).                 General (de)compression of files (lzw).
 
+Development
+* libext2fs: (libext2fs).       The EXT2FS library.
+
 GNU C library functions and macros
 * ALTWERASE: (libc)Local Modes.
 * ARGP_ERR_UNKNOWN: (libc)Argp Parser Functions.

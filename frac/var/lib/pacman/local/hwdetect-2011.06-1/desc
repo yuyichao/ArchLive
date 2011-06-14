@@ -1,0 +1,44 @@
+%NAME%
+hwdetect
+
+%VERSION%
+2011.06-1
+
+%DESC%
+Hardware detection script with loading modules and mkinitcpio.conf / rc.conf support
+
+%URL%
+
+
+%LICENSE%
+GPL
+
+%ARCH%
+any
+
+%BUILDDATE%
+1307773272
+
+%INSTALLDATE%
+1308091199
+
+%PACKAGER%
+Tobias Powalowski <tpowa@archlinux.org>
+
+%SIZE%
+36864
+
+%DEPENDS%
+sh
+awk
+grep
+coreutils
+sed
+e2fsprogs
+
+%OPTDEPENDS%
+cryptsetup: for encrypt mkinitcpio config support
+dmraid:     for dmraid mkinitcpio config support
+lvm2:       for lvm2 mkinitcpio config support
+mdadm:      for raid mkinitcpio config support
+
