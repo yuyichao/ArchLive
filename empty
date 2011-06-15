@@ -1,0 +1,5 @@
+#!/bin/bash
+srcdir="$(dirname $(readlink -f $0))"
+cd "$srcdir"
+
+find frac -type d -empty > empty.lst
