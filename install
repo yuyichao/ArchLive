@@ -17,3 +17,6 @@ cd "$srcdir"
 
 ./mount -v -u
 
+mkdir -p "$dest/home/"
+
+cp -a config "$dest/home/"
