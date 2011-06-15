@@ -1,0 +1,70 @@
+initscripts
+dhcpcd
+base base-devel
+emacs
+python python2 curl bash-completion hal
+grub2
+multilib-devel
+yaourt
+acpid aspell
+at
+auctex
+bashdb bc bluez boost boost-libs cmake git svn gdb
+xorg
+texlive-most texlive-lang
+inetutils openssh expect cups-pdf mysql indent unzip rar-beta gtk qt
+gnome gnome-extra inotify-tools convmv xdg-user-dirs xcursor-vanilla-dmz ethtool fdupes ffmpeg gimp gimp-help-zh_cn
+telepathy-butterfly telepathy-salut telepathy-haze telepathy-sofiasip telepathy-gabble telepathy-idle
+xscreensaver
+hwdetect calibre chromium easytag espeak firefox firefox-i18n-zh-cn flashplugin-prerelease gnome-spell gnome-tweak-tool gnome-shell-extension-windows-navigator gnome-shell-extension-user-theme firefox-i18n
+gnochm libreoffice libreoffice-extensions libreoffice-zh-CN
+nautilus-gkim nautilus-actions nautilus-open-terminal
+networkmanager
+postfix
+sudo gksu gedit-plugins kernel26-headers kernel26-manpages kernel26-docs
+w3m virtualbox virtualbox-additions kile kdegraphics-okular kdeplasma-addons-runners-converter gthumb inkscape kde-l10n-zh_cn tre espeak mesa mesa-demos mail-notification
+gnuplot
+anjuta anjuta-extras gimp-devel banshee netcat p7zip network-manager-applet devhelp gnome-color-manager
+ocaml php r ruby gstreamer0.10-bad-plugins gstreamer0.10-ffmpeg gstreamer0.10-ugly gstreamer0.10-ugly-plugins
+parcellite gnome-system-tools gnome-settings-daemon-updates gnome-themes-extras ntfs-3g ktorrent madwifi madwifi-utils mplayer-vaapi pdf2djvu socat system-config-printer-gnome system-config-printer-common system-tools-backends tcsh wireshark-gtk wireshark-cli gvfs-smb
+simple-scan crda gnome-js-common gnote gtkmm-docs gtkmm3-docs
+zsh strace skype
+ttf-arphic-ukai ttf-arphic-uming
+cpio fluidsynth
+rdesktop
+evolution-exchange
+mutt mutagen
+kdebase
+kdeplasma-applets-networkmanagement
+kdeplasma-addons
+lzop
+opengl-man-pages
+samba
+netcfg netstat-nat netwatch networkmanager-vpnc networkmanager-pptp networkmanager-openvpn networkmanager-openconnect
+laptop-mode-tools mingw32-gcc
+mailutils
+lesspipe
+rpmextract fastjar cabextract antiword unrtf
+lyx
+kdepim
+lib32-libcanberra-pulse
+lib32-alsa-plugins
+wqy-bitmapfont wqy-zenhei
+ttf-dejavu
+gnome-shell-extensions-common
+xsettings-client
+xsensors
+gnome-disk-utility
+pmtools
+seed
+extra/gnome-shell-extension-drive-menu extra/gnome-shell-extension-places-menu
+abs
+extra/gnome-shell-extension-alternative-status-menu
+gcolor2
+java-runtime
+py3gobject
+python-rope
+pylint
+transmission-gtk
+lsb-release
+hspell

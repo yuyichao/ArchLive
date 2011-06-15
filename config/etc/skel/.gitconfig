@@ -1,0 +1,7 @@
+[user]
+	name = Yichao Yu
+	email = yyc1992@gmail.com
+[core]
+	editor = emacs
+[color]
+	ui = true
