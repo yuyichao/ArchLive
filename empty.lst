@@ -13,6 +13,7 @@ frac/etc/gconf/gconf.xml.system
 frac/etc/gconf/gconf.xml.mandatory
 frac/etc/gconf/gconf.xml.defaults
 frac/usr/local/games
+frac/usr/local/share
 frac/usr/local/lib
 frac/usr/local/sbin
 frac/usr/local/etc

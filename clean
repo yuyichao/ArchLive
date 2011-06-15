@@ -1,0 +1,4 @@
+#!/bin/bash
+srcdir=$(dirname $(readlink -f "$0"))
+rm -rf "$srcdir/frac/usr/share/man" "$srcdir/frac/usr/local/share/man"
+find "$srcdir/frac/var_cache_pacman_pkg/" -type f -exec rm {} \;

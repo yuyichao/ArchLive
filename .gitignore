@@ -2,3 +2,5 @@
 .bash_history
 /root/
 /frac/var_cache_pacman_pkg/
+/frac/usr/share/man
+/frac/usr/local/share/man
