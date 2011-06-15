@@ -1,0 +1,36 @@
+%NAME%
+libdatrie
+
+%VERSION%
+0.2.4-1
+
+%DESC%
+Implementation of double-array structure for representing trie, as proposed by Junichi Aoe.
+
+%URL%
+http://linux.thai.net/~thep/datrie/datrie.html
+
+%LICENSE%
+LGPL
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1282136113
+
+%INSTALLDATE%
+1308108157
+
+%PACKAGER%
+Jan de Groot <jgc@archlinux.org>
+
+%SIZE%
+126976
+
+%REASON%
+1
+
+%DEPENDS%
+glibc
+

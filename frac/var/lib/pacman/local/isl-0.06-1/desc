@@ -1,0 +1,33 @@
+%NAME%
+isl
+
+%VERSION%
+0.06-1
+
+%DESC%
+Library for manipulating sets and relations of integer points bounded by linear constraints
+
+%URL%
+http://www.kotnet.org/~skimo/isl/
+
+%LICENSE%
+LGPL2.1
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1302410164
+
+%INSTALLDATE%
+1308108096
+
+%PACKAGER%
+Allan McRae <allan@archlinux.org>
+
+%SIZE%
+2236416
+
+%REASON%
+1
+

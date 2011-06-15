@@ -1,0 +1,33 @@
+%NAME%
+renderproto
+
+%VERSION%
+0.11.1-1
+
+%DESC%
+X11 Render extension wire protocol
+
+%URL%
+http://xorg.freedesktop.org/
+
+%LICENSE%
+custom
+
+%ARCH%
+any
+
+%BUILDDATE%
+1282551373
+
+%INSTALLDATE%
+1308108155
+
+%PACKAGER%
+Jan de Groot <jgc@archlinux.org>
+
+%SIZE%
+122880
+
+%REASON%
+1
+

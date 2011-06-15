@@ -1,0 +1,36 @@
+%NAME%
+libthai
+
+%VERSION%
+0.1.15-1
+
+%DESC%
+Thai language support routines
+
+%URL%
+http://linux.thai.net/projects/libthai
+
+%LICENSE%
+LGPL
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1302163515
+
+%INSTALLDATE%
+1308108157
+
+%PACKAGER%
+Jan de Groot <jgc@archlinux.org>
+
+%SIZE%
+684032
+
+%REASON%
+1
+
+%DEPENDS%
+libdatrie>=0.2.3
+

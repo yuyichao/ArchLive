@@ -1,0 +1,40 @@
+%NAME%
+wget
+
+%VERSION%
+1.12-7
+
+%DESC%
+A network utility to retrieve files from the Web
+
+%GROUPS%
+base
+
+%URL%
+http://www.gnu.org/software/wget/wget.html
+
+%LICENSE%
+GPL3
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1304771655
+
+%INSTALLDATE%
+1308108329
+
+%PACKAGER%
+Allan McRae <allan@archlinux.org>
+
+%SIZE%
+2260992
+
+%DEPENDS%
+glibc
+openssl
+
+%OPTDEPENDS%
+ca-certificates: HTTPS downloads
+

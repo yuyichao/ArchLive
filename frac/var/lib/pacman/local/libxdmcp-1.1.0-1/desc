@@ -1,0 +1,37 @@
+%NAME%
+libxdmcp
+
+%VERSION%
+1.1.0-1
+
+%DESC%
+X11 Display Manager Control Protocol library
+
+%URL%
+http://xorg.freedesktop.org/
+
+%LICENSE%
+custom
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1288541533
+
+%INSTALLDATE%
+1308108154
+
+%PACKAGER%
+Jan de Groot <jgc@archlinux.org>
+
+%SIZE%
+184320
+
+%REASON%
+1
+
+%DEPENDS%
+xproto
+glibc
+

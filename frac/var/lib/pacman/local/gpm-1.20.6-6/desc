@@ -1,0 +1,37 @@
+%NAME%
+gpm
+
+%VERSION%
+1.20.6-6
+
+%DESC%
+A mouse server for the console and xterm
+
+%URL%
+http://www.nico.schottelius.org/software/gpm/
+
+%LICENSE%
+GPL
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1290240493
+
+%INSTALLDATE%
+1308108157
+
+%PACKAGER%
+Eric Belanger <eric@archlinux.org>
+
+%SIZE%
+483328
+
+%REASON%
+1
+
+%DEPENDS%
+ncurses
+bash
+

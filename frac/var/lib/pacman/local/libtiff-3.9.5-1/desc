@@ -1,0 +1,40 @@
+%NAME%
+libtiff
+
+%VERSION%
+3.9.5-1
+
+%DESC%
+Library for manipulation of TIFF images
+
+%URL%
+http://www.remotesensing.org/libtiff/
+
+%LICENSE%
+custom
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1302616041
+
+%INSTALLDATE%
+1308108154
+
+%PACKAGER%
+Eric Bélanger <eric@archlinux.org>
+
+%SIZE%
+3547136
+
+%REASON%
+1
+
+%DEPENDS%
+libjpeg
+zlib
+
+%OPTDEPENDS%
+freeglut: for using tiffgt
+

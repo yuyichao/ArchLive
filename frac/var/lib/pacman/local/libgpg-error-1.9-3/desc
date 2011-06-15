@@ -1,0 +1,37 @@
+%NAME%
+libgpg-error
+
+%VERSION%
+1.9-3
+
+%DESC%
+Support library for libgcrypt
+
+%URL%
+http://www.gnupg.org
+
+%LICENSE%
+LGPL
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1301942435
+
+%INSTALLDATE%
+1308108158
+
+%PACKAGER%
+Andreas Radke <andyrtr@archlinux.org>
+
+%SIZE%
+278528
+
+%REASON%
+1
+
+%DEPENDS%
+glibc
+sh
+

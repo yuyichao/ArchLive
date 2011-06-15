@@ -1,0 +1,37 @@
+%NAME%
+fontconfig
+
+%VERSION%
+2.8.0-1
+
+%DESC%
+A library for configuring and customizing font access
+
+%URL%
+http://www.fontconfig.org/release/
+
+%LICENSE%
+custom
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1259525812
+
+%INSTALLDATE%
+1308108155
+
+%PACKAGER%
+Jan de Groot <jgc@archlinux.org>
+
+%SIZE%
+3960832
+
+%REASON%
+1
+
+%DEPENDS%
+expat>=2.0.1
+freetype2>=2.3.11
+

@@ -1,0 +1,37 @@
+%NAME%
+libsm
+
+%VERSION%
+1.2.0-1
+
+%DESC%
+X11 Session Management library
+
+%URL%
+http://xorg.freedesktop.org/
+
+%LICENSE%
+custom
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1288648784
+
+%INSTALLDATE%
+1308108157
+
+%PACKAGER%
+Jan de Groot <jgc@archlinux.org>
+
+%SIZE%
+372736
+
+%REASON%
+1
+
+%DEPENDS%
+libice
+util-linux-ng
+

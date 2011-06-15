@@ -1,0 +1,36 @@
+%NAME%
+libpng
+
+%VERSION%
+1.4.5-1
+
+%DESC%
+A collection of routines used to create PNG format graphics files
+
+%URL%
+http://www.libpng.org/pub/png/libpng.html
+
+%LICENSE%
+custom
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1293027542
+
+%INSTALLDATE%
+1308108154
+
+%PACKAGER%
+Jan de Groot <jgc@archlinux.org>
+
+%SIZE%
+770048
+
+%REASON%
+1
+
+%DEPENDS%
+zlib
+

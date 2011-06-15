@@ -1,0 +1,33 @@
+%NAME%
+inputproto
+
+%VERSION%
+2.0.2-1
+
+%DESC%
+X11 Input extension wire protocol
+
+%URL%
+http://xorg.freedesktop.org/
+
+%LICENSE%
+custom
+
+%ARCH%
+any
+
+%BUILDDATE%
+1307543980
+
+%INSTALLDATE%
+1308108158
+
+%PACKAGER%
+Jan de Groot <jgc@archlinux.org>
+
+%SIZE%
+290816
+
+%REASON%
+1
+

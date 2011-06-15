@@ -1,0 +1,33 @@
+%NAME%
+xineramaproto
+
+%VERSION%
+1.2.1-1
+
+%DESC%
+X11 Xinerama extension wire protocol
+
+%URL%
+http://xorg.freedesktop.org/
+
+%LICENSE%
+custom
+
+%ARCH%
+any
+
+%BUILDDATE%
+1295437110
+
+%INSTALLDATE%
+1308108158
+
+%PACKAGER%
+Jan de Groot <jgc@archlinux.org>
+
+%SIZE%
+57344
+
+%REASON%
+1
+

@@ -1,0 +1,36 @@
+%NAME%
+compositeproto
+
+%VERSION%
+0.4.2-1
+
+%DESC%
+X11 Composite extension wire protocol
+
+%URL%
+http://xorg.freedesktop.org/
+
+%LICENSE%
+custom
+
+%ARCH%
+any
+
+%BUILDDATE%
+1288539375
+
+%INSTALLDATE%
+1308108158
+
+%PACKAGER%
+Jan de Groot <jgc@archlinux.org>
+
+%SIZE%
+86016
+
+%REASON%
+1
+
+%DEPENDS%
+fixesproto
+

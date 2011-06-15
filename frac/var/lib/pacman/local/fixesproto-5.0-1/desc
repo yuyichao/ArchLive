@@ -1,0 +1,37 @@
+%NAME%
+fixesproto
+
+%VERSION%
+5.0-1
+
+%DESC%
+X11 Fixes extension wire protocol
+
+%URL%
+http://xorg.freedesktop.org/
+
+%LICENSE%
+custom
+
+%ARCH%
+any
+
+%BUILDDATE%
+1302517818
+
+%INSTALLDATE%
+1308108158
+
+%PACKAGER%
+Jan de Groot <jgc@archlinux.org>
+
+%SIZE%
+53248
+
+%REASON%
+1
+
+%DEPENDS%
+xproto
+xextproto
+

@@ -1,0 +1,36 @@
+%NAME%
+ppl
+
+%VERSION%
+0.11.2-1
+
+%DESC%
+A modern library for convex polyhedra and other numerical abstractions.
+
+%URL%
+http://www.cs.unipr.it/ppl
+
+%LICENSE%
+GPL3
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1298887567
+
+%INSTALLDATE%
+1308108097
+
+%PACKAGER%
+Allan McRae <allan@archlinux.org>
+
+%SIZE%
+23187456
+
+%REASON%
+1
+
+%DEPENDS%
+gmp>=5.0
+

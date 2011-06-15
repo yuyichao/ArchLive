@@ -1,0 +1,41 @@
+%NAME%
+librsvg
+
+%VERSION%
+2.34.0-1
+
+%DESC%
+SAX-based renderer for SVG files into a GdkPixbuf
+
+%URL%
+http://librsvg.sourceforge.net/
+
+%LICENSE%
+LGPL
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1301911958
+
+%INSTALLDATE%
+1308108157
+
+%PACKAGER%
+Ionut Biru <ibiru@archlinux.org>
+
+%SIZE%
+552960
+
+%REASON%
+1
+
+%DEPENDS%
+gdk-pixbuf2
+pango
+libcroco
+
+%OPTDEPENDS%
+python2: rsvg commandline utility
+

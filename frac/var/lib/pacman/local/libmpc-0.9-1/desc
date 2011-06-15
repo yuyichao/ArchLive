@@ -1,0 +1,36 @@
+%NAME%
+libmpc
+
+%VERSION%
+0.9-1
+
+%DESC%
+Library for the arithmetic of complex numbers with arbitrarily high precision
+
+%URL%
+http://www.multiprecision.org/
+
+%LICENSE%
+LGPL
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1298550783
+
+%INSTALLDATE%
+1308108096
+
+%PACKAGER%
+Allan McRae <allan@archlinux.org>
+
+%SIZE%
+356352
+
+%REASON%
+1
+
+%DEPENDS%
+mpfr>=3.0.0
+

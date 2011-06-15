@@ -1,0 +1,39 @@
+%NAME%
+patch
+
+%VERSION%
+2.6.1-2
+
+%DESC%
+A utility to apply patch files to original sources
+
+%GROUPS%
+base-devel
+
+%URL%
+http://www.gnu.org/software/patch/patch.html
+
+%LICENSE%
+GPL
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1290180829
+
+%INSTALLDATE%
+1308108099
+
+%PACKAGER%
+Stéphane Gaudreault <stephane@archlinux.org>
+
+%SIZE%
+147456
+
+%DEPENDS%
+glibc
+
+%OPTDEPENDS%
+ed: Interpret the patch as an ed script; for patch -e functionality(deprecated)
+

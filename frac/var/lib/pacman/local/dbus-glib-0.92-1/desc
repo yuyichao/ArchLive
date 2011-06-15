@@ -1,0 +1,37 @@
+%NAME%
+dbus-glib
+
+%VERSION%
+0.92-1
+
+%DESC%
+GLib bindings for DBUS
+
+%URL%
+http://www.freedesktop.org/wiki/Software/DBusBindings
+
+%LICENSE%
+GPL
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1289394441
+
+%INSTALLDATE%
+1308108160
+
+%PACKAGER%
+Ionut Biru <ibiru@archlinux.org>
+
+%SIZE%
+745472
+
+%REASON%
+1
+
+%DEPENDS%
+dbus-core>=1.4.0
+glib2>=2.26.0
+

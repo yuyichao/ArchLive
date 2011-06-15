@@ -1,0 +1,33 @@
+%NAME%
+hicolor-icon-theme
+
+%VERSION%
+0.12-1
+
+%DESC%
+Freedesktop.org Hicolor icon theme
+
+%URL%
+http://icon-theme.freedesktop.org/wiki/HicolorTheme
+
+%LICENSE%
+GPL2
+
+%ARCH%
+any
+
+%BUILDDATE%
+1272388386
+
+%INSTALLDATE%
+1308108160
+
+%PACKAGER%
+Jan de Groot <jgc@archlinux.org>
+
+%SIZE%
+1433600
+
+%REASON%
+1
+

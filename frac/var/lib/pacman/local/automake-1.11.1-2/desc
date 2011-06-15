@@ -1,0 +1,37 @@
+%NAME%
+automake
+
+%VERSION%
+1.11.1-2
+
+%DESC%
+A GNU tool for automatically creating Makefiles
+
+%GROUPS%
+base-devel
+
+%URL%
+http://www.gnu.org/software/automake
+
+%LICENSE%
+GPL
+
+%ARCH%
+any
+
+%BUILDDATE%
+1290223216
+
+%INSTALLDATE%
+1308108098
+
+%PACKAGER%
+Stéphane Gaudreault <stephane@archlinux.org>
+
+%SIZE%
+1867776
+
+%DEPENDS%
+perl
+bash
+
