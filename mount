@@ -11,6 +11,10 @@ mount_all() {
     mkdir -p "$nroot"
     mount "$srcdir/root.img" "$nroot"
 
+    while read file ;do
+	mkdir -p "$srcdir/$file"
+    done
+
     mount_lst=(frac/*)
     [[ -z $no_vfs ]] && mount_lst=("${mount_lst[@]}" vfs/*)
 
