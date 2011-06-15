@@ -13,7 +13,7 @@ mount_all() {
 
     while read file ;do
 	mkdir -p "$srcdir/$file"
-    done
+    done < "$srcdir/empty.lst"
 
     mount_lst=(frac/*)
     [[ -z $no_vfs ]] && mount_lst=("${mount_lst[@]}" vfs/*)

@@ -1,0 +1,6 @@
+<device DEVNO="0x0802" TIME="1308147700.997975" LABEL="boot" UUID="4d42204c-1aee-4c9d-b32e-15e01fdd61ec" TYPE="ext2">/dev/sda2</device>
+<device DEVNO="0x0803" TIME="1308147700.998192" LABEL="root" UUID="cf8fd720-e869-44ea-a486-0fc7aaabdd69" TYPE="ext4">/dev/sda3</device>
+<device DEVNO="0x0804" TIME="1308147700.998334" LABEL="home" UUID="afcae207-c261-4e60-ba85-9e70ba9883ef" TYPE="ext4">/dev/sda4</device>
+<device DEVNO="0x0805" TIME="1308147701.118150" LABEL="swap" UUID="164c739d-87a9-4e96-9d62-58d38e400962" TYPE="swap">/dev/sda5</device>
+<device DEVNO="0x0812" TIME="1308147701.175534" LABEL="ArchLive" UUID="4e766c15-8723-4e2e-a981-6e8bc795f165" TYPE="ext4">/dev/sdb2</device>
+<device DEVNO="0x0700" TIME="1308147701.175770" UUID="827d8479-3381-429c-af14-b1a20ed78f27" TYPE="ext2">/dev/loop0</device>
