@@ -1,1181 +1,1182 @@
-extra/a52dec 0.7.4-5
-extra/aalib 1.4rc5-8
-extra/abs 2.4.2-1
-extra/accountsservice 0.6.12-1
-core/acl 2.2.51-1
-extra/acpid 2.0.10-2
-local/acroread 9.4.2-1
-extra/aiksaurus 1.2.1-2
-kde-unstable/akonadi 1.5.80-2
-extra/alsa-lib 1.0.24.1-1
-extra/alsa-plugins 1.0.24-2
-extra/alsa-utils 1.0.24.2-1
-extra/anjuta 3.0.2.0-1
-extra/anjuta-extras 2.32.1.1-1
-community/antiword 0.37-2
-extra/apr 1.4.5-1
-extra/apr-util 1.3.12-1
-extra/art-sharp 2.24.2-1
-extra/aspell 0.60.6-5
-extra/at 3.1.12-1
-testing/ati-dri 7.10.99.git20110612-1
-extra/atk 2.0.0-1
-extra/atkmm 2.22.4-1
-extra/at-spi2-atk 2.0.2-1 (gnome)
-extra/at-spi2-core 2.0.2-1 (gnome)
-extra/attica 0.2.0-1
-core/attr 2.4.46-1
-community/auctex 11.86-2
-extra/audiofile 0.2.7-1
-local/aurup 0.7.8-2
-core/autoconf 2.68-1 (base-devel)
-extra/autogen 5.9.9-1
-core/automake 1.11.1-2 (base-devel)
-extra/avahi 0.6.30-3
-extra/babl 0.1.4-1
-extra/banshee 2.0.1-2
-core/bash 4.2.010-1 (base)
-extra/bash-completion 1.3-2
-community/bashdb 4.2_0.8-1
-extra/bc 1.06-7
-multilib-testing/binutils-multilib 2.21-9 (multilib-devel)
-core/bison 2.5-1 (base-devel)
-extra/bittorrent 5.2.2-4
-extra/blas 3.3.0-2
-extra/bluez 4.93-2
-extra/boo 0.9.4.9-1
-extra/boost 1.46.1-3
-extra/boost-libs 1.46.1-3
-extra/brasero 3.0.0-1
-extra/bug-buddy 2.32.0-1 (gnome-extra)
-core/bzip2 1.0.6-1 (base)
-community/cabextract 1.3-1
-core/ca-certificates 20110421-3
-extra/cairo 1.10.2-2
-extra/cairomm 1.10.0-1
-community/calibre 0.8.5-1
-extra/cantarell-fonts 0.0.6-1
-extra/cdparanoia 10.2-3
-extra/cdrdao 1.2.3-5
-extra/cdrkit 1.1.11-1
-extra/cheese 3.0.1-2 (gnome-extra)
-extra/chmlib 0.40-1
-extra/chromium 12.0.742.91-1
-extra/cifs-utils 4.9-3
-extra/cln 1.3.1-1
-core/cloog 0.16.2-1
-extra/clucene 0.9.21b-1
-extra/clutter 1.6.14-1
-extra/clutter-gst 1.3.12-1
-extra/clutter-gtk 1.0.0-1
-extra/clutter-gtk2 0.10.8-1
-extra/cmake 2.8.4-1
-extra/compositeproto 0.4.2-1
-extra/consolekit 0.4.5-1
-extra/convmv 1.14-1
-core/coreutils 8.12-3 (base)
-extra/cpio 2.11-2
-extra/cpufrequtils 008-1
-core/cracklib 2.8.18-1
-core/crda 1.1.1-3
-core/cronie 1.4.7-8 (base)
-core/cryptsetup 1.3.1-1 (base)
-extra/cups 1.4.6-3
-extra/cups-pdf 2.5.1-1
-extra/cups-pk-helper 0.1.2-1
-extra/curl 7.21.6-2
-extra/cyrus-sasl-plugins 2.1.23-5
-extra/damageproto 1.2.1-1
-core/dash 0.5.6.1-2 (base)
-core/db 5.1.25-1
-extra/dbus 1.4.8-1
-core/dbus-core 1.4.8-1
-extra/dbus-glib 0.92-1
-extra/dbus-python 0.83.1-2
-extra/dconf 0.7.5-1
-extra/desktop-file-utils 0.18-1
-extra/devhelp 3.0.0-1
-core/device-mapper 2.02.85-2 (base)
-local/d-feet 0.1.12-1
-core/dhcpcd 5.2.12-1 (base)
-core/dialog 1.1_20110302-1
-core/diffutils 3.0-2 (base)
-extra/dirmngr 1.1.0-1
-extra/djvulibre 3.5.24-1
-extra/dmidecode 2.11-1
-extra/dmxproto 2.3.1-1
-core/dnsutils 9.8.0.P2-1
-extra/docbook-xml 4.5-4
-extra/docbook-xsl 1.76.1-1
-extra/dri2proto 2.3-1
-extra/dvd+rw-tools 7.1-2
-core/e2fsprogs 1.41.14-1 (base)
-extra/easytag 2.1.6-3
-extra/ebook-tools 0.2.1-2
-extra/eject 2.1.5-5
-extra/elfutils 0.152-1
-extra/emacs 23.3-1
-extra/empathy 3.0.2-1 (gnome-extra)
-extra/enca 1.13-1
-extra/enchant 1.6.0-3
-extra/eog 3.0.2-1 (gnome-extra)
-extra/esound 0.2.41-1
-community/espeak 1.45.04-1
-extra/ethtool 1:2.6.39-1
-core/eventlog 0.2.12-2
-extra/evince 3.0.2-1 (gnome-extra)
-extra/evolution 3.0.2-1 (gnome-extra)
-extra/evolution-data-server 3.0.2.1-1
-extra/evolution-exchange 3.0.2-1
-extra/evolution-webcal 2.32.0-1 (gnome-extra)
-extra/exempi 2.1.1-1
-extra/exiv2 0.21.1-1
-core/expat 2.0.1-6
-extra/expect 5.45-1
-extra/faac 1.28-2
-extra/faad2 2.7-2
-core/fakeroot 1.15.1-1 (base-devel)
-extra/fam 2.7.0-15
-extra/farsight2 0.0.28-2
-extra/fastjar 0.98-1
-community/fdupes 1.40-5
-extra/ffmpeg 20110330-2
-extra/fftw 3.2.2-2
-core/file 5.07-3 (base)
-extra/file-roller 3.0.2-1 (gnome-extra)
-core/filesystem 2011.04-1 (base)
-core/findutils 4.4.2-3 (base)
-extra/firefox 4.0.1-1
-extra/firefox-i18n 4.0.1-1
-extra/firefox-i18n-zh-cn 4.0.1-1
-extra/fixesproto 5.0-1
-extra/flac 1.2.1-2
-archlinuxfr/flashplugin-prerelease 10.3.162.29-1
-core/flex 2.5.35-4 (base-devel)
-extra/fluidsynth 1.1.3-2
-extra/folks 0.4.3-1
-extra/fontconfig 2.8.0-1
-extra/fontsproto 2.1.1-1
-extra/freeglut 2.6.0-1
-extra/freetype2 2.4.4-2
-extra/fribidi 0.19.2-1
-extra/fuse 2.8.5-1
-core/gawk 3.1.8-2 (base)
-extra/gc 7.1-3
-extra/gcalctool 6.0.2-1 (gnome-extra)
-multilib-testing/gcc-libs-multilib 4.6.0-7
-multilib-testing/gcc-multilib 4.6.0-7 (multilib-devel)
-community/gcolor2 0.4-5
-extra/gconf 2.32.3-1
-extra/gconf-editor 3.0.0-1 (gnome-extra)
-extra/gconf-sharp 2.24.2-1
-extra/gconf-sharp-peditors 2.24.2-1
-extra/gd 2.0.36RC1-3
-extra/gdata-sharp 1.7.0.1-1
-extra/gdb 7.2-2
-core/gdbm 1.8.3-8
-extra/gdk-pixbuf2 2.23.3-1
-extra/gdl 3.0.2-1
-extra/gdm 3.0.4-1 (gnome-extra)
-extra/gedit 3.0.4-1 (gnome-extra)
-community/gedit-plugins 3.0.3-1
-extra/gegl 0.1.6-1
-core/gen-init-cpio 2.6.36-1
-core/gettext 0.18.1.1-3 (base)
-extra/ghostscript 9.02-2
-extra/giflib 4.1.6-4
-extra/gimp-devel 2.7.2-1
-extra/gimp-help-zh_cn 2.6.0-1 (gimp-help)
-extra/gio-sharp 0.2-2
-testing/git 1.7.5.4-1
-extra/gjs 0.7.14-1
-extra/gkeyfile-sharp 0.1-1
-extra/gksu 2.0.2-3
-extra/glade 3.10.0-2
-extra/glew 1.6.0-1
-extra/glib 1.2.10-8.1
-core/glib2 2.28.8-1
-testing/glibc 2.14-2 (base)
-extra/glibmm 2.28.1-1
-extra/glib-networking 2.28.7-1
-extra/glproto 1.4.12-1
-extra/gmime 2.4.23-1
-core/gmp 5.0.2-1
-community/gnochm 0.9.11-9
-extra/gnome-applets 3.1.1-1 (gnome)
-extra/gnome-backgrounds 3.0.2-1 (gnome)
-extra/gnome-bluetooth 3.0.1-1
-extra/gnome-color-manager 3.0.0-1
-extra/gnome-common 2.34.0-1
-extra/gnome-control-center 3.0.2-1 (gnome)
-extra/gnome-desktop 3.0.2-1 (gnome)
-extra/gnome-disk-utility 3.0.0-1
-extra/gnome-doc-utils 0.20.6-1
-extra/gnome-icon-theme 3.0.0-2 (gnome)
-extra/gnome-icon-theme-extras 3.0.0-1 (gnome)
-extra/gnome-icon-theme-symbolic 3.0.0-1 (gnome)
-extra/gnome-js-common 0.1.2-1
-extra/gnome-keyring 3.0.3-1 (gnome)
-extra/gnome-media 2.91.2-2 (gnome)
-extra/gnome-menus 3.0.1-1
-extra/gnome-mime-data 2.18.0-5
-extra/gnome-nettool 3.0.0-1 (gnome-extra)
-community/gnome-packagekit 3.0.3-1
-extra/gnome-panel 3.0.2-1 (gnome)
-extra/gnome-power-manager 3.0.2-2 (gnome)
-extra/gnome-screensaver 3.0.0-1 (gnome)
-extra/gnome-session 3.0.2-1 (gnome)
-extra/gnome-settings-daemon 3.0.2-1 (gnome)
-community/gnome-settings-daemon-updates 3.0.2-1
-extra/gnome-sharp 2.24.2-1
-extra/gnome-shell 3.0.2-1 (gnome)
-extra/gnome-shell-extension-alternative-status-menu 3.0.2-0.20110526.1
-extra/gnome-shell-extension-dock 3.0.2-0.20110526.1
-extra/gnome-shell-extension-drive-menu 3.0.2-0.20110526.1
-local/gnome-shell-extension-mediaplayer-git 20110614-1
-extra/gnome-shell-extension-places-menu 3.0.2-0.20110526.1
-extra/gnome-shell-extensions-common 3.0.2-0.20110526.1
-extra/gnome-shell-extension-user-theme 3.0.2-0.20110526.1
-local/gnome-shell-extension-weather-git 20110607-1
-extra/gnome-shell-extension-windows-navigator 3.0.2-0.20110526.1
-extra/gnome-spell 1.0.8-2
-extra/gnome-system-monitor 3.0.1-1 (gnome-extra)
-community/gnome-system-tools 3.0.0-1
-extra/gnome-terminal 3.0.1-2 (gnome)
-extra/gnome-themes-extras 2.22.0-2
-extra/gnome-themes-standard 3.0.2-1 (gnome)
-extra/gnome-tweak-tool 3.0.4-1
-extra/gnome-user-docs 3.0.4-1 (gnome)
-extra/gnome-utils 3.0.1-1 (gnome-extra)
-extra/gnome-vfs 2.24.4-3
-extra/gnome-vfs-sharp 2.24.2-1
-extra/gnome-video-effects 0.3.0-1
-community/gnote 0.7.4-1
-extra/gnu-netcat 0.7.1-3
-extra/gnupg 1.4.11-2
-extra/gnupg2 2.0.17-1
-extra/gnuplot 4.4.3-1
-extra/gnutls 2.12.6.1-1
-extra/gobject-introspection 0.10.8-1
-local/google-talkplugin 2.0.6.0-1
-extra/gpgme 1.3.0-1
-core/gpm 1.20.6-6
-extra/gpsd 2.96-1
-extra/grantlee 0.1.8-1
-testing/graphviz 2.28.0-2
-core/grep 2.8-1 (base)
-core/groff 1.21-1
-extra/grub2-bios 1:1.99-3
-extra/grub2-common 1:1.99-3
-extra/gsettings-desktop-schemas 3.0.1-2
-extra/gsfonts 1.0.7pre44-2
-extra/gsl 1.14-1
-extra/gsm 1.0.13-6
-extra/gstreamer0.10 0.10.34-1
-extra/gstreamer0.10-bad 0.10.22-1 (gstreamer0.10-plugins)
-extra/gstreamer0.10-bad-plugins 0.10.22-1 (gstreamer0.10-plugins)
-extra/gstreamer0.10-base 0.10.34-1
-extra/gstreamer0.10-base-plugins 0.10.34-1 (gstreamer0.10-plugins)
-extra/gstreamer0.10-ffmpeg 0.10.11-1 (gstreamer0.10-plugins)
-extra/gstreamer0.10-good 0.10.29-1
-extra/gstreamer0.10-good-plugins 0.10.29-1 (gstreamer0.10-plugins)
-extra/gstreamer0.10-python 0.10.21-1
-extra/gstreamer0.10-ugly 0.10.18-1
-extra/gstreamer0.10-ugly-plugins 0.10.18-1 (gstreamer0.10-plugins)
-extra/gthumb 2.13.2-1
-extra/gtk 1.2.10-10
-extra/gtk2 2.24.4-2
-extra/gtk3 3.0.11-1
-extra/gtk-doc 1.17-1
-extra/gtk-engines 2.20.2-1
-extra/gtkhtml4 4.0.1-1
-extra/gtkmm 2.24.0-1
-extra/gtkmm3 3.0.1-1
-extra/gtkmm3-docs 3.0.1-1
-extra/gtkmm-docs 2.24.0-1
-extra/gtk-sharp-2 2.12.10-1
-extra/gtk-sharp-beans 2.14.0-1
-extra/gtksourceview2 2.10.5-1
-extra/gtksourceview3 3.0.3-1
-extra/gtkspell 2.0.16-1
-extra/gtk-update-icon-cache 2.24.4-2
-extra/gtk-vnc 0.4.3-1
-extra/gucharmap 3.0.1-1 (gnome-extra)
-extra/gudev-sharp 0.1-1
-extra/guile 1.8.8-1
-extra/gvfs 1.8.2-1
-extra/gvfs-obexftp 1.8.2-1
-extra/gvfs-smb 1.8.2-1
-core/gzip 1.4-2 (base)
-extra/hal 0.5.14-6
-extra/hal-info 0.20091130-1
-core/hdparm 9.37-1
-core/heirloom-mailx 12.5-1 (base)
-extra/hicolor-icon-theme 0.12-1
-extra/hspell 1.1-1
-community/html2text 1.3.2a-8
-extra/hunspell 1.3.2-1
-extra/hwdetect 2011.06-1
-extra/hyphen 2.7.1-2
-core/iana-etc 2.30-1
-local/ibus-gjs-git 20110608-1
-local/ibus-sunpinyin-git 20110526-1
-extra/icon-naming-utils 0.8.90-2
-extra/icu 4.8-1
-extra/id3lib 3.8.3-11
-core/idnkit 1.0-1
-extra/ilmbase 1.0.2-1
-testing/imagemagick 6.7.0.2-1
-extra/imlib2 1.4.4-1
-extra/indent 2.2.11-1
-core/inetutils 1.8-2
-core/initscripts 2011.06.4-1 (base)
-extra/inkscape 0.48.1-3
-community/inotify-tools 3.14-1
-extra/inputproto 2.0.2-1
-extra/intltool 0.41.1-2
-core/iproute2 2.6.38-3
-core/iptables 1.4.10-1
-core/iputils 20101006-1 (base)
-core/isl 0.06-1
-extra/iso-codes 3.14-1
-core/iw 0.9.22-1
-extra/jack 0.120.2-1
-extra/jasper 1.900.1-6
-core/jfsutils 1.1.15-2 (base)
-extra/jhead 2.90-1
-community/jre 6u26-1
-extra/json-glib 0.12.4-1
-core/kbd 1.15.3-1
-extra/kbproto 1.0.5-1
-extra/kde-agent 20090801-2
-testing/kdebase-dolphin 4.6.80-1 (kde kdebase)
-testing/kdebase-kdepasswd 4.6.80-1 (kde kdebase)
-testing/kdebase-kdialog 4.6.80-1 (kde kdebase)
-testing/kdebase-keditbookmarks 4.6.80-1 (kde kdebase)
-testing/kdebase-kfind 4.6.80-1 (kde kdebase)
-testing/kdebase-konsole 4.6.80-1 (kde kdebase)
-testing/kdebase-kwrite 4.6.80-1 (kde kdebase)
-testing/kdebase-lib 4.6.80-1
-testing/kdebase-plasma 4.6.80-1 (kde kdebase)
-testing/kdebase-runtime 4.6.80-1
-testing/kdebase-workspace 4.6.80-2 (kde)
-testing/kdeedu-marble 4.6.80-1 (kde kdeedu)
-testing/kdegraphics-okular 4.6.80-1 (kde kdegraphics)
-testing/kde-l10n-zh_cn 4.6.4-3
-testing/kdelibs 4.6.80-1
-testing/kdepim-akonadiconsole 4.6.80-1 (kde kdepim)
-testing/kdepim-akregator 4.6.80-1 (kde kdepim)
-testing/kdepim-blogilo 4.6.80-1 (kde kdepim)
-testing/kdepim-console 4.6.80-1 (kde kdepim)
-testing/kdepim-kaddressbook 4.6.80-1 (kde kdepim)
-testing/kdepim-kalarm 4.6.80-1 (kde kdepim)
-testing/kdepim-kjots 4.6.80-1 (kde kdepim)
-testing/kdepim-kleopatra 4.6.80-1 (kde kdepim)
-testing/kdepim-kmail 4.6.80-1 (kde kdepim)
-testing/kdepim-knode 4.6.80-1 (kde kdepim)
-testing/kdepim-knotes 4.6.80-1 (kde kdepim)
-testing/kdepim-kontact 4.6.80-1 (kde kdepim)
-testing/kdepim-korganizer 4.6.80-1 (kde kdepim)
-testing/kdepim-kresources 4.6.80-1 (kde kdepim)
-testing/kdepim-ktimetracker 4.6.80-1 (kde kdepim)
-testing/kdepim-libkdepim 4.6.80-1
-testing/kdepimlibs 4.6.80-1
-testing/kdepim-runtime 4.6.80-1
-testing/kdepim-wizards 4.6.80-1 (kde kdepim)
-testing/kdeplasma-addons-applets-bball 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-binary-clock 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-blackboard 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-bookmarks 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-bubblemon 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-calculator 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-charselect 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-comic 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-community 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-dict 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-eyes 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-fifteenpuzzle 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-filewatcher 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-frame 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-fuzzy-clock 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-incomingmsg 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-kdeobservatory 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-kimpanel 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-knowledgebase 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-kolourpicker 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-konqprofiles 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-konsoleprofiles 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-lancelot 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-leavenote 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-life 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-luna 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-magnifique 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-mediaplayer 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-microblog 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-news 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-notes 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-nowplaying 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-paste 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-pastebin 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-plasmaboard 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-previewer 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-qalculate 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-rememberthemilk 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-rssnow 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-showdashboard 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-showdesktop 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-social-news 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-spellcheck 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-systemloadviewer 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-timer 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-unitconverter 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-weather 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-weatherstation 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-applets-webslice 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-containments 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-libs 4.6.80-1
-testing/kdeplasma-addons-runners-audioplayercontrol 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-runners-browserhistory 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-runners-characters 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-runners-contacts 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-runners-converter 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-runners-datetime 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-runners-events 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-runners-katesessions 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-runners-konquerorsessions 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-runners-konsolesessions 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-runners-kopete 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-runners-mediawiki 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-runners-spellchecker 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-wallpapers-mandelbrot 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-wallpapers-marble 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-wallpapers-pattern 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-wallpapers-virus 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-addons-wallpapers-weather 4.6.80-1 (kde kdeplasma-addons)
-testing/kdeplasma-applets-networkmanagement 1:git20110610-1
-kde-unstable/kde-wallpapers 4.6.80-1 (kde)
-core/kernel26 2.6.39.1-1 (base)
-core/kernel26-docs 2.6.39.1-1
-core/kernel26-headers 2.6.39.1-1
-extra/kernel26-manpages 2.6.38-1
-core/keyutils 1.4-1
-extra/kile 2.1-1
-core/krb5 1.9.1-1
-extra/ktorrent 4.1.1-2
-extra/ladspa 1.13-2
-extra/lame 3.98.4-1
-extra/lapack 3.3.0-2
-extra/laptop-mode-tools 1.57-3
-extra/lcms 1.19-1
-extra/lcms2 2.1-1
-core/less 443-2 (base)
-community/lesspipe 1.71-1
-extra/lesstif 0.95.2-2
-multilib/lib32-alsa-lib 1.0.24.1-1
-multilib/lib32-alsa-plugins 1.0.24-1
-multilib/lib32-atk 1.32.0-1
-multilib/lib32-attr 2.4.44-4
-multilib/lib32-cairo 1.10.2-2
-multilib/lib32-db 5.1.19-1
-multilib/lib32-dbus-core 1.4.0-2
-multilib/lib32-e2fsprogs 1.41.14-2
-multilib/lib32-expat 2.0.1-7
-multilib/lib32-flac 1.2.1-7
-multilib/lib32-fontconfig 2.8.0-3
-multilib/lib32-freetype2 2.4.4-1
-multilib-testing/lib32-gcc-libs 4.6.0-7
-multilib/lib32-gdk-pixbuf2 2.23.3-1
-multilib/lib32-glib2 2.28.6-1
-multilib-testing/lib32-glibc 2.14-2
-multilib/lib32-gnutls 2.12.2-1
-multilib/lib32-gtk2 2.24.4-1
-multilib/lib32-heimdal 1.3.3-3
-multilib/lib32-libasyncns 0.8-5
-multilib/lib32-libcanberra 0.28-1
-multilib/lib32-libcanberra-pulse 0.28-1
-multilib/lib32-libcap 2.21-1
-multilib/lib32-libcups 1.4.5-1
-multilib/lib32-libdrm 2.4.25-1
-multilib/lib32-libgcrypt 1.4.6-3
-multilib-testing/lib32-libgl 7.10.99.git20110612-1
-multilib/lib32-libgpg-error 1.9-4
-multilib/lib32-libice 1.0.7-1
-multilib/lib32-libjpeg-turbo 1.1.1-1
-multilib/lib32-libmng 1.0.10-5
-multilib/lib32-libogg 1.2.2-1
-multilib/lib32-libpng 1.4.5-1
-multilib/lib32-libpulse 0.9.22-1
-multilib/lib32-libsm 1.2.0-1
-multilib/lib32-libsndfile 1.0.24-1
-multilib/lib32-libstdc++5 3.3.6-5
-multilib/lib32-libtiff 3.9.4-3
-multilib/lib32-libtool 2.4-2
-multilib/lib32-libvorbis 1.3.2-1
-multilib/lib32-libx11 1.4.3-1
-multilib/lib32-libxau 1.0.6-2
-multilib/lib32-libxcb 1.7-2
-multilib/lib32-libxcomposite 0.4.3-1
-multilib/lib32-libxcursor 1.1.11-1
-multilib/lib32-libxdamage 1.1.3-3
-multilib/lib32-libxdmcp 1.1.0-1
-multilib/lib32-libxext 1.2.0-1
-multilib/lib32-libxfixes 4.0.5-3
-multilib/lib32-libxft 2.2.0-1
-multilib/lib32-libxi 1.4.1-1
-multilib/lib32-libxinerama 1.1.1-1
-multilib/lib32-libxml2 2.7.8-1
-multilib/lib32-libxrandr 1.3.1-1
-multilib/lib32-libxrender 0.9.6-4
-multilib/lib32-libxss 1.2.1-1
-multilib/lib32-libxt 1.1.1-1
-multilib/lib32-libxtst 1.2.0-1
-multilib/lib32-libxv 1.0.6-1
-multilib/lib32-libxxf86vm 1.1.1-1
-multilib-testing/lib32-mesa 7.10.99.git20110612-1
-multilib/lib32-ncurses 5.7-6
-multilib/lib32-openssl 1.0.0.d-1
-multilib/lib32-pango 1.28.3-1
-multilib/lib32-pcre 8.12-1
-multilib/lib32-pixman 0.20.2-1
-multilib/lib32-qt 4.7.3-1
-multilib/lib32-readline 6.1.002-3
-multilib/lib32-sqlite3 3.7.4-1
-multilib/lib32-tdb 1.2.1-3
-multilib/lib32-util-linux 2.19-1
-multilib/lib32-xcb-util 0.3.6-3
-multilib/lib32-zlib 1.2.5-6
-extra/libao 1.1.0-1
-core/libarchive 2.8.4-2
-extra/libart-lgpl 2.3.21-1
-extra/libass 0.9.12-1
-extra/libassuan 2.0.1-1
-extra/libasyncns 0.8-3
-extra/libatasmart 0.17-1
-extra/libavc1394 0.5.3-3
-extra/libbonobo 2.32.1-1
-extra/libbonoboui 2.24.5-1
-extra/libcaca 0.99.beta17-1
-extra/libcanberra 0.28-1
-extra/libcanberra-pulse 0.28-1
-core/libcap 2.21-1
-extra/libcdaudio 0.99.12-5
-extra/libcddb 1.3.2-2
-extra/libcdio 0.82-1
-extra/libcroco 0.6.2-1
-extra/libcups 1.4.6-3
-extra/libdaemon 0.14-1
-extra/libdatrie 0.2.4-1
-extra/libdbusmenu-qt 0.8.2-1
-extra/libdc1394 2.1.3-1
-extra/libdca 0.0.5-2
-extra/libdiscid 0.2.2-1
-extra/libdmtx 0.7.2-2
-extra/libdmx 1.1.1-1
-extra/libdrm 2.4.25-1
-extra/libdv 1.0.0-3
-extra/libdvdnav 4.1.3-2
-extra/libdvdread 4.1.3-2
-core/libedit 20110227_3.0-1
-testing/libevent 2.0.12-1
-extra/libexif 0.6.20-1
-core/libfetch 2.33-3
-extra/libffi 3.0.9-1
-extra/libfontenc 1.1.0-1
-extra/libftdi 0.19-1
-core/libgcrypt 1.4.6-3
-extra/libgda 4.2.7-1
-extra/libgdata 0.8.0-1
-extra/libgdiplus 2.10-1
-extra/libgee 0.6.1-1
-extra/libgksu 2.0.12-3
-testing/libgl 7.10.99.git20110612-1
-extra/libglade 2.6.4-2
-extra/libgme 0.6.0-1
-extra/libgnome 2.32.1-2
-extra/libgnomecanvas 2.30.3-1
-extra/libgnome-data 2.32.1-2
-extra/libgnomekbd 3.0.0.1-1
-extra/libgnome-keyring 3.0.3-1
-extra/libgnome-media-profiles 3.0.0-2
-extra/libgnome-sharp 2.24.2-1
-extra/libgnomeui 2.24.4-1
-core/libgpg-error 1.9-3
-extra/libgphoto2 2.4.10.1-2
-extra/libgpod 0.8.0-2
-extra/libgraphite 2.3.1-1
-core/libgssglue 0.1-4
-extra/libgtkhtml 2.11.1-3
-extra/libgtop 2.28.3-1
-extra/libgweather 3.0.2-1
-extra/libical 0.46-1
-extra/libice 1.0.7-1
-extra/libid3tag 0.15.1b-6
-extra/libidl2 0.8.14-1
-extra/libidn 1.22-1
-extra/libiec61883 1.2.0-2
-extra/libieee1284 0.2.11-3
-extra/libimobiledevice 1.1.0-1
-extra/libiodbc 3.52.7-4
-extra/libirman 0.4.5-2
-extra/libjpeg-turbo 1.1.1-1
-kde-unstable/libkexiv2 4.6.80-1
-extra/libksba 1.0.8-1
-extra/libktorrent 1.1.1-1
-core/libldap 2.4.24-1
-extra/liblrdf 0.4.0-7 (ladspa-plugins)
-extra/libmad 0.15.1b-5
-extra/libmms 0.6-1
-extra/libmng 1.0.10-3
-extra/libmodplug 0.8.8.1-1
-extra/libmp4v2 1.9.1-1
-core/libmpc 0.9-1
-extra/libmpcdec 1.2.6-2
-extra/libmpeg2 0.5.1-1
-extra/libmtp 1.0.6-1
-extra/libmusicbrainz3 3.0.3-1
-extra/libmysqlclient 5.5.13-1
-extra/libnice 0.1.0-1
-core/libnl 1.1-2
-extra/libnotify 0.7.3-1
-extra/libofa 0.9.3-3
-extra/libogg 1.2.2-1.1
-community/liboobs 3.0.0-1
-core/libpcap 1.1.1-2
-extra/libpciaccess 0.12.1-1
-extra/libpeas 1.0.0-1
-core/libpipeline 1.2.0-1 (base)
-extra/libplist 1.4-1
-extra/libpng 1.4.5-1
-archlinuxfr/libpng12 1.2.44-1
-testing/libproxy 0.4.6-7
-extra/libpst 0.6.49-3
-extra/libpulse 0.9.22-2
-testing/libpurple 2.8.0-3
-extra/libqalculate 0.9.7-2
-extra/libqzeitgeist 0.7.0-1
-extra/libraw1394 2.0.7-1
-extra/libreoffice 3.4.0-2
-extra/libreoffice-extension-ct2n 3.4.0-2 (libreoffice-extensions)
-extra/libreoffice-extension-diagram 3.4.0-2 (libreoffice-extensions)
-extra/libreoffice-extension-hunart 3.4.0-2 (libreoffice-extensions)
-extra/libreoffice-extension-nlpsolver 3.4.0-2 (libreoffice-extensions)
-extra/libreoffice-extension-numbertext 3.4.0-2 (libreoffice-extensions)
-extra/libreoffice-extension-oooblogger 3.4.0-2 (libreoffice-extensions)
-extra/libreoffice-extension-pdfimport 3.4.0-2 (libreoffice-extensions)
-extra/libreoffice-extension-presentation-minimizer 3.4.0-2 (libreoffice-extensions)
-extra/libreoffice-extension-presenter-screen 3.4.0-2 (libreoffice-extensions)
-extra/libreoffice-extension-report-builder 3.4.0-2 (libreoffice-extensions)
-extra/libreoffice-extension-typo 3.4.0-2 (libreoffice-extensions)
-extra/libreoffice-extension-watch-window 3.4.0-2 (libreoffice-extensions)
-extra/libreoffice-extension-wiki-publisher 3.4.0-2 (libreoffice-extensions)
-extra/libreoffice-zh-CN 3.4.0-1
-extra/librsvg 2.34.0-1
-extra/libsamplerate 0.1.7-2
-core/libsasl 2.1.23-5
-extra/libshout 2.2.2-3
-extra/libsidplay 1.36.59-4
-extra/libsigc++ 2.2.9-1
-extra/libsigsegv 2.6-1
-extra/libsm 1.2.0-1
-extra/libsndfile 1.0.24-1
-extra/libsoup 2.34.2-1
-extra/libsoup-gnome 2.34.2-1
-extra/libspectre 0.2.6-2
-extra/libssh 0.5.0-1
-extra/libssh2 1.2.7-2
-extra/libstdc++5 3.3.6-3
-extra/libtasn1 2.9-1
-extra/libtextcat 2.2-8
-extra/libthai 0.1.15-1
-extra/libtheora 1.1.1-1
-extra/libtiff 3.9.5-1
-core/libtirpc 0.2.1-3
-multilib/libtool-multilib 2.4-2 (multilib-devel)
-extra/libunique 1.1.6-4
-extra/libunique3 3.0.0-1
-core/libusb 1.0.8-1
-core/libusb-compat 0.1.3-1
-testing/libva 1.0.13-1
-extra/libvdpau 0.4.1-1
-extra/libvisual 0.4.0-3
-extra/libvncserver 0.9.8-2
-extra/libvorbis 1.3.2-1
-extra/libvpx 0.9.6-2
-extra/libwebkit 1.4.1-1
-extra/libwebkit3 1.4.1-1
-extra/libwmf 0.2.8.4-8
-extra/libwnck 2.30.6-2
-extra/libwnck3 3.0.2-1
-extra/libwpd 0.9.2-1
-extra/libwps 0.2.2-1
-extra/libx11 1.4.3-2
-extra/libxau 1.0.6-1
-extra/libxaw 1.0.9-1
-extra/libxcb 1.7-2
-extra/libxcomposite 0.4.3-1
-extra/libxcursor 1.1.11-1
-extra/libxdamage 1.1.3-1
-extra/libxdmcp 1.1.0-1
-extra/libxext 1.3.0-1
-extra/libxfixes 5.0-1
-extra/libxfont 1.4.3-1
-extra/libxft 2.2.0-1
-extra/libxi 1.4.2-1
-extra/libxinerama 1.1.1-1
-extra/libxkbfile 1.0.7-1
-extra/libxklavier 5.1-1
-extra/libxml2 2.7.8-1
-extra/libxmu 1.1.0-1
-extra/libxp 1.0.1-2
-extra/libxpm 3.5.9-1
-extra/libxrandr 1.3.1-1
-extra/libxrender 0.9.6-1
-extra/libxres 1.0.5-1
-extra/libxslt 1.1.26-2
-extra/libxss 1.2.1-1
-extra/libxt 1.1.1-1
-extra/libxtst 1.2.0-1
-extra/libxv 1.0.6-1
-extra/libxvmc 1.0.6-1
-extra/libxxf86dga 1.1.2-1
-extra/libxxf86vm 1.1.1-1
-extra/libytnef 1.5-2
-extra/libzip 0.10-1
-core/licenses 2.8-1 (base)
-core/links 2.3pre2-1
-testing/linux-api-headers 2.6.39.1-1
-core/linux-firmware 20110512-2
-extra/lirc-utils 1:0.9.0-4
-extra/lm_sensors 3.3.0-3
-core/logrotate 3.7.9-1 (base)
-extra/lpsolve 5.5.2.0-1
-community/lsb-release 1.4-10
-extra/lsof 4.84-3
-extra/lua 5.1.4-6
-core/lvm2 2.02.85-2 (base)
-extra/lyx 1.6.10-1
-core/lzo2 2.05-1
-extra/lzop 1.03-1
-core/m4 1.4.16-1 (base-devel)
-local/madedit 0.2.9-3
-local/madwifi 0.9.4.4136-3
-local/madwifi-utils 0.9.4.4119-1
-extra/mail-notification 5.4-8
-community/mailutils 2.2-1
-core/make 3.82-3 (base-devel)
-core/man-db 2.6.0.2-2 (base)
-core/man-pages 3.32-1 (base)
-extra/mcpp 2.7.2-2
-core/mdadm 3.2.1-3 (base)
-extra/mercurial 1.8.4-1
-testing/mesa 7.10.99.git20110612-1
-extra/mesa-demos 8.0.1-1
-extra/metacity 2.34.0-1 (gnome)
-extra/mime-types 1.0-3
-community/mingw32-binutils 2.21-1
-community/mingw32-gcc 4.5.2-3
-community/mingw32-runtime 3.18-3
-community/mingw32-w32api 3.16-1
-extra/mjpegtools 1.9.0-4
-testing/mkinitcpio 0.6.14-1
-core/mkinitcpio-busybox 1.18.4-1
-extra/mobile-broadband-provider-info 20110218-1
-core/module-init-tools 3.13-1
-extra/mono 2.10.2-1
-extra/mono-addins 0.5-1
-extra/mono-zeroconf 0.9.0-2
-extra/mousetweaks 3.0.1-1 (gnome-extra)
-extra/mozilla-common 1.4-1
-core/mpfr 3.0.1-1
-community/mplayer-vaapi 33161-1
-extra/musicbrainz 2.1.5-4
-extra/mutagen 1.20-3
-extra/mutt 1.5.21-5
-extra/mutter 3.0.2.1-1 (gnome)
-extra/mx 1.0.4-1
-extra/mysql 5.5.13-1
-extra/mysql-clients 5.5.13-1
-extra/nautilus 3.0.2-1 (gnome)
-community/nautilus-actions 3.1.3-1
-archlinuxfr/nautilus-gkim 0.6.1-1
-extra/nautilus-open-terminal 0.19-1
-extra/nautilus-sendto 3.0.0-1 (gnome-extra)
-core/ncurses 5.9-1
-extra/ndesk-dbus 0.6.0-2
-extra/ndesk-dbus-glib 0.4.1-2
-extra/neon 0.29.6-1
-core/netcfg 2.5.5-1
-extra/netkit-bsd-finger 0.17-5
-community/netstat-nat 1.4.10-1
-core/net-tools 1.60-18
-community/netwatch 1.3.0-2
-extra/networkmanager 0.8.9997-1
-extra/network-manager-applet 0.8.9997-1
-extra/networkmanager-openconnect 0.8.999-1
-extra/networkmanager-openvpn 0.8.999-1
-extra/networkmanager-pptp 0.8.999-1
-extra/networkmanager-vpnc 0.8.999-1
-extra/notification-daemon 0.7.1-1 (gnome)
-extra/notify-sharp-svn 3032-3
-extra/nspr 4.8.8-1
-extra/nss 3.12.10-1
-extra/ntfs-3g 2011.4.12-1
-extra/ntrack 1:13-2
-extra/obex-data-server 0.4.5-3
-extra/obexd-client 0.40-1
-extra/ocaml 3.12.0-2
-extra/openconnect 1:3.02-1
-extra/opencore-amr 0.1.2-1
-extra/openexr 1.7.0-1
-local/openfetion 2.2.1-1
-extra/opengl-man-pages 0.20110206-1
-extra/openjpeg 1.3-3
-extra/openobex 1.5-2
-extra/openslp 1.2.1-3
-testing/openssh 5.8p2-7
-core/openssl 1.0.0.d-1
-core/openvpn 2.2.0-1
-extra/orbit2 2.14.19-1
-extra/orc 0.4.14-1
-local/os-prober 1.47-1
-testing/oxygen-icons 4.6.80-1
-extra/p7zip 9.20.1-2
-community/packagekit 0.6.15-1
-archlinuxfr/package-query 0.8-1
-core/pacman 3.5.3-1 (base)
-archlinuxfr/pacman-color 3.5.2-1
-core/pacman-mirrorlist 20110324-1
-core/pam 1.1.3-1
-extra/pango 1.28.4-3
-extra/pangomm 2.28.1-1
-extra/papyon 0.5.5-1
-community/parcellite 1.0.1-1
-extra/parted 2.4-1
-core/patch 2.6.1-2 (base-devel)
-core/pciutils 3.1.7-4 (base)
-core/pcmciautils 017-2 (base)
-core/pcre 8.12-1
-community/pdf2djvu 0.7.7-1
-testing/perl 5.14.0-1 (base)
-extra/perl-error 0.17016-2
-community-testing/perl-net-dbus 0.33.6-6
-testing/perl-text-iconv 1.7-6
-testing/perl-xml-parser 2.40-3
-extra/perl-xml-simple 2.18-3
-extra/perl-xml-twig 3.34-3
-kde-unstable/phonon 4.5.55-1
-extra/phonon-gstreamer 4.5.1-1
-extra/php 5.3.6-4
-local/pidgin-openfetion-hg 21-1
-extra/pinentry 0.8.1-1
-extra/pixman 0.22.0-1
-core/pkg-config 0.26-1 (base-devel)
-extra/pm-quirks 0.20100619-1
-community/pmtools 20101124-1
-extra/pm-utils 1.4.1-3
-community/podofo 0.9.1-1
-extra/polkit 0.101-2
-extra/polkit-gnome 0.101-2
-extra/polkit-kde 0.99.0-1
-extra/polkit-qt 0.99.0-1
-extra/poppler 0.16.5-1
-extra/poppler-data 0.4.4-1
-extra/poppler-glib 0.16.5-1
-extra/poppler-qt 0.16.5-1
-core/popt 1.16-3
-community/portaudio 19_20071207-3
-extra/postfix 2.8.3-3
-testing/postgresql-libs 9.0.4-4
-local/powertop2 1.98-1
-core/ppl 0.11.2-1
-core/ppp 2.4.5-2 (base)
-core/pptpclient 1.7.2-3
-extra/printproto 1.0.5-1
-core/procps 3.2.8-3 (base)
-core/psmisc 22.13-1 (base)
-extra/pth 2.0.7-3
-extra/pulseaudio 0.9.22-2
-extra/pulseaudio-alsa 1-2 (pulseaudio-gnome)
-extra/py3gobject 2.28.4-1
-extra/pycrypto 2.3-1
-extra/pycups 1.9.55-1
-extra/pygobject 2.28.4-1
-extra/pygobject-devel 2.28.4-1
-extra/pygtk 2.24.0-1
-extra/pylint 0.23.0-2
-extra/pyorbit 2.24.0-3
-extra/pyqt 4.8.4-1
-extra/pysmbc 1.0.10-1
-extra/python 3.2-2
-testing/python2 2.7.2-1
-extra/python2-bonobo 2.28.1-7
-extra/python2-cairo 1.10.0-1
-community/python2-cherrypy 3.2.0-1
-community/python2-cssutils 0.9.7-1
-extra/python2-distribute 0.6.16-1
-extra/python2-gconf 2.28.1-7
-extra/python2-gnomecanvas 2.28.1-7
-extra/python2-gnomevfs 2.28.1-7
-extra/python2-gtkhtml2 2.25.3-9
-extra/python2-libgnome 2.28.1-7
-community/python2-pygments 1.4-3
-extra/python2-pyopenssl 0.11-2
-extra/python2-pyqt 4.8.4-1
-extra/python2-sip 4.12.2-1
-community/python-beautifulsoup 3.2.0-1
-extra/python-cairo 1.10.0-1
-community/python-dateutil 1.5-2
-community/python-dnspython 1.9.2-1
-extra/python-egenix-mx-base 3.2.0-1
-extra/python-imaging 1.1.7-3
-extra/python-logilab-astng 0.21.1-1
-extra/python-logilab-common 0.55.2-1
-extra/python-lxml 2.3-1
-community/python-mechanize 0.2.4-1
-extra/python-notify 0.1.1-10
-community/python-pychm 0.8.4-5
-community/python-pypdf 1.13-1
-community/python-rope 0.9.3-3
-extra/python-telepathy 0.15.19-1
-extra/pyxdg 0.19-2
-extra/pyxml 0.8.4-8
-extra/qca 2.0.3-1
-extra/qimageblitz 0.0.6-1
-extra/qt 4.7.3-3
-extra/qwt 5.2.1-1
-extra/r 2.13.0-1
-extra/randrproto 1.3.2-1
-extra/raptor1 1.4.21-3
-archlinuxfr/rar-beta 4.0.b6-1
-extra/rarian 0.8.1-1
-extra/rasqal 1:0.9.21-1
-extra/rdesktop 1.7.0-1
-core/readline 6.2.001-1
-extra/recode 3.6-6
-extra/recordproto 1.14.1-1
-extra/redland 1:1.0.12-1
-extra/redland-storage-virtuoso 1:1.0.12-1
-core/reiserfsprogs 3.6.21-3 (base)
-extra/renderproto 0.11.1-1
-core/rpcbind 0.2.0-3
-extra/rpmextract 1.0-4
-extra/rsync 3.0.8-2
-extra/rtkit 0.10-1
-extra/rtmpdump 2.3-3
-extra/ruby 1.9.2_p180-2
-core/run-parts 3.4.4-1
-extra/samba 3.5.8-3
-extra/sane 1.0.22-2
-extra/schroedinger 1.0.10-1
-extra/scrnsaverproto 1.2.1-1
-extra/sdl 1.2.14-6
-extra/seahorse 3.0.2-1 (gnome-extra)
-core/sed 4.2.1-3 (base)
-extra/seed 3.0.0-1
-extra/sg3_utils 1.30-1
-core/shadow 4.1.4.3-1 (base)
-kde-unstable/shared-desktop-ontologies 0.7.0-1
-extra/shared-mime-info 0.90-1
-extra/silc-toolkit 1.1.10-1
-community/simple-scan 2.32.0.2-1
-extra/sip 4.12.2-1
-multilib/skype 2.2.0.35-1
-extra/smbclient 3.5.8-3
-extra/socat 1.7.1.3-2
-extra/sofia-sip 1.12.11-1
-kde-unstable/soprano 2.6.50git20110522-1
-extra/sound-juicer 2.32.1-1 (gnome-extra)
-extra/sound-theme-freedesktop 0.7-1
-extra/soundtouch 1.5.0-1
-extra/speex 1.2rc1-1
-core/sqlite3 3.7.6.3-1
-archlinuxfr/stapler 2b-2
-extra/startup-notification 0.12-1
-extra/strace 4.6-1
-extra/strigi 0.7.5-1
-testing/subversion 1.6.17-4
-core/sudo 1.8.1.p2-1
-local/sunpinyin-git 20110526-1
-local/s-util-git 20110607-1
-core/sysfsutils 2.1.0-6 (base)
-core/syslog-ng 3.2.4-1 (base)
-extra/system-config-printer-common 1.3.2-1
-extra/system-config-printer-gnome 1.3.2-1
-community/system-tools-backends 2.10.2-1
-core/sysvinit 2.88-2 (base)
-extra/t1lib 5.1.2-2
-extra/taglib 1.7-1
-extra/taglib-sharp 2.0.3.7-1
-extra/talloc 2.0.5-1
-core/tar 1.26-1 (base)
-extra/tcl 8.5.9-1
-core/tcp_wrappers 7.6-12 (base)
-community/tcsh 6.17.00-3
-extra/tdb 1.2.9-1
-extra/telepathy-butterfly 0.5.15-1 (telepathy)
-extra/telepathy-farsight 0.0.18-1
-extra/telepathy-gabble 0.12.1-1 (telepathy)
-extra/telepathy-glib 0.14.7-1 (telepathy)
-extra/telepathy-haze 0.4.0-1 (telepathy)
-extra/telepathy-idle 0.1.10-1 (telepathy)
-extra/telepathy-logger 0.2.10-1
-extra/telepathy-mission-control 5.7.11-1
-extra/telepathy-salut 0.4.0-1 (telepathy)
-extra/telepathy-sofiasip 0.7.1-1 (telepathy)
-core/texinfo 4.13a-5 (base)
-testing/texlive-bibtexextra 2011.22499-1 (texlive-most)
-testing/texlive-bin 2011.0-1
-testing/texlive-core 2011.22722-1 (texlive-most)
-testing/texlive-fontsextra 2011.22691-1 (texlive-most)
-testing/texlive-formatsextra 2011.22650-1 (texlive-most)
-extra/texlive-games 2010.20619-2 (texlive-most)
-testing/texlive-genericextra 2011.22511-1 (texlive-most)
-testing/texlive-htmlxml 2011.22546-1 (texlive-most)
-extra/texlive-humanities 2010.22054-1 (texlive-most)
-testing/texlive-langcjk 2011.22725-1 (texlive-lang)
-testing/texlive-langcyrillic 2011.22650-1 (texlive-lang)
-testing/texlive-langextra 2011.22550-1 (texlive-lang)
-testing/texlive-langgreek 2011.22613-1 (texlive-lang)
-testing/texlive-latexextra 2011.22673-1 (texlive-most)
-testing/texlive-music 2011.22568-1 (texlive-most)
-testing/texlive-pictures 2011.22509-1 (texlive-most)
-extra/texlive-plainextra 2010.21462-1 (texlive-most)
-testing/texlive-pstricks 2011.22586-1 (texlive-most)
-testing/texlive-publishers 2011.22647-1 (texlive-most)
-testing/texlive-science 2011.22648-1 (texlive-most)
-extra/tk 8.5.9-1
-extra/tomboy 1.6.1-1 (gnome-extra)
-extra/totem 3.0.1-2 (gnome-extra)
-extra/totem-plparser 2.32.5-1
-extra/transmission-cli 2.31-1
-extra/transmission-gtk 2.31-1
-community/tre 0.8.0-1
-extra/ttf-arphic-ukai 0.2.20080216.1-2
-extra/ttf-arphic-uming 0.2.20080216.1-2
-extra/ttf-dejavu 2.33-1
-testing/twisted 11.0.0-1
-core/tzdata 2011g-1
-core/udev 171-2 (base)
-extra/udisks 1.0.3-3
-local/ultimate-gnome-icon-theme 0.5.1-1
-extra/unixodbc 2.3.0-1
-community/unrtf 0.21.1-1
-extra/unzip 6.0-5
-extra/upower 0.9.11-1
-extra/usbmuxd 1.0.6-2
-core/usbutils 002-3 (base)
-core/util-linux 2.19.1-2 (base)
-extra/v4l-utils 0.8.4-1
-extra/vala 0.12.1-1
-testing/valgrind 3.6.1-2
-extra/videoproto 2.3.1-1
-extra/vinagre 3.0.1-1 (gnome-extra)
-extra/vino 3.0.2-1 (gnome-extra)
-community/virtualbox 4.0.8-4
-community/virtualbox-additions 4.0.8-1
-extra/virtuoso 6.1.3-1
-core/vpnc 0.5.3-3
-extra/vte3 0.28.0-2
-extra/vte-common 0.28.0-2
-extra/w3m 0.5.3-1
-extra/wavpack 4.60.1-1
-core/wget 1.12-7 (base)
-core/which 2.20-4 (base)
-extra/whois 5.0.11-1
-core/wireless-regdb 2010.11.24-1
-core/wireless_tools 29-4
-extra/wireshark-cli 1.6.0-1
-extra/wireshark-gtk 1.6.0-1
-core/wpa_supplicant 0.7.3-3 (base)
-community/wqy-bitmapfont 0.9.9-6
-local/wqy-microhei 0.2.0_beta-2
-community/wqy-zenhei 0.9.45-1
-local/wxflashget 1.0.3-2
-extra/wxgtk 2.8.12-1
-extra/x264 20110327-1
-extra/xcb-proto 1.6-2
-extra/xcb-util 0.3.6-1
-extra/xcursor-themes 1.0.2-1
-community/xcursor-vanilla-dmz 0.4-5
-community/xcursor-vanilla-dmz-aa 0.4-5
-community/xdg-user-dirs 0.14-1
-extra/xdg-utils 1.1.0rc1-2
-extra/xextproto 7.2.0-1
-extra/xf86dgaproto 2.1-1
-extra/xf86-input-acecad 1.5.0-1 (xorg-drivers xorg)
-extra/xf86-input-aiptek 1.4.0-1 (xorg-drivers xorg)
-extra/xf86-input-evdev 2.6.0-3 (xorg-drivers xorg)
-extra/xf86-input-joystick 1.6.0-1 (xorg-drivers xorg)
-extra/xf86-input-keyboard 1.6.0-2 (xorg-drivers xorg)
-extra/xf86-input-mouse 1.7.0-2 (xorg-drivers xorg)
-extra/xf86-input-synaptics 1.4.0.901-1 (xorg-drivers xorg)
-testing/xf86-video-ati 6.14.2-1 (xorg-drivers xorg)
-extra/xf86vidmodeproto 2.3.1-1
-core/xfsprogs 3.1.5-1 (base)
-extra/xineramaproto 1.2.1-1
-core/xinetd 2.3.14-6
-extra/xkeyboard-config 2.2.1-1
-extra/xorg-appres 1.0.3-2
-extra/xorg-bdftopcf 1.0.3-1 (xorg xorg-apps)
-extra/xorg-docs 1.6-1 (xorg)
-extra/xorg-fonts-100dpi 1.0.1-3 (xorg)
-extra/xorg-fonts-75dpi 1.0.1-3 (xorg)
-extra/xorg-fonts-alias 1.0.2-1
-extra/xorg-fonts-encodings 1.0.4-1 (xorg-fonts xorg)
-extra/xorg-fonts-misc 1.0.1-1
-extra/xorg-font-util 1.2.0-1 (xorg-fonts xorg)
-extra/xorg-font-utils 7.6-2
-extra/xorg-iceauth 1.0.5-1 (xorg-apps xorg)
-extra/xorg-luit 1.1.0-2 (xorg xorg-apps)
-extra/xorg-mkfontdir 1.0.6-2 (xorg xorg-apps)
-extra/xorg-mkfontscale 1.0.8-1 (xorg-apps xorg)
-testing/xorg-server 1.10.2-2 (xorg)
-testing/xorg-server-common 1.10.2-2
-extra/xorg-sessreg 1.0.6-2 (xorg-apps xorg)
-extra/xorg-setxkbmap 1.2.0-2 (xorg-apps xorg)
-extra/xorg-smproxy 1.0.4-2 (xorg-apps xorg)
-extra/xorg-x11perf 1.5.3-2 (xorg-apps xorg)
-extra/xorg-xauth 1.0.6-1 (xorg-apps xorg)
-extra/xorg-xbacklight 1.1.2-2 (xorg-apps xorg)
-extra/xorg-xcmsdb 1.0.3-2 (xorg-apps xorg)
-extra/xorg-xcursorgen 1.0.4-2 (xorg-apps xorg)
-extra/xorg-xdpyinfo 1.2.0-2 (xorg-apps xorg)
-extra/xorg-xdriinfo 1.0.4-2 (xorg-apps xorg)
-extra/xorg-xev 1.1.0-2 (xorg-apps xorg)
-extra/xorg-xgamma 1.0.4-2 (xorg-apps xorg)
-extra/xorg-xhost 1.0.4-2 (xorg-apps xorg)
-extra/xorg-xinput 1.5.3-2 (xorg-apps xorg)
-extra/xorg-xkbcomp 1.2.1-2 (xorg-apps xorg)
-extra/xorg-xkbevd 1.1.2-2 (xorg-apps xorg)
-extra/xorg-xkbutils 1.0.3-2 (xorg-apps xorg)
-extra/xorg-xkill 1.0.3-2 (xorg-apps xorg)
-extra/xorg-xlsatoms 1.1.0-2 (xorg-apps xorg)
-extra/xorg-xlsclients 1.1.2-1 (xorg-apps xorg)
-extra/xorg-xmodmap 1.0.5-2 (xorg-apps xorg)
-extra/xorg-xpr 1.0.3-2 (xorg-apps xorg)
-extra/xorg-xprop 1.2.0-2 (xorg-apps xorg)
-extra/xorg-xrandr 1.3.4-2 (xorg-apps xorg)
-extra/xorg-xrdb 1.0.9-1 (xorg-apps xorg)
-extra/xorg-xrefresh 1.0.4-2 (xorg-apps xorg)
-extra/xorg-xset 1.2.1-2 (xorg-apps xorg)
-extra/xorg-xsetroot 1.1.0-2 (xorg-apps xorg)
-extra/xorg-xvinfo 1.1.1-2 (xorg-apps xorg)
-extra/xorg-xwd 1.0.4-2 (xorg-apps xorg)
-extra/xorg-xwininfo 1.1.1-2 (xorg-apps xorg)
-extra/xorg-xwud 1.0.3-2 (xorg-apps xorg)
-extra/xproto 7.0.21-1
-extra/xscreensaver 5.14-1
-community/xsensors 0.70-2
-community/xsettings-client 0.10-5
-extra/xulrunner 2.0.1-2
-extra/xvidcore 1.3.2-1
-core/xz 5.0.3-1
-community/yajl 2.0.2-1
-archlinuxfr/yaourt 0.10.1-2
-extra/yelp 3.0.3-1 (gnome)
-extra/yelp-xsl 3.0.2-1
-extra/zenity 3.0.0-2
-core/zlib 1.2.5-3
-extra/zope-interface 3.6.3-1
-extra/zsh 4.3.12-1
-extra/zziplib 0.13.60-1
+archlinuxfr/flashplugin-prerelease
+archlinuxfr/libpng12
+archlinuxfr/nautilus-gkim
+archlinuxfr/package-query
+archlinuxfr/pacman-color
+archlinuxfr/rar-beta
+archlinuxfr/stapler
+archlinuxfr/yaourt
+community/antiword
+community/auctex
+community/bashdb
+community/cabextract
+community/calibre
+community/clucene
+community/espeak
+community/fdupes
+community/gcolor2
+community/gedit-plugins
+community/gnochm
+community/gnome-packagekit
+community/gnome-settings-daemon-updates
+community/gnome-system-tools
+community/gnote
+community/html2text
+community/inotify-tools
+community/jre
+community/lesspipe
+community/liboobs
+community/lsb-release
+community/mailutils
+community/mingw32-binutils
+community/mingw32-gcc
+community/mingw32-runtime
+community/mingw32-w32api
+community/mplayer-vaapi
+community/nautilus-actions
+community/netstat-nat
+community/netwatch
+community/packagekit
+community/parcellite
+community/pdf2djvu
+community/pmtools
+community/podofo
+community/portaudio
+community/python2-cherrypy
+community/python2-cssutils
+community/python2-pygments
+community/python-beautifulsoup
+community/python-dateutil
+community/python-dnspython
+community/python-mechanize
+community/python-pychm
+community/python-pypdf
+community/python-rope
+community/simple-scan
+community/system-tools-backends
+community/tcsh
+community-testing/perl-net-dbus
+community/tre
+community/unrtf
+community/virtualbox
+community/virtualbox-additions
+community/wqy-bitmapfont
+community/wqy-zenhei
+community/xcursor-vanilla-dmz
+community/xcursor-vanilla-dmz-aa
+community/xdg-user-dirs
+community/xsensors
+community/xsettings-client
+community/yajl
+core/acl
+core/attr
+core/autoconf (base-devel)
+core/automake (base-devel)
+core/bash (base)
+core/bison (base-devel)
+core/bzip2 (base)
+core/ca-certificates
+core/cloog
+core/coreutils (base)
+core/cracklib
+core/crda
+core/cronie (base)
+core/cryptsetup (base)
+core/dash (base)
+core/db
+core/dbus-core
+core/device-mapper (base)
+core/dhcpcd (base)
+core/dialog
+core/diffutils (base)
+core/dnsutils
+core/e2fsprogs (base)
+core/eventlog
+core/expat
+core/fakeroot (base-devel)
+core/file (base)
+core/filesystem (base)
+core/findutils (base)
+core/flex (base-devel)
+core/gawk (base)
+core/gdbm
+core/gen-init-cpio
+core/gettext (base)
+core/glib2
+core/gmp
+core/gpm
+core/grep (base)
+core/groff
+core/gzip (base)
+core/hdparm
+core/heirloom-mailx (base)
+core/iana-etc
+core/idnkit
+core/inetutils
+core/initscripts (base)
+core/iproute2
+core/iptables
+core/iputils (base)
+core/isl
+core/iw
+core/jfsutils (base)
+core/kbd
+core/kernel26 (base)
+core/kernel26-docs
+core/kernel26-headers
+core/keyutils
+core/krb5
+core/less (base)
+core/libarchive
+core/libcap
+core/libedit
+core/libevent
+core/libfetch
+core/libgcrypt
+core/libgpg-error
+core/libgssglue
+core/libldap
+core/libmpc
+core/libnl
+core/libpcap
+core/libpipeline (base)
+core/libsasl
+core/libtirpc
+core/libusb
+core/libusb-compat
+core/licenses (base)
+core/links
+core/linux-firmware
+core/logrotate (base)
+core/lvm2 (base)
+core/lzo2
+core/m4 (base-devel)
+core/make (base-devel)
+core/man-db (base)
+core/man-pages (base)
+core/mkinitcpio
+core/mkinitcpio-busybox
+core/module-init-tools
+core/mpfr
+core/ncurses
+core/net-tools
+core/openssh
+core/openssl
+core/openvpn
+core/pacman (base)
+core/pacman-mirrorlist
+core/pam
+core/patch (base-devel)
+core/pciutils (base)
+core/pcmciautils (base)
+core/pcre
+core/pkg-config (base-devel)
+core/popt
+core/ppl
+core/ppp (base)
+core/pptpclient
+core/procps (base)
+core/psmisc (base)
+core/readline
+core/reiserfsprogs (base)
+core/rpcbind
+core/run-parts
+core/sed (base)
+core/shadow (base)
+core/sqlite3
+core/sudo
+core/sysfsutils (base)
+core/syslog-ng (base)
+core/sysvinit (base)
+core/tar (base)
+core/tcp_wrappers (base)
+core/texinfo (base)
+core/tzdata
+core/udev (base)
+core/usbutils (base)
+core/util-linux (base)
+core/vpnc
+core/wget (base)
+core/which (base)
+core/wireless-regdb
+core/wireless_tools
+core/wpa_supplicant (base)
+core/xfsprogs (base)
+core/xinetd
+core/xz
+core/zlib
+extra/a52dec
+extra/aalib
+extra/abs
+extra/accountsservice
+extra/acpid
+extra/aiksaurus
+extra/akonadi
+extra/alsa-lib
+extra/alsa-plugins
+extra/alsa-utils
+extra/anjuta
+extra/apr
+extra/apr-util
+extra/art-sharp
+extra/aspell
+extra/at
+extra/atk
+extra/atkmm
+extra/at-spi2-atk (gnome)
+extra/at-spi2-core (gnome)
+extra/attica
+extra/audiofile
+extra/autogen
+extra/avahi
+extra/babl
+extra/banshee
+extra/bash-completion
+extra/bc
+extra/bittorrent
+extra/blas
+extra/bluez
+extra/boo
+extra/boost
+extra/boost-libs
+extra/brasero
+extra/bug-buddy (gnome-extra)
+extra/cairo
+extra/cairomm
+extra/cantarell-fonts
+extra/cdparanoia
+extra/cdrdao
+extra/cdrkit
+extra/cheese (gnome-extra)
+extra/chmlib
+extra/chromium
+extra/cifs-utils
+extra/cln
+extra/clutter
+extra/clutter-gst
+extra/clutter-gtk
+extra/clutter-gtk2
+extra/cmake
+extra/compositeproto
+extra/consolekit
+extra/convmv
+extra/cpio
+extra/cpufrequtils
+extra/cups
+extra/cups-pdf
+extra/cups-pk-helper
+extra/curl
+extra/cyrus-sasl-plugins
+extra/damageproto
+extra/dbus
+extra/dbus-glib
+extra/dbus-python
+extra/dconf
+extra/desktop-file-utils
+extra/devhelp
+extra/dirmngr
+extra/djvulibre
+extra/dmidecode
+extra/dmxproto
+extra/docbook-xml
+extra/docbook-xsl
+extra/dri2proto
+extra/dvd+rw-tools
+extra/easytag
+extra/ebook-tools
+extra/eject
+extra/elfutils
+extra/emacs
+extra/empathy (gnome-extra)
+extra/enca
+extra/enchant
+extra/eog (gnome-extra)
+extra/esound
+extra/ethtool
+extra/evince (gnome-extra)
+extra/evolution-data-server
+extra/evolution-exchange
+extra/evolution (gnome-extra)
+extra/evolution-webcal (gnome-extra)
+extra/exempi
+extra/exiv2
+extra/expect
+extra/faac
+extra/faad2
+extra/fam
+extra/farsight2
+extra/fastjar
+extra/ffmpeg
+extra/fftw
+extra/file-roller (gnome-extra)
+extra/firefox
+extra/firefox-i18n
+extra/firefox-i18n-zh-cn
+extra/fixesproto
+extra/flac
+extra/fluidsynth
+extra/folks
+extra/fontconfig
+extra/fontsproto
+extra/freeglut
+extra/freetype2
+extra/fribidi
+extra/fuse
+extra/gc
+extra/gcalctool (gnome-extra)
+extra/gconf
+extra/gconf-editor (gnome-extra)
+extra/gconf-sharp
+extra/gconf-sharp-peditors
+extra/gd
+extra/gdata-sharp
+extra/gdb
+extra/gdk-pixbuf2
+extra/gdl
+extra/gdm (gnome-extra)
+extra/gedit (gnome-extra)
+extra/gegl
+extra/ghostscript
+extra/giflib
+extra/gimp-devel
+extra/gimp-help-zh_cn (gimp-help)
+extra/gio-sharp
+extra/gjs
+extra/gkeyfile-sharp
+extra/gksu
+extra/glade
+extra/glew
+extra/glib
+extra/glibmm
+extra/glib-networking
+extra/glproto
+extra/gmime
+extra/gnome-applets (gnome)
+extra/gnome-backgrounds (gnome)
+extra/gnome-bluetooth
+extra/gnome-color-manager
+extra/gnome-common
+extra/gnome-control-center (gnome)
+extra/gnome-desktop (gnome)
+extra/gnome-disk-utility
+extra/gnome-doc-utils
+extra/gnome-icon-theme-extras (gnome)
+extra/gnome-icon-theme (gnome)
+extra/gnome-icon-theme-symbolic (gnome)
+extra/gnome-js-common
+extra/gnome-keyring (gnome)
+extra/gnome-media (gnome)
+extra/gnome-menus
+extra/gnome-mime-data
+extra/gnome-nettool (gnome-extra)
+extra/gnome-panel (gnome)
+extra/gnome-power-manager (gnome)
+extra/gnome-screensaver (gnome)
+extra/gnome-session (gnome)
+extra/gnome-settings-daemon (gnome)
+extra/gnome-sharp
+extra/gnome-shell-extension-alternative-status-menu
+extra/gnome-shell-extension-dock
+extra/gnome-shell-extension-drive-menu
+extra/gnome-shell-extension-places-menu
+extra/gnome-shell-extensions-common
+extra/gnome-shell-extension-user-theme
+extra/gnome-shell-extension-windows-navigator
+extra/gnome-shell (gnome)
+extra/gnome-spell
+extra/gnome-system-monitor (gnome-extra)
+extra/gnome-terminal (gnome)
+extra/gnome-themes-extras
+extra/gnome-themes-standard (gnome)
+extra/gnome-tweak-tool
+extra/gnome-user-docs (gnome)
+extra/gnome-utils (gnome-extra)
+extra/gnome-vfs
+extra/gnome-vfs-sharp
+extra/gnome-video-effects
+extra/gnu-netcat
+extra/gnupg
+extra/gnupg2
+extra/gnuplot
+extra/gnutls
+extra/gobject-introspection
+extra/gpgme
+extra/gpsd
+extra/grantlee
+extra/grub2-bios
+extra/grub2-common
+extra/gsettings-desktop-schemas
+extra/gsfonts
+extra/gsl
+extra/gsm
+extra/gstreamer0.10
+extra/gstreamer0.10-bad (gstreamer0.10-plugins)
+extra/gstreamer0.10-bad-plugins (gstreamer0.10-plugins)
+extra/gstreamer0.10-base
+extra/gstreamer0.10-base-plugins (gstreamer0.10-plugins)
+extra/gstreamer0.10-ffmpeg (gstreamer0.10-plugins)
+extra/gstreamer0.10-good
+extra/gstreamer0.10-good-plugins (gstreamer0.10-plugins)
+extra/gstreamer0.10-python
+extra/gstreamer0.10-ugly
+extra/gstreamer0.10-ugly-plugins (gstreamer0.10-plugins)
+extra/gthumb
+extra/gtk
+extra/gtk2
+extra/gtk3
+extra/gtk-doc
+extra/gtk-engines
+extra/gtkhtml4
+extra/gtkmm
+extra/gtkmm3
+extra/gtkmm3-docs
+extra/gtkmm-docs
+extra/gtk-sharp-2
+extra/gtk-sharp-beans
+extra/gtksourceview2
+extra/gtksourceview3
+extra/gtkspell
+extra/gtk-update-icon-cache
+extra/gtk-vnc
+extra/gucharmap (gnome-extra)
+extra/gudev-sharp
+extra/guile
+extra/gvfs
+extra/gvfs-obexftp
+extra/gvfs-smb
+extra/hal
+extra/hal-info
+extra/hicolor-icon-theme
+extra/hspell
+extra/hunspell
+extra/hwdetect
+extra/hyphen
+extra/icon-naming-utils
+extra/icu
+extra/id3lib
+extra/ilmbase
+extra/imlib2
+extra/indent
+extra/inkscape
+extra/inputproto
+extra/intltool
+extra/iso-codes
+extra/jack
+extra/jasper
+extra/jhead
+extra/json-glib
+extra/kbproto
+extra/kde-agent
+extra/kdeplasma-applets-networkmanagement
+extra/kernel26-manpages
+extra/kile
+extra/ktorrent
+extra/ladspa
+extra/lame
+extra/lapack
+extra/laptop-mode-tools
+extra/lcms
+extra/lcms2
+extra/lesstif
+extra/libao
+extra/libart-lgpl
+extra/libass
+extra/libassuan
+extra/libasyncns
+extra/libatasmart
+extra/libavc1394
+extra/libbonobo
+extra/libbonoboui
+extra/libcaca
+extra/libcanberra
+extra/libcanberra-pulse
+extra/libcdaudio
+extra/libcddb
+extra/libcdio
+extra/libcroco
+extra/libcups
+extra/libdaemon
+extra/libdatrie
+extra/libdbusmenu-qt
+extra/libdc1394
+extra/libdca
+extra/libdiscid
+extra/libdmtx
+extra/libdmx
+extra/libdrm
+extra/libdv
+extra/libdvdnav
+extra/libdvdread
+extra/libexif
+extra/libffi
+extra/libfontenc
+extra/libftdi
+extra/libgda
+extra/libgdata
+extra/libgdiplus
+extra/libgee
+extra/libgksu
+extra/libglade
+extra/libgme
+extra/libgnome
+extra/libgnomecanvas
+extra/libgnome-data
+extra/libgnomekbd
+extra/libgnome-keyring
+extra/libgnome-media-profiles
+extra/libgnome-sharp
+extra/libgnomeui
+extra/libgphoto2
+extra/libgpod
+extra/libgraphite
+extra/libgtkhtml
+extra/libgtop
+extra/libgweather
+extra/libical
+extra/libice
+extra/libid3tag
+extra/libidl2
+extra/libidn
+extra/libiec61883
+extra/libieee1284
+extra/libimobiledevice
+extra/libiodbc
+extra/libirman
+extra/libjpeg-turbo
+extra/libksba
+extra/libktorrent
+extra/liblrdf (ladspa-plugins)
+extra/libmad
+extra/libmms
+extra/libmng
+extra/libmodplug
+extra/libmp4v2
+extra/libmpcdec
+extra/libmpeg2
+extra/libmusicbrainz3
+extra/libmysqlclient
+extra/libnice
+extra/libnotify
+extra/libofa
+extra/libogg
+extra/libpciaccess
+extra/libpeas
+extra/libplist
+extra/libpng
+extra/libpst
+extra/libpulse
+extra/libqalculate
+extra/libqzeitgeist
+extra/libraw1394
+extra/libreoffice-zh-CN
+extra/librsvg
+extra/libsamplerate
+extra/libshout
+extra/libsidplay
+extra/libsigc++
+extra/libsigsegv
+extra/libsm
+extra/libsndfile
+extra/libsoup
+extra/libsoup-gnome
+extra/libspectre
+extra/libssh
+extra/libssh2
+extra/libstdc++5
+extra/libtasn1
+extra/libtextcat
+extra/libthai
+extra/libtheora
+extra/libtiff
+extra/libunique
+extra/libunique3
+extra/libvdpau
+extra/libvisual
+extra/libvncserver
+extra/libvorbis
+extra/libvpx
+extra/libwebkit
+extra/libwebkit3
+extra/libwmf
+extra/libwnck
+extra/libwnck3
+extra/libwpd
+extra/libwps
+extra/libx11
+extra/libxau
+extra/libxaw
+extra/libxcb
+extra/libxcomposite
+extra/libxcursor
+extra/libxdamage
+extra/libxdmcp
+extra/libxext
+extra/libxfixes
+extra/libxfont
+extra/libxft
+extra/libxi
+extra/libxinerama
+extra/libxkbfile
+extra/libxklavier
+extra/libxml2
+extra/libxmu
+extra/libxp
+extra/libxpm
+extra/libxrandr
+extra/libxrender
+extra/libxres
+extra/libxslt
+extra/libxss
+extra/libxt
+extra/libxtst
+extra/libxv
+extra/libxvmc
+extra/libxxf86dga
+extra/libxxf86vm
+extra/libytnef
+extra/libzip
+extra/lirc-utils
+extra/lm_sensors
+extra/lpsolve
+extra/lsof
+extra/lua
+extra/lyx
+extra/lzop
+extra/mail-notification
+extra/mcpp
+extra/mercurial
+extra/mesa-demos
+extra/metacity (gnome)
+extra/mime-types
+extra/mjpegtools
+extra/mobile-broadband-provider-info
+extra/mono
+extra/mono-addins
+extra/mono-zeroconf
+extra/mousetweaks (gnome-extra)
+extra/mozilla-common
+extra/mpd
+extra/musicbrainz
+extra/mutagen
+extra/mutt
+extra/mutter (gnome)
+extra/mx
+extra/mysql
+extra/mysql-clients
+extra/nautilus (gnome)
+extra/nautilus-open-terminal
+extra/nautilus-sendto (gnome-extra)
+extra/ndesk-dbus
+extra/ndesk-dbus-glib
+extra/neon
+extra/netkit-bsd-finger
+extra/networkmanager
+extra/network-manager-applet
+extra/networkmanager-openconnect
+extra/networkmanager-openvpn
+extra/networkmanager-pptp
+extra/networkmanager-vpnc
+extra/notification-daemon (gnome)
+extra/notify-sharp-svn
+extra/nspr
+extra/nss
+extra/ntfs-3g
+extra/ntp
+extra/ntrack
+extra/obex-data-server
+extra/obexd-client
+extra/ocaml
+extra/openconnect
+extra/opencore-amr
+extra/openexr
+extra/opengl-man-pages
+extra/openjpeg
+extra/openobex
+extra/openslp
+extra/orbit2
+extra/orc
+extra/p7zip
+extra/pango
+extra/pangomm
+extra/papyon
+extra/parted
+extra/perl-error
+extra/perl-xml-simple
+extra/perl-xml-twig
+extra/phonon
+extra/phonon-gstreamer
+extra/php
+extra/pinentry
+extra/pixman
+extra/pm-quirks
+extra/pm-utils
+extra/polkit
+extra/polkit-gnome
+extra/polkit-kde
+extra/polkit-qt
+extra/poppler
+extra/poppler-data
+extra/poppler-glib
+extra/poppler-qt
+extra/postfix
+extra/printproto
+extra/pth
+extra/pulseaudio
+extra/pulseaudio-alsa (pulseaudio-gnome)
+extra/py3gobject
+extra/pycrypto
+extra/pycups
+extra/pygobject
+extra/pygobject-devel
+extra/pygtk
+extra/pylint
+extra/pyorbit
+extra/pyqt
+extra/pysmbc
+extra/python
+extra/python2
+extra/python2-bonobo
+extra/python2-cairo
+extra/python2-distribute
+extra/python2-gconf
+extra/python2-gnomecanvas
+extra/python2-gnomevfs
+extra/python2-gtkhtml2
+extra/python2-libgnome
+extra/python2-pyopenssl
+extra/python2-pyqt
+extra/python2-sip
+extra/python-cairo
+extra/python-egenix-mx-base
+extra/python-imaging
+extra/python-logilab-astng
+extra/python-logilab-common
+extra/python-lxml
+extra/python-mpd
+extra/python-notify
+extra/python-telepathy
+extra/pyxdg
+extra/pyxml
+extra/qca
+extra/qimageblitz
+extra/qt
+extra/qwt
+extra/r
+extra/randrproto
+extra/raptor1
+extra/rarian
+extra/rasqal
+extra/rdesktop
+extra/recode
+extra/recordproto
+extra/redland
+extra/redland-storage-virtuoso
+extra/renderproto
+extra/rpmextract
+extra/rsync
+extra/rtkit
+extra/rtmpdump
+extra/ruby
+extra/samba
+extra/sane
+extra/schroedinger
+extra/scrnsaverproto
+extra/sdl
+extra/seahorse (gnome-extra)
+extra/seed
+extra/sg3_utils
+extra/shared-desktop-ontologies
+extra/shared-mime-info
+extra/silc-toolkit
+extra/sip
+extra/smbclient
+extra/socat
+extra/sofia-sip
+extra/soprano
+extra/sound-juicer (gnome-extra)
+extra/sound-theme-freedesktop
+extra/soundtouch
+extra/speex
+extra/startup-notification
+extra/strace
+extra/strigi
+extra/system-config-printer-common
+extra/system-config-printer-gnome
+extra/t1lib
+extra/taglib
+extra/taglib-sharp
+extra/talloc
+extra/tcl
+extra/tdb
+extra/telepathy-butterfly (telepathy)
+extra/telepathy-farsight
+extra/telepathy-gabble (telepathy)
+extra/telepathy-glib (telepathy)
+extra/telepathy-haze (telepathy)
+extra/telepathy-idle (telepathy)
+extra/telepathy-logger
+extra/telepathy-mission-control
+extra/telepathy-salut (telepathy)
+extra/telepathy-sofiasip (telepathy)
+extra/texlive-games (texlive-most)
+extra/texlive-humanities (texlive-most)
+extra/texlive-plainextra (texlive-most)
+extra/tk
+extra/tomboy (gnome-extra)
+extra/totem (gnome-extra)
+extra/totem-plparser
+extra/transmission-cli
+extra/transmission-gtk
+extra/ttf-arphic-ukai
+extra/ttf-arphic-uming
+extra/ttf-dejavu
+extra/twisted
+extra/udisks
+extra/unixodbc
+extra/unzip
+extra/upower
+extra/usbmuxd
+extra/v4l-utils
+extra/vala
+extra/videoproto
+extra/vinagre (gnome-extra)
+extra/vino (gnome-extra)
+extra/virtuoso
+extra/vte3
+extra/vte-common
+extra/w3m
+extra/wavpack
+extra/whois
+extra/wireshark-cli
+extra/wireshark-gtk
+extra/wxgtk
+extra/x264
+extra/xcb-proto
+extra/xcb-util
+extra/xcursor-themes
+extra/xdg-utils
+extra/xextproto
+extra/xf86dgaproto
+extra/xf86-input-acecad (xorg-drivers xorg)
+extra/xf86-input-aiptek (xorg-drivers xorg)
+extra/xf86-input-evdev (xorg-drivers xorg)
+extra/xf86-input-joystick (xorg-drivers xorg)
+extra/xf86-input-keyboard (xorg-drivers xorg)
+extra/xf86-input-mouse (xorg-drivers xorg)
+extra/xf86-input-synaptics (xorg-drivers xorg)
+extra/xf86vidmodeproto
+extra/xineramaproto
+extra/xkeyboard-config
+extra/xorg-appres
+extra/xorg-bdftopcf (xorg xorg-apps)
+extra/xorg-docs (xorg)
+extra/xorg-fonts-100dpi (xorg)
+extra/xorg-fonts-75dpi (xorg)
+extra/xorg-fonts-alias
+extra/xorg-fonts-encodings (xorg-fonts xorg)
+extra/xorg-fonts-misc
+extra/xorg-font-utils
+extra/xorg-font-util (xorg-fonts xorg)
+extra/xorg-iceauth (xorg-apps xorg)
+extra/xorg-luit (xorg xorg-apps)
+extra/xorg-mkfontdir (xorg xorg-apps)
+extra/xorg-mkfontscale (xorg-apps xorg)
+extra/xorg-sessreg (xorg-apps xorg)
+extra/xorg-setxkbmap (xorg-apps xorg)
+extra/xorg-smproxy (xorg-apps xorg)
+extra/xorg-x11perf (xorg-apps xorg)
+extra/xorg-xauth (xorg-apps xorg)
+extra/xorg-xbacklight (xorg-apps xorg)
+extra/xorg-xcmsdb (xorg-apps xorg)
+extra/xorg-xcursorgen (xorg-apps xorg)
+extra/xorg-xdpyinfo (xorg-apps xorg)
+extra/xorg-xdriinfo (xorg-apps xorg)
+extra/xorg-xev (xorg-apps xorg)
+extra/xorg-xgamma (xorg-apps xorg)
+extra/xorg-xhost (xorg-apps xorg)
+extra/xorg-xinput (xorg-apps xorg)
+extra/xorg-xkbcomp (xorg-apps xorg)
+extra/xorg-xkbevd (xorg-apps xorg)
+extra/xorg-xkbutils (xorg-apps xorg)
+extra/xorg-xkill (xorg-apps xorg)
+extra/xorg-xlsatoms (xorg-apps xorg)
+extra/xorg-xlsclients (xorg-apps xorg)
+extra/xorg-xmodmap (xorg-apps xorg)
+extra/xorg-xprop (xorg-apps xorg)
+extra/xorg-xpr (xorg-apps xorg)
+extra/xorg-xrandr (xorg-apps xorg)
+extra/xorg-xrdb (xorg-apps xorg)
+extra/xorg-xrefresh (xorg-apps xorg)
+extra/xorg-xsetroot (xorg-apps xorg)
+extra/xorg-xset (xorg-apps xorg)
+extra/xorg-xvinfo (xorg-apps xorg)
+extra/xorg-xwd (xorg-apps xorg)
+extra/xorg-xwininfo (xorg-apps xorg)
+extra/xorg-xwud (xorg-apps xorg)
+extra/xproto
+extra/xscreensaver
+extra/xulrunner
+extra/xvidcore
+extra/yelp (gnome)
+extra/yelp-xsl
+extra/zenity
+extra/zope-interface
+extra/zsh
+extra/zziplib
+local/acroread
+local/anjuta-extras
+local/aurup
+local/d-feet
+local/gnome-shell-extension-mediaplayer-git
+local/gnome-shell-extension-weather-git
+local/google-talkplugin
+local/ibus-gjs-git
+local/ibus-sunpinyin-git
+local/madedit
+local/mpdris2-git
+local/openfetion
+local/os-prober
+local/pidgin-openfetion-hg
+local/powertop2
+local/sunpinyin-git
+local/s-util-git
+local/ultimate-gnome-icon-theme
+local/wqy-microhei
+multilib/lib32-alsa-lib
+multilib/lib32-alsa-plugins
+multilib/lib32-atk
+multilib/lib32-attr
+multilib/lib32-cairo
+multilib/lib32-dbus-core
+multilib/lib32-e2fsprogs
+multilib/lib32-expat
+multilib/lib32-flac
+multilib/lib32-fontconfig
+multilib/lib32-freetype2
+multilib/lib32-gdk-pixbuf2
+multilib/lib32-glib2
+multilib/lib32-gnutls
+multilib/lib32-gtk2
+multilib/lib32-keyutils
+multilib/lib32-krb5
+multilib/lib32-libasyncns
+multilib/lib32-libcanberra
+multilib/lib32-libcanberra-pulse
+multilib/lib32-libcap
+multilib/lib32-libcups
+multilib/lib32-libdrm
+multilib/lib32-libgcrypt
+multilib/lib32-libgpg-error
+multilib/lib32-libice
+multilib/lib32-libjpeg-turbo
+multilib/lib32-libldap
+multilib/lib32-libmng
+multilib/lib32-libogg
+multilib/lib32-libpng
+multilib/lib32-libpulse
+multilib/lib32-libsm
+multilib/lib32-libsndfile
+multilib/lib32-libstdc++5
+multilib/lib32-libtiff
+multilib/lib32-libtool
+multilib/lib32-libvorbis
+multilib/lib32-libx11
+multilib/lib32-libxau
+multilib/lib32-libxcb
+multilib/lib32-libxcomposite
+multilib/lib32-libxcursor
+multilib/lib32-libxdamage
+multilib/lib32-libxdmcp
+multilib/lib32-libxext
+multilib/lib32-libxfixes
+multilib/lib32-libxft
+multilib/lib32-libxi
+multilib/lib32-libxinerama
+multilib/lib32-libxml2
+multilib/lib32-libxrandr
+multilib/lib32-libxrender
+multilib/lib32-libxss
+multilib/lib32-libxt
+multilib/lib32-libxtst
+multilib/lib32-libxv
+multilib/lib32-libxxf86vm
+multilib/lib32-ncurses
+multilib/lib32-openssl
+multilib/lib32-pango
+multilib/lib32-pcre
+multilib/lib32-pixman
+multilib/lib32-qt
+multilib/lib32-readline
+multilib/lib32-sqlite3
+multilib/lib32-tdb
+multilib/lib32-util-linux
+multilib/lib32-xcb-util
+multilib/lib32-zlib
+multilib/libtool-multilib (multilib-devel)
+multilib/skype
+multilib-testing/binutils-multilib (multilib-devel)
+multilib-testing/gcc-libs-multilib
+multilib-testing/gcc-multilib (multilib-devel)
+multilib-testing/lib32-gcc-libs
+multilib-testing/lib32-glibc
+multilib-testing/lib32-libgl
+multilib-testing/lib32-mesa
+testing/ati-dri
+testing/git
+testing/glibc (base)
+testing/graphviz
+testing/imagemagick
+testing/kdebase-dolphin (kde kdebase)
+testing/kdebase-kdepasswd (kde kdebase)
+testing/kdebase-kdialog (kde kdebase)
+testing/kdebase-keditbookmarks (kde kdebase)
+testing/kdebase-kfind (kde kdebase)
+testing/kdebase-konsole (kde kdebase)
+testing/kdebase-kwrite (kde kdebase)
+testing/kdebase-lib
+testing/kdebase-plasma (kde kdebase)
+testing/kdebase-runtime
+testing/kdebase-workspace (kde)
+testing/kdeedu-marble (kde kdeedu)
+testing/kdegraphics-libs
+testing/kdegraphics-okular (kde kdegraphics)
+testing/kde-l10n-zh_cn
+testing/kdelibs
+testing/kdepim-akonadiconsole (kde kdepim)
+testing/kdepim-akregator (kde kdepim)
+testing/kdepim-blogilo (kde kdepim)
+testing/kdepim-console (kde kdepim)
+testing/kdepim-kaddressbook (kde kdepim)
+testing/kdepim-kalarm (kde kdepim)
+testing/kdepim-kjots (kde kdepim)
+testing/kdepim-kleopatra (kde kdepim)
+testing/kdepim-kmail (kde kdepim)
+testing/kdepim-knode (kde kdepim)
+testing/kdepim-knotes (kde kdepim)
+testing/kdepim-kontact (kde kdepim)
+testing/kdepim-korganizer (kde kdepim)
+testing/kdepim-kresources (kde kdepim)
+testing/kdepim-ktimetracker (kde kdepim)
+testing/kdepim-libkdepim
+testing/kdepimlibs
+testing/kdepim-runtime
+testing/kdepim-wizards (kde kdepim)
+testing/kdeplasma-addons-applets-bball (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-binary-clock (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-blackboard (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-bookmarks (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-bubblemon (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-calculator (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-charselect (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-comic (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-community (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-dict (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-eyes (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-fifteenpuzzle (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-filewatcher (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-frame (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-fuzzy-clock (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-incomingmsg (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-kdeobservatory (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-kimpanel (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-knowledgebase (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-kolourpicker (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-konqprofiles (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-konsoleprofiles (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-lancelot (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-leavenote (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-life (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-luna (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-magnifique (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-mediaplayer (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-microblog (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-news (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-notes (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-nowplaying (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-pastebin (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-paste (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-plasmaboard (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-previewer (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-qalculate (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-rememberthemilk (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-rssnow (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-showdashboard (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-showdesktop (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-social-news (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-spellcheck (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-systemloadviewer (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-timer (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-unitconverter (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-weather (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-weatherstation (kde kdeplasma-addons)
+testing/kdeplasma-addons-applets-webslice (kde kdeplasma-addons)
+testing/kdeplasma-addons-containments (kde kdeplasma-addons)
+testing/kdeplasma-addons-libs
+testing/kdeplasma-addons-runners-audioplayercontrol (kde kdeplasma-addons)
+testing/kdeplasma-addons-runners-browserhistory (kde kdeplasma-addons)
+testing/kdeplasma-addons-runners-characters (kde kdeplasma-addons)
+testing/kdeplasma-addons-runners-contacts (kde kdeplasma-addons)
+testing/kdeplasma-addons-runners-converter (kde kdeplasma-addons)
+testing/kdeplasma-addons-runners-datetime (kde kdeplasma-addons)
+testing/kdeplasma-addons-runners-events (kde kdeplasma-addons)
+testing/kdeplasma-addons-runners-katesessions (kde kdeplasma-addons)
+testing/kdeplasma-addons-runners-konquerorsessions (kde kdeplasma-addons)
+testing/kdeplasma-addons-runners-konsolesessions (kde kdeplasma-addons)
+testing/kdeplasma-addons-runners-kopete (kde kdeplasma-addons)
+testing/kdeplasma-addons-runners-mediawiki (kde kdeplasma-addons)
+testing/kdeplasma-addons-runners-spellchecker (kde kdeplasma-addons)
+testing/kdeplasma-addons-wallpapers-mandelbrot (kde kdeplasma-addons)
+testing/kdeplasma-addons-wallpapers-marble (kde kdeplasma-addons)
+testing/kdeplasma-addons-wallpapers-pattern (kde kdeplasma-addons)
+testing/kdeplasma-addons-wallpapers-virus (kde kdeplasma-addons)
+testing/kdeplasma-addons-wallpapers-weather (kde kdeplasma-addons)
+testing/libgl
+testing/libmtp
+testing/libproxy
+testing/libpurple
+testing/libreoffice
+testing/libreoffice-extension-ct2n (libreoffice-extensions)
+testing/libreoffice-extension-diagram (libreoffice-extensions)
+testing/libreoffice-extension-hunart (libreoffice-extensions)
+testing/libreoffice-extension-nlpsolver (libreoffice-extensions)
+testing/libreoffice-extension-numbertext (libreoffice-extensions)
+testing/libreoffice-extension-oooblogger (libreoffice-extensions)
+testing/libreoffice-extension-pdfimport (libreoffice-extensions)
+testing/libreoffice-extension-presentation-minimizer (libreoffice-extensions)
+testing/libreoffice-extension-presenter-screen (libreoffice-extensions)
+testing/libreoffice-extension-report-builder (libreoffice-extensions)
+testing/libreoffice-extension-typo (libreoffice-extensions)
+testing/libreoffice-extension-watch-window (libreoffice-extensions)
+testing/libreoffice-extension-wiki-publisher (libreoffice-extensions)
+testing/libva
+testing/linux-api-headers
+testing/mdadm (base)
+testing/mesa
+testing/netcfg
+testing/oxygen-icons
+testing/perl (base)
+testing/perl-text-iconv
+testing/perl-xml-parser
+testing/postgresql-libs
+testing/subversion
+testing/texlive-bibtexextra (texlive-most)
+testing/texlive-bin
+testing/texlive-core (texlive-most)
+testing/texlive-fontsextra (texlive-most)
+testing/texlive-formatsextra (texlive-most)
+testing/texlive-genericextra (texlive-most)
+testing/texlive-htmlxml (texlive-most)
+testing/texlive-langcjk (texlive-lang)
+testing/texlive-langcyrillic (texlive-lang)
+testing/texlive-langextra (texlive-lang)
+testing/texlive-langgreek (texlive-lang)
+testing/texlive-latexextra (texlive-most)
+testing/texlive-music (texlive-most)
+testing/texlive-pictures (texlive-most)
+testing/texlive-pstricks (texlive-most)
+testing/texlive-publishers (texlive-most)
+testing/texlive-science (texlive-most)
+testing/valgrind
+testing/xf86-video-ati (xorg-drivers xorg)
+testing/xorg-server-common
+testing/xorg-server (xorg)
