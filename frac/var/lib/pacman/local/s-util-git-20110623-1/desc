@@ -2,7 +2,7 @@
 s-util-git
 
 %VERSION%
-20110614-1
+20110623-1
 
 %DESC%
 Simple utilities, git version
@@ -17,16 +17,16 @@ GPL
 any
 
 %BUILDDATE%
-1308068103
+1308836590
 
 %INSTALLDATE%
-1308068111
+1308836593
 
 %PACKAGER%
 Unknown Packager
 
 %SIZE%
-110592
+94208
 
 %DEPENDS%
 bash

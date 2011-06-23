@@ -2,7 +2,7 @@
 gtk2
 
 %VERSION%
-2.24.5-1
+2.24.5-2
 
 %DESC%
 The GTK+ Toolkit (v2)
@@ -17,10 +17,10 @@ LGPL
 x86_64
 
 %BUILDDATE%
-1308217044
+1308468854
 
 %INSTALLDATE%
-1308314685
+1308836465
 
 %PACKAGER%
 Ionut Biru <ibiru@archlinux.org>

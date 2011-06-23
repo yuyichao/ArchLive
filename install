@@ -25,4 +25,6 @@ mkdir -p "$dest/home/"
 
 cp -a config "$dest/home/"
 
-chroot "$desk" "$srcdir/post_instl" "$disk"
+cp "$srcdir/post_instl" "$dest"
+
+bdroot "$desk" "/post_instl" "$disk"

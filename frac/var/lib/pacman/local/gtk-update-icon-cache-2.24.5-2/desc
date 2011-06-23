@@ -2,7 +2,7 @@
 gtk-update-icon-cache
 
 %VERSION%
-2.24.5-1
+2.24.5-2
 
 %DESC%
 The GTK+ update icon cache tool
@@ -17,10 +17,10 @@ LGPL
 x86_64
 
 %BUILDDATE%
-1308217059
+1308468876
 
 %INSTALLDATE%
-1308314684
+1308836464
 
 %PACKAGER%
 Ionut Biru <ibiru@archlinux.org>

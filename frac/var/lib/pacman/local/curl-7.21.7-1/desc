@@ -2,7 +2,7 @@
 curl
 
 %VERSION%
-7.21.6-2
+7.21.7-1
 
 %DESC%
 An URL retrival utility and library
@@ -17,16 +17,16 @@ MIT
 x86_64
 
 %BUILDDATE%
-1305398599
+1308832125
 
 %INSTALLDATE%
-1308067408
+1308836461
 
 %PACKAGER%
-Angel Velásquez <angvp@archlinux.org>
+Dave Reisner <dreisner@archlinux.org>
 
 %SIZE%
-1830912
+1810432
 
 %DEPENDS%
 zlib

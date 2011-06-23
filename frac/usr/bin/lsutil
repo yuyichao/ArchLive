@@ -1,14 +1,35 @@
 #!/bin/bash
+
+# Copyright 2010, 2011 Yu Yichao, Rudy
+# yyc1992@gmail.com
+# rudyht@gmail.com
+#
+# This file is part of s-util.
+#
+# s-util is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# s-util is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with s-util.  If not, see <http://www.gnu.org/licenses/>.
+#
+
 s_shelp()
 {
     cat<<EOF
 This command list the favorate commands names.
 USAGE:
-	$(basename $0) [OPTIONS] [command]
+        $(basename $0) [OPTIONS] [command]
 OPTIONS:
-	-v/--version: show the version number and exit
-	-h/--help: show this help and exit
-	
+        -v/--version: show the version number and exit
+        -h/--help: show this help and exit
+
 EOF
 }
 
@@ -31,7 +52,7 @@ del_frm_ary()
     local __n=${#__tmp_array[@]}
     local i
     for ((i = 0;i < __n;i++)) ;do
-	[[ ${__key} == ${__tmp_array[i]} ]] && unset __tmp_array[i]
+        [[ ${__key} == ${__tmp_array[i]} ]] && unset __tmp_array[i]
     done
     eval "${__array}"'=("${__tmp_array[@]}")'
 }
@@ -57,33 +78,33 @@ usr_cmd_lst="${usr_conf_dir}/bkmrk.lst"
 
 for ((i = 0;i < ${#args[@]};)) ;do
     case "${args[i]}" in
-	-a|--add)
-	    darg $i
-	    [[ ${args[i]} =~ ^! ]] && {
-		echo "command cannot start with !"
-		exit 1
-	    }
-	    if [ $(tail -n1 ${usr_cmd_lst} | wc -l) = 0 ] ;then
-		echo >> ${usr_cmd_lst}
-	    fi &&
-	    echo "${args[i]}" >> ${usr_cmd_lst} || exit 1
-	    exit 0
-	    ;;
-	-d|--delete)
-	    darg $i
-	    [[ ${args[i]} =~ ^! ]] && {
-		echo "command cannot start with !"
-		exit 1
-	    }
-	    if [ $(tail -n1 ${usr_cmd_lst} | wc -l) = 0 ] ;then
-		echo >> ${usr_cmd_lst}
-	    fi &&
-	    echo "!${args[i]}" >> ${usr_cmd_lst} || exit 1
-	    exit 0
-	    ;;
-	*)
-	    let 'i++'
-	    ;;
+        -a|--add)
+            darg $i
+            [[ ${args[i]} =~ ^! ]] && {
+                echo "command cannot start with !"
+                exit 1
+            }
+            if [ $(tail -n1 ${usr_cmd_lst} | wc -l) = 0 ] ;then
+                echo >> ${usr_cmd_lst}
+            fi &&
+            echo "${args[i]}" >> ${usr_cmd_lst} || exit 1
+            exit 0
+            ;;
+        -d|--delete)
+            darg $i
+            [[ ${args[i]} =~ ^! ]] && {
+                echo "command cannot start with !"
+                exit 1
+            }
+            if [ $(tail -n1 ${usr_cmd_lst} | wc -l) = 0 ] ;then
+                echo >> ${usr_cmd_lst}
+            fi &&
+            echo "!${args[i]}" >> ${usr_cmd_lst} || exit 1
+            exit 0
+            ;;
+        *)
+            let 'i++'
+            ;;
     esac
 done
 
@@ -97,9 +118,9 @@ favolst=()
 
 for ((i = 0;i < ${#cmdlst[@]};i++)) ;do
     if [[ ${cmdlst[i]} =~ ^! ]] ;then
-	del_frm_ary "${cmdlst[i]#!}" favolst
+        del_frm_ary "${cmdlst[i]#!}" favolst
     else
-	apnd_to_ary "${cmdlst[i]}" favolst
+        apnd_to_ary "${cmdlst[i]}" favolst
     fi
 done
 

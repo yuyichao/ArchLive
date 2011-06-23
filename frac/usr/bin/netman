@@ -1,25 +1,45 @@
 #!/bin/bash
 
+# Copyright 2010, 2011 Yu Yichao, Rudy
+# yyc1992@gmail.com
+# rudyht@gmail.com
+#
+# This file is part of s-util.
+#
+# s-util is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# s-util is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with s-util.  If not, see <http://www.gnu.org/licenses/>.
+#
+
 . s_init.sh
 
 approx=0
 
 for ((i = 0;i < ${#args[@]};)) ;do
     case "${args[i]}" in
-	-a|--apropos)
-	    approx=1
-	    darg $i
-	    ;;
-	*)
-	    let 'i++'
-	    ;;
+        -a|--apropos)
+            approx=1
+            darg $i
+            ;;
+        *)
+            let 'i++'
+            ;;
     esac
 done
 
 if [[ $approx == 0 ]] &&
     ( ( [[ "${args[0]}" == 'n' ]] ||
-	    [[ "${args[0]}" =~ ^[0-9] ]]) &&
-	((${#args[@]} != 1)) ) ;then
+            [[ "${args[0]}" =~ ^[0-9] ]]) &&
+        ((${#args[@]} != 1)) ) ;then
     sektion="${args[0]}"
     darg 0
 else

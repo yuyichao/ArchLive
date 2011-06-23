@@ -1,0 +1,6 @@
+#!/bin/bash
+/sbin/mkinitcpio -k 2.6.39-ARCH -c /etc/mkinitcpio.conf -g /boot/kernel26.img
+/sbin/mkinitcpio -k 2.6.39-ARCH -c /etc/mkinitcpio.conf -g /boot/kernel26-fallback.img -S autodetect
+
+grub-install "$1"
+grub-mkconfig -o /boot/grub/grub.cfg

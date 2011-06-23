@@ -2,7 +2,7 @@
 libcups
 
 %VERSION%
-1.4.6-3
+1.4.6-4
 
 %DESC%
 The CUPS Printing System - client libraries and headers
@@ -17,10 +17,10 @@ GPL
 x86_64
 
 %BUILDDATE%
-1307226684
+1308339049
 
 %INSTALLDATE%
-1308108159
+1308836464
 
 %PACKAGER%
 Andreas Radke <andyrtr@archlinux.org>

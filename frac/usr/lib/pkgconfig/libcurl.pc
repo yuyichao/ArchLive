@@ -33,7 +33,7 @@ supported_features="SSL IPv6 libz AsynchDNS NTLM"
 Name: libcurl
 URL: http://curl.haxx.se/
 Description: Library to transfer files with ftp, http, etc.
-Version: 7.21.6
+Version: 7.21.7
 Libs: -L${libdir} -lcurl 
 Libs.private: -lssh2 -lssl -lcrypto -lrt -lssl -lcrypto -ldl -lz -lz 
 Cflags: -I${includedir}

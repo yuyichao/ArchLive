@@ -1,32 +1,77 @@
 #!/bin/bash -e
 
+# Copyright 2010, 2011 Yu Yichao, Rudy
+# yyc1992@gmail.com
+# rudyht@gmail.com
+#
+# This file is part of s-util.
+#
+# s-util is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# s-util is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with s-util.  If not, see <http://www.gnu.org/licenses/>.
+#
+
 . s_init.sh
 
 action=0
 
+user=''
+glst=''
+
 for ((i = 0;i < ${#args[@]};)) ;do
-    case "$args[i]" in
-	-n)
-	    [[ $action == 2 ]] && {
-		echo "Only one action can be done." >&2
-		exit 1
-	    }
-	    action=1
-	    dargs $i
-	    ;;
-	-u)
-	    [[ $action == 1 ]] && {
-		echo "Only one action can be done." >&2
-		exit 1
-	    }
-	    action=2
-	    dargs $i
-	    ;;
-	*)
-	    let 'i++' || true
-	    ;;
+    case "${args[i]}" in
+        -n)
+            [[ $action == 2 ]] && {
+                echo "Only one action can be done." >&2
+                exit 1
+            }
+            action=1
+            dargs $i
+            ;;
+        -u)
+            [[ $action == 1 ]] && {
+                echo "Only one action can be done." >&2
+                exit 1
+            }
+            action=2
+            dargs $i
+            ;;
+        --userspec*)
+            [[ "${args[i]}" == --userspec ]] && {
+                dargs $i
+                user="${args[i]}"
+            } || {
+                user="${args[i]#--userspec}"
+            }
+            dargs $i
+            ;;
+        --groups*)
+            [[ "${args[i]}" == --groups ]] && {
+                dargs $i
+                glst="${args[i]}"
+            } || {
+                glst="${args[i]#--groups}"
+            }
+            dargs $i
+            ;;
+        *)
+            let 'i++' || true
+            ;;
     esac
 done
+
+opt=''
+[[ -z $user ]] || opt="${opt} --userspec=${user}"
+[[ -z $glst ]] || opt="${opt} --groups=${glst}"
 
 nroot="${args[0]}"
 
@@ -46,22 +91,22 @@ mkdir -p "$nroot"
 sub_dirs=(dev proc sys dev/pts dev/shm)
 if [[ $action == 0 ]] || [[ $action == 1 ]] ;then
     for ((i = 0;i < ${#sub_dirs[@]};i++)) ;do
-	mkdir -p ${nroot}/${sub_dirs[i]} &&
-	mount --bind /"${sub_dirs[i]}" "${nroot}/${sub_dirs[i]}" || break
+        mkdir -p ${nroot}/${sub_dirs[i]} &&
+        mount --bind /"${sub_dirs[i]}" "${nroot}/${sub_dirs[i]}" || break
     done
 fi
 result=0
 case $action in
     0)
-	(( i >= ${#sub_dirs[@]} )) && {
-	    chroot "${nroot}"
-	    ((i--))
-	}
-	;;
+        (( i >= ${#sub_dirs[@]} )) && {
+            chroot $opt "${args[@]}"
+            ((i--))
+        }
+        ;;
     1)
-	(( i >= ${#sub_dirs[@]} )) && exit 0
-	result=1
-	;;
+        (( i >= ${#sub_dirs[@]} )) && exit 0
+        result=1
+        ;;
 esac
 for ((;i >= 0;i--)) ;do
     umount "${nroot}/${sub_dirs[i]}"

@@ -2,7 +2,7 @@
 glibc
 
 %VERSION%
-2.14-2
+2.14-3
 
 %DESC%
 GNU C Library
@@ -21,16 +21,16 @@ LGPL
 x86_64
 
 %BUILDDATE%
-1307756385
+1308309930
 
 %INSTALLDATE%
-1308067378
+1308836462
 
 %PACKAGER%
 Allan McRae <allan@archlinux.org>
 
 %SIZE%
-35262464
+35586048
 
 %REASON%
 1

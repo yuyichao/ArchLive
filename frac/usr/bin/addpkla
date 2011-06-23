@@ -1,14 +1,35 @@
 #!/bin/bash
+
+# Copyright 2010, 2011 Yu Yichao, Rudy
+# yyc1992@gmail.com
+# rudyht@gmail.com
+#
+# This file is part of s-util.
+#
+# s-util is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# s-util is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with s-util.  If not, see <http://www.gnu.org/licenses/>.
+#
+
 s_shelp()
 {
     cat <<EOF
 This command add a permission of a certain action to polkit. It will automatically call sudo.
 USAGE:
-	$(basename $0) [OPTIONS] policies
+        $(basename $0) [OPTIONS] policies
 OPTIONS:
-	-u/--user USER: to add a permission for USER
-	-v/--version: show the version number
-	-h/--help: show this help and exit
+        -u/--user USER: to add a permission for USER
+        -v/--version: show the version number
+        -h/--help: show this help and exit
 EOF
 }
 
@@ -16,19 +37,19 @@ EOF
 
 for ((i = 0;i < ${#args[@]};)) ;do
     case "${args[i]}" in
-	-u|--user)
-	    darg $i
-	    S_USERNAME="${args[i]}"
-	    darg $i
-	    ;;
-	-*)
-	    echo "Warning: Unrecognized argument ${args[i]}" >&2
-	    darg $i
-	    ;;
-	*)
-	    let 'i++'
-	    ;;
-	esac
+        -u|--user)
+            darg $i
+            S_USERNAME="${args[i]}"
+            darg $i
+            ;;
+        -*)
+            echo "Warning: Unrecognized argument ${args[i]}" >&2
+            darg $i
+            ;;
+        *)
+            let 'i++'
+            ;;
+        esac
 done
 
 [[ -z $S_USERNAME ]] && S_USERNAME=$(whoami)
