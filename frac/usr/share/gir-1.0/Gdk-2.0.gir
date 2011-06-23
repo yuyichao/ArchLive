@@ -17956,7 +17956,7 @@ you're an application - or gtk_style_set_background() - if you're
 implementing a custom widget.)
 The @color must be allocated; gdk_rgb_find_color() is the best way
 to allocate a color.
-See also gdk_window_set_background_pixmap().</doc>
+See also gdk_window_set_back_pixmap().</doc>
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>

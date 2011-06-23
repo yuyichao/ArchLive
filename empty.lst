@@ -1,3 +1,4 @@
+frac/var_cache_pacman_pkg
 frac/lib/udev/devices/pts
 frac/lib/udev/devices/shm
 frac/etc/udev/rules.d

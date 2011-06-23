@@ -3,11 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>GConfChangeSet</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.75.2">
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
 <link rel="home" href="index.html" title="GConf Reference Manual">
 <link rel="up" href="ch01.html" title="Using the GConf library">
 <link rel="prev" href="gconf-gconf-locale.html" title="gconf-locale">
-<meta name="generator" content="GTK-Doc V1.15.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.17 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -159,23 +159,19 @@ user data passed to <a class="link" href="gconf-gconf-changeset.html#gconf-chang
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cs</code></em> :</span></p></td>
-<td>the <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a> being iterated over.
-</td>
+<td>the <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a> being iterated over.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>the current key.
-</td>
+<td>the current key.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>value</code></em> :</span></p></td>
-<td>the current value, or <span class="symbol">NULL</span>.
-</td>
+<td>the current value, or <span class="symbol">NULL</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
-<td>user data passed to <a class="link" href="gconf-gconf-changeset.html#gconf-change-set-foreach" title="gconf_change_set_foreach ()"><code class="function">gconf_change_set_foreach()</code></a>.
-</td>
+<td>user data passed to <a class="link" href="gconf-gconf-changeset.html#gconf-change-set-foreach" title="gconf_change_set_foreach ()"><code class="function">gconf_change_set_foreach()</code></a>.</td>
 </tr>
 </tbody>
 </table></div>
@@ -207,29 +203,24 @@ occurred will have been removed from the set. If any error occurs,
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cs</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>remove_committed</code></em> :</span></p></td>
-<td>whether to remove successfully-committed changes from the set
-</td>
+<td>whether to remove successfully-committed changes from the set</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> if an error occurs.
-</td>
+<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> if an error occurs.</td>
 </tr>
 </tbody>
 </table></div>
@@ -249,23 +240,19 @@ save the current state of that key in the returned change set.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cs</code></em> :</span></p></td>
-<td>the <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a> to be reverted.
-</td>
+<td>the <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a> to be reverted.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>the modified <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>the modified <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr>
 </tbody>
 </table></div>
@@ -286,24 +273,20 @@ Creates a change set that will change the keys in
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>keys</code></em> :</span></p></td>
 <td>
-<span class="symbol">NULL</span>terminated array of key names.
-</td>
+<span class="symbol">NULL</span>terminated array of key names.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>the newly allocated <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>the newly allocated <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr>
 </tbody>
 </table></div>
@@ -324,28 +307,23 @@ Convenient Varags version of <a class="link" href="gconf-gconf-changeset.html#gc
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>first_key</code></em> :</span></p></td>
-<td>the first key, a char* value.
-</td>
+<td>the first key, a char* value.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>...</code></em> :</span></p></td>
-<td>the keys to be set.
-</td>
+<td>the keys to be set.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>the newly allocated <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>the newly allocated <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr>
 </tbody>
 </table></div>
@@ -362,8 +340,7 @@ count, and must call <a class="link" href="gconf-gconf-changeset.html#gconf-chan
 <col align="left" valign="top">
 <tbody><tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a new <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>a new <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr></tbody>
 </table></div>
 </div>
@@ -379,13 +356,11 @@ Increases the reference count of a <a class="link" href="gconf-gconf-changeset.h
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cs</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>the referenced <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>the referenced <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr>
 </tbody>
 </table></div>
@@ -402,8 +377,7 @@ reference count reaches 0, destroys the <a class="link" href="gconf-gconf-change
 <col align="left" valign="top">
 <tbody><tr>
 <td><p><span class="term"><em class="parameter"><code>cs</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr></tbody>
 </table></div>
 </div>
@@ -419,8 +393,7 @@ change set would have no effect.
 <col align="left" valign="top">
 <tbody><tr>
 <td><p><span class="term"><em class="parameter"><code>cs</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr></tbody>
 </table></div>
 </div>
@@ -436,13 +409,11 @@ Returns the size of the changeset, a <a href="http://library.gnome.org/devel/gli
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cs</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>the size, a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> value.
-</td>
+<td>the size, a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> value.</td>
 </tr>
 </tbody>
 </table></div>
@@ -462,13 +433,11 @@ If <em class="parameter"><code>key</code></em> is not in the change set, this fu
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cs</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key to remove from the change set.
-</td>
+<td>key to remove from the change set.</td>
 </tr>
 </tbody>
 </table></div>
@@ -491,18 +460,16 @@ confuse the internal data structures and cause memory corruption.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cs</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>func</code></em> :</span></p></td>
-<td> function to call for each change in the change set. <span class="annotation">[<a href="http://foldoc.org/scope%20call"><span class="acronym">scope call</span></a>]</span>
+<td>function to call for each change in the change set. <span class="annotation">[<a href="http://foldoc.org/scope%20call"><span class="acronym">scope call</span></a>]</span>
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
-<td>user data to pass to the <a class="link" href="gconf-gconf-changeset.html#GConfChangeSetForeachFunc" title="GConfChangeSetForeachFunc ()"><span class="type">GConfChangeSetForeachFunc</span></a>.
-</td>
+<td>user data to pass to the <a class="link" href="gconf-gconf-changeset.html#GConfChangeSetForeachFunc" title="GConfChangeSetForeachFunc ()"><span class="type">GConfChangeSetForeachFunc</span></a>.</td>
 </tr>
 </tbody>
 </table></div>
@@ -522,24 +489,20 @@ is found , the value is set in value_retloc.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cs</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>the key to be searched in the changeset.
-</td>
+<td>the key to be searched in the changeset.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>value_retloc</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-value.html#GConfValue" title="struct GConfValue"><span class="type">GConfValue</span></a> ** to hold the key, if found.
-</td>
+<td>a <a class="link" href="gconf-gconf-value.html#GConfValue" title="struct GConfValue"><span class="type">GConfValue</span></a> ** to hold the key, if found.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> on finding the key, <span class="symbol">FALSE</span> if key is not found.
-</td>
+<span class="symbol">TRUE</span> on finding the key, <span class="symbol">FALSE</span> if key is not found.</td>
 </tr>
 </tbody>
 </table></div>
@@ -560,18 +523,15 @@ you try to commit the change set).
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cs</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>the key to change.
-</td>
+<td>the key to change.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>value</code></em> :</span></p></td>
-<td>the value to change the key to.
-</td>
+<td>the value to change the key to.</td>
 </tr>
 </tbody>
 </table></div>
@@ -593,18 +553,15 @@ the change is modified, or the <a class="link" href="gconf-gconf-changeset.html#
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cs</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>the key to change.
-</td>
+<td>the key to change.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>value</code></em> :</span></p></td>
-<td>the new value of <em class="parameter"><code>key</code></em>.
-</td>
+<td>the new value of <em class="parameter"><code>key</code></em>.</td>
 </tr>
 </tbody>
 </table></div>
@@ -623,13 +580,11 @@ schedules a <a class="link" href="gconf-gconf.html#gconf-engine-unset" title="gc
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cs</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>the key to unset.
-</td>
+<td>the key to unset.</td>
 </tr>
 </tbody>
 </table></div>
@@ -649,18 +604,15 @@ creating a <a class="link" href="gconf-gconf-value.html#GConfValue" title="struc
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cs</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>the key to set.
-</td>
+<td>the key to set.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
-<td>the new value of <em class="parameter"><code>key</code></em>.
-</td>
+<td>the new value of <em class="parameter"><code>key</code></em>.</td>
 </tr>
 </tbody>
 </table></div>
@@ -680,18 +632,15 @@ creating a <a class="link" href="gconf-gconf-value.html#GConfValue" title="struc
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cs</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>the key to set.
-</td>
+<td>the key to set.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
-<td>the new value of <em class="parameter"><code>key</code></em>.
-</td>
+<td>the new value of <em class="parameter"><code>key</code></em>.</td>
 </tr>
 </tbody>
 </table></div>
@@ -711,18 +660,15 @@ creating a <a class="link" href="gconf-gconf-value.html#GConfValue" title="struc
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cs</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>the key to set.
-</td>
+<td>the key to set.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
-<td>the new value of <em class="parameter"><code>key</code></em>.
-</td>
+<td>the new value of <em class="parameter"><code>key</code></em>.</td>
 </tr>
 </tbody>
 </table></div>
@@ -742,18 +688,15 @@ creating a <a class="link" href="gconf-gconf-value.html#GConfValue" title="struc
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cs</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>the key to set.
-</td>
+<td>the key to set.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
-<td>the new value of <em class="parameter"><code>key</code></em>.
-</td>
+<td>the new value of <em class="parameter"><code>key</code></em>.</td>
 </tr>
 </tbody>
 </table></div>
@@ -774,18 +717,15 @@ unmodified.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cs</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>the key to set.
-</td>
+<td>the key to set.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
-<td>the new value of <em class="parameter"><code>key</code></em>.
-</td>
+<td>the new value of <em class="parameter"><code>key</code></em>.</td>
 </tr>
 </tbody>
 </table></div>
@@ -807,23 +747,19 @@ list of values being set for the key.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cs</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>the key to set.
-</td>
+<td>the key to set.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>list_type</code></em> :</span></p></td>
-<td>the type of the list.
-</td>
+<td>the type of the list.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>list</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> containing the values to be set.
-</td>
+<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> containing the values to be set.</td>
 </tr>
 </tbody>
 </table></div>
@@ -847,33 +783,27 @@ the pair of values being set for the key.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cs</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>the key to set.
-</td>
+<td>the key to set.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>car_type</code></em> :</span></p></td>
-<td>the type of the pair's first field. (car)
-</td>
+<td>the type of the pair's first field. (car)</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cdr_type</code></em> :</span></p></td>
-<td>the type of the pair's second field. (cdr)
-</td>
+<td>the type of the pair's second field. (cdr)</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>address_of_car</code></em> :</span></p></td>
-<td>address of the car.
-</td>
+<td>address of the car.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>address_of_cdr</code></em> :</span></p></td>
-<td>address of the cdr.
-</td>
+<td>address of the cdr.</td>
 </tr>
 </tbody>
 </table></div>
@@ -893,18 +823,15 @@ Sets the user_data and the destroy notification function fields of the
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cs</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>data</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>.
-</td>
+<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>dnotify</code></em> :</span></p></td>
-<td>a pointer to the function to be called during destroy.
-</td>
+<td>a pointer to the function to be called during destroy.</td>
 </tr>
 </tbody>
 </table></div>
@@ -921,13 +848,11 @@ Returns the user_data field of the <a class="link" href="gconf-gconf-changeset.h
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cs</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> a pointer to the user_data.
-</td>
+<td>a pointer to the user_data.</td>
 </tr>
 </tbody>
 </table></div>
@@ -936,6 +861,6 @@ Returns the user_data field of the <a class="link" href="gconf-gconf-changeset.h
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.15.1</div>
+          Generated by GTK-Doc V1.17</div>
 </body>
 </html>

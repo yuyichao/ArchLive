@@ -9,9 +9,9 @@
 
 /* Package name      : perl5
  * Source directory  : .
- * Configuration time: Sun May 22 18:40:24 UTC 2011
+ * Configuration time: Thu Jun 16 21:04:19 UTC 2011
  * Configured by     : nobody
- * Target system     : linux milano 2.6.39-arch #1 smp preempt fri may 20 11:33:59 cest 2011 x86_64 intel(r) core(tm)2 duo cpu t7700 @ 2.40ghz genuineintel gnulinux 
+ * Target system     : linux milano 2.6.39-arch #1 smp preempt mon jun 6 22:37:55 cest 2011 x86_64 intel(r) core(tm)2 duo cpu t7700 @ 2.40ghz genuineintel gnulinux 
  */
 
 #ifndef _config_h_

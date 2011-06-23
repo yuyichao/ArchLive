@@ -5331,7 +5331,12 @@ supports multiple selections.</doc>
       </constructor>
       <virtual-method name="embed" invoker="embed" version="1.30">
         <doc xml:whitespace="preserve">Embeds the children of an #AtkPlug as the children of the #AtkSocket.  The
-plug may be in the same process or in a different process.</doc>
+plug may be in the same process or in a different process.
+THe class item used by this function should be filled in by the IPC layer
+(ie, at-spi2-atk).  The implementor of the AtkSocket should call this
+function and pass the id for the plug as returned by atk_plug_get_id.
+It is the responsibility of the application to pass the plug id on to
+the process implementing the AtkSocket as needed.</doc>
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
@@ -5344,7 +5349,12 @@ plug may be in the same process or in a different process.</doc>
       </virtual-method>
       <method name="embed" c:identifier="atk_socket_embed" version="1.30">
         <doc xml:whitespace="preserve">Embeds the children of an #AtkPlug as the children of the #AtkSocket.  The
-plug may be in the same process or in a different process.</doc>
+plug may be in the same process or in a different process.
+THe class item used by this function should be filled in by the IPC layer
+(ie, at-spi2-atk).  The implementor of the AtkSocket should call this
+function and pass the id for the plug as returned by atk_plug_get_id.
+It is the responsibility of the application to pass the plug id on to
+the process implementing the AtkSocket as needed.</doc>
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
@@ -7754,9 +7764,10 @@ to atk_attribute_set_free().</doc>
         </parameters>
       </virtual-method>
       <virtual-method name="get_selection" invoker="get_selection">
-        <doc xml:whitespace="preserve">Gets the text from the specified selection.</doc>
+        <doc xml:whitespace="preserve">Gets the text from the specified selection.
+to free the returned string.</doc>
         <return-value transfer-ownership="full">
-          <doc xml:whitespace="preserve">the selected text.</doc>
+          <doc xml:whitespace="preserve">a newly allocated string containing the selected text. Use g_free()</doc>
           <type name="utf8" c:type="gchar*"/>
         </return-value>
         <parameters>
@@ -7775,9 +7786,10 @@ to atk_attribute_set_free().</doc>
         </parameters>
       </virtual-method>
       <virtual-method name="get_text" invoker="get_text">
-        <doc xml:whitespace="preserve">Gets the specified text.</doc>
+        <doc xml:whitespace="preserve">Gets the specified text.
+to, but not including @end_offset. Use g_free() to free the returned string.</doc>
         <return-value transfer-ownership="full">
-          <doc xml:whitespace="preserve">the text from @start_offset up to, but not including @end_offset.</doc>
+          <doc xml:whitespace="preserve">a newly allocated string containing the text from @start_offset up</doc>
           <type name="utf8" c:type="gchar*"/>
         </return-value>
         <parameters>
@@ -7818,9 +7830,10 @@ after the offset if the offset is not inside a sentence.
 If the boundary type is ATK_TEXT_BOUNDARY_LINE_START the returned
 string is from the line start after the offset to the next line start.
 If the boundary_type is ATK_TEXT_BOUNDARY_LINE_END the returned string
-is from the line end at or after the offset to the next line end.</doc>
+is from the line end at or after the offset to the next line end.
+by the specified @boundary_type. Use g_free() to free the returned string.</doc>
         <return-value transfer-ownership="full">
-          <doc xml:whitespace="preserve">the text after @offset bounded by the specified @boundary_type.</doc>
+          <doc xml:whitespace="preserve">a newly allocated string containing the text after @offset bounded</doc>
           <type name="utf8" c:type="gchar*"/>
         </return-value>
         <parameters>
@@ -7875,9 +7888,10 @@ string is from the line start at or before the offset to the line
 start after the offset.
 If the boundary_type is ATK_TEXT_BOUNDARY_LINE_END the returned string
 is from the line end before the offset to the line end at or after
-the offset.</doc>
+the offset.
+the specified @boundary_type. Use g_free() to free the returned string.</doc>
         <return-value transfer-ownership="full">
-          <doc xml:whitespace="preserve">the text at @offset bounded by the specified @boundary_type.</doc>
+          <doc xml:whitespace="preserve">a newly allocated string containing the text at @offset bounded by</doc>
           <type name="utf8" c:type="gchar*"/>
         </return-value>
         <parameters>
@@ -7905,14 +7919,14 @@ the offset.</doc>
 If the boundary_type if ATK_TEXT_BOUNDARY_CHAR the character before the
 offset is returned.
 If the boundary_type is ATK_TEXT_BOUNDARY_WORD_START the returned string
-is from the word start before the word start before the offset to 
-the word start before the offset.
+is from the word start before the word start before or at the offset to 
+the word start before or at the offset.
 The returned string will contain the word before the offset if the offset
 is inside a word and will contain the word before the word before the 
 offset if the offset is not inside a word.
 If the boundary_type is ATK_TEXT_BOUNDARY_WORD_END the returned string
-is from the word end before the word end at or before the offset to the 
-word end at or before the offset.
+is from the word end before the word end before the offset to the word
+end before the offset.
 The returned string will contain the word before the offset if the offset
 is inside a word or if the offset is not inside a word.
 If the boundary type is ATK_TEXT_BOUNDARY_SENTENCE_START the returned
@@ -7931,9 +7945,10 @@ string is from the line start before the line start ar or before the offset
 to the line start ar or before the offset.
 If the boundary_type is ATK_TEXT_BOUNDARY_LINE_END the returned string
 is from the line end before the line end before the offset to the 
-line end before the offset.</doc>
+line end before the offset.
+by the specified @boundary_type. Use g_free() to free the returned string.</doc>
         <return-value transfer-ownership="full">
-          <doc xml:whitespace="preserve">the text before @offset bounded by the specified @boundary_type.</doc>
+          <doc xml:whitespace="preserve">a newly allocated string containing the text before @offset bounded</doc>
           <type name="utf8" c:type="gchar*"/>
         </return-value>
         <parameters>
@@ -8248,9 +8263,10 @@ to atk_attribute_set_free().</doc>
         </parameters>
       </method>
       <method name="get_selection" c:identifier="atk_text_get_selection">
-        <doc xml:whitespace="preserve">Gets the text from the specified selection.</doc>
+        <doc xml:whitespace="preserve">Gets the text from the specified selection.
+to free the returned string.</doc>
         <return-value transfer-ownership="full">
-          <doc xml:whitespace="preserve">the selected text.</doc>
+          <doc xml:whitespace="preserve">a newly allocated string containing the selected text. Use g_free()</doc>
           <type name="utf8" c:type="gchar*"/>
         </return-value>
         <parameters>
@@ -8269,9 +8285,10 @@ to atk_attribute_set_free().</doc>
         </parameters>
       </method>
       <method name="get_text" c:identifier="atk_text_get_text">
-        <doc xml:whitespace="preserve">Gets the specified text.</doc>
+        <doc xml:whitespace="preserve">Gets the specified text.
+to, but not including @end_offset. Use g_free() to free the returned string.</doc>
         <return-value transfer-ownership="full">
-          <doc xml:whitespace="preserve">the text from @start_offset up to, but not including @end_offset.</doc>
+          <doc xml:whitespace="preserve">a newly allocated string containing the text from @start_offset up</doc>
           <type name="utf8" c:type="gchar*"/>
         </return-value>
         <parameters>
@@ -8312,9 +8329,10 @@ after the offset if the offset is not inside a sentence.
 If the boundary type is ATK_TEXT_BOUNDARY_LINE_START the returned
 string is from the line start after the offset to the next line start.
 If the boundary_type is ATK_TEXT_BOUNDARY_LINE_END the returned string
-is from the line end at or after the offset to the next line end.</doc>
+is from the line end at or after the offset to the next line end.
+by the specified @boundary_type. Use g_free() to free the returned string.</doc>
         <return-value transfer-ownership="full">
-          <doc xml:whitespace="preserve">the text after @offset bounded by the specified @boundary_type.</doc>
+          <doc xml:whitespace="preserve">a newly allocated string containing the text after @offset bounded</doc>
           <type name="utf8" c:type="gchar*"/>
         </return-value>
         <parameters>
@@ -8370,9 +8388,10 @@ string is from the line start at or before the offset to the line
 start after the offset.
 If the boundary_type is ATK_TEXT_BOUNDARY_LINE_END the returned string
 is from the line end before the offset to the line end at or after
-the offset.</doc>
+the offset.
+the specified @boundary_type. Use g_free() to free the returned string.</doc>
         <return-value transfer-ownership="full">
-          <doc xml:whitespace="preserve">the text at @offset bounded by the specified @boundary_type.</doc>
+          <doc xml:whitespace="preserve">a newly allocated string containing the text at @offset bounded by</doc>
           <type name="utf8" c:type="gchar*"/>
         </return-value>
         <parameters>
@@ -8400,14 +8419,14 @@ the offset.</doc>
 If the boundary_type if ATK_TEXT_BOUNDARY_CHAR the character before the
 offset is returned.
 If the boundary_type is ATK_TEXT_BOUNDARY_WORD_START the returned string
-is from the word start before the word start before the offset to 
-the word start before the offset.
+is from the word start before the word start before or at the offset to 
+the word start before or at the offset.
 The returned string will contain the word before the offset if the offset
 is inside a word and will contain the word before the word before the 
 offset if the offset is not inside a word.
 If the boundary_type is ATK_TEXT_BOUNDARY_WORD_END the returned string
-is from the word end before the word end at or before the offset to the 
-word end at or before the offset.
+is from the word end before the word end before the offset to the word
+end before the offset.
 The returned string will contain the word before the offset if the offset
 is inside a word or if the offset is not inside a word.
 If the boundary type is ATK_TEXT_BOUNDARY_SENTENCE_START the returned
@@ -8426,9 +8445,10 @@ string is from the line start before the line start ar or before the offset
 to the line start ar or before the offset.
 If the boundary_type is ATK_TEXT_BOUNDARY_LINE_END the returned string
 is from the line end before the line end before the offset to the 
-line end before the offset.</doc>
+line end before the offset.
+by the specified @boundary_type. Use g_free() to free the returned string.</doc>
         <return-value transfer-ownership="full">
-          <doc xml:whitespace="preserve">the text before @offset bounded by the specified @boundary_type.</doc>
+          <doc xml:whitespace="preserve">a newly allocated string containing the text before @offset bounded</doc>
           <type name="utf8" c:type="gchar*"/>
         </return-value>
         <parameters>
@@ -8766,7 +8786,7 @@ line end before the offset.</doc>
       <field name="get_text">
         <callback name="get_text">
           <return-value transfer-ownership="full">
-            <doc xml:whitespace="preserve">the text from @start_offset up to, but not including @end_offset.</doc>
+            <doc xml:whitespace="preserve">a newly allocated string containing the text from @start_offset up</doc>
             <type name="utf8" c:type="gchar*"/>
           </return-value>
           <parameters>
@@ -8787,7 +8807,7 @@ line end before the offset.</doc>
       <field name="get_text_after_offset">
         <callback name="get_text_after_offset">
           <return-value transfer-ownership="full">
-            <doc xml:whitespace="preserve">the text after @offset bounded by the specified @boundary_type.</doc>
+            <doc xml:whitespace="preserve">a newly allocated string containing the text after @offset bounded</doc>
             <type name="utf8" c:type="gchar*"/>
           </return-value>
           <parameters>
@@ -8816,7 +8836,7 @@ line end before the offset.</doc>
       <field name="get_text_at_offset">
         <callback name="get_text_at_offset">
           <return-value transfer-ownership="full">
-            <doc xml:whitespace="preserve">the text at @offset bounded by the specified @boundary_type.</doc>
+            <doc xml:whitespace="preserve">a newly allocated string containing the text at @offset bounded by</doc>
             <type name="utf8" c:type="gchar*"/>
           </return-value>
           <parameters>
@@ -8862,7 +8882,7 @@ line end before the offset.</doc>
       <field name="get_text_before_offset">
         <callback name="get_text_before_offset">
           <return-value transfer-ownership="full">
-            <doc xml:whitespace="preserve">the text before @offset bounded by the specified @boundary_type.</doc>
+            <doc xml:whitespace="preserve">a newly allocated string containing the text before @offset bounded</doc>
             <type name="utf8" c:type="gchar*"/>
           </return-value>
           <parameters>
@@ -9029,7 +9049,7 @@ line end before the offset.</doc>
       <field name="get_selection">
         <callback name="get_selection">
           <return-value transfer-ownership="full">
-            <doc xml:whitespace="preserve">the selected text.</doc>
+            <doc xml:whitespace="preserve">a newly allocated string containing the selected text. Use g_free()</doc>
             <type name="utf8" c:type="gchar*"/>
           </return-value>
           <parameters>

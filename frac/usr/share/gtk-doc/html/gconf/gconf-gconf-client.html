@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>GConfClient</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.75.2">
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
 <link rel="home" href="index.html" title="GConf Reference Manual">
 <link rel="up" href="ch01.html" title="Using the GConf library">
 <link rel="prev" href="ch01.html" title="Using the GConf library">
 <link rel="next" href="gconf-gconf-backend.html" title="gconf-backend">
-<meta name="generator" content="GTK-Doc V1.15.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.17 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -225,7 +225,7 @@ directly, or you'll break things. This is why there's no
 <a class="link" href="gconf-gconf-client.html#gconf-client-get-default" title="gconf_client_get_default ()"><code class="function">gconf_client_get_default()</code></a>, there is no (legitimate) way to obtain a pointer to the
 underlying <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>. If you create a <span class="type">GConfClient</span> from an existing engine,
 you'll have to be disciplined enough to avoid using that engine directly.
-<sup>[<a name="id2946786" href="#ftn.id2946786" class="footnote">1</a>]</sup>
+<sup>[<a name="id3008065" href="#ftn.id3008065" class="footnote">1</a>]</sup>
 </p>
 </div>
 <p>
@@ -392,23 +392,19 @@ notify function is called).
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>the <span class="type">GConfClient</span> notifying us.
-</td>
+<td>the <span class="type">GConfClient</span> notifying us.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cnxn_id</code></em> :</span></p></td>
-<td>connection ID from <a class="link" href="gconf-gconf-client.html#gconf-client-notify-add" title="gconf_client_notify_add ()"><code class="function">gconf_client_notify_add()</code></a>.
-</td>
+<td>connection ID from <a class="link" href="gconf-gconf-client.html#gconf-client-notify-add" title="gconf_client_notify_add ()"><code class="function">gconf_client_notify_add()</code></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>entry</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-value.html#GConfEntry" title="struct GConfEntry"><span class="type">GConfEntry</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-value.html#GConfEntry" title="struct GConfEntry"><span class="type">GConfEntry</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
-<td>user data from <a class="link" href="gconf-gconf-client.html#gconf-client-notify-add" title="gconf_client_notify_add ()"><code class="function">gconf_client_notify_add()</code></a>.
-</td>
+<td>user data from <a class="link" href="gconf-gconf-client.html#gconf-client-notify-add" title="gconf_client_notify_add ()"><code class="function">gconf_client_notify_add()</code></a>.</td>
 </tr>
 </tbody>
 </table></div>
@@ -427,13 +423,11 @@ handling.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 </tbody>
 </table></div>
@@ -450,8 +444,7 @@ Casts a pointer to a <span class="type">GConfClient</span>*.
 <col align="left" valign="top">
 <tbody><tr>
 <td><p><span class="term"><em class="parameter"><code>obj</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr></tbody>
 </table></div>
 </div>
@@ -472,7 +465,7 @@ It's important to call <a href="http://library.gnome.org/devel/gobject/unstable/
 <col align="left" valign="top">
 <tbody><tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> a new <span class="type">GConfClient</span>. <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when you're done. <span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span>
+<td>a new <span class="type">GConfClient</span>. <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#g-object-unref"><code class="function">g_object_unref()</code></a> when you're done. <span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span>
 </td>
 </tr></tbody>
 </table></div>
@@ -493,12 +486,11 @@ wrapper.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>engine</code></em> :</span></p></td>
-<td>the <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a> to use.
-</td>
+<td>the <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a> to use.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> a new <span class="type">GConfClient</span>. <span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span>
+<td>a new <span class="type">GConfClient</span>. <span class="annotation">[<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span>
 </td>
 </tr>
 </tbody>
@@ -529,23 +521,19 @@ name must not have a trailing slash.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>dir</code></em> :</span></p></td>
-<td>directory to add to the list.
-</td>
+<td>directory to add to the list.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>preload</code></em> :</span></p></td>
-<td>degree of preload.
-</td>
+<td>degree of preload.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 </tbody>
 </table></div>
@@ -568,18 +556,15 @@ you must remove it the same number of times before the remove takes effect.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>dir</code></em> :</span></p></td>
-<td>directory to remove.
-</td>
+<td>directory to remove.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 </tbody>
 </table></div>
@@ -622,24 +607,20 @@ notification function is called.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>
-<em class="parameter"><code>namespace_section</code></em>
-</td>
+<td><em class="parameter"><code>namespace_section</code></em></td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>namespace_section</code></em> :</span></p></td>
-<td>where to listen for changes.
-</td>
+<td>where to listen for changes.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>func</code></em> :</span></p></td>
-<td>. <span class="annotation">[<a href="http://foldoc.org/scope%20notified"><span class="acronym">scope notified</span></a>][closure user_data][destroy destroy_notify]</span>
+<td>. <span class="annotation">[<a href="http://foldoc.org/scope%20notified"><span class="acronym">scope notified</span></a>][<a href="http://foldoc.org/closure"><span class="acronym">closure</span></a> user_data][destroy destroy_notify]</span>
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a connection ID for removing the notification.
-</td>
+<td>a connection ID for removing the notification.</td>
 </tr>
 </tbody>
 </table></div>
@@ -659,13 +640,11 @@ notification's user data, if appropriate.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cnxn</code></em> :</span></p></td>
-<td>connection ID.
-</td>
+<td>connection ID.</td>
 </tr>
 </tbody>
 </table></div>
@@ -684,13 +663,11 @@ changed
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>the key that has changed.
-</td>
+<td>the key that has changed.</td>
 </tr>
 </tbody>
 </table></div>
@@ -710,13 +687,11 @@ Controls the default error handling for <span class="type">GConfClient</span>. S
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>mode</code></em> :</span></p></td>
-<td>error handling mode.
-</td>
+<td>error handling mode.</td>
 </tr>
 </tbody>
 </table></div>
@@ -734,8 +709,7 @@ for all <span class="type">GConfClient</span> internal errors.
 <col align="left" valign="top">
 <tbody><tr>
 <td><p><span class="term"><em class="parameter"><code>func</code></em> :</span></p></td>
-<td>pointer to the function to be called for error handling.
-</td>
+<td>pointer to the function to be called for error handling.</td>
 </tr></tbody>
 </table></div>
 </div>
@@ -752,8 +726,7 @@ memory.
 <col align="left" valign="top">
 <tbody><tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr></tbody>
 </table></div>
 </div>
@@ -774,23 +747,19 @@ again.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>dirname</code></em> :</span></p></td>
-<td>directory to preload.
-</td>
+<td>directory to preload.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>type</code></em> :</span></p></td>
-<td>degree of preload.
-</td>
+<td>degree of preload.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 </tbody>
 </table></div>
@@ -812,23 +781,19 @@ modified.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key to set.
-</td>
+<td>key to set.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
-<td>new value.
-</td>
+<td>new value.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 </tbody>
 </table></div>
@@ -848,23 +813,19 @@ Gets the value of a configuration key. Just like <a class="link" href="gconf-gco
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key to get.
-</td>
+<td>key to get.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>newly-allocated <a class="link" href="gconf-gconf-value.html#GConfValue" title="struct GConfValue"><span class="type">GConfValue</span></a>, or <span class="symbol">NULL</span> if unset and no default exists.
-</td>
+<td>newly-allocated <a class="link" href="gconf-gconf-value.html#GConfValue" title="struct GConfValue"><span class="type">GConfValue</span></a>, or <span class="symbol">NULL</span> if unset and no default exists.</td>
 </tr>
 </tbody>
 </table></div>
@@ -883,23 +844,19 @@ Gets the value of a configuration key. Just like <a class="link" href="gconf-gco
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key to get.
-</td>
+<td>key to get.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>newly-allocated <a class="link" href="gconf-gconf-value.html#GConfValue" title="struct GConfValue"><span class="type">GConfValue</span></a>, or <span class="symbol">NULL</span> if unset (even if a default exists).
-</td>
+<td>newly-allocated <a class="link" href="gconf-gconf-value.html#GConfValue" title="struct GConfValue"><span class="type">GConfValue</span></a>, or <span class="symbol">NULL</span> if unset (even if a default exists).</td>
 </tr>
 </tbody>
 </table></div>
@@ -920,33 +877,27 @@ Obtains the full <a class="link" href="gconf-gconf-value.html#GConfEntry" title=
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td> key to get.
-</td>
+<td>key to get.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>locale</code></em> :</span></p></td>
-<td>preferred locale (as in the locale-related environment variables).
-</td>
+<td>preferred locale (as in the locale-related environment variables).</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>use_schema_default</code></em> :</span></p></td>
-<td>indicates whether to look for a default value when the key is unset.
-</td>
+<td>indicates whether to look for a default value when the key is unset.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-value.html#GConfEntry" title="struct GConfEntry"><span class="type">GConfEntry</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-value.html#GConfEntry" title="struct GConfEntry"><span class="type">GConfEntry</span></a>.</td>
 </tr>
 </tbody>
 </table></div>
@@ -972,23 +923,19 @@ extract the default value. Just like <a class="link" href="gconf-gconf.html#gcon
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key to get.
-</td>
+<td>key to get.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>newly-allocated <a class="link" href="gconf-gconf-value.html#GConfValue" title="struct GConfValue"><span class="type">GConfValue</span></a>, or <span class="symbol">NULL</span> if the key has no default value in its schema.
-</td>
+<td>newly-allocated <a class="link" href="gconf-gconf-value.html#GConfValue" title="struct GConfValue"><span class="type">GConfValue</span></a>, or <span class="symbol">NULL</span> if the key has no default value in its schema.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1010,24 +957,20 @@ Just like <a class="link" href="gconf-gconf.html#gconf-engine-unset" title="gcon
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key to unset.
-</td>
+<td>key to unset.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.
-</td>
+<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1049,29 +992,24 @@ but uses <span class="type">GConfClient</span> caching and error-handling featur
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>a key or directory name to be unset.
-</td>
+<td>a key or directory name to be unset.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>flags</code></em> :</span></p></td>
-<td>change how the unset is done.
-</td>
+<td>change how the unset is done.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.
-</td>
+<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1097,22 +1035,19 @@ Just like <a class="link" href="gconf-gconf.html#gconf-engine-all-entries" title
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>dir</code></em> :</span></p></td>
-<td>directory to list.
-</td>
+<td>directory to list.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> List of <a class="link" href="gconf-gconf-value.html#GConfEntry" title="struct GConfEntry"><span class="type">GConfEntry</span></a>. <span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> GConfEntry][<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span>
+<td>List of <a class="link" href="gconf-gconf-value.html#GConfEntry" title="struct GConfEntry"><span class="type">GConfEntry</span></a>. <span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> GConfEntry][<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span>
 </td>
 </tr>
 </tbody>
@@ -1136,22 +1071,19 @@ but uses <span class="type">GConfClient</span> caching and error-handling featur
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>dir</code></em> :</span></p></td>
-<td>directory to get subdirectories from.
-</td>
+<td>directory to get subdirectories from.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> List of allocated subdirectory names. <span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> utf8][<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span>
+<td>List of allocated subdirectory names. <span class="annotation">[<a href="http://foldoc.org/element-type"><span class="acronym">element-type</span></a> utf8][<a href="http://foldoc.org/transfer%20full"><span class="acronym">transfer full</span></a>]</span>
 </td>
 </tr>
 </tbody>
@@ -1177,13 +1109,11 @@ Just like <a class="link" href="gconf-gconf.html#gconf-engine-suggest-sync" titl
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1204,24 +1134,20 @@ Just like <a class="link" href="gconf-gconf.html#gconf-engine-dir-exists" title=
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>dir</code></em> :</span></p></td>
-<td>directory to check for
-</td>
+<td>directory to check for</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> or <span class="symbol">FALSE</span>.
-</td>
+<span class="symbol">TRUE</span> or <span class="symbol">FALSE</span>.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1240,24 +1166,20 @@ Checks whether the key is writable.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>the value to be changed.
-</td>
+<td>the value to be changed.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> if the key is writable, <span class="symbol">FALSE</span> if the key is read only.
-</td>
+<span class="symbol">TRUE</span> if the key is writable, <span class="symbol">FALSE</span> if the key is read only.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1280,23 +1202,19 @@ Just like <a class="link" href="gconf-gconf.html#gconf-engine-get-float" title="
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want the value of.
-</td>
+<td>key you want the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>the value of <em class="parameter"><code>key</code></em>, or 0.0 if no value is obtained.
-</td>
+<td>the value of <em class="parameter"><code>key</code></em>, or 0.0 if no value is obtained.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1319,23 +1237,19 @@ Just like <a class="link" href="gconf-gconf.html#gconf-engine-get-int" title="gc
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want the value of.
-</td>
+<td>key you want the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>the value of <em class="parameter"><code>key</code></em>, or 0 if no value is obtained.
-</td>
+<td>the value of <em class="parameter"><code>key</code></em>, or 0 if no value is obtained.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1358,23 +1272,19 @@ Just like <a class="link" href="gconf-gconf.html#gconf-engine-get-string" title=
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want the value of.
-</td>
+<td>key you want the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>allocated string (value of <em class="parameter"><code>key</code></em>), or <span class="symbol">NULL</span> if no value is obtained.
-</td>
+<td>allocated string (value of <em class="parameter"><code>key</code></em>), or <span class="symbol">NULL</span> if no value is obtained.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1397,23 +1307,19 @@ Just like <a class="link" href="gconf-gconf.html#gconf-engine-get-bool" title="g
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want the value of.
-</td>
+<td>key you want the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>the value of <em class="parameter"><code>key</code></em>, or <span class="symbol">FALSE</span> if no value is obtained.
-</td>
+<td>the value of <em class="parameter"><code>key</code></em>, or <span class="symbol">FALSE</span> if no value is obtained.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1436,23 +1342,19 @@ Just like <a class="link" href="gconf-gconf.html#gconf-engine-get-schema" title=
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want the value of.
-</td>
+<td>key you want the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>the value of <em class="parameter"><code>key</code></em> as an allocated <a class="link" href="gconf-gconf-schema.html#GConfSchema" title="GConfSchema"><span class="type">GConfSchema</span></a>, or <span class="symbol">NULL</span> if no value was obtained.
-</td>
+<td>the value of <em class="parameter"><code>key</code></em> as an allocated <a class="link" href="gconf-gconf-schema.html#GConfSchema" title="GConfSchema"><span class="type">GConfSchema</span></a>, or <span class="symbol">NULL</span> if no value was obtained.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1535,28 +1437,23 @@ Just like <a class="link" href="gconf-gconf.html#gconf-engine-get-list" title="g
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want the value of.
-</td>
+<td>key you want the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>list_type</code></em> :</span></p></td>
-<td>type of each list element.
-</td>
+<td>type of each list element.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> an allocated list, with elements as described above.
-</td>
+<td>an allocated list, with elements as described above.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1664,44 +1561,36 @@ else
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want the value of.
-</td>
+<td>key you want the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>car_type</code></em> :</span></p></td>
-<td>desired type of the pair's first field (car).
-</td>
+<td>desired type of the pair's first field (car).</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cdr_type</code></em> :</span></p></td>
-<td>desired type of the pair's second field (cdr).
-</td>
+<td>desired type of the pair's second field (cdr).</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>car_retloc</code></em> :</span></p></td>
-<td>address of a return location for the car.
-</td>
+<td>address of a return location for the car.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cdr_retloc</code></em> :</span></p></td>
-<td>address of a return location for the cdr.
-</td>
+<td>address of a return location for the cdr.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.
-</td>
+<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1722,29 +1611,24 @@ Just like <a class="link" href="gconf-gconf.html#gconf-engine-set" title="gconf_
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want to set the value of.
-</td>
+<td>key you want to set the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
-<td>new value of <em class="parameter"><code>key</code></em>.
-</td>
+<td>new value of <em class="parameter"><code>key</code></em>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.
-</td>
+<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1765,29 +1649,24 @@ Just like <a class="link" href="gconf-gconf.html#gconf-engine-set" title="gconf_
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want to set the value of.
-</td>
+<td>key you want to set the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
-<td>new value of <em class="parameter"><code>key</code></em>.
-</td>
+<td>new value of <em class="parameter"><code>key</code></em>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.
-</td>
+<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1808,29 +1687,24 @@ Just like <a class="link" href="gconf-gconf.html#gconf-engine-set" title="gconf_
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want to set the value of.
-</td>
+<td>key you want to set the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
-<td>new value of <em class="parameter"><code>key</code></em>.
-</td>
+<td>new value of <em class="parameter"><code>key</code></em>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.
-</td>
+<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1851,29 +1725,24 @@ Just like <a class="link" href="gconf-gconf.html#gconf-engine-set" title="gconf_
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want to set the value of.
-</td>
+<td>key you want to set the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
-<td>new value of <em class="parameter"><code>key</code></em>.
-</td>
+<td>new value of <em class="parameter"><code>key</code></em>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.
-</td>
+<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1894,29 +1763,24 @@ Just like <a class="link" href="gconf-gconf.html#gconf-engine-set" title="gconf_
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want to set the value of.
-</td>
+<td>key you want to set the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
-<td>new value of <em class="parameter"><code>key</code></em>.
-</td>
+<td>new value of <em class="parameter"><code>key</code></em>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.
-</td>
+<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1939,34 +1803,28 @@ Changes the value of <em class="parameter"><code>key</code></em> to a <em class=
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want to set the value of.
-</td>
+<td>key you want to set the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>list_type</code></em> :</span></p></td>
-<td>type of each list element.
-</td>
+<td>type of each list element.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>list</code></em> :</span></p></td>
-<td>new value of <em class="parameter"><code>key</code></em>.
-</td>
+<td>new value of <em class="parameter"><code>key</code></em>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.
-</td>
+<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1991,44 +1849,36 @@ already exists but doesn't store a pair value (GCONF_VALUE_PAIR), <a class="link
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want to set the value of.
-</td>
+<td>key you want to set the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>car_type</code></em> :</span></p></td>
-<td>type of the pair's first field (car).
-</td>
+<td>type of the pair's first field (car).</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cdr_type</code></em> :</span></p></td>
-<td>type of the pair's second field (cdr).
-</td>
+<td>type of the pair's second field (cdr).</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>address_of_car</code></em> :</span></p></td>
-<td>address of the car.
-</td>
+<td>address of the car.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>address_of_cdr</code></em> :</span></p></td>
-<td>address of the cdr.
-</td>
+<td>address of the cdr.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.
-</td>
+<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.</td>
 </tr>
 </tbody>
 </table></div>
@@ -2046,13 +1896,11 @@ Emits the "error" signal. Rarely useful.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
-<td>error to pass to signal handlers.
-</td>
+<td>error to pass to signal handlers.</td>
 </tr>
 </tbody>
 </table></div>
@@ -2070,13 +1918,11 @@ Emits the "unreturned_error" signal. Rarely useful.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
-<td>error to pass to signal handlers.
-</td>
+<td>error to pass to signal handlers.</td>
 </tr>
 </tbody>
 </table></div>
@@ -2095,18 +1941,15 @@ Emits the "value_changed" signal. Rarely useful.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key to pass to signal handlers.
-</td>
+<td>key to pass to signal handlers.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>value</code></em> :</span></p></td>
-<td>value of <em class="parameter"><code>key</code></em> to pass to signal handlers.
-</td>
+<td>value of <em class="parameter"><code>key</code></em> to pass to signal handlers.</td>
 </tr>
 </tbody>
 </table></div>
@@ -2138,29 +1981,24 @@ occurred will have been removed from the set. If any error occurs,
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cs</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-changeset.html#GConfChangeSet" title="GConfChangeSet"><span class="type">GConfChangeSet</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>remove_committed</code></em> :</span></p></td>
-<td>whether to remove successfully-committed changes from the set.
-</td>
+<td>whether to remove successfully-committed changes from the set.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> if an error occurs.
-</td>
+<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> if an error occurs.</td>
 </tr>
 </tbody>
 </table></div>
@@ -2180,23 +2018,19 @@ save the current state of that key in the returned change set.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cs</code></em> :</span></p></td>
-<td>change set to create the reverse of.
-</td>
+<td>change set to create the reverse of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a new change set that would restore the current state of each key in <em class="parameter"><code>cs</code></em>.
-</td>
+<td>a new change set that would restore the current state of each key in <em class="parameter"><code>cs</code></em>.</td>
 </tr>
 </tbody>
 </table></div>
@@ -2219,24 +2053,20 @@ current state by committing the returned change set.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>keys</code></em> :</span></p></td>
 <td>
-<span class="symbol">NULL</span>-terminated array of key names.
-</td>
+<span class="symbol">NULL</span>-terminated array of key names.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>new change set that changes all the <em class="parameter"><code>keys</code></em> to their current state.
-</td>
+<td>new change set that changes all the <em class="parameter"><code>keys</code></em> to their current state.</td>
 </tr>
 </tbody>
 </table></div>
@@ -2257,29 +2087,24 @@ Convenient varargs version of <a class="link" href="gconf-gconf-client.html#gcon
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>client</code></em> :</span></p></td>
-<td>a <span class="type">GConfClient</span>.
-</td>
+<td>a <span class="type">GConfClient</span>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>first_key</code></em> :</span></p></td>
-<td>first key to save the current state of.
-</td>
+<td>first key to save the current state of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>...</code></em> :</span></p></td>
 <td>
-<span class="symbol">NULL</span>-terminated list of additional keys.
-</td>
+<span class="symbol">NULL</span>-terminated list of additional keys.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>new change set that changes all the keys to their current state.
-</td>
+<td>new change set that changes all the keys to their current state.</td>
 </tr>
 </tbody>
 </table></div>
@@ -2287,7 +2112,7 @@ Convenient varargs version of <a class="link" href="gconf-gconf-client.html#gcon
 </div>
 <div class="footnotes">
 <br><hr width="100" align="left">
-<div class="footnote"><p><sup>[<a name="ftn.id2946786" href="#id2946786" class="para">1</a>] </sup>
+<div class="footnote"><p><sup>[<a id="ftn.id3008065" href="#id3008065" class="para">1</a>] </sup>
 This is all a white lie; <span class="emphasis"><em>some</em></span> direct <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>
 operations are safe. But it's complicated to know which, and if an operation
 isn't safe the resulting bugs will mangle the cache and cause weird bugs at an
@@ -2298,6 +2123,6 @@ situation.
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.15.1</div>
+          Generated by GTK-Doc V1.17</div>
 </body>
 </html>

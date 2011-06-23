@@ -8,7 +8,7 @@
 <link rel="up" href="atk.html" title="ATK Library">
 <link rel="prev" href="AtkRegistry.html" title="AtkRegistry">
 <link rel="next" href="AtkRelationSet.html" title="AtkRelationSet">
-<meta name="generator" content="GTK-Doc V1.16 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.17.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -47,11 +47,11 @@ enum                <a class="link" href="AtkRelation.html#AtkRelationType" titl
 <a class="link" href="AtkRelation.html#AtkRelationType" title="enum AtkRelationType"><span class="returnvalue">AtkRelationType</span></a>     <a class="link" href="AtkRelation.html#atk-relation-type-register" title="atk_relation_type_register ()">atk_relation_type_register</a>          (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);
 const <span class="returnvalue">gchar</span> *       <a class="link" href="AtkRelation.html#atk-relation-type-get-name" title="atk_relation_type_get_name ()">atk_relation_type_get_name</a>          (<em class="parameter"><code><a class="link" href="AtkRelation.html#AtkRelationType" title="enum AtkRelationType"><span class="type">AtkRelationType</span></a> type</code></em>);
 <a class="link" href="AtkRelation.html#AtkRelationType" title="enum AtkRelationType"><span class="returnvalue">AtkRelationType</span></a>     <a class="link" href="AtkRelation.html#atk-relation-type-for-name" title="atk_relation_type_for_name ()">atk_relation_type_for_name</a>          (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);
-<a class="link" href="AtkRelation.html" title="AtkRelation"><span class="returnvalue">AtkRelation</span></a> *           <a class="link" href="AtkRelation.html#atk-relation-new" title="atk_relation_new ()">atk_relation_new</a>                (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> **targets</code></em>,
+<a class="link" href="AtkRelation.html" title="AtkRelation"><span class="returnvalue">AtkRelation</span></a> *       <a class="link" href="AtkRelation.html#atk-relation-new" title="atk_relation_new ()">atk_relation_new</a>                    (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> **targets</code></em>,
                                                          <em class="parameter"><code><span class="type">gint</span> n_targets</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkRelation.html#AtkRelationType" title="enum AtkRelationType"><span class="type">AtkRelationType</span></a> relationship</code></em>);
 <a class="link" href="AtkRelation.html#AtkRelationType" title="enum AtkRelationType"><span class="returnvalue">AtkRelationType</span></a>     <a class="link" href="AtkRelation.html#atk-relation-get-relation-type" title="atk_relation_get_relation_type ()">atk_relation_get_relation_type</a>      (<em class="parameter"><code><a class="link" href="AtkRelation.html" title="AtkRelation"><span class="type">AtkRelation</span></a> *relation</code></em>);
-<span class="returnvalue">GPtrArray</span> *             <a class="link" href="AtkRelation.html#atk-relation-get-target" title="atk_relation_get_target ()">atk_relation_get_target</a>         (<em class="parameter"><code><a class="link" href="AtkRelation.html" title="AtkRelation"><span class="type">AtkRelation</span></a> *relation</code></em>);
+<span class="returnvalue">GPtrArray</span> *         <a class="link" href="AtkRelation.html#atk-relation-get-target" title="atk_relation_get_target ()">atk_relation_get_target</a>             (<em class="parameter"><code><a class="link" href="AtkRelation.html" title="AtkRelation"><span class="type">AtkRelation</span></a> *relation</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="AtkRelation.html#atk-relation-add-target" title="atk_relation_add_target ()">atk_relation_add_target</a>             (<em class="parameter"><code><a class="link" href="AtkRelation.html" title="AtkRelation"><span class="type">AtkRelation</span></a> *relation</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *target</code></em>);
 <span class="returnvalue">gboolean</span>            <a class="link" href="AtkRelation.html#atk-relation-remove-target" title="atk_relation_remove_target ()">atk_relation_remove_target</a>          (<em class="parameter"><code><a class="link" href="AtkRelation.html" title="AtkRelation"><span class="type">AtkRelation</span></a> *relation</code></em>,
@@ -286,7 +286,7 @@ or <a class="link" href="AtkRelation.html#ATK-RELATION-NULL:CAPS"><span class="t
 <hr>
 <div class="refsect2">
 <a name="atk-relation-new"></a><h3>atk_relation_new ()</h3>
-<pre class="programlisting"><a class="link" href="AtkRelation.html" title="AtkRelation"><span class="returnvalue">AtkRelation</span></a> *           atk_relation_new                (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> **targets</code></em>,
+<pre class="programlisting"><a class="link" href="AtkRelation.html" title="AtkRelation"><span class="returnvalue">AtkRelation</span></a> *       atk_relation_new                    (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> **targets</code></em>,
                                                          <em class="parameter"><code><span class="type">gint</span> n_targets</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkRelation.html#AtkRelationType" title="enum AtkRelationType"><span class="type">AtkRelationType</span></a> relationship</code></em>);</pre>
 <p>
@@ -346,7 +346,7 @@ Gets the type of <em class="parameter"><code>relation</code></em>
 <hr>
 <div class="refsect2">
 <a name="atk-relation-get-target"></a><h3>atk_relation_get_target ()</h3>
-<pre class="programlisting"><span class="returnvalue">GPtrArray</span> *             atk_relation_get_target         (<em class="parameter"><code><a class="link" href="AtkRelation.html" title="AtkRelation"><span class="type">AtkRelation</span></a> *relation</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">GPtrArray</span> *         atk_relation_get_target             (<em class="parameter"><code><a class="link" href="AtkRelation.html" title="AtkRelation"><span class="type">AtkRelation</span></a> *relation</code></em>);</pre>
 <p>
 Gets the target list of <em class="parameter"><code>relation</code></em>
 </p>
@@ -439,6 +439,6 @@ Remove the specified AtkObject from the target for the relation.
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.16</div>
+          Generated by GTK-Doc V1.17.1</div>
 </body>
 </html>

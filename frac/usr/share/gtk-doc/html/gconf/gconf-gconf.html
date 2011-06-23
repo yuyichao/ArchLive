@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>GConf Core Interfaces</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.75.2">
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
 <link rel="home" href="index.html" title="GConf Reference Manual">
 <link rel="up" href="ch01.html" title="Using the GConf library">
 <link rel="prev" href="gconf-gconf-value.html" title="GConfValue, GConfEntry, GConfMetaInfo">
 <link rel="next" href="gconf-gconf-locale.html" title="gconf-locale">
-<meta name="generator" content="GTK-Doc V1.15.1 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.17 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -226,25 +226,13 @@ initialized.
 <col align="left" valign="top">
 <tbody>
 <tr>
-<td><p><span class="term"><em class="parameter"><code>argc</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>argv</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> otherwise.
-</td>
+<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> otherwise.</td>
 </tr>
 </tbody>
 </table></div>
@@ -260,21 +248,6 @@ initialized.
 </div>
 <p>
 </p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>app</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>mod_info</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-</tbody>
-</table></div>
 </div>
 <hr>
 <div class="refsect2">
@@ -287,21 +260,6 @@ initialized.
 </div>
 <p>
 </p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>app</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>mod_info</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-</tbody>
-</table></div>
 </div>
 <hr>
 <div class="refsect2">
@@ -319,8 +277,7 @@ Asks whether the library has been initialized.
 <tbody><tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> if the library has been initialized.
-</td>
+<span class="symbol">TRUE</span> if the library has been initialized.</td>
 </tr></tbody>
 </table></div>
 </div>
@@ -346,23 +303,15 @@ default setting or a user setting. If <em class="parameter"><code>value</code></
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>the <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a> passed to <a class="link" href="gconf-gconf.html#gconf-engine-notify-add" title="gconf_engine_notify_add ()"><code class="function">gconf_engine_notify_add()</code></a>.
-</td>
+<td>the <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a> passed to <a class="link" href="gconf-gconf.html#gconf-engine-notify-add" title="gconf_engine_notify_add ()"><code class="function">gconf_engine_notify_add()</code></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cnxn_id</code></em> :</span></p></td>
-<td>the ID returned from <a class="link" href="gconf-gconf.html#gconf-engine-notify-add" title="gconf_engine_notify_add ()"><code class="function">gconf_engine_notify_add()</code></a>.
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>entry</code></em> :</span></p></td>
-<td>
-</td>
+<td>the ID returned from <a class="link" href="gconf-gconf.html#gconf-engine-notify-add" title="gconf_engine_notify_add ()"><code class="function">gconf_engine_notify_add()</code></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
-<td>the user data passed to <a class="link" href="gconf-gconf.html#gconf-engine-notify-add" title="gconf_engine_notify_add ()"><code class="function">gconf_engine_notify_add()</code></a>.
-</td>
+<td>the user data passed to <a class="link" href="gconf-gconf.html#gconf-engine-notify-add" title="gconf_engine_notify_add ()"><code class="function">gconf_engine_notify_add()</code></a>.</td>
 </tr>
 </tbody>
 </table></div>
@@ -392,34 +341,28 @@ notification request; 0 is an invalid ID, and is returned if an error occurs.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a> to monitor for changes.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a> to monitor for changes.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>namespace_section</code></em> :</span></p></td>
-<td>the directory or key to watch; you will be notified of changes at or below this point.
-</td>
+<td>the directory or key to watch; you will be notified of changes at or below this point.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>func</code></em> :</span></p></td>
-<td>the callback to invoke when a notification is received from the server.
-</td>
+<td>the callback to invoke when a notification is received from the server.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
-<td>the data to pass to the callback.
-</td>
+<td>the data to pass to the callback.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
 <td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-Return value: an ID for the notification request, or 0 on error.
-</td>
+Return value: an ID for the notification request, or 0 on error.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>value: an ID for the notification request, or 0 on error.
-</td>
+<td>value: an ID for the notification request, or 0 on error.</td>
 </tr>
 </tbody>
 </table></div>
@@ -437,13 +380,11 @@ Removes a notification request.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>the <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a> you were monitoring for changes.
-</td>
+<td>the <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a> you were monitoring for changes.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cnxn</code></em> :</span></p></td>
-<td>The ID returned by <a class="link" href="gconf-gconf.html#gconf-engine-notify-add" title="gconf_engine_notify_add ()"><code class="function">gconf_engine_notify_add()</code></a>.
-</td>
+<td>The ID returned by <a class="link" href="gconf-gconf.html#gconf-engine-notify-add" title="gconf_engine_notify_add ()"><code class="function">gconf_engine_notify_add()</code></a>.</td>
 </tr>
 </tbody>
 </table></div>
@@ -467,23 +408,19 @@ default value for a key, if the key is unset and a default exists.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a> to get the value from.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a> to get the value from.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>the key to get.
-</td>
+<td>the key to get.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>newly-allocated <a class="link" href="gconf-gconf-value.html#GConfValue" title="struct GConfValue"><span class="type">GConfValue</span></a>, or <span class="symbol">NULL</span> if unset and no default exists.
-</td>
+<td>newly-allocated <a class="link" href="gconf-gconf-value.html#GConfValue" title="struct GConfValue"><span class="type">GConfValue</span></a>, or <span class="symbol">NULL</span> if unset and no default exists.</td>
 </tr>
 </tbody>
 </table></div>
@@ -504,23 +441,19 @@ return <span class="symbol">NULL</span> if no default exists or an error occurs.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a> to get the value from.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a> to get the value from.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>the key to get.
-</td>
+<td>the key to get.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>newly-allocated <a class="link" href="gconf-gconf-value.html#GConfValue" title="struct GConfValue"><span class="type">GConfValue</span></a>, or <span class="symbol">NULL</span> if unset.
-</td>
+<td>newly-allocated <a class="link" href="gconf-gconf-value.html#GConfValue" title="struct GConfValue"><span class="type">GConfValue</span></a>, or <span class="symbol">NULL</span> if unset.</td>
 </tr>
 </tbody>
 </table></div>
@@ -541,34 +474,28 @@ Obtain the full <a class="link" href="gconf-gconf-value.html#GConfEntry" title="
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>the key to get.
-</td>
+<td>the key to get.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>locale</code></em> :</span></p></td>
-<td>preferred locale (as in the locale-related environment variables).
-</td>
+<td>preferred locale (as in the locale-related environment variables).</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>use_schema_default</code></em> :</span></p></td>
 <td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> value indicating whether the default value associated with schema
-should be used.
-</td>
+should be used.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-value.html#GConfEntry" title="struct GConfEntry"><span class="type">GConfEntry</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-value.html#GConfEntry" title="struct GConfEntry"><span class="type">GConfEntry</span></a>.</td>
 </tr>
 </tbody>
 </table></div>
@@ -594,28 +521,23 @@ identical to <a class="link" href="gconf-gconf.html#gconf-engine-get" title="gco
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a> to get the value from.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a> to get the value from.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>the key to get.
-</td>
+<td>the key to get.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>locale</code></em> :</span></p></td>
-<td>preferred locale (as in the locale-related environment variables).
-</td>
+<td>preferred locale (as in the locale-related environment variables).</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>newly-allocated <a class="link" href="gconf-gconf-value.html#GConfValue" title="struct GConfValue"><span class="type">GConfValue</span></a>, or <span class="symbol">NULL</span> if unset.
-</td>
+<td>newly-allocated <a class="link" href="gconf-gconf-value.html#GConfValue" title="struct GConfValue"><span class="type">GConfValue</span></a>, or <span class="symbol">NULL</span> if unset.</td>
 </tr>
 </tbody>
 </table></div>
@@ -641,23 +563,19 @@ extract the default value.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a> to get the value from.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a> to get the value from.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>the key to get the default value for.
-</td>
+<td>the key to get the default value for.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>newly-allocated <a class="link" href="gconf-gconf-value.html#GConfValue" title="struct GConfValue"><span class="type">GConfValue</span></a>, or <span class="symbol">NULL</span> if unset.
-</td>
+<td>newly-allocated <a class="link" href="gconf-gconf-value.html#GConfValue" title="struct GConfValue"><span class="type">GConfValue</span></a>, or <span class="symbol">NULL</span> if unset.</td>
 </tr>
 </tbody>
 </table></div>
@@ -686,29 +604,24 @@ setup without a constant barrage of error messages.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a> to set the value in.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a> to set the value in.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>the key to set.
-</td>
+<td>the key to set.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>value</code></em> :</span></p></td>
-<td>the new value of <em class="parameter"><code>key</code></em>.
-</td>
+<td>the new value of <em class="parameter"><code>key</code></em>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.
-</td>
+<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.</td>
 </tr>
 </tbody>
 </table></div>
@@ -729,24 +642,20 @@ administrator has "forced" a value for this key.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a> to affect.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a> to affect.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>the key to unset.
-</td>
+<td>the key to unset.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.
-</td>
+<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.</td>
 </tr>
 </tbody>
 </table></div>
@@ -771,29 +680,24 @@ schema associations into the database during "make install."
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a> to affect.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a> to affect.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>the key to associate the schema with.
-</td>
+<td>the key to associate the schema with.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>schema_key</code></em> :</span></p></td>
-<td>the key where the schema will be stored.
-</td>
+<td>the key where the schema will be stored.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.
-</td>
+<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.</td>
 </tr>
 </tbody>
 </table></div>
@@ -817,23 +721,19 @@ each list element, then <a href="http://library.gnome.org/devel/glib/unstable/gl
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>dir</code></em> :</span></p></td>
-<td>Directory to list.
-</td>
+<td>Directory to list.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>value: (element-type GConfEntry) (transfer full): List of <a class="link" href="gconf-gconf-value.html#GConfEntry" title="struct GConfEntry"><span class="type">GConfEntry</span></a>.
-</td>
+<td>value: (element-type GConfEntry) (transfer full): List of <a class="link" href="gconf-gconf-value.html#GConfEntry" title="struct GConfEntry"><span class="type">GConfEntry</span></a>.</td>
 </tr>
 </tbody>
 </table></div>
@@ -855,23 +755,19 @@ subdirectory. You should <a href="http://library.gnome.org/devel/glib/unstable/g
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>dir</code></em> :</span></p></td>
-<td>Directory to get subdirectories from.
-</td>
+<td>Directory to get subdirectories from.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>value: (element-type utf8) (transfer full): List of allocated subdirectory names.
-</td>
+<td>value: (element-type utf8) (transfer full): List of allocated subdirectory names.</td>
 </tr>
 </tbody>
 </table></div>
@@ -895,13 +791,11 @@ and minimize data loss.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>the <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a> to suggest syncing to.
-</td>
+<td>the <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a> to suggest syncing to.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 </tbody>
 </table></div>
@@ -921,24 +815,20 @@ database. Returns <span class="symbol">TRUE</span> or <span class="symbol">FALSE
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>dir</code></em> :</span></p></td>
-<td>Directory to check for.
-</td>
+<td>Directory to check for.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> or <span class="symbol">FALSE</span>.
-</td>
+<span class="symbol">TRUE</span> or <span class="symbol">FALSE</span>.</td>
 </tr>
 </tbody>
 </table></div>
@@ -960,18 +850,15 @@ calling <code class="function">ConfigDatabase_remove_dir()</code>.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>dir</code></em> :</span></p></td>
-<td>the name of the directory to be removed.
-</td>
+<td>the name of the directory to be removed.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 </tbody>
 </table></div>
@@ -990,24 +877,20 @@ Checks whether the key is writable.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>the value to be changed.
-</td>
+<td>the value to be changed.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> if the key is writable, <span class="symbol">FALSE</span> if the key is read only.
-</td>
+<span class="symbol">TRUE</span> if the key is writable, <span class="symbol">FALSE</span> if the key is read only.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1033,19 +916,16 @@ argument is unused.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key to check.
-</td>
+<td>key to check.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>why_invalid</code></em> :</span></p></td>
-<td>return location for an explanation of the problem, if any. <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> the returned string.
-</td>
+<td>return location for an explanation of the problem, if any. <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> the returned string.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> if the key is valid, or <span class="symbol">FALSE</span> if not.
-</td>
+<span class="symbol">TRUE</span> if the key is valid, or <span class="symbol">FALSE</span> if not.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1067,19 +947,16 @@ it internally so here it is if you need it.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>above</code></em> :</span></p></td>
-<td>the key on the "left hand side" of the predicate.
-</td>
+<td>the key on the "left hand side" of the predicate.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>below</code></em> :</span></p></td>
-<td>the key on the "right hand side."
-</td>
+<td>the key on the "right hand side."</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> or <span class="symbol">FALSE</span>.
-</td>
+<span class="symbol">TRUE</span> or <span class="symbol">FALSE</span>.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1098,18 +975,15 @@ and returns the new string.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>dir</code></em> :</span></p></td>
-<td>the directory.
-</td>
+<td>the directory.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>the key.
-</td>
+<td>the key.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>the newly concatenated string.
-</td>
+<td>the newly concatenated string.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1126,8 +1000,7 @@ random number generated.
 <col align="left" valign="top">
 <tbody><tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a newly created key, a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> value.
-</td>
+<td>a newly created key, a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> value.</td>
 </tr></tbody>
 </table></div>
 </div>
@@ -1148,18 +1021,15 @@ result in a valid key.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>arbitrary_text</code></em> :</span></p></td>
-<td>some text in any encoding or format
-</td>
+<td>some text in any encoding or format</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>len</code></em> :</span></p></td>
-<td>length of <em class="parameter"><code>arbitrary_text</code></em> in bytes, or -1 if <em class="parameter"><code>arbitrary_text</code></em> is nul-terminated
-</td>
+<td>length of <em class="parameter"><code>arbitrary_text</code></em> in bytes, or -1 if <em class="parameter"><code>arbitrary_text</code></em> is nul-terminated</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> a nul-terminated valid GConf key
-</td>
+<td>a nul-terminated valid GConf key</td>
 </tr>
 </tbody>
 </table></div>
@@ -1183,12 +1053,11 @@ form.
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>len</code></em> :</span></p></td>
-<td>length of <em class="parameter"><code>escaped_key</code></em> in bytes, or -1 if <em class="parameter"><code>escaped_key</code></em> is nul-terminated
-</td>
+<td>length of <em class="parameter"><code>escaped_key</code></em> in bytes, or -1 if <em class="parameter"><code>escaped_key</code></em> is nul-terminated</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> the original string that was escaped to create <em class="parameter"><code>escaped_key</code></em>
+<td>the original string that was escaped to create <em class="parameter"><code>escaped_key</code></em>
 </td>
 </tr>
 </tbody>
@@ -1211,23 +1080,19 @@ stored at <em class="parameter"><code>key</code></em>, an error is returned. On 
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want the value of.
-</td>
+<td>key you want the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>the value of <em class="parameter"><code>key</code></em>, or 0.0 if no value is obtained.
-</td>
+<td>the value of <em class="parameter"><code>key</code></em>, or 0.0 if no value is obtained.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1249,23 +1114,19 @@ stored at <em class="parameter"><code>key</code></em>, an error is returned. On 
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want the value of.
-</td>
+<td>key you want the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>the value of <em class="parameter"><code>key</code></em>, or 0 if no value is obtained.
-</td>
+<td>the value of <em class="parameter"><code>key</code></em>, or 0 if no value is obtained.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1287,23 +1148,19 @@ stored at <em class="parameter"><code>key</code></em>, an error is returned. On 
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want the value of.
-</td>
+<td>key you want the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>allocated string (value of <em class="parameter"><code>key</code></em>), or <span class="symbol">NULL</span> if no value is obtained.
-</td>
+<td>allocated string (value of <em class="parameter"><code>key</code></em>), or <span class="symbol">NULL</span> if no value is obtained.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1325,23 +1182,19 @@ stored at <em class="parameter"><code>key</code></em>, an error is returned. On 
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want the value of.
-</td>
+<td>key you want the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>the value of <em class="parameter"><code>key</code></em>, or <span class="symbol">FALSE</span> if no value is obtained.
-</td>
+<td>the value of <em class="parameter"><code>key</code></em>, or <span class="symbol">FALSE</span> if no value is obtained.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1363,23 +1216,19 @@ Automatically performs type-checking, so if a non-schema is stored at
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want the value of.
-</td>
+<td>key you want the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>the value of <em class="parameter"><code>key</code></em> as an allocated <a class="link" href="gconf-gconf-schema.html#GConfSchema" title="GConfSchema"><span class="type">GConfSchema</span></a>, or <span class="symbol">NULL</span> if no value was obtained.
-</td>
+<td>the value of <em class="parameter"><code>key</code></em> as an allocated <a class="link" href="gconf-gconf-schema.html#GConfSchema" title="GConfSchema"><span class="type">GConfSchema</span></a>, or <span class="symbol">NULL</span> if no value was obtained.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1459,28 +1308,23 @@ list itself with <a href="http://library.gnome.org/devel/glib/unstable/glib-Sing
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want the value of.
-</td>
+<td>key you want the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>list_type</code></em> :</span></p></td>
-<td>type of each list element.
-</td>
+<td>type of each list element.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> an allocated list, with elements as described above.
-</td>
+<td>an allocated list, with elements as described above.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1588,44 +1432,36 @@ else
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want the value of.
-</td>
+<td>key you want the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>car_type</code></em> :</span></p></td>
-<td>desired type of the pair's first field (car).
-</td>
+<td>desired type of the pair's first field (car).</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cdr_type</code></em> :</span></p></td>
-<td>desired type of the pair's second field (cdr).
-</td>
+<td>desired type of the pair's second field (cdr).</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>car_retloc</code></em> :</span></p></td>
-<td>address of a return location for the car.
-</td>
+<td>address of a return location for the car.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cdr_retloc</code></em> :</span></p></td>
-<td>address of a return location for the cdr.
-</td>
+<td>address of a return location for the cdr.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.
-</td>
+<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1645,29 +1481,24 @@ Change the value of <em class="parameter"><code>key</code></em> to <em class="pa
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want to set the value of.
-</td>
+<td>key you want to set the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
-<td>new value of <em class="parameter"><code>key</code></em>.
-</td>
+<td>new value of <em class="parameter"><code>key</code></em>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.
-</td>
+<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1687,29 +1518,24 @@ Change the value of <em class="parameter"><code>key</code></em> to <em class="pa
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want to set the value of.
-</td>
+<td>key you want to set the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
-<td>new value of <em class="parameter"><code>key</code></em>.
-</td>
+<td>new value of <em class="parameter"><code>key</code></em>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.
-</td>
+<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1729,29 +1555,24 @@ Change the value of <em class="parameter"><code>key</code></em> to <em class="pa
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want to set the value of.
-</td>
+<td>key you want to set the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
-<td>new value of <em class="parameter"><code>key</code></em>.
-</td>
+<td>new value of <em class="parameter"><code>key</code></em>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.
-</td>
+<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1771,29 +1592,24 @@ Change the value of <em class="parameter"><code>key</code></em> to <em class="pa
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want to set the value of.
-</td>
+<td>key you want to set the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
-<td>new value of <em class="parameter"><code>key</code></em>.
-</td>
+<td>new value of <em class="parameter"><code>key</code></em>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.
-</td>
+<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1813,29 +1629,24 @@ Change the value of <em class="parameter"><code>key</code></em> to <em class="pa
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want to set the value of.
-</td>
+<td>key you want to set the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
-<td>new value of <em class="parameter"><code>key</code></em>.
-</td>
+<td>new value of <em class="parameter"><code>key</code></em>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.
-</td>
+<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1858,34 +1669,28 @@ Change the value of <em class="parameter"><code>key</code></em> to <em class="pa
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want to set the value of.
-</td>
+<td>key you want to set the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>list_type</code></em> :</span></p></td>
-<td>type of each list element.
-</td>
+<td>type of each list element.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>list</code></em> :</span></p></td>
-<td>new value of <em class="parameter"><code>key</code></em>.
-</td>
+<td>new value of <em class="parameter"><code>key</code></em>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.
-</td>
+<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1910,44 +1715,36 @@ but doesn't store a schema value (GCONF_VALUE_SCHEMA), <a class="link" href="gco
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>key you want to set the value of.
-</td>
+<td>key you want to set the value of.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>car_type</code></em> :</span></p></td>
-<td>type of the pair's first field (car).
-</td>
+<td>type of the pair's first field (car).</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cdr_type</code></em> :</span></p></td>
-<td>type of the pair's second field (cdr).
-</td>
+<td>type of the pair's second field (cdr).</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>address_of_car</code></em> :</span></p></td>
-<td>address of the car.
-</td>
+<td>address of the car.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>address_of_cdr</code></em> :</span></p></td>
-<td>address of the cdr.
-</td>
+<td>address of the cdr.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.
-</td>
+<span class="symbol">TRUE</span> on success, <span class="symbol">FALSE</span> on error.</td>
 </tr>
 </tbody>
 </table></div>
@@ -1999,24 +1796,20 @@ and if a match is found the enum value is placed in <em class="parameter"><code>
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>lookup_table</code></em> :</span></p></td>
-<td>a lookup table mapping enum values to strings.
-</td>
+<td>a lookup table mapping enum values to strings.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>str</code></em> :</span></p></td>
-<td>the string to convert to an enum value.
-</td>
+<td>the string to convert to an enum value.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>enum_value_retloc</code></em> :</span></p></td>
-<td>the address of an enum variable.
-</td>
+<td>the address of an enum variable.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<span class="symbol">TRUE</span> if a match was found.
-</td>
+<span class="symbol">TRUE</span> if a match was found.</td>
 </tr>
 </tbody>
 </table></div>
@@ -2034,18 +1827,15 @@ See <a class="link" href="gconf-gconf.html#gconf-string-to-enum" title="gconf_st
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>lookup_table</code></em> :</span></p></td>
-<td>a lookup table mapping enum values to strings.
-</td>
+<td>a lookup table mapping enum values to strings.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>enum_value</code></em> :</span></p></td>
-<td>the enumeration value to convert to a string.
-</td>
+<td>the enumeration value to convert to a string.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a pointer to the proper string in the lookup table, or <span class="symbol">NULL</span> if no match was found.
-</td>
+<td>a pointer to the proper string in the lookup table, or <span class="symbol">NULL</span> if no match was found.</td>
 </tr>
 </tbody>
 </table></div>
@@ -2065,13 +1855,11 @@ and clears the configuration database cache using <code class="function">ConfigD
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 </tbody>
 </table></div>
@@ -2091,13 +1879,11 @@ In case of a local <a class="link" href="gconf-gconf-engine.html#GConfEngine" ti
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 </tbody>
 </table></div>
@@ -2120,47 +1906,39 @@ Returns the <a class="link" href="gconf-gconf-value.html#GConfValue" title="stru
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>conf</code></em> :</span></p></td>
-<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.
-</td>
+<td>a <a class="link" href="gconf-gconf-engine.html#GConfEngine" title="GConfEngine"><span class="type">GConfEngine</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>the key whose value is to be obtained.
-</td>
+<td>the key whose value is to be obtained.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>locale</code></em> :</span></p></td>
 <td>the preferred locale (as in the locale related environment variables) or<span class="symbol">NULL</span> if no locale is to be
-passed.
-</td>
+passed.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>use_schema_default</code></em> :</span></p></td>
 <td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> value, indicating whether schema information is to be used as the default
-value.
-</td>
+value.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>is_default_p</code></em> :</span></p></td>
 <td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> if the is_default field of the <a class="link" href="gconf-gconf-value.html#GConfEntry" title="struct GConfEntry"><span class="type">GConfEntry</span></a> is required, <span class="symbol">NULL</span>
-otherwise.
-</td>
+otherwise.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>is_writable_p</code></em> :</span></p></td>
 <td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> if the is_writable field of the <a class="link" href="gconf-gconf-value.html#GConfEntry" title="struct GConfEntry"><span class="type">GConfEntry</span></a> is required, <span class="symbol">NULL</span>
-otherwise.
-</td>
+otherwise.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>err</code></em> :</span></p></td>
-<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.
-</td>
+<td>the return location for an allocated <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <span class="symbol">NULL</span> to ignore errors.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>the <a class="link" href="gconf-gconf-value.html#GConfValue" title="struct GConfValue"><span class="type">GConfValue</span></a>.
-</td>
+<td>the <a class="link" href="gconf-gconf-value.html#GConfValue" title="struct GConfValue"><span class="type">GConfValue</span></a>.</td>
 </tr>
 </tbody>
 </table></div>
@@ -2169,6 +1947,6 @@ otherwise.
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.15.1</div>
+          Generated by GTK-Doc V1.17</div>
 </body>
 </html>

@@ -76,7 +76,7 @@
     <message xml:lang="bn">GConf-এর সিস্টেম সংক্রান্ত মান পরিবর্তনের জন্য অনুমতি আবশ্যক</message>
     <message xml:lang="bn_IN">GConf-র সিস্টেম সংক্রান্ত মান পরিবর্তনের জন্য অনুমতি আবশ্যক</message>
     <message xml:lang="ca">Es necessiten privilegis per canviar els valors de sistema del GConf</message>
-    <message xml:lang="ca@valencia">Es necessiten privilegis per a canviar els valors de sistema del GConf</message>
+    <message xml:lang="ca@valencia">Es necessiten privilegis per canviar els valors de sistema del GConf</message>
     <message xml:lang="cs">Ke změně systémových hodnot GConfu jsou vyžadována oprávnění</message>
     <message xml:lang="cy">Mae angen breintiau ar gyfer newid gwerthoedd system GConf</message>
     <message xml:lang="da">Der kræves rettigheder til at ændre GConf-systemværdier</message>
@@ -203,7 +203,7 @@
     <message xml:lang="bn">GConf-এর আবশ্যক মান পরিবর্তনের জন্য অনুমতি আবশ্যক</message>
     <message xml:lang="bn_IN">GConf-র আবশ্যক মান পরিবর্তনের জন্য অনুমতি আবশ্যক</message>
     <message xml:lang="ca">Es necessiten privilegis per canviar els valors obligatoris del GConf</message>
-    <message xml:lang="ca@valencia">Es necessiten privilegis per a canviar els valors obligatoris del GConf</message>
+    <message xml:lang="ca@valencia">Es necessiten privilegis per canviar els valors obligatoris del GConf</message>
     <message xml:lang="cs">Ke změně povinných hodnot GConfu jsou vyžadována oprávnění</message>
     <message xml:lang="cy">Mae angen breintiau ar gyfer newid gwerthoedd hanfodol GConf</message>
     <message xml:lang="da">Der kræves rettigheder til at ændre obligatoriske GConf-værdier</message>

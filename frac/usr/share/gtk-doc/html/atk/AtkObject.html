@@ -8,7 +8,7 @@
 <link rel="up" href="atk.html" title="ATK Library">
 <link rel="prev" href="AtkNoOpObjectFactory.html" title="AtkNoOpObjectFactory">
 <link rel="next" href="AtkObjectFactory.html" title="AtkObjectFactory">
-<meta name="generator" content="GTK-Doc V1.16 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.17.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -52,21 +52,19 @@ enum                <a class="link" href="AtkObject.html#AtkLayer" title="enum A
 <span class="returnvalue">gboolean</span>            (<a class="link" href="AtkObject.html#AtkFunction" title="AtkFunction ()">*AtkFunction</a>)                      (<em class="parameter"><code><span class="type">gpointer</span> data</code></em>);
 <span class="returnvalue">void</span>                (<a class="link" href="AtkObject.html#AtkPropertyChangeHandler" title="AtkPropertyChangeHandler ()">*AtkPropertyChangeHandler</a>)         (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *Param1</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkObject.html#AtkPropertyValues" title="AtkPropertyValues"><span class="type">AtkPropertyValues</span></a> *Param2</code></em>);
-<a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *               <a class="link" href="AtkObject.html#atk-implementor-ref-accessible" title="atk_implementor_ref_accessible ()">atk_implementor_ref_accessible</a>
-                                                        (<em class="parameter"><code><a class="link" href="AtkObject.html#AtkImplementor" title="AtkImplementor"><span class="type">AtkImplementor</span></a> *implementor</code></em>);
+<a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         <a class="link" href="AtkObject.html#atk-implementor-ref-accessible" title="atk_implementor_ref_accessible ()">atk_implementor_ref_accessible</a>      (<em class="parameter"><code><a class="link" href="AtkObject.html#AtkImplementor" title="AtkImplementor"><span class="type">AtkImplementor</span></a> *implementor</code></em>);
 const <span class="returnvalue">gchar</span> *       <a class="link" href="AtkObject.html#atk-object-get-name" title="atk_object_get_name ()">atk_object_get_name</a>                 (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
 const <span class="returnvalue">gchar</span> *       <a class="link" href="AtkObject.html#atk-object-get-description" title="atk_object_get_description ()">atk_object_get_description</a>          (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
-<a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *               <a class="link" href="AtkObject.html#atk-object-get-parent" title="atk_object_get_parent ()">atk_object_get_parent</a>         (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
+<a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         <a class="link" href="AtkObject.html#atk-object-get-parent" title="atk_object_get_parent ()">atk_object_get_parent</a>               (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
 <span class="returnvalue">gint</span>                <a class="link" href="AtkObject.html#atk-object-get-n-accessible-children" title="atk_object_get_n_accessible_children ()">atk_object_get_n_accessible_children</a>
                                                         (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
-<a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *               <a class="link" href="AtkObject.html#atk-object-ref-accessible-child" title="atk_object_ref_accessible_child ()">atk_object_ref_accessible_child</a>
-                                                        (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>,
+<a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         <a class="link" href="AtkObject.html#atk-object-ref-accessible-child" title="atk_object_ref_accessible_child ()">atk_object_ref_accessible_child</a>     (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>,
                                                          <em class="parameter"><code><span class="type">gint</span> i</code></em>);
-<a class="link" href="AtkRelationSet.html" title="AtkRelationSet"><span class="returnvalue">AtkRelationSet</span></a> *          <a class="link" href="AtkObject.html#atk-object-ref-relation-set" title="atk_object_ref_relation_set ()">atk_object_ref_relation_set</a>   (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
+<a class="link" href="AtkRelationSet.html" title="AtkRelationSet"><span class="returnvalue">AtkRelationSet</span></a> *    <a class="link" href="AtkObject.html#atk-object-ref-relation-set" title="atk_object_ref_relation_set ()">atk_object_ref_relation_set</a>         (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
 <a class="link" href="AtkObject.html#AtkLayer" title="enum AtkLayer"><span class="returnvalue">AtkLayer</span></a>            <a class="link" href="AtkObject.html#atk-object-get-layer" title="atk_object_get_layer ()">atk_object_get_layer</a>                (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
 <span class="returnvalue">gint</span>                <a class="link" href="AtkObject.html#atk-object-get-mdi-zorder" title="atk_object_get_mdi_zorder ()">atk_object_get_mdi_zorder</a>           (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
 <a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole"><span class="returnvalue">AtkRole</span></a>             <a class="link" href="AtkObject.html#atk-object-get-role" title="atk_object_get_role ()">atk_object_get_role</a>                 (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
-<a class="link" href="AtkStateSet.html" title="AtkStateSet"><span class="returnvalue">AtkStateSet</span></a> *             <a class="link" href="AtkObject.html#atk-object-ref-state-set" title="atk_object_ref_state_set ()">atk_object_ref_state_set</a>      (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
+<a class="link" href="AtkStateSet.html" title="AtkStateSet"><span class="returnvalue">AtkStateSet</span></a> *       <a class="link" href="AtkObject.html#atk-object-ref-state-set" title="atk_object_ref_state_set ()">atk_object_ref_state_set</a>            (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
 <span class="returnvalue">gint</span>                <a class="link" href="AtkObject.html#atk-object-get-index-in-parent" title="atk_object_get_index_in_parent ()">atk_object_get_index_in_parent</a>      (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="AtkObject.html#atk-object-set-name" title="atk_object_set_name ()">atk_object_set_name</a>                 (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>,
                                                          <em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);
@@ -93,7 +91,7 @@ const <span class="returnvalue">gchar</span> *       <a class="link" href="AtkOb
 <span class="returnvalue">gboolean</span>            <a class="link" href="AtkObject.html#atk-object-remove-relationship" title="atk_object_remove_relationship ()">atk_object_remove_relationship</a>      (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *object</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkRelation.html#AtkRelationType" title="enum AtkRelationType"><span class="type">AtkRelationType</span></a> relationship</code></em>,
                                                          <em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *target</code></em>);
-<a class="link" href="AtkText.html#AtkAttributeSet" title="AtkAttributeSet"><span class="returnvalue">AtkAttributeSet</span></a> *         <a class="link" href="AtkObject.html#atk-object-get-attributes" title="atk_object_get_attributes ()">atk_object_get_attributes</a>     (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
+<a class="link" href="AtkText.html#AtkAttributeSet" title="AtkAttributeSet"><span class="returnvalue">AtkAttributeSet</span></a> *   <a class="link" href="AtkObject.html#atk-object-get-attributes" title="atk_object_get_attributes ()">atk_object_get_attributes</a>           (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);
 const <span class="returnvalue">gchar</span> *       <a class="link" href="AtkObject.html#atk-role-get-name" title="atk_role_get_name ()">atk_role_get_name</a>                   (<em class="parameter"><code><a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole"><span class="type">AtkRole</span></a> role</code></em>);
 const <span class="returnvalue">gchar</span> *       <a class="link" href="AtkObject.html#atk-role-get-localized-name" title="atk_role_get_localized_name ()">atk_role_get_localized_name</a>         (<em class="parameter"><code><a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole"><span class="type">AtkRole</span></a> role</code></em>);
 <a class="link" href="AtkObject.html#AtkRole" title="enum AtkRole"><span class="returnvalue">AtkRole</span></a>             <a class="link" href="AtkObject.html#atk-role-for-name" title="atk_role_for_name ()">atk_role_for_name</a>                   (<em class="parameter"><code>const <span class="type">gchar</span> *name</code></em>);
@@ -931,8 +929,7 @@ An AtkPropertyChangeHandler is a function which is executed when an AtkObject's 
 <hr>
 <div class="refsect2">
 <a name="atk-implementor-ref-accessible"></a><h3>atk_implementor_ref_accessible ()</h3>
-<pre class="programlisting"><a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *               atk_implementor_ref_accessible
-                                                        (<em class="parameter"><code><a class="link" href="AtkObject.html#AtkImplementor" title="AtkImplementor"><span class="type">AtkImplementor</span></a> *implementor</code></em>);</pre>
+<pre class="programlisting"><a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         atk_implementor_ref_accessible      (<em class="parameter"><code><a class="link" href="AtkObject.html#AtkImplementor" title="AtkImplementor"><span class="type">AtkImplementor</span></a> *implementor</code></em>);</pre>
 <p>
 Gets a reference to an object's <a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> implementation, if
 the object implements <span class="type">AtkObjectIface</span>
@@ -1002,7 +999,7 @@ of the accessible.</td>
 <hr>
 <div class="refsect2">
 <a name="atk-object-get-parent"></a><h3>atk_object_get_parent ()</h3>
-<pre class="programlisting"><a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *               atk_object_get_parent         (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);</pre>
+<pre class="programlisting"><a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         atk_object_get_parent               (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);</pre>
 <p>
 Gets the accessible parent of the accessible.
 </p>
@@ -1050,8 +1047,7 @@ of the accessible.</td>
 <hr>
 <div class="refsect2">
 <a name="atk-object-ref-accessible-child"></a><h3>atk_object_ref_accessible_child ()</h3>
-<pre class="programlisting"><a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *               atk_object_ref_accessible_child
-                                                        (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>,
+<pre class="programlisting"><a class="link" href="AtkObject.html" title="AtkObject"><span class="returnvalue">AtkObject</span></a> *         atk_object_ref_accessible_child     (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>,
                                                          <em class="parameter"><code><span class="type">gint</span> i</code></em>);</pre>
 <p>
 Gets a reference to the specified accessible child of the object.
@@ -1082,7 +1078,7 @@ accessible child of the accessible. <span class="annotation">[<a href="http://fo
 <hr>
 <div class="refsect2">
 <a name="atk-object-ref-relation-set"></a><h3>atk_object_ref_relation_set ()</h3>
-<pre class="programlisting"><a class="link" href="AtkRelationSet.html" title="AtkRelationSet"><span class="returnvalue">AtkRelationSet</span></a> *          atk_object_ref_relation_set   (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);</pre>
+<pre class="programlisting"><a class="link" href="AtkRelationSet.html" title="AtkRelationSet"><span class="returnvalue">AtkRelationSet</span></a> *    atk_object_ref_relation_set         (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);</pre>
 <p>
 Gets the <a class="link" href="AtkRelationSet.html" title="AtkRelationSet"><span class="type">AtkRelationSet</span></a> associated with the object.
 </p>
@@ -1183,7 +1179,7 @@ Gets the role of the accessible.
 <hr>
 <div class="refsect2">
 <a name="atk-object-ref-state-set"></a><h3>atk_object_ref_state_set ()</h3>
-<pre class="programlisting"><a class="link" href="AtkStateSet.html" title="AtkStateSet"><span class="returnvalue">AtkStateSet</span></a> *             atk_object_ref_state_set      (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);</pre>
+<pre class="programlisting"><a class="link" href="AtkStateSet.html" title="AtkStateSet"><span class="returnvalue">AtkStateSet</span></a> *       atk_object_ref_state_set            (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);</pre>
 <p>
 Gets a reference to the state set of the accessible; the caller must
 unreference it when it is no longer needed.
@@ -1493,7 +1489,7 @@ Removes a relationship of the specified type with the specified target.
 <hr>
 <div class="refsect2">
 <a name="atk-object-get-attributes"></a><h3>atk_object_get_attributes ()</h3>
-<pre class="programlisting"><a class="link" href="AtkText.html#AtkAttributeSet" title="AtkAttributeSet"><span class="returnvalue">AtkAttributeSet</span></a> *         atk_object_get_attributes     (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);</pre>
+<pre class="programlisting"><a class="link" href="AtkText.html#AtkAttributeSet" title="AtkAttributeSet"><span class="returnvalue">AtkAttributeSet</span></a> *   atk_object_get_attributes           (<em class="parameter"><code><a class="link" href="AtkObject.html" title="AtkObject"><span class="type">AtkObject</span></a> *accessible</code></em>);</pre>
 <p>
 Get a list of properties applied to this object as a whole, as an <a class="link" href="AtkText.html#AtkAttributeSet" title="AtkAttributeSet"><span class="type">AtkAttributeSet</span></a> consisting of 
 name-value pairs. As such these attributes may be considered weakly-typed properties or annotations, 
@@ -1877,6 +1873,6 @@ See also: <a class="link" href="AtkObjectFactory.html" title="AtkObjectFactory">
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.16</div>
+          Generated by GTK-Doc V1.17.1</div>
 </body>
 </html>
