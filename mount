@@ -24,7 +24,8 @@ mount_all() {
 	mount --bind "$dir" "$ndir"
     done
 
-    [[ -z $no_vfs ]] && for dir in $(cat tmpfs) ;do
+    [[ -z $no_vfs ]] || return 0;
+    for dir in $(cat tmpfs) ;do
 	ndir="root/$dir"
 	mkdir -p "$ndir"
 	mount -t tmpfs -o nodev,nosuid,mode=1777 none "$ndir"

@@ -5,26 +5,30 @@ disk="$(readlink -f "$1")"
 dest="/mnt"
 drive="${disk%%[0-9]}"
 
+[[ "$nroot" == "$dest" ]] && {
+    echo "Error: source and destination are the same."
+    exit 1
+}
+
+echo "mounting destination..."
 mount "$disk" "$dest"
 
-[[ "$nroot" == "$dest" ]] && exit 1
-
+echo "mounting source..."
 cd "$srcdir"
-
 ./mount -v
 
+echo "installing..."
 cd "$nroot"
+cp -au . "$dest"
 
-cp -a . "$dest"
-
+echo "unmounting source..."
 cd "$srcdir"
-
 ./mount -v -u
 
+echo "copying config files..."
 mkdir -p "$dest/home/"
-
 cp -a config "$dest/home/"
 
+echo "post_install..."
 cp "$srcdir/post_instl" "$dest"
-
-bdroot "$desk" "/post_instl" "$disk"
+bdroot "$dest" "/post_instl" "$drive"
