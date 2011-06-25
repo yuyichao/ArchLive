@@ -8,7 +8,7 @@
 <link rel="up" href="ch02.html" title="API Reference">
 <link rel="prev" href="dbus-glib-DBusGProxy.html" title="DBusGProxy">
 <link rel="next" href="dbus-glib-DBus-GLib-low-level.html" title="DBus GLib low level">
-<meta name="generator" content="GTK-Doc V1.15 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.17 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -26,7 +26,7 @@
                   <a href="#dbus-glib-Specializable-GType-System.description" class="shortcut">Description</a>
 </td></tr>
 </table>
-<div class="refentry" title="Specializable GType System">
+<div class="refentry">
 <a name="dbus-glib-Specializable-GType-System"></a><div class="titlepage"></div>
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
@@ -35,135 +35,135 @@
 </td>
 <td valign="top" align="right"></td>
 </tr></table></div>
-<div class="refsect1" title="Stability Level">
+<div class="refsect1">
 <a name="dbus-glib-Specializable-GType-System.stability-level"></a><h2>Stability Level</h2>
 Unstable, unless otherwise indicated
 </div>
-<div class="refsynopsisdiv" title="Synopsis">
+<div class="refsynopsisdiv">
 <a name="dbus-glib-Specializable-GType-System.synopsis"></a><h2>Synopsis</h2>
 <pre class="synopsis"><span class="returnvalue">void</span>                (<a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCollectionIterator" title="DBusGTypeSpecializedCollectionIterator ()">*DBusGTypeSpecializedCollectionIterator</a>)
-                                                        (<em class="parameter"><code>const <span class="type">GValue</span> *value</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);
-<span class="returnvalue">void</span>                (<a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedMapIterator" title="DBusGTypeSpecializedMapIterator ()">*DBusGTypeSpecializedMapIterator</a>)  (<em class="parameter"><code>const <span class="type">GValue</span> *key_val</code></em>,
-                                                         <em class="parameter"><code>const <span class="type">GValue</span> *value_val</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);
+                                                        (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);
+<span class="returnvalue">void</span>                (<a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedMapIterator" title="DBusGTypeSpecializedMapIterator ()">*DBusGTypeSpecializedMapIterator</a>)  (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *key_val</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value_val</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);
                     <a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedAppendContext" title="DBusGTypeSpecializedAppendContext">DBusGTypeSpecializedAppendContext</a>;
-<span class="returnvalue">gpointer</span>            (<a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedConstructor" title="DBusGTypeSpecializedConstructor ()">*DBusGTypeSpecializedConstructor</a>)  (<em class="parameter"><code><span class="type">GType</span> type</code></em>);
-<span class="returnvalue">void</span>                (<a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedFreeFunc" title="DBusGTypeSpecializedFreeFunc ()">*DBusGTypeSpecializedFreeFunc</a>)     (<em class="parameter"><code><span class="type">GType</span> type</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> val</code></em>);
-<span class="returnvalue">gpointer</span>            (<a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCopyFunc" title="DBusGTypeSpecializedCopyFunc ()">*DBusGTypeSpecializedCopyFunc</a>)     (<em class="parameter"><code><span class="type">GType</span> type</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> src</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>            (<a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedConstructor" title="DBusGTypeSpecializedConstructor ()">*DBusGTypeSpecializedConstructor</a>)  (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> type</code></em>);
+<span class="returnvalue">void</span>                (<a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedFreeFunc" title="DBusGTypeSpecializedFreeFunc ()">*DBusGTypeSpecializedFreeFunc</a>)     (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> val</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>            (<a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCopyFunc" title="DBusGTypeSpecializedCopyFunc ()">*DBusGTypeSpecializedCopyFunc</a>)     (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> src</code></em>);
                     <a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedVtable" title="DBusGTypeSpecializedVtable">DBusGTypeSpecializedVtable</a>;
-<span class="returnvalue">gboolean</span>            (<a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCollectionFixedAccessorFunc" title="DBusGTypeSpecializedCollectionFixedAccessorFunc ()">*DBusGTypeSpecializedCollectionFixedAccessorFunc</a>)
-                                                        (<em class="parameter"><code><span class="type">GType</span> type</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> instance</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> *values</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> *len</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            (<a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCollectionFixedAccessorFunc" title="DBusGTypeSpecializedCollectionFixedAccessorFunc ()">*DBusGTypeSpecializedCollectionFixedAccessorFunc</a>)
+                                                        (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> instance</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> *values</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *len</code></em>);
 <span class="returnvalue">void</span>                (<a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCollectionIteratorFunc" title="DBusGTypeSpecializedCollectionIteratorFunc ()">*DBusGTypeSpecializedCollectionIteratorFunc</a>)
-                                                        (<em class="parameter"><code><span class="type">GType</span> type</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> instance</code></em>,
+                                                        (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> instance</code></em>,
                                                          <em class="parameter"><code><a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCollectionIterator" title="DBusGTypeSpecializedCollectionIterator ()"><span class="type">DBusGTypeSpecializedCollectionIterator</span></a> iterator</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);
 <span class="returnvalue">void</span>                (<a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCollectionAppendFunc" title="DBusGTypeSpecializedCollectionAppendFunc ()">*DBusGTypeSpecializedCollectionAppendFunc</a>)
                                                         (<em class="parameter"><code><a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedAppendContext" title="DBusGTypeSpecializedAppendContext"><span class="type">DBusGTypeSpecializedAppendContext</span></a> *ctx</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *val</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *val</code></em>);
 <span class="returnvalue">void</span>                (<a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCollectionEndAppendFunc" title="DBusGTypeSpecializedCollectionEndAppendFunc ()">*DBusGTypeSpecializedCollectionEndAppendFunc</a>)
                                                         (<em class="parameter"><code><a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedAppendContext" title="DBusGTypeSpecializedAppendContext"><span class="type">DBusGTypeSpecializedAppendContext</span></a> *ctx</code></em>);
                     <a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCollectionVtable" title="DBusGTypeSpecializedCollectionVtable">DBusGTypeSpecializedCollectionVtable</a>;
 <span class="returnvalue">void</span>                (<a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedMapIteratorFunc" title="DBusGTypeSpecializedMapIteratorFunc ()">*DBusGTypeSpecializedMapIteratorFunc</a>)
-                                                        (<em class="parameter"><code><span class="type">GType</span> type</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> instance</code></em>,
+                                                        (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> instance</code></em>,
                                                          <em class="parameter"><code><a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedMapIterator" title="DBusGTypeSpecializedMapIterator ()"><span class="type">DBusGTypeSpecializedMapIterator</span></a> iterator</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);
 <span class="returnvalue">void</span>                (<a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedMapAppendFunc" title="DBusGTypeSpecializedMapAppendFunc ()">*DBusGTypeSpecializedMapAppendFunc</a>)
                                                         (<em class="parameter"><code><a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedAppendContext" title="DBusGTypeSpecializedAppendContext"><span class="type">DBusGTypeSpecializedAppendContext</span></a> *ctx</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *key</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *val</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *key</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *val</code></em>);
                     <a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedMapVtable" title="DBusGTypeSpecializedMapVtable">DBusGTypeSpecializedMapVtable</a>;
-<span class="returnvalue">gboolean</span>            (<a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedStructGetMember" title="DBusGTypeSpecializedStructGetMember ()">*DBusGTypeSpecializedStructGetMember</a>)
-                                                        (<em class="parameter"><code><span class="type">GType</span> type</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> instance</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> member</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *ret_value</code></em>);
-<span class="returnvalue">gboolean</span>            (<a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedStructSetMember" title="DBusGTypeSpecializedStructSetMember ()">*DBusGTypeSpecializedStructSetMember</a>)
-                                                        (<em class="parameter"><code><span class="type">GType</span> type</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> instance</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> member</code></em>,
-                                                         <em class="parameter"><code>const <span class="type">GValue</span> *new_value</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            (<a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedStructGetMember" title="DBusGTypeSpecializedStructGetMember ()">*DBusGTypeSpecializedStructGetMember</a>)
+                                                        (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> instance</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> member</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *ret_value</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            (<a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedStructSetMember" title="DBusGTypeSpecializedStructSetMember ()">*DBusGTypeSpecializedStructSetMember</a>)
+                                                        (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> instance</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> member</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *new_value</code></em>);
                     <a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedStructVtable" title="DBusGTypeSpecializedStructVtable">DBusGTypeSpecializedStructVtable</a>;
-<span class="returnvalue">GType</span>               <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-collection" title="dbus_g_type_get_collection ()">dbus_g_type_get_collection</a>          (<em class="parameter"><code>const <span class="type">char</span> *container</code></em>,
-                                                         <em class="parameter"><code><span class="type">GType</span> specialization</code></em>);
-<span class="returnvalue">GType</span>               <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-map" title="dbus_g_type_get_map ()">dbus_g_type_get_map</a>                 (<em class="parameter"><code>const <span class="type">char</span> *container</code></em>,
-                                                         <em class="parameter"><code><span class="type">GType</span> key_specialization</code></em>,
-                                                         <em class="parameter"><code><span class="type">GType</span> value_specialization</code></em>);
-<span class="returnvalue">GType</span>               <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-structv" title="dbus_g_type_get_structv ()">dbus_g_type_get_structv</a>             (<em class="parameter"><code>const <span class="type">char</span> *container</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> num_members</code></em>,
-                                                         <em class="parameter"><code><span class="type">GType</span> *types</code></em>);
-<span class="returnvalue">GType</span>               <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-struct" title="dbus_g_type_get_struct ()">dbus_g_type_get_struct</a>              (<em class="parameter"><code>const <span class="type">char</span> *container</code></em>,
-                                                         <em class="parameter"><code><span class="type">GType</span> first_type</code></em>,
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-collection" title="dbus_g_type_get_collection ()">dbus_g_type_get_collection</a>          (<em class="parameter"><code>const <span class="type">char</span> *container</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> specialization</code></em>);
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-map" title="dbus_g_type_get_map ()">dbus_g_type_get_map</a>                 (<em class="parameter"><code>const <span class="type">char</span> *container</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> key_specialization</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> value_specialization</code></em>);
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-structv" title="dbus_g_type_get_structv ()">dbus_g_type_get_structv</a>             (<em class="parameter"><code>const <span class="type">char</span> *container</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> num_members</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> *types</code></em>);
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-struct" title="dbus_g_type_get_struct ()">dbus_g_type_get_struct</a>              (<em class="parameter"><code>const <span class="type">char</span> *container</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> first_type</code></em>,
                                                          <em class="parameter"><code>...</code></em>);
-<span class="returnvalue">gboolean</span>            <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-is-collection" title="dbus_g_type_is_collection ()">dbus_g_type_is_collection</a>           (<em class="parameter"><code><span class="type">GType</span> gtype</code></em>);
-<span class="returnvalue">gboolean</span>            <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-is-map" title="dbus_g_type_is_map ()">dbus_g_type_is_map</a>                  (<em class="parameter"><code><span class="type">GType</span> gtype</code></em>);
-<span class="returnvalue">gboolean</span>            <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-is-struct" title="dbus_g_type_is_struct ()">dbus_g_type_is_struct</a>               (<em class="parameter"><code><span class="type">GType</span> gtype</code></em>);
-<span class="returnvalue">GType</span>               <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-collection-specialization" title="dbus_g_type_get_collection_specialization ()">dbus_g_type_get_collection_specialization</a>
-                                                        (<em class="parameter"><code><span class="type">GType</span> gtype</code></em>);
-<span class="returnvalue">GType</span>               <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-map-key-specialization" title="dbus_g_type_get_map_key_specialization ()">dbus_g_type_get_map_key_specialization</a>
-                                                        (<em class="parameter"><code><span class="type">GType</span> gtype</code></em>);
-<span class="returnvalue">GType</span>               <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-map-value-specialization" title="dbus_g_type_get_map_value_specialization ()">dbus_g_type_get_map_value_specialization</a>
-                                                        (<em class="parameter"><code><span class="type">GType</span> gtype</code></em>);
-<span class="returnvalue">GType</span>               <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-struct-member-type" title="dbus_g_type_get_struct_member_type ()">dbus_g_type_get_struct_member_type</a>  (<em class="parameter"><code><span class="type">GType</span> gtype</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> member</code></em>);
-<span class="returnvalue">guint</span>               <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-struct-size" title="dbus_g_type_get_struct_size ()">dbus_g_type_get_struct_size</a>         (<em class="parameter"><code><span class="type">GType</span> gtype</code></em>);
-<span class="returnvalue">gpointer</span>            <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-specialized-construct" title="dbus_g_type_specialized_construct ()">dbus_g_type_specialized_construct</a>   (<em class="parameter"><code><span class="type">GType</span> gtype</code></em>);
-<span class="returnvalue">void</span>                <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-specialized-init-append" title="dbus_g_type_specialized_init_append ()">dbus_g_type_specialized_init_append</a> (<em class="parameter"><code><span class="type">GValue</span> *value</code></em>,
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-is-collection" title="dbus_g_type_is_collection ()">dbus_g_type_is_collection</a>           (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> gtype</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-is-map" title="dbus_g_type_is_map ()">dbus_g_type_is_map</a>                  (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> gtype</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-is-struct" title="dbus_g_type_is_struct ()">dbus_g_type_is_struct</a>               (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> gtype</code></em>);
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-collection-specialization" title="dbus_g_type_get_collection_specialization ()">dbus_g_type_get_collection_specialization</a>
+                                                        (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> gtype</code></em>);
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-map-key-specialization" title="dbus_g_type_get_map_key_specialization ()">dbus_g_type_get_map_key_specialization</a>
+                                                        (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> gtype</code></em>);
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-map-value-specialization" title="dbus_g_type_get_map_value_specialization ()">dbus_g_type_get_map_value_specialization</a>
+                                                        (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> gtype</code></em>);
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-struct-member-type" title="dbus_g_type_get_struct_member_type ()">dbus_g_type_get_struct_member_type</a>  (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> gtype</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> member</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>               <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-struct-size" title="dbus_g_type_get_struct_size ()">dbus_g_type_get_struct_size</a>         (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> gtype</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>            <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-specialized-construct" title="dbus_g_type_specialized_construct ()">dbus_g_type_specialized_construct</a>   (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> gtype</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-specialized-init-append" title="dbus_g_type_specialized_init_append ()">dbus_g_type_specialized_init_append</a> (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>,
                                                          <em class="parameter"><code><a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedAppendContext" title="DBusGTypeSpecializedAppendContext"><span class="type">DBusGTypeSpecializedAppendContext</span></a> *ctx</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-specialized-collection-append" title="dbus_g_type_specialized_collection_append ()">dbus_g_type_specialized_collection_append</a>
                                                         (<em class="parameter"><code><a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedAppendContext" title="DBusGTypeSpecializedAppendContext"><span class="type">DBusGTypeSpecializedAppendContext</span></a> *ctx</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *elt</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *elt</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-specialized-collection-end-append" title="dbus_g_type_specialized_collection_end_append ()">dbus_g_type_specialized_collection_end_append</a>
                                                         (<em class="parameter"><code><a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedAppendContext" title="DBusGTypeSpecializedAppendContext"><span class="type">DBusGTypeSpecializedAppendContext</span></a> *ctx</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-specialized-map-append" title="dbus_g_type_specialized_map_append ()">dbus_g_type_specialized_map_append</a>  (<em class="parameter"><code><a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedAppendContext" title="DBusGTypeSpecializedAppendContext"><span class="type">DBusGTypeSpecializedAppendContext</span></a> *ctx</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *key</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *val</code></em>);
-<span class="returnvalue">gboolean</span>            <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-collection-get-fixed" title="dbus_g_type_collection_get_fixed ()">dbus_g_type_collection_get_fixed</a>    (<em class="parameter"><code><span class="type">GValue</span> *value</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> *data</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> *len</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *key</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *val</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-collection-get-fixed" title="dbus_g_type_collection_get_fixed ()">dbus_g_type_collection_get_fixed</a>    (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> *data</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *len</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-collection-value-iterate" title="dbus_g_type_collection_value_iterate ()">dbus_g_type_collection_value_iterate</a>
-                                                        (<em class="parameter"><code>const <span class="type">GValue</span> *value</code></em>,
+                                                        (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>,
                                                          <em class="parameter"><code><a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCollectionIterator" title="DBusGTypeSpecializedCollectionIterator ()"><span class="type">DBusGTypeSpecializedCollectionIterator</span></a> iterator</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);
-<span class="returnvalue">void</span>                <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-map-value-iterate" title="dbus_g_type_map_value_iterate ()">dbus_g_type_map_value_iterate</a>       (<em class="parameter"><code>const <span class="type">GValue</span> *value</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-map-value-iterate" title="dbus_g_type_map_value_iterate ()">dbus_g_type_map_value_iterate</a>       (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>,
                                                          <em class="parameter"><code><a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedMapIterator" title="DBusGTypeSpecializedMapIterator ()"><span class="type">DBusGTypeSpecializedMapIterator</span></a> iterator</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);
-<span class="returnvalue">gboolean</span>            <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-struct-get-member" title="dbus_g_type_struct_get_member ()">dbus_g_type_struct_get_member</a>       (<em class="parameter"><code>const <span class="type">GValue</span> *value</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> member</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *dest</code></em>);
-<span class="returnvalue">gboolean</span>            <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-struct-set-member" title="dbus_g_type_struct_set_member ()">dbus_g_type_struct_set_member</a>       (<em class="parameter"><code><span class="type">GValue</span> *value</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> member</code></em>,
-                                                         <em class="parameter"><code>const <span class="type">GValue</span> *src</code></em>);
-<span class="returnvalue">gboolean</span>            <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-struct-get" title="dbus_g_type_struct_get ()">dbus_g_type_struct_get</a>              (<em class="parameter"><code>const <span class="type">GValue</span> *value</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> member</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-struct-get-member" title="dbus_g_type_struct_get_member ()">dbus_g_type_struct_get_member</a>       (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> member</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *dest</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-struct-set-member" title="dbus_g_type_struct_set_member ()">dbus_g_type_struct_set_member</a>       (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> member</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *src</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-struct-get" title="dbus_g_type_struct_get ()">dbus_g_type_struct_get</a>              (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> member</code></em>,
                                                          <em class="parameter"><code>...</code></em>);
-<span class="returnvalue">gboolean</span>            <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-struct-set" title="dbus_g_type_struct_set ()">dbus_g_type_struct_set</a>              (<em class="parameter"><code><span class="type">GValue</span> *value</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> member</code></em>,
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-struct-set" title="dbus_g_type_struct_set ()">dbus_g_type_struct_set</a>              (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> member</code></em>,
                                                          <em class="parameter"><code>...</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-specialized-init" title="dbus_g_type_specialized_init ()">dbus_g_type_specialized_init</a>        (<em class="parameter"><code><span class="type">void</span></code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-register-collection" title="dbus_g_type_register_collection ()">dbus_g_type_register_collection</a>     (<em class="parameter"><code>const <span class="type">char</span> *name</code></em>,
                                                          <em class="parameter"><code>const <a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCollectionVtable" title="DBusGTypeSpecializedCollectionVtable"><span class="type">DBusGTypeSpecializedCollectionVtable</span></a> *vtable</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> flags</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> flags</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-register-map" title="dbus_g_type_register_map ()">dbus_g_type_register_map</a>            (<em class="parameter"><code>const <span class="type">char</span> *name</code></em>,
                                                          <em class="parameter"><code>const <a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedMapVtable" title="DBusGTypeSpecializedMapVtable"><span class="type">DBusGTypeSpecializedMapVtable</span></a> *vtable</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> flags</code></em>);
-const <a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedMapVtable" title="DBusGTypeSpecializedMapVtable"><span class="returnvalue">DBusGTypeSpecializedMapVtable</span></a>* <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-map-peek-vtable" title="dbus_g_type_map_peek_vtable ()">dbus_g_type_map_peek_vtable</a>
-                                                        (<em class="parameter"><code><span class="type">GType</span> map_type</code></em>);
-const <a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCollectionVtable" title="DBusGTypeSpecializedCollectionVtable"><span class="returnvalue">DBusGTypeSpecializedCollectionVtable</span></a>* <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-collection-peek-vtable" title="dbus_g_type_collection_peek_vtable ()">dbus_g_type_collection_peek_vtable</a>
-                                                        (<em class="parameter"><code><span class="type">GType</span> collection_type</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> flags</code></em>);
+const <a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedMapVtable" title="DBusGTypeSpecializedMapVtable"><span class="returnvalue">DBusGTypeSpecializedMapVtable</span></a> *  <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-map-peek-vtable" title="dbus_g_type_map_peek_vtable ()">dbus_g_type_map_peek_vtable</a>
+                                                        (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> map_type</code></em>);
+const <a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCollectionVtable" title="DBusGTypeSpecializedCollectionVtable"><span class="returnvalue">DBusGTypeSpecializedCollectionVtable</span></a> *  <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-collection-peek-vtable" title="dbus_g_type_collection_peek_vtable ()">dbus_g_type_collection_peek_vtable</a>
+                                                        (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> collection_type</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-register-struct" title="dbus_g_type_register_struct ()">dbus_g_type_register_struct</a>         (<em class="parameter"><code>const <span class="type">char</span> *name</code></em>,
                                                          <em class="parameter"><code>const <a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedStructVtable" title="DBusGTypeSpecializedStructVtable"><span class="type">DBusGTypeSpecializedStructVtable</span></a> *vtable</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> flags</code></em>);
-<span class="returnvalue">GVariant</span> *          <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-value-build-g-variant" title="dbus_g_value_build_g_variant ()">dbus_g_value_build_g_variant</a>        (<em class="parameter"><code>const <span class="type">GValue</span> *value</code></em>);
-<span class="returnvalue">void</span>                <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-value-parse-g-variant" title="dbus_g_value_parse_g_variant ()">dbus_g_value_parse_g_variant</a>        (<em class="parameter"><code><span class="type">GVariant</span> *variant</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *value</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> flags</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-GVariant.html#GVariant"><span class="returnvalue">GVariant</span></a> *          <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-value-build-g-variant" title="dbus_g_value_build_g_variant ()">dbus_g_value_build_g_variant</a>        (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-value-parse-g-variant" title="dbus_g_value_parse_g_variant ()">dbus_g_value_parse_g_variant</a>        (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-GVariant.html#GVariant"><span class="type">GVariant</span></a> *variant</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>);
 #define             <a class="link" href="dbus-glib-Specializable-GType-System.html#DBUS-TYPE-G-BOOLEAN-ARRAY:CAPS" title="DBUS_TYPE_G_BOOLEAN_ARRAY">DBUS_TYPE_G_BOOLEAN_ARRAY</a>
 #define             <a class="link" href="dbus-glib-Specializable-GType-System.html#DBUS-TYPE-G-UCHAR-ARRAY:CAPS" title="DBUS_TYPE_G_UCHAR_ARRAY">DBUS_TYPE_G_UCHAR_ARRAY</a>
 #define             <a class="link" href="dbus-glib-Specializable-GType-System.html#DBUS-TYPE-G-UINT-ARRAY:CAPS" title="DBUS_TYPE_G_UINT_ARRAY">DBUS_TYPE_G_UINT_ARRAY</a>
@@ -178,7 +178,7 @@ typedef             <a class="link" href="dbus-glib-Specializable-GType-System.h
 #define             <a class="link" href="dbus-glib-Specializable-GType-System.html#DBUS-TYPE-G-OBJECT-PATH:CAPS" title="DBUS_TYPE_G_OBJECT_PATH">DBUS_TYPE_G_OBJECT_PATH</a>
 </pre>
 </div>
-<div class="refsect1" title="Description">
+<div class="refsect1">
 <a name="dbus-glib-Specializable-GType-System.description"></a><h2>Description</h2>
 <p>
 Specialized gtypes are basically a way to allow the definition of
@@ -212,62 +212,27 @@ containers and using existing containers. I expect most users to only do
 the latter. I also need to add some examples.
 </p>
 </div>
-<div class="refsect1" title="Details">
+<div class="refsect1">
 <a name="dbus-glib-Specializable-GType-System.details"></a><h2>Details</h2>
-<div class="refsect2" title="DBusGTypeSpecializedCollectionIterator ()">
+<div class="refsect2">
 <a name="DBusGTypeSpecializedCollectionIterator"></a><h3>DBusGTypeSpecializedCollectionIterator ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                (*DBusGTypeSpecializedCollectionIterator)
-                                                        (<em class="parameter"><code>const <span class="type">GValue</span> *value</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);</pre>
+                                                        (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
 <p>
 </p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>value</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-</tbody>
-</table></div>
 </div>
 <hr>
-<div class="refsect2" title="DBusGTypeSpecializedMapIterator ()">
+<div class="refsect2">
 <a name="DBusGTypeSpecializedMapIterator"></a><h3>DBusGTypeSpecializedMapIterator ()</h3>
-<pre class="programlisting"><span class="returnvalue">void</span>                (*DBusGTypeSpecializedMapIterator)  (<em class="parameter"><code>const <span class="type">GValue</span> *key_val</code></em>,
-                                                         <em class="parameter"><code>const <span class="type">GValue</span> *value_val</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">void</span>                (*DBusGTypeSpecializedMapIterator)  (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *key_val</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value_val</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
 <p>
 </p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>key_val</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>value_val</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-</tbody>
-</table></div>
 </div>
 <hr>
-<div class="refsect2" title="DBusGTypeSpecializedAppendContext">
+<div class="refsect2">
 <a name="DBusGTypeSpecializedAppendContext"></a><h3>DBusGTypeSpecializedAppendContext</h3>
 <pre class="programlisting">typedef struct {
   /* public */
@@ -283,80 +248,30 @@ the latter. I also need to add some examples.
 </p>
 </div>
 <hr>
-<div class="refsect2" title="DBusGTypeSpecializedConstructor ()">
+<div class="refsect2">
 <a name="DBusGTypeSpecializedConstructor"></a><h3>DBusGTypeSpecializedConstructor ()</h3>
-<pre class="programlisting"><span class="returnvalue">gpointer</span>            (*DBusGTypeSpecializedConstructor)  (<em class="parameter"><code><span class="type">GType</span> type</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>            (*DBusGTypeSpecializedConstructor)  (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> type</code></em>);</pre>
 <p>
 </p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>type</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>
-</td>
-</tr>
-</tbody>
-</table></div>
 </div>
 <hr>
-<div class="refsect2" title="DBusGTypeSpecializedFreeFunc ()">
+<div class="refsect2">
 <a name="DBusGTypeSpecializedFreeFunc"></a><h3>DBusGTypeSpecializedFreeFunc ()</h3>
-<pre class="programlisting"><span class="returnvalue">void</span>                (*DBusGTypeSpecializedFreeFunc)     (<em class="parameter"><code><span class="type">GType</span> type</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> val</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">void</span>                (*DBusGTypeSpecializedFreeFunc)     (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> val</code></em>);</pre>
 <p>
 </p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>type</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-</tbody>
-</table></div>
 </div>
 <hr>
-<div class="refsect2" title="DBusGTypeSpecializedCopyFunc ()">
+<div class="refsect2">
 <a name="DBusGTypeSpecializedCopyFunc"></a><h3>DBusGTypeSpecializedCopyFunc ()</h3>
-<pre class="programlisting"><span class="returnvalue">gpointer</span>            (*DBusGTypeSpecializedCopyFunc)     (<em class="parameter"><code><span class="type">GType</span> type</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> src</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>            (*DBusGTypeSpecializedCopyFunc)     (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> src</code></em>);</pre>
 <p>
 </p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>type</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>src</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>
-</td>
-</tr>
-</tbody>
-</table></div>
 </div>
 <hr>
-<div class="refsect2" title="DBusGTypeSpecializedVtable">
+<div class="refsect2">
 <a name="DBusGTypeSpecializedVtable"></a><h3>DBusGTypeSpecializedVtable</h3>
 <pre class="programlisting">typedef struct {
   DBusGTypeSpecializedConstructor    constructor;
@@ -371,124 +286,46 @@ the latter. I also need to add some examples.
 </p>
 </div>
 <hr>
-<div class="refsect2" title="DBusGTypeSpecializedCollectionFixedAccessorFunc ()">
+<div class="refsect2">
 <a name="DBusGTypeSpecializedCollectionFixedAccessorFunc"></a><h3>DBusGTypeSpecializedCollectionFixedAccessorFunc ()</h3>
-<pre class="programlisting"><span class="returnvalue">gboolean</span>            (*DBusGTypeSpecializedCollectionFixedAccessorFunc)
-                                                        (<em class="parameter"><code><span class="type">GType</span> type</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> instance</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> *values</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> *len</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            (*DBusGTypeSpecializedCollectionFixedAccessorFunc)
+                                                        (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> instance</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> *values</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *len</code></em>);</pre>
 <p>
 </p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>type</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>instance</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>values</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>len</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>
-</td>
-</tr>
-</tbody>
-</table></div>
 </div>
 <hr>
-<div class="refsect2" title="DBusGTypeSpecializedCollectionIteratorFunc ()">
+<div class="refsect2">
 <a name="DBusGTypeSpecializedCollectionIteratorFunc"></a><h3>DBusGTypeSpecializedCollectionIteratorFunc ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                (*DBusGTypeSpecializedCollectionIteratorFunc)
-                                                        (<em class="parameter"><code><span class="type">GType</span> type</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> instance</code></em>,
+                                                        (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> instance</code></em>,
                                                          <em class="parameter"><code><a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCollectionIterator" title="DBusGTypeSpecializedCollectionIterator ()"><span class="type">DBusGTypeSpecializedCollectionIterator</span></a> iterator</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
 <p>
 </p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>type</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>instance</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>iterator</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-</tbody>
-</table></div>
 </div>
 <hr>
-<div class="refsect2" title="DBusGTypeSpecializedCollectionAppendFunc ()">
+<div class="refsect2">
 <a name="DBusGTypeSpecializedCollectionAppendFunc"></a><h3>DBusGTypeSpecializedCollectionAppendFunc ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                (*DBusGTypeSpecializedCollectionAppendFunc)
                                                         (<em class="parameter"><code><a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedAppendContext" title="DBusGTypeSpecializedAppendContext"><span class="type">DBusGTypeSpecializedAppendContext</span></a> *ctx</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *val</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *val</code></em>);</pre>
 <p>
 </p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>ctx</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-</tbody>
-</table></div>
 </div>
 <hr>
-<div class="refsect2" title="DBusGTypeSpecializedCollectionEndAppendFunc ()">
+<div class="refsect2">
 <a name="DBusGTypeSpecializedCollectionEndAppendFunc"></a><h3>DBusGTypeSpecializedCollectionEndAppendFunc ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                (*DBusGTypeSpecializedCollectionEndAppendFunc)
                                                         (<em class="parameter"><code><a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedAppendContext" title="DBusGTypeSpecializedAppendContext"><span class="type">DBusGTypeSpecializedAppendContext</span></a> *ctx</code></em>);</pre>
 <p>
 </p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody><tr>
-<td><p><span class="term"><em class="parameter"><code>ctx</code></em> :</span></p></td>
-<td>
-</td>
-</tr></tbody>
-</table></div>
 </div>
 <hr>
-<div class="refsect2" title="DBusGTypeSpecializedCollectionVtable">
+<div class="refsect2">
 <a name="DBusGTypeSpecializedCollectionVtable"></a><h3>DBusGTypeSpecializedCollectionVtable</h3>
 <pre class="programlisting">typedef struct {
   DBusGTypeSpecializedVtable                        base_vtable;
@@ -502,73 +339,28 @@ the latter. I also need to add some examples.
 </p>
 </div>
 <hr>
-<div class="refsect2" title="DBusGTypeSpecializedMapIteratorFunc ()">
+<div class="refsect2">
 <a name="DBusGTypeSpecializedMapIteratorFunc"></a><h3>DBusGTypeSpecializedMapIteratorFunc ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                (*DBusGTypeSpecializedMapIteratorFunc)
-                                                        (<em class="parameter"><code><span class="type">GType</span> type</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> instance</code></em>,
+                                                        (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> instance</code></em>,
                                                          <em class="parameter"><code><a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedMapIterator" title="DBusGTypeSpecializedMapIterator ()"><span class="type">DBusGTypeSpecializedMapIterator</span></a> iterator</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
 <p>
 </p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>type</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>instance</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>iterator</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-</tbody>
-</table></div>
 </div>
 <hr>
-<div class="refsect2" title="DBusGTypeSpecializedMapAppendFunc ()">
+<div class="refsect2">
 <a name="DBusGTypeSpecializedMapAppendFunc"></a><h3>DBusGTypeSpecializedMapAppendFunc ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                (*DBusGTypeSpecializedMapAppendFunc)
                                                         (<em class="parameter"><code><a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedAppendContext" title="DBusGTypeSpecializedAppendContext"><span class="type">DBusGTypeSpecializedAppendContext</span></a> *ctx</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *key</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *val</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *key</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *val</code></em>);</pre>
 <p>
 </p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>ctx</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>key</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>val</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-</tbody>
-</table></div>
 </div>
 <hr>
-<div class="refsect2" title="DBusGTypeSpecializedMapVtable">
+<div class="refsect2">
 <a name="DBusGTypeSpecializedMapVtable"></a><h3>DBusGTypeSpecializedMapVtable</h3>
 <pre class="programlisting">typedef struct {
   DBusGTypeSpecializedVtable                        base_vtable;
@@ -580,89 +372,29 @@ the latter. I also need to add some examples.
 </p>
 </div>
 <hr>
-<div class="refsect2" title="DBusGTypeSpecializedStructGetMember ()">
+<div class="refsect2">
 <a name="DBusGTypeSpecializedStructGetMember"></a><h3>DBusGTypeSpecializedStructGetMember ()</h3>
-<pre class="programlisting"><span class="returnvalue">gboolean</span>            (*DBusGTypeSpecializedStructGetMember)
-                                                        (<em class="parameter"><code><span class="type">GType</span> type</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> instance</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> member</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *ret_value</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            (*DBusGTypeSpecializedStructGetMember)
+                                                        (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> instance</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> member</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *ret_value</code></em>);</pre>
 <p>
 </p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>type</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>instance</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>member</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>ret_value</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>
-</td>
-</tr>
-</tbody>
-</table></div>
 </div>
 <hr>
-<div class="refsect2" title="DBusGTypeSpecializedStructSetMember ()">
+<div class="refsect2">
 <a name="DBusGTypeSpecializedStructSetMember"></a><h3>DBusGTypeSpecializedStructSetMember ()</h3>
-<pre class="programlisting"><span class="returnvalue">gboolean</span>            (*DBusGTypeSpecializedStructSetMember)
-                                                        (<em class="parameter"><code><span class="type">GType</span> type</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> instance</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> member</code></em>,
-                                                         <em class="parameter"><code>const <span class="type">GValue</span> *new_value</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            (*DBusGTypeSpecializedStructSetMember)
+                                                        (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> type</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> instance</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> member</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *new_value</code></em>);</pre>
 <p>
 </p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>type</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>instance</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>member</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>new_value</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>
-</td>
-</tr>
-</tbody>
-</table></div>
 </div>
 <hr>
-<div class="refsect2" title="DBusGTypeSpecializedStructVtable">
+<div class="refsect2">
 <a name="DBusGTypeSpecializedStructVtable"></a><h3>DBusGTypeSpecializedStructVtable</h3>
 <pre class="programlisting">typedef struct {
   DBusGTypeSpecializedVtable                        base_vtable;
@@ -674,12 +406,12 @@ the latter. I also need to add some examples.
 </p>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_get_collection ()">
+<div class="refsect2">
 <a name="dbus-g-type-get-collection"></a><h3>dbus_g_type_get_collection ()</h3>
-<pre class="programlisting"><span class="returnvalue">GType</span>               dbus_g_type_get_collection          (<em class="parameter"><code>const <span class="type">char</span> *container</code></em>,
-                                                         <em class="parameter"><code><span class="type">GType</span> specialization</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               dbus_g_type_get_collection          (<em class="parameter"><code>const <span class="type">char</span> *container</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> specialization</code></em>);</pre>
 <p>
-Gets a <span class="type">GType</span> for a particular collection instance, 
+Gets a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> for a particular collection instance, 
 creating the type if not already created.
 </p>
 <div class="variablelist"><table border="0">
@@ -687,31 +419,28 @@ creating the type if not already created.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>container</code></em> :</span></p></td>
-<td>a string specifying a registered collection type
-</td>
+<td>a string specifying a registered collection type</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>specialization</code></em> :</span></p></td>
 <td>
-<span class="type">GType</span> of collection elements
-</td>
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> of collection elements</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> the <span class="type">GType</span> of that instance
-</td>
+<td>the <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> of that instance</td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_get_map ()">
+<div class="refsect2">
 <a name="dbus-g-type-get-map"></a><h3>dbus_g_type_get_map ()</h3>
-<pre class="programlisting"><span class="returnvalue">GType</span>               dbus_g_type_get_map                 (<em class="parameter"><code>const <span class="type">char</span> *container</code></em>,
-                                                         <em class="parameter"><code><span class="type">GType</span> key_specialization</code></em>,
-                                                         <em class="parameter"><code><span class="type">GType</span> value_specialization</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               dbus_g_type_get_map                 (<em class="parameter"><code>const <span class="type">char</span> *container</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> key_specialization</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> value_specialization</code></em>);</pre>
 <p>
-Gets a <span class="type">GType</span> for a particular map instance,
+Gets a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> for a particular map instance,
 creating the type if not already created.
 </p>
 <div class="variablelist"><table border="0">
@@ -719,37 +448,33 @@ creating the type if not already created.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>container</code></em> :</span></p></td>
-<td>a string specifying a registered map type
-</td>
+<td>a string specifying a registered map type</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>key_specialization</code></em> :</span></p></td>
 <td>
-<span class="type">GType</span> of keys
-</td>
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> of keys</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>value_specialization</code></em> :</span></p></td>
 <td>
-<span class="type">GType</span> of values
-</td>
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> of values</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> the <span class="type">GType</span> of that instance
-</td>
+<td>the <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> of that instance</td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_get_structv ()">
+<div class="refsect2">
 <a name="dbus-g-type-get-structv"></a><h3>dbus_g_type_get_structv ()</h3>
-<pre class="programlisting"><span class="returnvalue">GType</span>               dbus_g_type_get_structv             (<em class="parameter"><code>const <span class="type">char</span> *container</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> num_members</code></em>,
-                                                         <em class="parameter"><code><span class="type">GType</span> *types</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               dbus_g_type_get_structv             (<em class="parameter"><code>const <span class="type">char</span> *container</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> num_members</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> *types</code></em>);</pre>
 <p>
-Gets a <span class="type">GType</span> for a particular struct instance,
+Gets a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> for a particular struct instance,
 creating the type if not already created.
 </p>
 <div class="variablelist"><table border="0">
@@ -757,35 +482,31 @@ creating the type if not already created.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>container</code></em> :</span></p></td>
-<td>a string specifying a registered struct type
-</td>
+<td>a string specifying a registered struct type</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>num_members</code></em> :</span></p></td>
-<td>number of members in the struct
-</td>
+<td>number of members in the struct</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>types</code></em> :</span></p></td>
-<td>an array specufying a GType for each struct element
-</td>
+<td>an array specufying a GType for each struct element</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> the <span class="type">GType</span> of that instance
-</td>
+<td>the <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> of that instance</td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_get_struct ()">
+<div class="refsect2">
 <a name="dbus-g-type-get-struct"></a><h3>dbus_g_type_get_struct ()</h3>
-<pre class="programlisting"><span class="returnvalue">GType</span>               dbus_g_type_get_struct              (<em class="parameter"><code>const <span class="type">char</span> *container</code></em>,
-                                                         <em class="parameter"><code><span class="type">GType</span> first_type</code></em>,
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               dbus_g_type_get_struct              (<em class="parameter"><code>const <span class="type">char</span> *container</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> first_type</code></em>,
                                                          <em class="parameter"><code>...</code></em>);</pre>
 <p>
-Varags methsod to get a <span class="type">GType</span> for a particular struct instance,
+Varags methsod to get a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> for a particular struct instance,
 creating the type if not already created.
 </p>
 <div class="variablelist"><table border="0">
@@ -793,32 +514,28 @@ creating the type if not already created.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>container</code></em> :</span></p></td>
-<td>a string specifying a registered struct type
-</td>
+<td>a string specifying a registered struct type</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>first_type</code></em> :</span></p></td>
 <td>
-<span class="type">GType</span> for the struct's first member
-</td>
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> for the struct's first member</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>...</code></em> :</span></p></td>
-<td>more GTypes for the struct's members, terminated by G_TYPE_INVALID
-</td>
+<td>more GTypes for the struct's members, terminated by G_TYPE_INVALID</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> the <span class="type">GType</span> of that instance
-</td>
+<td>the <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> of that instance</td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_is_collection ()">
+<div class="refsect2">
 <a name="dbus-g-type-is-collection"></a><h3>dbus_g_type_is_collection ()</h3>
-<pre class="programlisting"><span class="returnvalue">gboolean</span>            dbus_g_type_is_collection           (<em class="parameter"><code><span class="type">GType</span> gtype</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            dbus_g_type_is_collection           (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> gtype</code></em>);</pre>
 <p>
 Tests if a given GType is a collection.
 </p>
@@ -827,21 +544,19 @@ Tests if a given GType is a collection.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>gtype</code></em> :</span></p></td>
-<td>a GType to test
-</td>
+<td>a GType to test</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> true if the given GType is a collection
-</td>
+<td>true if the given GType is a collection</td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_is_map ()">
+<div class="refsect2">
 <a name="dbus-g-type-is-map"></a><h3>dbus_g_type_is_map ()</h3>
-<pre class="programlisting"><span class="returnvalue">gboolean</span>            dbus_g_type_is_map                  (<em class="parameter"><code><span class="type">GType</span> gtype</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            dbus_g_type_is_map                  (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> gtype</code></em>);</pre>
 <p>
 Tests if a given GType is a map,
 i.e. it was created with <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-map" title="dbus_g_type_get_map ()"><span class="type">dbus_g_type_get_map</span></a>.
@@ -851,21 +566,19 @@ i.e. it was created with <a class="link" href="dbus-glib-Specializable-GType-Sys
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>gtype</code></em> :</span></p></td>
-<td>a GType to test
-</td>
+<td>a GType to test</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> true if the given GType is a map
-</td>
+<td>true if the given GType is a map</td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_is_struct ()">
+<div class="refsect2">
 <a name="dbus-g-type-is-struct"></a><h3>dbus_g_type_is_struct ()</h3>
-<pre class="programlisting"><span class="returnvalue">gboolean</span>            dbus_g_type_is_struct               (<em class="parameter"><code><span class="type">GType</span> gtype</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            dbus_g_type_is_struct               (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> gtype</code></em>);</pre>
 <p>
 Tests if a given GType is a struct,
 i.e. it was created with <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-struct" title="dbus_g_type_get_struct ()"><span class="type">dbus_g_type_get_struct</span></a>
@@ -875,88 +588,80 @@ i.e. it was created with <a class="link" href="dbus-glib-Specializable-GType-Sys
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>gtype</code></em> :</span></p></td>
-<td>a GType to test
-</td>
+<td>a GType to test</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> true if the given GType is a struct
-</td>
+<td>true if the given GType is a struct</td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_get_collection_specialization ()">
+<div class="refsect2">
 <a name="dbus-g-type-get-collection-specialization"></a><h3>dbus_g_type_get_collection_specialization ()</h3>
-<pre class="programlisting"><span class="returnvalue">GType</span>               dbus_g_type_get_collection_specialization
-                                                        (<em class="parameter"><code><span class="type">GType</span> gtype</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               dbus_g_type_get_collection_specialization
+                                                        (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> gtype</code></em>);</pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>gtype</code></em> :</span></p></td>
-<td>a collection GType, as created by <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-collection" title="dbus_g_type_get_collection ()"><span class="type">dbus_g_type_get_collection</span></a>.
-</td>
+<td>a collection GType, as created by <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-collection" title="dbus_g_type_get_collection ()"><span class="type">dbus_g_type_get_collection</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> the element type for a given collection GType.
-Returns G_TYPE_INVALID if not a collection GType
-</td>
+<td>the element type for a given collection GType.
+Returns G_TYPE_INVALID if not a collection GType</td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_get_map_key_specialization ()">
+<div class="refsect2">
 <a name="dbus-g-type-get-map-key-specialization"></a><h3>dbus_g_type_get_map_key_specialization ()</h3>
-<pre class="programlisting"><span class="returnvalue">GType</span>               dbus_g_type_get_map_key_specialization
-                                                        (<em class="parameter"><code><span class="type">GType</span> gtype</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               dbus_g_type_get_map_key_specialization
+                                                        (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> gtype</code></em>);</pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>gtype</code></em> :</span></p></td>
-<td>a map GType, as created by <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-map" title="dbus_g_type_get_map ()"><span class="type">dbus_g_type_get_map</span></a>.
-</td>
+<td>a map GType, as created by <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-map" title="dbus_g_type_get_map ()"><span class="type">dbus_g_type_get_map</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> the key type for a given map GType.
-Returns G_TYPE_INVALID if not a map GType
-</td>
+<td>the key type for a given map GType.
+Returns G_TYPE_INVALID if not a map GType</td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_get_map_value_specialization ()">
+<div class="refsect2">
 <a name="dbus-g-type-get-map-value-specialization"></a><h3>dbus_g_type_get_map_value_specialization ()</h3>
-<pre class="programlisting"><span class="returnvalue">GType</span>               dbus_g_type_get_map_value_specialization
-                                                        (<em class="parameter"><code><span class="type">GType</span> gtype</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               dbus_g_type_get_map_value_specialization
+                                                        (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> gtype</code></em>);</pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>gtype</code></em> :</span></p></td>
-<td>a map GType, as created by <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-map" title="dbus_g_type_get_map ()"><span class="type">dbus_g_type_get_map</span></a>.
-</td>
+<td>a map GType, as created by <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-map" title="dbus_g_type_get_map ()"><span class="type">dbus_g_type_get_map</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> the value type for a given map GType.
-Returns G_TYPE_INVALID if not a map GType
-</td>
+<td>the value type for a given map GType.
+Returns G_TYPE_INVALID if not a map GType</td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_get_struct_member_type ()">
+<div class="refsect2">
 <a name="dbus-g-type-get-struct-member-type"></a><h3>dbus_g_type_get_struct_member_type ()</h3>
-<pre class="programlisting"><span class="returnvalue">GType</span>               dbus_g_type_get_struct_member_type  (<em class="parameter"><code><span class="type">GType</span> gtype</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> member</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               dbus_g_type_get_struct_member_type  (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> gtype</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> member</code></em>);</pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
@@ -967,43 +672,39 @@ Returns G_TYPE_INVALID if not a map GType
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>member</code></em> :</span></p></td>
-<td>the index of a struct member
-</td>
+<td>the index of a struct member</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> the type for a given member of a struct <span class="type">GType</span>.
-Returns G_TYPE_INVALID if not a struct GType
-</td>
+<td>the type for a given member of a struct <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a>.
+Returns G_TYPE_INVALID if not a struct GType</td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_get_struct_size ()">
+<div class="refsect2">
 <a name="dbus-g-type-get-struct-size"></a><h3>dbus_g_type_get_struct_size ()</h3>
-<pre class="programlisting"><span class="returnvalue">guint</span>               dbus_g_type_get_struct_size         (<em class="parameter"><code><span class="type">GType</span> gtype</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>               dbus_g_type_get_struct_size         (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> gtype</code></em>);</pre>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>gtype</code></em> :</span></p></td>
-<td>a struct GType, as created with <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-struct" title="dbus_g_type_get_struct ()"><span class="type">dbus_g_type_get_struct</span></a>.
-</td>
+<td>a struct GType, as created with <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-struct" title="dbus_g_type_get_struct ()"><span class="type">dbus_g_type_get_struct</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> the number of members in a given struct <span class="type">GType</span>.
-Returns G_TYPE_INVALID if not a struct GType
-</td>
+<td>the number of members in a given struct <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a>.
+Returns G_TYPE_INVALID if not a struct GType</td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_specialized_construct ()">
+<div class="refsect2">
 <a name="dbus-g-type-specialized-construct"></a><h3>dbus_g_type_specialized_construct ()</h3>
-<pre class="programlisting"><span class="returnvalue">gpointer</span>            dbus_g_type_specialized_construct   (<em class="parameter"><code><span class="type">GType</span> gtype</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>            dbus_g_type_specialized_construct   (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> gtype</code></em>);</pre>
 <p>
 Create an instance of a given specialized type. 
 The structure created and returned will depend on the container type of the 
@@ -1016,21 +717,19 @@ then this will return a GArray with element_size of sizeof(int)
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>gtype</code></em> :</span></p></td>
-<td>a specialized <span class="type">GType</span>, as created by <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-collection" title="dbus_g_type_get_collection ()"><span class="type">dbus_g_type_get_collection</span></a>, <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-map" title="dbus_g_type_get_map ()"><span class="type">dbus_g_type_get_map</span></a> or <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-struct" title="dbus_g_type_get_struct ()"><span class="type">dbus_g_type_get_struct</span></a>.
-</td>
+<td>a specialized <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a>, as created by <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-collection" title="dbus_g_type_get_collection ()"><span class="type">dbus_g_type_get_collection</span></a>, <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-map" title="dbus_g_type_get_map ()"><span class="type">dbus_g_type_get_map</span></a> or <a class="link" href="dbus-glib-Specializable-GType-System.html#dbus-g-type-get-struct" title="dbus_g_type_get_struct ()"><span class="type">dbus_g_type_get_struct</span></a>.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> a pointer to a newly constructed instance of the given type.
-</td>
+<td>a pointer to a newly constructed instance of the given type.</td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_specialized_init_append ()">
+<div class="refsect2">
 <a name="dbus-g-type-specialized-init-append"></a><h3>dbus_g_type_specialized_init_append ()</h3>
-<pre class="programlisting"><span class="returnvalue">void</span>                dbus_g_type_specialized_init_append (<em class="parameter"><code><span class="type">GValue</span> *value</code></em>,
+<pre class="programlisting"><span class="returnvalue">void</span>                dbus_g_type_specialized_init_append (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>,
                                                          <em class="parameter"><code><a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedAppendContext" title="DBusGTypeSpecializedAppendContext"><span class="type">DBusGTypeSpecializedAppendContext</span></a> *ctx</code></em>);</pre>
 <p>
 Create a new context for adding elements to a collection or key/value pairs 
@@ -1041,23 +740,21 @@ to a map. You generally don't need or want to use this..
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>value</code></em> :</span></p></td>
-<td>a <span class="type">GValue</span> containing an instance of specialized type
-</td>
+<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> containing an instance of specialized type</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>ctx</code></em> :</span></p></td>
-<td>a <a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedAppendContext" title="DBusGTypeSpecializedAppendContext"><span class="type">DBusGTypeSpecializedAppendContext</span></a> in which to return a new appending context.
-</td>
+<td>a <a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedAppendContext" title="DBusGTypeSpecializedAppendContext"><span class="type">DBusGTypeSpecializedAppendContext</span></a> in which to return a new appending context.</td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_specialized_collection_append ()">
+<div class="refsect2">
 <a name="dbus-g-type-specialized-collection-append"></a><h3>dbus_g_type_specialized_collection_append ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                dbus_g_type_specialized_collection_append
                                                         (<em class="parameter"><code><a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedAppendContext" title="DBusGTypeSpecializedAppendContext"><span class="type">DBusGTypeSpecializedAppendContext</span></a> *ctx</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *elt</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *elt</code></em>);</pre>
 <p>
 Appends a given element to the end of a collection.
 </p>
@@ -1071,14 +768,13 @@ Appends a given element to the end of a collection.
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>elt</code></em> :</span></p></td>
-<td>a GValue containing an element to append to the collection.
-</td>
+<td>a GValue containing an element to append to the collection.</td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_specialized_collection_end_append ()">
+<div class="refsect2">
 <a name="dbus-g-type-specialized-collection-end-append"></a><h3>dbus_g_type_specialized_collection_end_append ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                dbus_g_type_specialized_collection_end_append
                                                         (<em class="parameter"><code><a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedAppendContext" title="DBusGTypeSpecializedAppendContext"><span class="type">DBusGTypeSpecializedAppendContext</span></a> *ctx</code></em>);</pre>
@@ -1095,11 +791,11 @@ Finish appending elements to a given collection
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_specialized_map_append ()">
+<div class="refsect2">
 <a name="dbus-g-type-specialized-map-append"></a><h3>dbus_g_type_specialized_map_append ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                dbus_g_type_specialized_map_append  (<em class="parameter"><code><a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedAppendContext" title="DBusGTypeSpecializedAppendContext"><span class="type">DBusGTypeSpecializedAppendContext</span></a> *ctx</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *key</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *val</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *key</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *val</code></em>);</pre>
 <p>
 Inserts the given key/value pair into the map instance.
 </p>
@@ -1125,52 +821,27 @@ Inserts the given key/value pair into the map instance.
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_collection_get_fixed ()">
+<div class="refsect2">
 <a name="dbus-g-type-collection-get-fixed"></a><h3>dbus_g_type_collection_get_fixed ()</h3>
-<pre class="programlisting"><span class="returnvalue">gboolean</span>            dbus_g_type_collection_get_fixed    (<em class="parameter"><code><span class="type">GValue</span> *value</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> *data</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> *len</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            dbus_g_type_collection_get_fixed    (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> *data</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *len</code></em>);</pre>
 <p>
 if the collection has elements of fixed size (i.e. a fundamental type), 
 return the contents of the array.
 Its pretty obscure and I don't think anyone uses it.
 </p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>value</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>data</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>len</code></em> :</span></p></td>
-<td>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>
-</td>
-</tr>
-</tbody>
-</table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_collection_value_iterate ()">
+<div class="refsect2">
 <a name="dbus-g-type-collection-value-iterate"></a><h3>dbus_g_type_collection_value_iterate ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                dbus_g_type_collection_value_iterate
-                                                        (<em class="parameter"><code>const <span class="type">GValue</span> *value</code></em>,
+                                                        (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>,
                                                          <em class="parameter"><code><a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCollectionIterator" title="DBusGTypeSpecializedCollectionIterator ()"><span class="type">DBusGTypeSpecializedCollectionIterator</span></a> iterator</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
 <p>
 Calls the given function for each element of the collection. 
-The function is passed a <span class="type">GValue</span> containing the element and the given 
+The function is passed a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> containing the element and the given 
 <em class="parameter"><code>user_data</code></em> parameter. The collection may not be modified while iterating over 
 it.
 </p>
@@ -1179,13 +850,11 @@ it.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>value</code></em> :</span></p></td>
-<td>a <span class="type">GValue</span> holding a collection type.
-</td>
+<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> holding a collection type.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>iterator</code></em> :</span></p></td>
-<td>a function to call for each element
-</td>
+<td>a function to call for each element</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
@@ -1196,11 +865,11 @@ it.
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_map_value_iterate ()">
+<div class="refsect2">
 <a name="dbus-g-type-map-value-iterate"></a><h3>dbus_g_type_map_value_iterate ()</h3>
-<pre class="programlisting"><span class="returnvalue">void</span>                dbus_g_type_map_value_iterate       (<em class="parameter"><code>const <span class="type">GValue</span> *value</code></em>,
+<pre class="programlisting"><span class="returnvalue">void</span>                dbus_g_type_map_value_iterate       (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>,
                                                          <em class="parameter"><code><a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedMapIterator" title="DBusGTypeSpecializedMapIterator ()"><span class="type">DBusGTypeSpecializedMapIterator</span></a> iterator</code></em>,
-                                                         <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
 <p>
 Calls the given function for each key/value pair of the map. 
 The function is passed two GValues containing the key/value pair and the given 
@@ -1212,13 +881,11 @@ it.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>value</code></em> :</span></p></td>
-<td>a <span class="type">GValue</span> holding a collection type.
-</td>
+<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> holding a collection type.</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>iterator</code></em> :</span></p></td>
-<td>a function to call for each element
-</td>
+<td>a function to call for each element</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
@@ -1229,11 +896,11 @@ it.
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_struct_get_member ()">
+<div class="refsect2">
 <a name="dbus-g-type-struct-get-member"></a><h3>dbus_g_type_struct_get_member ()</h3>
-<pre class="programlisting"><span class="returnvalue">gboolean</span>            dbus_g_type_struct_get_member       (<em class="parameter"><code>const <span class="type">GValue</span> *value</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> member</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *dest</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            dbus_g_type_struct_get_member       (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> member</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *dest</code></em>);</pre>
 <p>
 Fetches a given member of a given struct instance. <em class="parameter"><code>dest</code></em> must be initialised 
 was the correct type for that member, e.g. as returned by 
@@ -1244,33 +911,29 @@ was the correct type for that member, e.g. as returned by
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>value</code></em> :</span></p></td>
-<td>a <span class="type">GValue</span> containing a struct instance
-</td>
+<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> containing a struct instance</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>member</code></em> :</span></p></td>
-<td>the index of a given member
-</td>
+<td>the index of a given member</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>dest</code></em> :</span></p></td>
-<td>an initialised <span class="type">GValue</span> in which to return the struct member
-</td>
+<td>an initialised <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> in which to return the struct member</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> TRUE if sucessful
-</td>
+<td>TRUE if sucessful</td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_struct_set_member ()">
+<div class="refsect2">
 <a name="dbus-g-type-struct-set-member"></a><h3>dbus_g_type_struct_set_member ()</h3>
-<pre class="programlisting"><span class="returnvalue">gboolean</span>            dbus_g_type_struct_set_member       (<em class="parameter"><code><span class="type">GValue</span> *value</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> member</code></em>,
-                                                         <em class="parameter"><code>const <span class="type">GValue</span> *src</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            dbus_g_type_struct_set_member       (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> member</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *src</code></em>);</pre>
 <p>
 Sets a given member of a struct to a new value. The type of <em class="parameter"><code>src</code></em> must match 
 the exiting type of <em class="parameter"><code>member</code></em> member of the struct.
@@ -1280,32 +943,28 @@ the exiting type of <em class="parameter"><code>member</code></em> member of the
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>value</code></em> :</span></p></td>
-<td>a <span class="type">GValue</span> containing a struct instance
-</td>
+<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> containing a struct instance</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>member</code></em> :</span></p></td>
-<td>the index of a given member
-</td>
+<td>the index of a given member</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>src</code></em> :</span></p></td>
-<td>an <span class="type">GValue</span> containing the new value for that struct member
-</td>
+<td>an <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> containing the new value for that struct member</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> TRUE if sucessful
-</td>
+<td>TRUE if sucessful</td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_struct_get ()">
+<div class="refsect2">
 <a name="dbus-g-type-struct-get"></a><h3>dbus_g_type_struct_get ()</h3>
-<pre class="programlisting"><span class="returnvalue">gboolean</span>            dbus_g_type_struct_get              (<em class="parameter"><code>const <span class="type">GValue</span> *value</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> member</code></em>,
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            dbus_g_type_struct_get              (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> member</code></em>,
                                                          <em class="parameter"><code>...</code></em>);</pre>
 <p>
 Collects the selected values of this struct into the return locations
@@ -1316,34 +975,32 @@ provided.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>value</code></em> :</span></p></td>
-<td>a <span class="type">GValue</span> containing a <span class="type">DBusGTypeStruct</span> type
-</td>
+<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> containing a <span class="type">DBusGTypeStruct</span> type</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>member</code></em> :</span></p></td>
-<td>struct member to get
-</td>
+<td>struct member to get</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>...</code></em> :</span></p></td>
 <td>location in which to return the value of this member,
-      followed optionally by more member/return locations pairs, followed by
-      by <span class="type">G_MAXUINT</span>
+followed optionally by more member/return locations pairs, followed by
+by <a href="http://library.gnome.org/devel/glib/unstable/glib-Limits-of-Basic-Types.html#G-MAXUINT:CAPS"><span class="type">G_MAXUINT</span></a>
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> <span class="type">FALSE</span> on failure
-</td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><span class="type">FALSE</span></a> on failure</td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_struct_set ()">
+<div class="refsect2">
 <a name="dbus-g-type-struct-set"></a><h3>dbus_g_type_struct_set ()</h3>
-<pre class="programlisting"><span class="returnvalue">gboolean</span>            dbus_g_type_struct_set              (<em class="parameter"><code><span class="type">GValue</span> *value</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> member</code></em>,
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            dbus_g_type_struct_set              (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> member</code></em>,
                                                          <em class="parameter"><code>...</code></em>);</pre>
 <p>
 Sets the selected members of the struct in <em class="parameter"><code>value</code></em>.
@@ -1353,41 +1010,39 @@ Sets the selected members of the struct in <em class="parameter"><code>value</co
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>value</code></em> :</span></p></td>
-<td>a <span class="type">GValue</span> containing a <span class="type">DBusGTypeStruct</span> type
-</td>
+<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> containing a <span class="type">DBusGTypeStruct</span> type</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>member</code></em> :</span></p></td>
-<td>struct member to set
-</td>
+<td>struct member to set</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>...</code></em> :</span></p></td>
 <td>value for the first member, followed optionally by
-      more member/value pairs, followed by <span class="type">G_MAXUINT</span>
+more member/value pairs, followed by <a href="http://library.gnome.org/devel/glib/unstable/glib-Limits-of-Basic-Types.html#G-MAXUINT:CAPS"><span class="type">G_MAXUINT</span></a>
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> <span class="type">FALSE</span> on failure
-</td>
+<td>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><span class="type">FALSE</span></a> on failure</td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_specialized_init ()">
+<div class="refsect2">
 <a name="dbus-g-type-specialized-init"></a><h3>dbus_g_type_specialized_init ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                dbus_g_type_specialized_init        (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>
 </p>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_register_collection ()">
+<div class="refsect2">
 <a name="dbus-g-type-register-collection"></a><h3>dbus_g_type_register_collection ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                dbus_g_type_register_collection     (<em class="parameter"><code>const <span class="type">char</span> *name</code></em>,
                                                          <em class="parameter"><code>const <a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCollectionVtable" title="DBusGTypeSpecializedCollectionVtable"><span class="type">DBusGTypeSpecializedCollectionVtable</span></a> *vtable</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> flags</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> flags</code></em>);</pre>
 <p>
 Defines a new collection container.
 </p>
@@ -1396,28 +1051,25 @@ Defines a new collection container.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>name</code></em> :</span></p></td>
-<td>The name of a new collection container
-</td>
+<td>The name of a new collection container</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>vtable</code></em> :</span></p></td>
-<td>the vtable defining the new container
-</td>
+<td>the vtable defining the new container</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>flags</code></em> :</span></p></td>
-<td>As yet unused.
-</td>
+<td>As yet unused.</td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_register_map ()">
+<div class="refsect2">
 <a name="dbus-g-type-register-map"></a><h3>dbus_g_type_register_map ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                dbus_g_type_register_map            (<em class="parameter"><code>const <span class="type">char</span> *name</code></em>,
                                                          <em class="parameter"><code>const <a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedMapVtable" title="DBusGTypeSpecializedMapVtable"><span class="type">DBusGTypeSpecializedMapVtable</span></a> *vtable</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> flags</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> flags</code></em>);</pre>
 <p>
 Defines a new map container.
 </p>
@@ -1426,76 +1078,57 @@ Defines a new map container.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>name</code></em> :</span></p></td>
-<td>The name of a new map container
-</td>
+<td>The name of a new map container</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>vtable</code></em> :</span></p></td>
-<td>the vtable defining the new container
-</td>
+<td>the vtable defining the new container</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>flags</code></em> :</span></p></td>
-<td>As yet unused.
-</td>
+<td>As yet unused.</td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_map_peek_vtable ()">
+<div class="refsect2">
 <a name="dbus-g-type-map-peek-vtable"></a><h3>dbus_g_type_map_peek_vtable ()</h3>
-<pre class="programlisting">const <a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedMapVtable" title="DBusGTypeSpecializedMapVtable"><span class="returnvalue">DBusGTypeSpecializedMapVtable</span></a>* dbus_g_type_map_peek_vtable
-                                                        (<em class="parameter"><code><span class="type">GType</span> map_type</code></em>);</pre>
+<pre class="programlisting">const <a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedMapVtable" title="DBusGTypeSpecializedMapVtable"><span class="returnvalue">DBusGTypeSpecializedMapVtable</span></a> *  dbus_g_type_map_peek_vtable
+                                                        (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> map_type</code></em>);</pre>
 <p>
 Peek the vtable for a given map specialization
 </p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
-<tbody>
-<tr>
+<tbody><tr>
 <td><p><span class="term"><em class="parameter"><code>map_type</code></em> :</span></p></td>
-<td>a gtype of a map specialization
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>
-</td>
-</tr>
-</tbody>
+<td>a gtype of a map specialization</td>
+</tr></tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_collection_peek_vtable ()">
+<div class="refsect2">
 <a name="dbus-g-type-collection-peek-vtable"></a><h3>dbus_g_type_collection_peek_vtable ()</h3>
-<pre class="programlisting">const <a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCollectionVtable" title="DBusGTypeSpecializedCollectionVtable"><span class="returnvalue">DBusGTypeSpecializedCollectionVtable</span></a>* dbus_g_type_collection_peek_vtable
-                                                        (<em class="parameter"><code><span class="type">GType</span> collection_type</code></em>);</pre>
+<pre class="programlisting">const <a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedCollectionVtable" title="DBusGTypeSpecializedCollectionVtable"><span class="returnvalue">DBusGTypeSpecializedCollectionVtable</span></a> *  dbus_g_type_collection_peek_vtable
+                                                        (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> collection_type</code></em>);</pre>
 <p>
 Peek the vtable for a given collection specialization
 </p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
-<tbody>
-<tr>
+<tbody><tr>
 <td><p><span class="term"><em class="parameter"><code>collection_type</code></em> :</span></p></td>
-<td>a gtype of a collection specialization
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>
-</td>
-</tr>
-</tbody>
+<td>a gtype of a collection specialization</td>
+</tr></tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_type_register_struct ()">
+<div class="refsect2">
 <a name="dbus-g-type-register-struct"></a><h3>dbus_g_type_register_struct ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                dbus_g_type_register_struct         (<em class="parameter"><code>const <span class="type">char</span> *name</code></em>,
                                                          <em class="parameter"><code>const <a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGTypeSpecializedStructVtable" title="DBusGTypeSpecializedStructVtable"><span class="type">DBusGTypeSpecializedStructVtable</span></a> *vtable</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> flags</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> flags</code></em>);</pre>
 <p>
 Defines a new struct container.
 </p>
@@ -1504,28 +1137,25 @@ Defines a new struct container.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>name</code></em> :</span></p></td>
-<td>The name of a new struct container
-</td>
+<td>The name of a new struct container</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>vtable</code></em> :</span></p></td>
-<td>the vtable defining the new container
-</td>
+<td>the vtable defining the new container</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>flags</code></em> :</span></p></td>
-<td>As yet unused.
-</td>
+<td>As yet unused.</td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_value_build_g_variant ()">
+<div class="refsect2">
 <a name="dbus-g-value-build-g-variant"></a><h3>dbus_g_value_build_g_variant ()</h3>
-<pre class="programlisting"><span class="returnvalue">GVariant</span> *          dbus_g_value_build_g_variant        (<em class="parameter"><code>const <span class="type">GValue</span> *value</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-GVariant.html#GVariant"><span class="returnvalue">GVariant</span></a> *          dbus_g_value_build_g_variant        (<em class="parameter"><code>const <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>);</pre>
 <p>
-Recurses <em class="parameter"><code>value</code></em> and converts its contents to a <span class="type">GVariant</span>.
+Recurses <em class="parameter"><code>value</code></em> and converts its contents to a <a href="http://library.gnome.org/devel/glib/unstable/glib-GVariant.html#GVariant"><span class="type">GVariant</span></a>.
 </p>
 <p>
 The value must either be a simple value (integer, string, boolean,
@@ -1539,28 +1169,27 @@ object path etc.) or a specialized container registered with
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>value</code></em> :</span></p></td>
-<td>a simple or specialized <span class="type">GValue</span> to convert to a <span class="type">GVariant</span>
+<td>a simple or specialized <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> to convert to a <a href="http://library.gnome.org/devel/glib/unstable/glib-GVariant.html#GVariant"><span class="type">GVariant</span></a>
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> a new <span class="type">GVariant</span> containing <em class="parameter"><code>value</code></em> with a floating reference
-</td>
+<td>a new <a href="http://library.gnome.org/devel/glib/unstable/glib-GVariant.html#GVariant"><span class="type">GVariant</span></a> containing <em class="parameter"><code>value</code></em> with a floating reference</td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_value_parse_g_variant ()">
+<div class="refsect2">
 <a name="dbus-g-value-parse-g-variant"></a><h3>dbus_g_value_parse_g_variant ()</h3>
-<pre class="programlisting"><span class="returnvalue">void</span>                dbus_g_value_parse_g_variant        (<em class="parameter"><code><span class="type">GVariant</span> *variant</code></em>,
-                                                         <em class="parameter"><code><span class="type">GValue</span> *value</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">void</span>                dbus_g_value_parse_g_variant        (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-GVariant.html#GVariant"><span class="type">GVariant</span></a> *variant</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a> *value</code></em>);</pre>
 <p>
 Deserialize <em class="parameter"><code>variant</code></em> and put an equivalent dbus-glib data structure in
 <em class="parameter"><code>value</code></em>.
 </p>
 <p>
-It is an error if <em class="parameter"><code>variant</code></em> contains any <span class="type">GVariant</span> extensions not supported
+It is an error if <em class="parameter"><code>variant</code></em> contains any <a href="http://library.gnome.org/devel/glib/unstable/glib-GVariant.html#GVariant"><span class="type">GVariant</span></a> extensions not supported
 by dbus-glib, including handles (file descriptor passing) and 'maybe' types.
 </p>
 <div class="variablelist"><table border="0">
@@ -1568,19 +1197,19 @@ by dbus-glib, including handles (file descriptor passing) and 'maybe' types.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>variant</code></em> :</span></p></td>
-<td>a <span class="type">GVariant</span>
+<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-GVariant.html#GVariant"><span class="type">GVariant</span></a>
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>value</code></em> :</span></p></td>
-<td>a zero-filled <span class="type">GValue</span>
+<td>a zero-filled <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a>
 </td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="DBUS_TYPE_G_BOOLEAN_ARRAY">
+<div class="refsect2">
 <a name="DBUS-TYPE-G-BOOLEAN-ARRAY:CAPS"></a><h3>DBUS_TYPE_G_BOOLEAN_ARRAY</h3>
 <pre class="programlisting">#define DBUS_TYPE_G_BOOLEAN_ARRAY  (dbus_g_type_get_collection ("GArray", G_TYPE_BOOLEAN))
 </pre>
@@ -1588,7 +1217,7 @@ by dbus-glib, including handles (file descriptor passing) and 'maybe' types.
 </p>
 </div>
 <hr>
-<div class="refsect2" title="DBUS_TYPE_G_UCHAR_ARRAY">
+<div class="refsect2">
 <a name="DBUS-TYPE-G-UCHAR-ARRAY:CAPS"></a><h3>DBUS_TYPE_G_UCHAR_ARRAY</h3>
 <pre class="programlisting">#define DBUS_TYPE_G_UCHAR_ARRAY    (dbus_g_type_get_collection ("GArray", G_TYPE_UCHAR))
 </pre>
@@ -1596,7 +1225,7 @@ by dbus-glib, including handles (file descriptor passing) and 'maybe' types.
 </p>
 </div>
 <hr>
-<div class="refsect2" title="DBUS_TYPE_G_UINT_ARRAY">
+<div class="refsect2">
 <a name="DBUS-TYPE-G-UINT-ARRAY:CAPS"></a><h3>DBUS_TYPE_G_UINT_ARRAY</h3>
 <pre class="programlisting">#define DBUS_TYPE_G_UINT_ARRAY     (dbus_g_type_get_collection ("GArray", G_TYPE_UINT))
 </pre>
@@ -1604,7 +1233,7 @@ by dbus-glib, including handles (file descriptor passing) and 'maybe' types.
 </p>
 </div>
 <hr>
-<div class="refsect2" title="DBUS_TYPE_G_INT_ARRAY">
+<div class="refsect2">
 <a name="DBUS-TYPE-G-INT-ARRAY:CAPS"></a><h3>DBUS_TYPE_G_INT_ARRAY</h3>
 <pre class="programlisting">#define DBUS_TYPE_G_INT_ARRAY      (dbus_g_type_get_collection ("GArray", G_TYPE_INT))
 </pre>
@@ -1612,7 +1241,7 @@ by dbus-glib, including handles (file descriptor passing) and 'maybe' types.
 </p>
 </div>
 <hr>
-<div class="refsect2" title="DBUS_TYPE_G_UINT64_ARRAY">
+<div class="refsect2">
 <a name="DBUS-TYPE-G-UINT64-ARRAY:CAPS"></a><h3>DBUS_TYPE_G_UINT64_ARRAY</h3>
 <pre class="programlisting">#define DBUS_TYPE_G_UINT64_ARRAY   (dbus_g_type_get_collection ("GArray", G_TYPE_UINT64))
 </pre>
@@ -1620,7 +1249,7 @@ by dbus-glib, including handles (file descriptor passing) and 'maybe' types.
 </p>
 </div>
 <hr>
-<div class="refsect2" title="DBUS_TYPE_G_INT64_ARRAY">
+<div class="refsect2">
 <a name="DBUS-TYPE-G-INT64-ARRAY:CAPS"></a><h3>DBUS_TYPE_G_INT64_ARRAY</h3>
 <pre class="programlisting">#define DBUS_TYPE_G_INT64_ARRAY    (dbus_g_type_get_collection ("GArray", G_TYPE_INT64))
 </pre>
@@ -1628,7 +1257,7 @@ by dbus-glib, including handles (file descriptor passing) and 'maybe' types.
 </p>
 </div>
 <hr>
-<div class="refsect2" title="DBUS_TYPE_G_OBJECT_ARRAY">
+<div class="refsect2">
 <a name="DBUS-TYPE-G-OBJECT-ARRAY:CAPS"></a><h3>DBUS_TYPE_G_OBJECT_ARRAY</h3>
 <pre class="programlisting">#define DBUS_TYPE_G_OBJECT_ARRAY   (dbus_g_type_get_collection ("GPtrArray", G_TYPE_OBJECT))
 </pre>
@@ -1636,7 +1265,7 @@ by dbus-glib, including handles (file descriptor passing) and 'maybe' types.
 </p>
 </div>
 <hr>
-<div class="refsect2" title="DBUS_TYPE_G_STRING_STRING_HASHTABLE">
+<div class="refsect2">
 <a name="DBUS-TYPE-G-STRING-STRING-HASHTABLE:CAPS"></a><h3>DBUS_TYPE_G_STRING_STRING_HASHTABLE</h3>
 <pre class="programlisting">#define DBUS_TYPE_G_STRING_STRING_HASHTABLE (dbus_g_type_get_map ("GHashTable", G_TYPE_STRING, G_TYPE_STRING))
 </pre>
@@ -1644,13 +1273,13 @@ by dbus-glib, including handles (file descriptor passing) and 'maybe' types.
 </p>
 </div>
 <hr>
-<div class="refsect2" title="DBusGSignature">
+<div class="refsect2">
 <a name="DBusGSignature"></a><h3>DBusGSignature</h3>
 <pre class="programlisting">typedef gchar DBusGSignature;
 </pre>
 <p>
 A typedef for a string used to represent D-Bus signatures.
-Its GType is <a class="link" href="dbus-glib-Specializable-GType-System.html#DBUS-TYPE-G-SIGNATURE:CAPS" title="DBUS_TYPE_G_SIGNATURE"><code class="literal">DBUS_TYPE_G_SIGNATURE</code></a>, derived from <code class="literal">G_TYPE_BOXED</code>.
+Its GType is <a class="link" href="dbus-glib-Specializable-GType-System.html#DBUS-TYPE-G-SIGNATURE:CAPS" title="DBUS_TYPE_G_SIGNATURE"><code class="literal">DBUS_TYPE_G_SIGNATURE</code></a>, derived from <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#G-TYPE-BOXED:CAPS"><code class="literal">G_TYPE_BOXED</code></a>.
 </p>
 <p>
 Prior to version 0.FIXME this was used as the type name of
@@ -1659,34 +1288,34 @@ Prior to version 0.FIXME this was used as the type name of
 <p class="since">Since 0.FIXME</p>
 </div>
 <hr>
-<div class="refsect2" title="DBUS_TYPE_G_SIGNATURE">
+<div class="refsect2">
 <a name="DBUS-TYPE-G-SIGNATURE:CAPS"></a><h3>DBUS_TYPE_G_SIGNATURE</h3>
 <pre class="programlisting">#define DBUS_TYPE_G_SIGNATURE (dbus_g_signature_get_g_type ())
 </pre>
 <p>
-The <span class="type">GType</span> of a <a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGSignature" title="DBusGSignature"><span class="type">DBusGSignature</span></a>, which is a boxed type containing a
+The <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> of a <a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGSignature" title="DBusGSignature"><span class="type">DBusGSignature</span></a>, which is a boxed type containing a
 D-Bus signature as a zero-terminated string. Signatures can be
-copied with <code class="function">g_strdup()</code> and freed with <code class="function">g_free()</code>, just like <code class="literal">G_TYPE_STRING</code>,
+copied with <a href="http://library.gnome.org/devel/glib/unstable/glib-String-Utility-Functions.html#g-strdup"><code class="function">g_strdup()</code></a> and freed with <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>, just like <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#G-TYPE-STRING:CAPS"><code class="literal">G_TYPE_STRING</code></a>,
 but have a distinct boxed type to allow them to be distinguished when
-stored in a <span class="type">GValue</span>.
+stored in a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a>.
 </p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody><tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> a type derived from <code class="literal">G_TYPE_BOXED</code>
+<td>a type derived from <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#G-TYPE-BOXED:CAPS"><code class="literal">G_TYPE_BOXED</code></a>
 </td>
 </tr></tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="DBusGObjectPath">
+<div class="refsect2">
 <a name="DBusGObjectPath"></a><h3>DBusGObjectPath</h3>
 <pre class="programlisting">typedef gchar DBusGObjectPath;
 </pre>
 <p>
 A typedef for a string used to represent D-Bus object paths.
-Its GType is <a class="link" href="dbus-glib-Specializable-GType-System.html#DBUS-TYPE-G-OBJECT-PATH:CAPS" title="DBUS_TYPE_G_OBJECT_PATH"><code class="literal">DBUS_TYPE_G_OBJECT_PATH</code></a>, derived from <code class="literal">G_TYPE_BOXED</code>.
+Its GType is <a class="link" href="dbus-glib-Specializable-GType-System.html#DBUS-TYPE-G-OBJECT-PATH:CAPS" title="DBUS_TYPE_G_OBJECT_PATH"><code class="literal">DBUS_TYPE_G_OBJECT_PATH</code></a>, derived from <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#G-TYPE-BOXED:CAPS"><code class="literal">G_TYPE_BOXED</code></a>.
 </p>
 <p>
 Prior to version 0.FIXME this was used as the type name of
@@ -1695,22 +1324,22 @@ Prior to version 0.FIXME this was used as the type name of
 <p class="since">Since 0.FIXME</p>
 </div>
 <hr>
-<div class="refsect2" title="DBUS_TYPE_G_OBJECT_PATH">
+<div class="refsect2">
 <a name="DBUS-TYPE-G-OBJECT-PATH:CAPS"></a><h3>DBUS_TYPE_G_OBJECT_PATH</h3>
 <pre class="programlisting">#define DBUS_TYPE_G_OBJECT_PATH (dbus_g_object_path_get_g_type ())
 </pre>
 <p>
-The <span class="type">GType</span> of a <a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGObjectPath" title="DBusGObjectPath"><span class="type">DBusGObjectPath</span></a>, which is a boxed type containing a
+The <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> of a <a class="link" href="dbus-glib-Specializable-GType-System.html#DBusGObjectPath" title="DBusGObjectPath"><span class="type">DBusGObjectPath</span></a>, which is a boxed type containing a
 D-Bus object path as a zero-terminated string. Object paths can be
-copied with <code class="function">g_strdup()</code> and freed with <code class="function">g_free()</code>, just like <code class="literal">G_TYPE_STRING</code>,
+copied with <a href="http://library.gnome.org/devel/glib/unstable/glib-String-Utility-Functions.html#g-strdup"><code class="function">g_strdup()</code></a> and freed with <a href="http://library.gnome.org/devel/glib/unstable/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a>, just like <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#G-TYPE-STRING:CAPS"><code class="literal">G_TYPE_STRING</code></a>,
 but have a distinct boxed type to allow them to be distinguished when
-stored in a <span class="type">GValue</span>.
+stored in a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Generic-values.html#GValue"><span class="type">GValue</span></a>.
 </p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody><tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td> a type derived from <code class="literal">G_TYPE_BOXED</code>
+<td>a type derived from <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#G-TYPE-BOXED:CAPS"><code class="literal">G_TYPE_BOXED</code></a>
 </td>
 </tr></tbody>
 </table></div>
@@ -1719,6 +1348,6 @@ stored in a <span class="type">GValue</span>.
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.15</div>
+          Generated by GTK-Doc V1.17</div>
 </body>
 </html>

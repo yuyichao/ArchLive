@@ -30,7 +30,7 @@
     <keyword type="function" name="dbus_g_connection_register_g_object ()" link="dbus-glib-DBusGConnection.html#dbus-g-connection-register-g-object"/>
     <keyword type="function" name="dbus_g_connection_unregister_g_object ()" link="dbus-glib-DBusGConnection.html#dbus-g-connection-unregister-g-object"/>
     <keyword type="function" name="dbus_g_connection_lookup_g_object ()" link="dbus-glib-DBusGConnection.html#dbus-g-connection-lookup-g-object"/>
-    <keyword type="struct" name="DBusGObjectInfo" link="dbus-glib-DBus-GObject-related-functions.html#DBusGObjectInfo"/>
+    <keyword type="struct" name="struct DBusGObjectInfo" link="dbus-glib-DBus-GObject-related-functions.html#DBusGObjectInfo"/>
     <keyword type="function" name="dbus_g_object_type_install_info ()" link="dbus-glib-DBus-GObject-related-functions.html#dbus-g-object-type-install-info"/>
     <keyword type="function" name="dbus_g_object_path_get_g_type ()" link="dbus-glib-DBus-GObject-related-functions.html#dbus-g-object-path-get-g-type"/>
     <keyword type="function" name="dbus_g_object_register_marshaller ()" link="dbus-glib-DBus-GObject-related-functions.html#dbus-g-object-register-marshaller"/>
@@ -39,7 +39,7 @@
     <keyword type="function" name="dbus_g_message_ref ()" link="dbus-glib-DBusGMessage.html#dbus-g-message-ref"/>
     <keyword type="function" name="dbus_g_message_unref ()" link="dbus-glib-DBusGMessage.html#dbus-g-message-unref"/>
     <keyword type="function" name="dbus_g_message_get_message ()" link="dbus-glib-DBusGMessage.html#dbus-g-message-get-message"/>
-    <keyword type="struct" name="DBusGMethodInfo" link="dbus-glib-DBusGMethod.html#DBusGMethodInfo"/>
+    <keyword type="struct" name="struct DBusGMethodInfo" link="dbus-glib-DBusGMethod.html#DBusGMethodInfo"/>
     <keyword type="struct" name="DBusGMethodInvocation" link="dbus-glib-DBusGMethod.html#DBusGMethodInvocation"/>
     <keyword type="function" name="dbus_g_method_get_sender ()" link="dbus-glib-DBusGMethod.html#dbus-g-method-get-sender"/>
     <keyword type="function" name="dbus_g_method_get_reply ()" link="dbus-glib-DBusGMethod.html#dbus-g-method-get-reply"/>
@@ -51,7 +51,7 @@
     <keyword type="function" name="dbus_g_error_get_name ()" link="dbus-glib-DBusGError.html#dbus-g-error-get-name"/>
     <keyword type="function" name="dbus_g_error_quark ()" link="dbus-glib-DBusGError.html#dbus-g-error-quark"/>
     <keyword type="function" name="dbus_g_error_domain_register ()" link="dbus-glib-DBusGError.html#dbus-g-error-domain-register"/>
-    <keyword type="struct" name="DBusGProxy" link="dbus-glib-DBusGProxy.html#DBusGProxy"/>
+    <keyword type="struct" name="struct DBusGProxy" link="dbus-glib-DBusGProxy.html#DBusGProxy"/>
     <keyword type="function" name="dbus_g_proxy_new_for_name ()" link="dbus-glib-DBusGProxy.html#dbus-g-proxy-new-for-name"/>
     <keyword type="function" name="dbus_g_proxy_new_for_name_owner ()" link="dbus-glib-DBusGProxy.html#dbus-g-proxy-new-for-name-owner"/>
     <keyword type="function" name="dbus_g_proxy_new_from_proxy ()" link="dbus-glib-DBusGProxy.html#dbus-g-proxy-new-from-proxy"/>
@@ -137,6 +137,6 @@
     <keyword type="function" name="dbus_set_g_error ()" link="dbus-glib-DBus-GLib-low-level.html#dbus-set-g-error"/>
     <keyword type="function" name="dbus_connection_setup_with_g_main ()" link="dbus-glib-DBus-GLib-low-level.html#dbus-connection-setup-with-g-main"/>
     <keyword type="function" name="dbus_server_setup_with_g_main ()" link="dbus-glib-DBus-GLib-low-level.html#dbus-server-setup-with-g-main"/>
-    <keyword type="" name="Options" link="dbus-binding-tool.html#id558581"/>
+    <keyword type="" name="Options" link="dbus-binding-tool.html#idp4767920"/>
   </functions>
 </book>

@@ -33,7 +33,7 @@ DAEMON="/usr/sbin/$NAME"
 
 case "$1" in
     start)
-        ck_daemon dbus && /etc/rc.d/dbus start
+        ck_daemon dbus && { echo -n "Start dbus first." >&2; stat_die; }
         stat_busy "Starting $DESC"
         $DAEMON -D > /dev/null 2>&1
         if [ $? -gt 0 ]; then

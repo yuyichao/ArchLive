@@ -54,11 +54,11 @@ sub import {
     return;
 }
 
-die "Perl lib version (5.14.0) doesn't match executable '$0' version ($])"
+die "Perl lib version (5.14.1) doesn't match executable '$0' version ($])"
     unless $^V;
 
-$^V eq 5.14.0
-    or die "Perl lib version (5.14.0) doesn't match executable '$0' version (" .
+$^V eq 5.14.1
+    or die "Perl lib version (5.14.1) doesn't match executable '$0' version (" .
 	sprintf("v%vd",$^V) . ")";
 
 
@@ -106,5 +106,5 @@ tie %Config, 'Config', {
     so => 'so',
     useithreads => 'define',
     usevendorprefix => 'define',
-    version => '5.14.0',
+    version => '5.14.1',
 };

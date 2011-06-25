@@ -1,0 +1,53 @@
+%NAME%
+s-util-git
+
+%VERSION%
+20110625-1
+
+%DESC%
+Simple utilities, git version
+
+%URL%
+https://github.com/yuyichao/s-util
+
+%LICENSE%
+GPL
+
+%ARCH%
+any
+
+%BUILDDATE%
+1308964114
+
+%INSTALLDATE%
+1308964128
+
+%PACKAGER%
+Unknown Packager
+
+%SIZE%
+98304
+
+%DEPENDS%
+bash
+coreutils
+findutils
+grep
+awk
+sed
+
+%OPTDEPENDS%
+xdg-utils: for using xopen to open any kind of files without annoy cli output
+openssl: for grub certificate from website
+nss: for add certificate in to database
+wget: for using recget to download recursively
+texlive-bin: for using texit to generate a tmp pdf
+curl: for netman and mitclass
+util-linux: mount
+
+%CONFLICTS%
+s-util
+
+%PROVIDES%
+s-util
+

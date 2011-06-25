@@ -1,0 +1,37 @@
+%NAME%
+psmisc
+
+%VERSION%
+22.14-1
+
+%DESC%
+Miscellaneous procfs tools
+
+%GROUPS%
+base
+
+%URL%
+http://psmisc.sourceforge.net/index.html
+
+%LICENSE%
+GPL
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1308900417
+
+%INSTALLDATE%
+1308964096
+
+%PACKAGER%
+Eric Belanger <eric@archlinux.org>
+
+%SIZE%
+626688
+
+%DEPENDS%
+glibc
+ncurses
+

@@ -8,7 +8,7 @@
 <link rel="up" href="ch02.html" title="API Reference">
 <link rel="prev" href="dbus-glib-DBusGConnection.html" title="DBusGConnection">
 <link rel="next" href="dbus-glib-DBusGMessage.html" title="DBusGMessage">
-<meta name="generator" content="GTK-Doc V1.15 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.17 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -26,46 +26,46 @@
                   <a href="#dbus-glib-DBus-GObject-related-functions.description" class="shortcut">Description</a>
 </td></tr>
 </table>
-<div class="refentry" title="DBus GObject related functions">
+<div class="refentry">
 <a name="dbus-glib-DBus-GObject-related-functions"></a><div class="titlepage"></div>
 <div class="refnamediv"><table width="100%"><tr>
 <td valign="top">
 <h2><span class="refentrytitle"><a name="dbus-glib-DBus-GObject-related-functions.top_of_page"></a>DBus GObject related functions</span></h2>
-<p>DBus GObject related functions — Exporting a <span class="type">GObject</span> remotely</p>
+<p>DBus GObject related functions — Exporting a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a> remotely</p>
 </td>
 <td valign="top" align="right"></td>
 </tr></table></div>
-<div class="refsect1" title="Stability Level">
+<div class="refsect1">
 <a name="dbus-glib-DBus-GObject-related-functions.stability-level"></a><h2>Stability Level</h2>
 Stable, unless otherwise indicated
 </div>
-<div class="refsynopsisdiv" title="Synopsis">
+<div class="refsynopsisdiv">
 <a name="dbus-glib-DBus-GObject-related-functions.synopsis"></a><h2>Synopsis</h2>
-<pre class="synopsis">                    <a class="link" href="dbus-glib-DBus-GObject-related-functions.html#DBusGObjectInfo" title="DBusGObjectInfo">DBusGObjectInfo</a>;
-<span class="returnvalue">void</span>                <a class="link" href="dbus-glib-DBus-GObject-related-functions.html#dbus-g-object-type-install-info" title="dbus_g_object_type_install_info ()">dbus_g_object_type_install_info</a>     (<em class="parameter"><code><span class="type">GType</span> object_type</code></em>,
-                                                         <em class="parameter"><code>const <a class="link" href="dbus-glib-DBus-GObject-related-functions.html#DBusGObjectInfo" title="DBusGObjectInfo"><span class="type">DBusGObjectInfo</span></a> *info</code></em>);
-<span class="returnvalue">GType</span>               <a class="link" href="dbus-glib-DBus-GObject-related-functions.html#dbus-g-object-path-get-g-type" title="dbus_g_object_path_get_g_type ()">dbus_g_object_path_get_g_type</a>       (<em class="parameter"><code><span class="type">void</span></code></em>);
-<span class="returnvalue">void</span>                <a class="link" href="dbus-glib-DBus-GObject-related-functions.html#dbus-g-object-register-marshaller" title="dbus_g_object_register_marshaller ()">dbus_g_object_register_marshaller</a>   (<em class="parameter"><code><span class="type">GClosureMarshal</span> marshaller</code></em>,
-                                                         <em class="parameter"><code><span class="type">GType</span> rettype</code></em>,
+<pre class="synopsis">struct              <a class="link" href="dbus-glib-DBus-GObject-related-functions.html#DBusGObjectInfo" title="struct DBusGObjectInfo">DBusGObjectInfo</a>;
+<span class="returnvalue">void</span>                <a class="link" href="dbus-glib-DBus-GObject-related-functions.html#dbus-g-object-type-install-info" title="dbus_g_object_type_install_info ()">dbus_g_object_type_install_info</a>     (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> object_type</code></em>,
+                                                         <em class="parameter"><code>const <a class="link" href="dbus-glib-DBus-GObject-related-functions.html#DBusGObjectInfo" title="struct DBusGObjectInfo"><span class="type">DBusGObjectInfo</span></a> *info</code></em>);
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               <a class="link" href="dbus-glib-DBus-GObject-related-functions.html#dbus-g-object-path-get-g-type" title="dbus_g_object_path_get_g_type ()">dbus_g_object_path_get_g_type</a>       (<em class="parameter"><code><span class="type">void</span></code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="dbus-glib-DBus-GObject-related-functions.html#dbus-g-object-register-marshaller" title="dbus_g_object_register_marshaller ()">dbus_g_object_register_marshaller</a>   (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Closures.html#GClosureMarshal"><span class="type">GClosureMarshal</span></a> marshaller</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> rettype</code></em>,
                                                          <em class="parameter"><code>...</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="dbus-glib-DBus-GObject-related-functions.html#dbus-g-object-register-marshaller-array" title="dbus_g_object_register_marshaller_array ()">dbus_g_object_register_marshaller_array</a>
-                                                        (<em class="parameter"><code><span class="type">GClosureMarshal</span> marshaller</code></em>,
-                                                         <em class="parameter"><code><span class="type">GType</span> rettype</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> n_types</code></em>,
-                                                         <em class="parameter"><code>const <span class="type">GType</span> *types</code></em>);
+                                                        (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Closures.html#GClosureMarshal"><span class="type">GClosureMarshal</span></a> marshaller</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> rettype</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n_types</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> *types</code></em>);
 </pre>
 </div>
-<div class="refsect1" title="Description">
+<div class="refsect1">
 <a name="dbus-glib-DBus-GObject-related-functions.description"></a><h2>Description</h2>
 <p>
 FIXME
 </p>
 </div>
-<div class="refsect1" title="Details">
+<div class="refsect1">
 <a name="dbus-glib-DBus-GObject-related-functions.details"></a><h2>Details</h2>
-<div class="refsect2" title="DBusGObjectInfo">
-<a name="DBusGObjectInfo"></a><h3>DBusGObjectInfo</h3>
-<pre class="programlisting">typedef struct {
+<div class="refsect2">
+<a name="DBusGObjectInfo"></a><h3>struct DBusGObjectInfo</h3>
+<pre class="programlisting">struct DBusGObjectInfo {
   int   format_version;
                        
   const DBusGMethodInfo *method_infos;
@@ -73,56 +73,50 @@ FIXME
   const char *data; 
   const char *exported_signals;  
   const char *exported_properties; 
-} DBusGObjectInfo;
+};
 </pre>
 <p>
-Introspection data for a <span class="type">GObject</span>, normally autogenerated by
+Introspection data for a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a>, normally autogenerated by
 a tool such as <a class="link" href="dbus-binding-tool.html" title="dbus-binding-tool"><span class="type">dbus-binding-tool</span></a>.
 </p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">
 <tbody>
 <tr>
-<td><p><span class="term"><span class="type">int</span> <em class="structfield"><code><a name="DBusGObjectInfo.format-version"></a>format_version</code></em>;</span></p></td>
+<td><p><span class="term"><a href="/usr/share/gtk-doc/html/gnutls/gnutls-crypto.html#int"><span class="type">int</span></a> <em class="structfield"><code><a name="DBusGObjectInfo.format-version"></a>format_version</code></em>;</span></p></td>
 <td>Allows us to change the rest of this struct
-  by adding DBusGObjectInfo2, DBusGObjectInfo3, etc.
-</td>
+by adding DBusGObjectInfo2, DBusGObjectInfo3, etc.</td>
 </tr>
 <tr>
-<td><p><span class="term">const <a class="link" href="dbus-glib-DBusGMethod.html#DBusGMethodInfo" title="DBusGMethodInfo"><span class="type">DBusGMethodInfo</span></a> *<em class="structfield"><code><a name="DBusGObjectInfo.method-infos"></a>method_infos</code></em>;</span></p></td>
-<td>Array of method pointers 
-</td>
+<td><p><span class="term">const <a class="link" href="dbus-glib-DBusGMethod.html#DBusGMethodInfo" title="struct DBusGMethodInfo"><span class="type">DBusGMethodInfo</span></a> *<em class="structfield"><code><a name="DBusGObjectInfo.method-infos"></a>method_infos</code></em>;</span></p></td>
+<td>Array of method pointers</td>
 </tr>
 <tr>
-<td><p><span class="term"><span class="type">int</span> <em class="structfield"><code><a name="DBusGObjectInfo.n-method-infos"></a>n_method_infos</code></em>;</span></p></td>
-<td>Length of the infos array 
-</td>
+<td><p><span class="term"><a href="/usr/share/gtk-doc/html/gnutls/gnutls-crypto.html#int"><span class="type">int</span></a> <em class="structfield"><code><a name="DBusGObjectInfo.n-method-infos"></a>n_method_infos</code></em>;</span></p></td>
+<td>Length of the infos array</td>
 </tr>
 <tr>
 <td><p><span class="term">const <span class="type">char</span> *<em class="structfield"><code><a name="DBusGObjectInfo.data"></a>data</code></em>;</span></p></td>
-<td>Introspection data 
-</td>
+<td>Introspection data</td>
 </tr>
 <tr>
 <td><p><span class="term">const <span class="type">char</span> *<em class="structfield"><code><a name="DBusGObjectInfo.exported-signals"></a>exported_signals</code></em>;</span></p></td>
-<td>Exported signals
-</td>
+<td>Exported signals</td>
 </tr>
 <tr>
 <td><p><span class="term">const <span class="type">char</span> *<em class="structfield"><code><a name="DBusGObjectInfo.exported-properties"></a>exported_properties</code></em>;</span></p></td>
-<td>Exported properties 
-</td>
+<td>Exported properties</td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_object_type_install_info ()">
+<div class="refsect2">
 <a name="dbus-g-object-type-install-info"></a><h3>dbus_g_object_type_install_info ()</h3>
-<pre class="programlisting"><span class="returnvalue">void</span>                dbus_g_object_type_install_info     (<em class="parameter"><code><span class="type">GType</span> object_type</code></em>,
-                                                         <em class="parameter"><code>const <a class="link" href="dbus-glib-DBus-GObject-related-functions.html#DBusGObjectInfo" title="DBusGObjectInfo"><span class="type">DBusGObjectInfo</span></a> *info</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">void</span>                dbus_g_object_type_install_info     (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> object_type</code></em>,
+                                                         <em class="parameter"><code>const <a class="link" href="dbus-glib-DBus-GObject-related-functions.html#DBusGObjectInfo" title="struct DBusGObjectInfo"><span class="type">DBusGObjectInfo</span></a> *info</code></em>);</pre>
 <p>
-Install introspection information about the given object <span class="type">GType</span>
+Install introspection information about the given object <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a>
 sufficient to allow methods on the object to be invoked by name.
 The introspection information is normally generated by
 dbus-glib-tool, then this function is called in the
@@ -139,8 +133,7 @@ their methods invoked remotely.
 <tr>
 <td><p><span class="term"><em class="parameter"><code>object_type</code></em> :</span></p></td>
 <td>
-<span class="type">GType</span> for the object
-</td>
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> for the object</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>info</code></em> :</span></p></td>
@@ -151,30 +144,22 @@ their methods invoked remotely.
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_object_path_get_g_type ()">
+<div class="refsect2">
 <a name="dbus-g-object-path-get-g-type"></a><h3>dbus_g_object_path_get_g_type ()</h3>
-<pre class="programlisting"><span class="returnvalue">GType</span>               dbus_g_object_path_get_g_type       (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="returnvalue">GType</span></a>               dbus_g_object_path_get_g_type       (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <p>
 </p>
-<div class="variablelist"><table border="0">
-<col align="left" valign="top">
-<tbody><tr>
-<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>
-</td>
-</tr></tbody>
-</table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_object_register_marshaller ()">
+<div class="refsect2">
 <a name="dbus-g-object-register-marshaller"></a><h3>dbus_g_object_register_marshaller ()</h3>
-<pre class="programlisting"><span class="returnvalue">void</span>                dbus_g_object_register_marshaller   (<em class="parameter"><code><span class="type">GClosureMarshal</span> marshaller</code></em>,
-                                                         <em class="parameter"><code><span class="type">GType</span> rettype</code></em>,
+<pre class="programlisting"><span class="returnvalue">void</span>                dbus_g_object_register_marshaller   (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Closures.html#GClosureMarshal"><span class="type">GClosureMarshal</span></a> marshaller</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> rettype</code></em>,
                                                          <em class="parameter"><code>...</code></em>);</pre>
 <p>
-Register a <span class="type">GClosureMarshal</span> to be used for signal invocations,
+Register a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Closures.html#GClosureMarshal"><span class="type">GClosureMarshal</span></a> to be used for signal invocations,
 giving its return type and a list of parameter types,
-followed by <code class="literal">G_TYPE_INVALID</code>.
+followed by <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#G-TYPE-INVALID:CAPS"><code class="literal">G_TYPE_INVALID</code></a>.
 </p>
 <p>
 This function will not be needed once GLib includes libffi.
@@ -184,33 +169,27 @@ This function will not be needed once GLib includes libffi.
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>marshaller</code></em> :</span></p></td>
-<td>a GClosureMarshal to be used for invocation
-</td>
+<td>a GClosureMarshal to be used for invocation</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>rettype</code></em> :</span></p></td>
 <td>a GType for the return type of the function
-@:... The parameter <span class="type">GTypes</span>, followed by <code class="literal">G_TYPE_INVALID</code>
-</td>
-</tr>
-<tr>
-<td><p><span class="term"><em class="parameter"><code>...</code></em> :</span></p></td>
-<td>
+@:... The parameter <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GTypes</span></a>, followed by <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#G-TYPE-INVALID:CAPS"><code class="literal">G_TYPE_INVALID</code></a>
 </td>
 </tr>
 </tbody>
 </table></div>
 </div>
 <hr>
-<div class="refsect2" title="dbus_g_object_register_marshaller_array ()">
+<div class="refsect2">
 <a name="dbus-g-object-register-marshaller-array"></a><h3>dbus_g_object_register_marshaller_array ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                dbus_g_object_register_marshaller_array
-                                                        (<em class="parameter"><code><span class="type">GClosureMarshal</span> marshaller</code></em>,
-                                                         <em class="parameter"><code><span class="type">GType</span> rettype</code></em>,
-                                                         <em class="parameter"><code><span class="type">guint</span> n_types</code></em>,
-                                                         <em class="parameter"><code>const <span class="type">GType</span> *types</code></em>);</pre>
+                                                        (<em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Closures.html#GClosureMarshal"><span class="type">GClosureMarshal</span></a> marshaller</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> rettype</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> n_types</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> *types</code></em>);</pre>
 <p>
-Register a <span class="type">GClosureMarshal</span> to be used for signal invocations.
+Register a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Closures.html#GClosureMarshal"><span class="type">GClosureMarshal</span></a> to be used for signal invocations.
 <em class="parameter"><code>see_also</code></em> <a class="link" href="dbus-glib-DBus-GObject-related-functions.html#dbus-g-object-register-marshaller" title="dbus_g_object_register_marshaller ()"><span class="type">dbus_g_object_register_marshaller</span></a>
 </p>
 <div class="variablelist"><table border="0">
@@ -218,35 +197,31 @@ Register a <span class="type">GClosureMarshal</span> to be used for signal invoc
 <tbody>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>marshaller</code></em> :</span></p></td>
-<td>a <span class="type">GClosureMarshal</span> to be used for invocation
-</td>
+<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Closures.html#GClosureMarshal"><span class="type">GClosureMarshal</span></a> to be used for invocation</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>rettype</code></em> :</span></p></td>
-<td>a <span class="type">GType</span> for the return type of the function
-</td>
+<td>a <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Type-Information.html#GType"><span class="type">GType</span></a> for the return type of the function</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>n_types</code></em> :</span></p></td>
-<td>number of function parameters
-</td>
+<td>number of function parameters</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>types</code></em> :</span></p></td>
-<td>a C array of GTypes values
-</td>
+<td>a C array of GTypes values</td>
 </tr>
 </tbody>
 </table></div>
 </div>
 </div>
-<div class="refsect1" title="See Also">
+<div class="refsect1">
 <a name="dbus-glib-DBus-GObject-related-functions.see-also"></a><h2>See Also</h2>
-<span class="type">GObject</span>
+<a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a>
 </div>
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.15</div>
+          Generated by GTK-Doc V1.17</div>
 </body>
 </html>

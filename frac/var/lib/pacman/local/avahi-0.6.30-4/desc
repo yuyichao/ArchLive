@@ -1,0 +1,64 @@
+%NAME%
+avahi
+
+%VERSION%
+0.6.30-4
+
+%DESC%
+A multicast/unicast DNS-SD framework
+
+%REPLACES%
+howl
+mdnsresponder
+
+%URL%
+http://www.avahi.org/
+
+%LICENSE%
+LGPL
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1308886193
+
+%INSTALLDATE%
+1308964094
+
+%PACKAGER%
+Gaetan Bisson <bisson@archlinux.org>
+
+%SIZE%
+2392064
+
+%REASON%
+1
+
+%DEPENDS%
+expat
+libdaemon
+glib2
+dbus
+libcap
+gdbm
+
+%OPTDEPENDS%
+gtk3: avahi-discover-standalone, bshell, bssh, bvnc
+gtk2: gtk2 bindings
+qt3: qt3 bindings
+qt: qt bindings
+pygtk: avahi-bookmarks, avahi-discover
+twisted: avahi-bookmarks
+mono: mono bindings
+dbus-python: avahi-discover
+nss-mdns: NSS support for mDNS
+
+%CONFLICTS%
+howl
+mdnsresponder
+
+%PROVIDES%
+howl
+mdnsresponder
+

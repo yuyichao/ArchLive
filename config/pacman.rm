@@ -1,4 +1,1 @@
-tracker
-gnome-common gtk-doc gtkhtml intltool libgles libgsf scons
-madwifi
-net-tools
+tracker gnome-common gtk-doc gtkhtml intltool libgles libgsf scons net-tools
