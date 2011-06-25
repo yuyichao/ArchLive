@@ -1,61 +1,22 @@
-base base-devel multilib-devel xorg texlive-most texlive-lang
+groups: base base-devel multilib-devel xorg texlive-most texlive-lang gnome gnome-extra gstreamer0.10-plugins
 
-basic: initscripts hal grub2 acpid kernel26 kernel26-headers kernel26-manpages kernel26-docs
-net: dhcpcd curl inetutils openssh networkmanager
+basic: initscripts hal grub2 acpid kernel26 kernel26-headers crda ntfs-3g
+doc: kernel26-manpages kernel26-docs gtkmm-docs gtkmm3-docs opengl-man-pages
+net-connect: dhcpcd networkmanager ethtool netcfg yp-tools networkmanager-vpnc networkmanager-pptp networkmanager-openvpn networkmanager-openconnect network-manager-applet
+net-util: curl inetutils openssh netwatch samba mailutils mutt postfix w3m socat gvfs-smb netcat
+net-gui: firefox firefox-i18n firefox-i18n-zh-cn flashplugin-prerelease chromium ktorrent rdesktop evolution-exchange mail-notification wireshark-gtk wireshark-cli transmission-gtk skype
 text: emacs auctex
 python: python python2 py3gobject python-rope pylint
 arch: yaourt abs
-util: bash-completion aspell at expect cups-pdf mysql indent unzip rar-beta bc inotify-tools
-devel: bluez boost boost-libs cmake git svn gdb bashdb
-gnome: gnome gnome-extra gnome-shell-extension-drive-menu gnome-shell-extension-places-menu gnome-shell-extension-alternative-status-menu gcolor2 gnome-disk-utility seed
+util: bash-completion aspell at expect cups-pdf mysql indent bc inotify-tools fdupes xdg-user-dirs sudo convmv ffmpeg laptop-mode-tools cpio zsh strace pdf2djvu gnuplot tcsh ruby espeak hwdetect tre
+archive: unzip rar-beta p7zip rpmextract fastjar cabextract antiword unrtf
+devel: bluez boost boost-libs cmake git svn gdb bashdb lzop lesspipe pmtools lsb-release hspell
+gnome: gnome-shell-extension-drive-menu gnome-shell-extension-places-menu gnome-shell-extension-alternative-status-menu gcolor2 gnome-disk-utility seed gnome-spell gnome-tweak-tool gnome-shell-extension-windows-navigator gnome-shell-extension-user-theme gnome-system-tools gnome-settings-daemon-updates gnome-themes-extras gnome-js-common gnote devhelp gnome-color-manager anjuta anjuta-extras
+desktop: gimp-devel gimp-help-zh_cn gnochm libreoffice libreoffice-extensions libreoffice-zh-CN calibre nautilus-gkim nautilus-actions nautilus-open-terminal gksu easytag gedit-plugins virtualbox virtualbox-additions gthumb inkscape mesa-demos parcellite system-config-printer-gnome system-config-printer-common system-tools-backends simple-scan lyx
 empathy: telepathy-butterfly telepathy-salut telepathy-haze telepathy-sofiasip telepathy-gabble telepathy-idle
-
-
-convmv xdg-user-dirs xcursor-vanilla-dmz
-ethtool
-fdupes
-ffmpeg
-gimp-devel gimp-help-zh_cn
-hwdetect calibre chromium easytag espeak firefox firefox-i18n-zh-cn flashplugin-prerelease
-gnome-spell gnome-tweak-tool gnome-shell-extension-windows-navigator gnome-shell-extension-user-theme
-firefox-i18n
-gnochm libreoffice libreoffice-extensions libreoffice-zh-CN
-nautilus-gkim nautilus-actions nautilus-open-terminal
-postfix
-sudo gksu gedit-plugins
-w3m
-virtualbox virtualbox-additions
-gthumb
-inkscape kde-l10n-zh_cn tre espeak mesa mesa-demos mail-notification
-gnuplot
-anjuta anjuta-extras banshee netcat p7zip network-manager-applet devhelp gnome-color-manager
-ocaml php r ruby gstreamer0.10-bad-plugins gstreamer0.10-ffmpeg gstreamer0.10-ugly gstreamer0.10-ugly-plugins
-parcellite
-gnome-system-tools gnome-settings-daemon-updates gnome-themes-extras
-ntfs-3g
-ktorrent
-mplayer-vaapi pdf2djvu socat system-config-printer-gnome system-config-printer-common system-tools-backends tcsh wireshark-gtk wireshark-cli gvfs-smb
-simple-scan crda gnome-js-common gnote gtkmm-docs gtkmm3-docs
-zsh strace skype
-cpio fluidsynth
-rdesktop
-evolution-exchange
-mutt mutagen
-kdebase kdeplasma-applets-networkmanagement kdeplasma-addons kdepim kile kdegraphics-okular kdeplasma-addons-runners-converter
-opengl-man-pages
-lzop samba
-netcfg netstat-nat netwatch networkmanager-vpnc networkmanager-pptp networkmanager-openvpn networkmanager-openconnect
-laptop-mode-tools mingw32-gcc
-mailutils
-lesspipe
-rpmextract fastjar cabextract antiword unrtf
-lyx
-lib32-libcanberra-pulse
-lib32-alsa-plugins
-wqy-bitmapfont wqy-zenhei ttf-dejavu ttf-arphic-ukai ttf-arphic-uming
-xsettings-client xsensors xscreensaver
-pmtools
-java-runtime
-transmission-gtk
-lsb-release
-hspell
+fonts: wqy-bitmapfont wqy-zenhei ttf-dejavu ttf-arphic-ukai ttf-arphic-uming
+libs: lib32-libcanberra-pulse lib32-libpulse lib32-v41-utils lib32-alsa-plugins java-runtime graphviz
+theme: xcursor-vanilla-dmz
+kde: kdebase kdeplasma-applets-networkmanagement kdeplasma-addons kdepim kile kdegraphics-okular kdeplasma-addons-runners-converter kde-l10n-zh_cn
+audio: mplayer-vaapi fluidsynth mutagen banshee
+x: xsettings-client xsensors xscreensaver
