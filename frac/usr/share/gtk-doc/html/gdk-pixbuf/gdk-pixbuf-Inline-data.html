@@ -8,7 +8,7 @@
 <link rel="up" href="rn01.html" title="API Reference">
 <link rel="prev" href="gdk-pixbuf-Image-Data-in-Memory.html" title="Image Data in Memory">
 <link rel="next" href="gdk-pixbuf-Scaling.html" title="Scaling">
-<meta name="generator" content="GTK-Doc V1.17 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.17.1 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -48,16 +48,16 @@ enum                <a class="link" href="gdk-pixbuf-Inline-data.html#GdkPixdata
 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="returnvalue">gpointer</span></a>            <a class="link" href="gdk-pixbuf-Inline-data.html#gdk-pixdata-from-pixbuf" title="gdk_pixdata_from_pixbuf ()">gdk_pixdata_from_pixbuf</a>             (<em class="parameter"><code><a class="link" href="gdk-pixbuf-Inline-data.html#GdkPixdata" title="struct GdkPixdata"><span class="type">GdkPixdata</span></a> *pixdata</code></em>,
                                                          <em class="parameter"><code>const <a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> *pixbuf</code></em>,
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> use_rle</code></em>);
-<a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *	        <a class="link" href="gdk-pixbuf-Inline-data.html#gdk-pixbuf-from-pixdata" title="gdk_pixbuf_from_pixdata ()">gdk_pixbuf_from_pixdata</a>             (<em class="parameter"><code>const <a class="link" href="gdk-pixbuf-Inline-data.html#GdkPixdata" title="struct GdkPixdata"><span class="type">GdkPixdata</span></a> *pixdata</code></em>,
+<a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *         <a class="link" href="gdk-pixbuf-Inline-data.html#gdk-pixbuf-from-pixdata" title="gdk_pixbuf_from_pixdata ()">gdk_pixbuf_from_pixdata</a>             (<em class="parameter"><code>const <a class="link" href="gdk-pixbuf-Inline-data.html#GdkPixdata" title="struct GdkPixdata"><span class="type">GdkPixdata</span></a> *pixdata</code></em>,
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> copy_pixels</code></em>,
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="returnvalue">guint8</span></a> *		          <a class="link" href="gdk-pixbuf-Inline-data.html#gdk-pixdata-serialize" title="gdk_pixdata_serialize ()">gdk_pixdata_serialize</a>               (<em class="parameter"><code>const <a class="link" href="gdk-pixbuf-Inline-data.html#GdkPixdata" title="struct GdkPixdata"><span class="type">GdkPixdata</span></a> *pixdata</code></em>,
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="returnvalue">guint8</span></a> *            <a class="link" href="gdk-pixbuf-Inline-data.html#gdk-pixdata-serialize" title="gdk_pixdata_serialize ()">gdk_pixdata_serialize</a>               (<em class="parameter"><code>const <a class="link" href="gdk-pixbuf-Inline-data.html#GdkPixdata" title="struct GdkPixdata"><span class="type">GdkPixdata</span></a> *pixdata</code></em>,
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *stream_length_p</code></em>);
 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="gdk-pixbuf-Inline-data.html#gdk-pixdata-deserialize" title="gdk_pixdata_deserialize ()">gdk_pixdata_deserialize</a>             (<em class="parameter"><code><a class="link" href="gdk-pixbuf-Inline-data.html#GdkPixdata" title="struct GdkPixdata"><span class="type">GdkPixdata</span></a> *pixdata</code></em>,
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> stream_length</code></em>,
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> *stream</code></em>,
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Strings.html#GString"><span class="returnvalue">GString</span></a> *	          <a class="link" href="gdk-pixbuf-Inline-data.html#gdk-pixdata-to-csource" title="gdk_pixdata_to_csource ()">gdk_pixdata_to_csource</a>              (<em class="parameter"><code><a class="link" href="gdk-pixbuf-Inline-data.html#GdkPixdata" title="struct GdkPixdata"><span class="type">GdkPixdata</span></a> *pixdata</code></em>,
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Strings.html#GString"><span class="returnvalue">GString</span></a> *           <a class="link" href="gdk-pixbuf-Inline-data.html#gdk-pixdata-to-csource" title="gdk_pixdata_to_csource ()">gdk_pixdata_to_csource</a>              (<em class="parameter"><code><a class="link" href="gdk-pixbuf-Inline-data.html#GdkPixdata" title="struct GdkPixdata"><span class="type">GdkPixdata</span></a> *pixdata</code></em>,
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
                                                          <em class="parameter"><code><a class="link" href="gdk-pixbuf-Inline-data.html#GdkPixdataDumpType" title="enum GdkPixdataDumpType"><span class="type">GdkPixdataDumpType</span></a> dump_type</code></em>);
 </pre>
@@ -343,7 +343,7 @@ for the run-length encoded pixel data, otherwise <a href="http://library.gnome.o
 <hr>
 <div class="refsect2">
 <a name="gdk-pixbuf-from-pixdata"></a><h3>gdk_pixbuf_from_pixdata ()</h3>
-<pre class="programlisting"><a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *	        gdk_pixbuf_from_pixdata             (<em class="parameter"><code>const <a class="link" href="gdk-pixbuf-Inline-data.html#GdkPixdata" title="struct GdkPixdata"><span class="type">GdkPixdata</span></a> *pixdata</code></em>,
+<pre class="programlisting"><a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *         gdk_pixbuf_from_pixdata             (<em class="parameter"><code>const <a class="link" href="gdk-pixbuf-Inline-data.html#GdkPixdata" title="struct GdkPixdata"><span class="type">GdkPixdata</span></a> *pixdata</code></em>,
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a> copy_pixels</code></em>,
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>
@@ -377,7 +377,7 @@ pixel data is always copied.</td>
 <hr>
 <div class="refsect2">
 <a name="gdk-pixdata-serialize"></a><h3>gdk_pixdata_serialize ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="returnvalue">guint8</span></a> *		          gdk_pixdata_serialize               (<em class="parameter"><code>const <a class="link" href="gdk-pixbuf-Inline-data.html#GdkPixdata" title="struct GdkPixdata"><span class="type">GdkPixdata</span></a> *pixdata</code></em>,
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="returnvalue">guint8</span></a> *            gdk_pixdata_serialize               (<em class="parameter"><code>const <a class="link" href="gdk-pixbuf-Inline-data.html#GdkPixdata" title="struct GdkPixdata"><span class="type">GdkPixdata</span></a> *pixdata</code></em>,
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *stream_length_p</code></em>);</pre>
 <p>
 Serializes a <a class="link" href="gdk-pixbuf-Inline-data.html#GdkPixdata" title="struct GdkPixdata"><span class="type">GdkPixdata</span></a> structure into a byte stream.
@@ -451,7 +451,7 @@ or <a class="link" href="gdk-pixbuf-The-GdkPixbuf-Structure.html#GDK-PIXBUF-ERRO
 <hr>
 <div class="refsect2">
 <a name="gdk-pixdata-to-csource"></a><h3>gdk_pixdata_to_csource ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Strings.html#GString"><span class="returnvalue">GString</span></a> *	          gdk_pixdata_to_csource              (<em class="parameter"><code><a class="link" href="gdk-pixbuf-Inline-data.html#GdkPixdata" title="struct GdkPixdata"><span class="type">GdkPixdata</span></a> *pixdata</code></em>,
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Strings.html#GString"><span class="returnvalue">GString</span></a> *           gdk_pixdata_to_csource              (<em class="parameter"><code><a class="link" href="gdk-pixbuf-Inline-data.html#GdkPixdata" title="struct GdkPixdata"><span class="type">GdkPixdata</span></a> *pixdata</code></em>,
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *name</code></em>,
                                                          <em class="parameter"><code><a class="link" href="gdk-pixbuf-Inline-data.html#GdkPixdataDumpType" title="enum GdkPixdataDumpType"><span class="type">GdkPixdataDumpType</span></a> dump_type</code></em>);</pre>
 <p>
@@ -490,6 +490,6 @@ of <em class="parameter"><code>pixdata</code></em>.</td>
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.17</div>
+          Generated by GTK-Doc V1.17.1</div>
 </body>
 </html>

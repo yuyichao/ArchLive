@@ -97,7 +97,7 @@ while test "X$1" != "X--"; do
        FAKEROOT_FD_BASE="$1"
        ;;
     -v|--version)
-       echo "fakeroot version 1.15.1"
+       echo "fakeroot version 1.16"
        exit 0
        ;;
     -h|--help)

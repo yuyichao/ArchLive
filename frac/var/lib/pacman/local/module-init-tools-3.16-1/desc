@@ -1,0 +1,36 @@
+%NAME%
+module-init-tools
+
+%VERSION%
+3.16-1
+
+%DESC%
+utilities needed by Linux systems for managing loadable kernel modules
+
+%URL%
+http://kerneltools.org
+
+%LICENSE%
+GPL
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1309012244
+
+%INSTALLDATE%
+1309273848
+
+%PACKAGER%
+Dave Reisner <dreisner@archlinux.org>
+
+%SIZE%
+1224704
+
+%REASON%
+1
+
+%DEPENDS%
+glibc
+

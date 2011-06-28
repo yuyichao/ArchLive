@@ -1,0 +1,36 @@
+%NAME%
+mpfr
+
+%VERSION%
+3.0.1.p4-1
+
+%DESC%
+Multiple-precision floating-point library
+
+%URL%
+http://www.mpfr.org/
+
+%LICENSE%
+LGPL
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1309013632
+
+%INSTALLDATE%
+1309273871
+
+%PACKAGER%
+Allan McRae <allan@archlinux.org>
+
+%SIZE%
+1499136
+
+%REASON%
+1
+
+%DEPENDS%
+gmp>=5.0
+

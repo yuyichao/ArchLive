@@ -1,15 +1,19 @@
 # See also: protocols(5), http://www.sethwklein.net/projects/iana-etc/
 #
 #    Last Updated
-#            2010-05-27
+#            2011-05-03
 # 
-#    This registry is also available in XML and plain text formats.
+#    This registry is also available in plain text.
 # 
 #    Registry included below
 # 
 #      * Assigned Internet Protocol Numbers
 # 
 # Assigned Internet Protocol Numbers
+# 
+#    Registration Procedures
+# 
+#  IESG Approval or Standards Action
 # 
 #    Reference
 #            [RFC5237]
@@ -18,15 +22,12 @@
 # 
 #  In the Internet Protocol version 4 (IPv4) [RFC791] there is a field
 #  called "Protocol" to identify the next level protocol.  This is an 8
-#  bit field.  In Internet Protocol version 6 (IPv6) [RFC1883], this field
+#  bit field.  In Internet Protocol version 6 (IPv6) [RFC2460], this field
 #  is called the "Next Header" field.
-# 
-#    Registration Procedures
-#            IESG Approval or Standards Action
 # 
 #    Decimal     Keyword                   Protocol                                                    Reference
 # protocol   num aliases      # comments
-hopopt         0 HOPOPT       # IPv6 Hop-by-Hop Option                [RFC1883]
+hopopt         0 HOPOPT       # IPv6 Hop-by-Hop Option                [RFC2460]
 icmp           1 ICMP         # Internet Control Message              [RFC792]
 igmp           2 IGMP         # Internet Group Management             [RFC1112]
 ggp            3 GGP          # Gateway-to-Gateway                    [RFC823]
@@ -99,9 +100,9 @@ mobile        55 MOBILE       # IP Mobility                           [Charlie_P
 tlsp          56 TLSP         # Transport Layer Security Protocol     [Christer_Oberg]
 #                            using Kryptonet key management
 skip          57 SKIP         # SKIP                                  [Tom_Markson]
-ipv6-icmp     58 IPv6-ICMP    # ICMP for IPv6                         [RFC1883]
-ipv6-nonxt    59 IPv6-NoNxt   # No Next Header for IPv6               [RFC1883]
-ipv6-opts     60 IPv6-Opts    # Destination Options for IPv6          [RFC1883]
+ipv6-icmp     58 IPv6-ICMP    # ICMP for IPv6                         [RFC2460]
+ipv6-nonxt    59 IPv6-NoNxt   # No Next Header for IPv6               [RFC2460]
+ipv6-opts     60 IPv6-Opts    # Destination Options for IPv6          [RFC2460]
 #      61                    any host internal protocol            [Internet_Assigned_Numbers_Authority]
 cftp          62 CFTP         # CFTP                                  [Forsdick, H., "CFTP", Network Message, Bolt Beranek and Newman, January
 #                                                                  1982.][Harry_Forsdick]
@@ -127,6 +128,8 @@ vmtp          81 VMTP         # VMTP                                  [Dave_Cher
 secure-vmtp   82 SECURE-VMTP  # SECURE-VMTP                           [Dave_Cheriton]
 vines         83 VINES        # VINES                                 [Brian Horn]
 ttp           84 TTP          # TTP                                   [Jim_Stevens]
+iptm          84 IPTM         # Protocol Internet Protocol Traffic    [Jim_Stevens]
+#                            Manager
 nsfnet-igp    85 NSFNET-IGP   # NSFNET-IGP                            [Hans_Werner_Braun]
 dgp           86 DGP          # Dissimilar Gateway Protocol           [M/A-COM Government Systems, "Dissimilar Gateway Protocol Specification, Draft
 #                                                                  Version", Contract no. CS901145, November 16, 1987.][Mike_Little]
@@ -179,7 +182,7 @@ iplt         129 IPLT         # [[Hollbach]]
 sps          130 SPS          # Secure Packet Shield                  [Bill_McIntosh]
 pipe         131 PIPE         # Private IP Encapsulation within IP    [Bernhard_Petri]
 sctp         132 SCTP         # Stream Control Transmission Protocol  [Randall_R_Stewart]
-fc           133 FC           # Fibre Channel                         [Murali_Rajagopal]
+fc           133 FC           # Fibre Channel                         [Murali_Rajagopal][RFC6172]
 rsvp-e2e-ignore 134 RSVP-E2E-IGNORE # [RFC3175]
 mobility     135 Mobility     # Header                                       [RFC3775]
 udplite      136 UDPLite      # [RFC3828]
@@ -228,7 +231,7 @@ reserved     255 Reserved     # [Internet_Assigned_Numbers_Authority]
 #    [J_Noel_Chiappa]                      J. Noel Chiappa                     mailto:JNC&xx.lcs.mit.edu
 #    [Jack_Haverty]                        Jack Haverty                        mailto:jhaverty&oracle.com
 #    [Jean_Michel_Pittet]                  Jean-Michel Pittet                  mailto:jmp&gandalf.engr.sgi.com                 1998-11
-#    [Jim_Stevens]                         Jim Stevens                         mailto:Stevens&isi.edu
+#    [Jim_Stevens]                         Jim Stevens                         mailto:jasteven&rockwellcollins.com             2011-01-26
 #    [John_Ioannidis]                      John Ioannidis                      mailto:ji&cs.columbia.edu
 #    [John_Moy]                            John Moy                            mailto:jmoy&proteon.com
 #    [John_Murphy]                         John Murphy                         mailto:john.m.murphy&mci.com                    1998-10

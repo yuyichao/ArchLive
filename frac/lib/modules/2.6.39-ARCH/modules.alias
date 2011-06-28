@@ -5683,6 +5683,7 @@ alias usb:v22B8p3010d0001dc*dsc*dp*ic*isc*ip* usb_storage
 alias usb:v2116p0320d0001dc*dsc*dp*ic*isc*ip* usb_storage
 alias usb:v1E74p4621d0000dc*dsc*dp*ic*isc*ip* usb_storage
 alias usb:v1E68p001Bd0000dc*dsc*dp*ic*isc*ip* usb_storage
+alias usb:v1B1Cp1AB5d0200dc*dsc*dp*ic*isc*ip* usb_storage
 alias usb:v1908p3335d0200dc*dsc*dp*ic*isc*ip* usb_storage
 alias usb:v1908p1320d0000dc*dsc*dp*ic*isc*ip* usb_storage
 alias usb:v1908p1315d0000dc*dsc*dp*ic*isc*ip* usb_storage
@@ -5815,6 +5816,7 @@ alias usb:v0AF0p6971d*dc*dsc*dp*ic*isc*ip* usb_storage
 alias usb:v0ACEp20FFd0101dc*dsc*dp*ic*isc*ip* usb_storage
 alias usb:v0ACEp2011d0101dc*dsc*dp*ic*isc*ip* usb_storage
 alias usb:v0A17p0004d1000dc*dsc*dp*ic*isc*ip* usb_storage
+alias usb:v090Cp6000d0100dc*dsc*dp*ic*isc*ip* usb_storage
 alias usb:v090Cp1132d*dc*dsc*dp*ic*isc*ip* usb_storage
 alias usb:v090Ap1200d*dc*dsc*dp*ic*isc*ip* usb_storage
 alias usb:v090Ap1050d0100dc*dsc*dp*ic*isc*ip* usb_storage
@@ -6256,6 +6258,7 @@ alias usb:v0403pD38Bd*dc*dsc*dp*ic*isc*ip* ftdi_sio
 alias usb:v0403pD38Ad*dc*dsc*dp*ic*isc*ip* ftdi_sio
 alias usb:v0403pD389d*dc*dsc*dp*ic*isc*ip* ftdi_sio
 alias usb:v0403pD388d*dc*dsc*dp*ic*isc*ip* ftdi_sio
+alias usb:v0403pF3C2d*dc*dsc*dp*ic*isc*ip* ftdi_sio
 alias usb:v0403pF3C1d*dc*dsc*dp*ic*isc*ip* ftdi_sio
 alias usb:v0403pF3C0d*dc*dsc*dp*ic*isc*ip* ftdi_sio
 alias usb:v0403pE520d*dc*dsc*dp*ic*isc*ip* ftdi_sio
@@ -6995,11 +6998,13 @@ alias usb:v1266p1004d*dc*dsc*dp*ic*isc*ip* option
 alias usb:v1266p1003d*dc*dsc*dp*ic*isc*ip* option
 alias usb:v1266p1002d*dc*dsc*dp*ic*isc*ip* option
 alias usb:v201Ep2009d*dc*dsc*dp*ic*isc*ip* option
+alias usb:v1C9Ep9607d*dc*dsc*dp*ic*isc*ip* option
 alias usb:v1C9Ep9603d*dc*dsc*dp*ic*isc*ip* option
 alias usb:v20B9p1682d*dc*dsc*dp*ic*isc*ip* option
 alias usb:v1011p3198d*dc*dsc*dp*ic*isc*ip* option
 alias usb:v1BBBp0000d*dc*dsc*dp*ic*isc*ip* option
 alias usb:v1E0Ep9200d*dc*dsc*dp*icFFiscFFipFF* option
+alias usb:v1E0Ep9100d*dc*dsc*dp*ic*isc*ip* option
 alias usb:v1E0Ep9000d*dc*dsc*dp*ic*isc*ip* option
 alias usb:v0930p1302d*dc*dsc*dp*ic*isc*ip* option
 alias usb:v0930p0D45d*dc*dsc*dp*ic*isc*ip* option
@@ -7012,7 +7017,6 @@ alias usb:v1E0EpCE1Ed*dc*dsc*dp*ic*isc*ip* option
 alias usb:v1E0EpCE16d*dc*dsc*dp*ic*isc*ip* option
 alias usb:v1186p3E04d*dc*dsc*dp*ic*isc*ip* option
 alias usb:v04A5p4068d*dc*dsc*dp*ic*isc*ip* option
-alias usb:v1D6Bp0002d*dc*dsc*dp*ic*isc*ip* option
 alias usb:v19D2pFFFFd*dc*dsc*dp*icFFiscFFipFF* option
 alias usb:v19D2pFFF5d*dc*dsc*dp*icFFiscFFipFF* option
 alias usb:v19D2pFFF1d*dc*dsc*dp*icFFiscFFipFF* option
@@ -8285,6 +8289,8 @@ alias usb:v*p*d*dc*dsc*dp*ic02isc02ip00* cdc_acm
 alias usb:v04D8p000Bd*dc*dsc*dp*ic*isc*ip* cdc_acm
 alias usb:v0694pFF00d*dc*dsc*dp*ic*isc*ip* cdc_acm
 alias usb:v04E7p6651d*dc*dsc*dp*ic02isc02ipFF* cdc_acm
+alias usb:v0421p03CDd*dc*dsc*dp*ic02isc02ipFF* cdc_acm
+alias usb:v0421p0335d*dc*dsc*dp*ic02isc02ipFF* cdc_acm
 alias usb:v0421p0302d*dc*dsc*dp*ic02isc02ipFF* cdc_acm
 alias usb:v0421p01D4d*dc*dsc*dp*ic02isc02ipFF* cdc_acm
 alias usb:v0421p04CEd*dc*dsc*dp*ic02isc02ipFF* cdc_acm

@@ -1,0 +1,56 @@
+%NAME%
+git
+
+%VERSION%
+1.7.6-1
+
+%DESC%
+the fast distributed version control system
+
+%REPLACES%
+git-core
+
+%URL%
+http://git-scm.com/
+
+%LICENSE%
+GPL2
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1309194829
+
+%INSTALLDATE%
+1309273847
+
+%PACKAGER%
+Dan McGee <dan@archlinux.org>
+
+%SIZE%
+13762560
+
+%REASON%
+1
+
+%DEPENDS%
+curl
+expat>=2.0
+perl-error
+perl>=5.14.0
+
+%OPTDEPENDS%
+tk: gitk and git gui
+perl-libwww: git svn
+perl-term-readkey: git svn
+perl-mime-tools: git send-email
+perl-net-smtp-ssl: git send-email TLS support
+perl-authen-sasl: git send-email TLS support
+python2: various helper scripts
+subversion: git svn
+cvsps: git cvsimport
+
+%PROVIDES%
+git-core
+
