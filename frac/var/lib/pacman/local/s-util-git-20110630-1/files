@@ -15,6 +15,7 @@ usr/bin/mitclass
 usr/bin/netman
 usr/bin/recget
 usr/bin/s_init.sh
+usr/bin/search
 usr/bin/setup.sh
 usr/bin/spath
 usr/bin/spid

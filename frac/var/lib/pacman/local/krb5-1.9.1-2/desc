@@ -2,7 +2,7 @@
 krb5
 
 %VERSION%
-1.9.1-1
+1.9.1-2
 
 %DESC%
 The Kerberos network authentication system
@@ -20,16 +20,16 @@ custom
 x86_64
 
 %BUILDDATE%
-1304710302
+1309457097
 
 %INSTALLDATE%
-1308108158
+1309473638
 
 %PACKAGER%
 Stéphane Gaudreault <stephane@archlinux.org>
 
 %SIZE%
-3637248
+3760128
 
 %REASON%
 1

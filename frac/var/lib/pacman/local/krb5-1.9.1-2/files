@@ -1,11 +1,9 @@
 %FILES%
 etc/
-etc/krb5/
-etc/krb5/kdc.conf
-etc/krb5/krb5.conf
+etc/krb5.conf
 etc/rc.d/
-etc/rc.d/kadmind.rc
-etc/rc.d/krb5-kdc.rc
+etc/rc.d/krb5-kadmind
+etc/rc.d/krb5-kdc
 usr/
 usr/bin/
 usr/bin/gss-client
@@ -153,8 +151,12 @@ usr/share/man/man8/kpropd.8.gz
 usr/share/man/man8/kproplog.8.gz
 usr/share/man/man8/krb5kdc.8.gz
 usr/share/man/man8/sserver.8.gz
+var/
+var/lib/
+var/lib/krb5kdc/
+var/lib/krb5kdc/kdc.conf
 
 %BACKUP%
-etc/krb5/krb5.conf	76d9be4a4f2d5877e9eb2d141bc578e3
-etc/krb5/kdc.conf	d77c83a028e48fb44fe216f82e42b14f
+etc/krb5.conf	76d9be4a4f2d5877e9eb2d141bc578e3
+var/lib/krb5kdc/kdc.conf	d77c83a028e48fb44fe216f82e42b14f
 

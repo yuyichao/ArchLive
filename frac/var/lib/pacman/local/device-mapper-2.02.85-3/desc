@@ -2,7 +2,7 @@
 device-mapper
 
 %VERSION%
-2.02.85-2
+2.02.85-3
 
 %DESC%
 Device mapper userspace library and tools
@@ -21,16 +21,16 @@ LGPL2.1
 x86_64
 
 %BUILDDATE%
-1306602471
+1309456361
 
 %INSTALLDATE%
-1308068038
+1309473637
 
 %PACKAGER%
 Thomas Bächler <thomas@archlinux.org>
 
 %SIZE%
-471040
+466944
 
 %REASON%
 1
@@ -38,7 +38,4 @@ Thomas Bächler <thomas@archlinux.org>
 %DEPENDS%
 glibc
 udev
-
-%CONFLICTS%
-mkinitcpio<0.5.99
 

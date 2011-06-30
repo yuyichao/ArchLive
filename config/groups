@@ -1,0 +1,382 @@
+testing/cronie (base) [installed]
+testing/cryptsetup (base) [installed]
+testing/device-mapper (base) [installed]
+testing/lvm2 (base) [installed]
+testing/mdadm (base) [installed]
+testing/texlive-langcjk (texlive-lang) [installed]
+testing/texlive-langcyrillic (texlive-lang) [installed]
+testing/texlive-langextra (texlive-lang) [installed]
+testing/texlive-langgreek (texlive-lang) [installed]
+testing/texlive-bibtexextra (texlive-most) [installed]
+testing/texlive-core (texlive-most) [installed]
+testing/texlive-fontsextra (texlive-most) [installed]
+testing/texlive-formatsextra (texlive-most) [installed]
+testing/texlive-genericextra (texlive-most) [installed]
+testing/texlive-htmlxml (texlive-most) [installed]
+testing/texlive-latexextra (texlive-most) [installed]
+testing/texlive-music (texlive-most) [installed]
+testing/texlive-pictures (texlive-most) [installed]
+testing/texlive-pstricks (texlive-most) [installed]
+testing/texlive-publishers (texlive-most) [installed]
+testing/texlive-science (texlive-most) [installed]
+testing/libreoffice-extension-ct2n (libreoffice-extensions) [installed]
+testing/libreoffice-extension-diagram (libreoffice-extensions) [installed]
+testing/libreoffice-extension-google-docs (libreoffice-extensions)
+testing/libreoffice-extension-hunart (libreoffice-extensions) [installed]
+testing/libreoffice-extension-nlpsolver (libreoffice-extensions) [installed]
+testing/libreoffice-extension-numbertext (libreoffice-extensions) [installed]
+testing/libreoffice-extension-oooblogger (libreoffice-extensions) [installed]
+testing/libreoffice-extension-pdfimport (libreoffice-extensions) [installed]
+testing/libreoffice-extension-presentation-minimizer (libreoffice-extensions) [installed]
+testing/libreoffice-extension-presenter-screen (libreoffice-extensions) [installed]
+testing/libreoffice-extension-report-builder (libreoffice-extensions) [installed]
+testing/libreoffice-extension-scripting-beanshell (libreoffice-extensions)
+testing/libreoffice-extension-scripting-javascript (libreoffice-extensions)
+testing/libreoffice-extension-scripting-python (libreoffice-extensions)
+testing/libreoffice-extension-typo (libreoffice-extensions) [installed]
+testing/libreoffice-extension-validator (libreoffice-extensions)
+testing/libreoffice-extension-watch-window (libreoffice-extensions) [installed]
+testing/libreoffice-extension-wiki-publisher (libreoffice-extensions) [installed]
+testing/xf86-video-ati (xorg-drivers xorg) [installed]
+testing/xorg-server (xorg) [installed]
+testing/xf86-video-ati (xorg-drivers xorg) [installed]
+core/bash (base) [installed]
+core/binutils (base)
+core/bzip2 (base) [installed]
+core/coreutils (base) [installed]
+core/cronie (base) [installed: 1.4.8-1]
+core/cryptsetup (base) [installed: 1.3.1-2]
+core/dash (base) [installed]
+core/device-mapper (base) [installed: 2.02.85-3]
+core/dhcpcd (base) [installed]
+core/diffutils (base) [installed]
+core/e2fsprogs (base) [installed]
+core/file (base) [installed]
+core/filesystem (base) [installed]
+core/findutils (base) [installed]
+core/gawk (base) [installed]
+core/gcc-libs (base)
+core/gettext (base) [installed]
+core/glibc (base) [installed]
+core/grep (base) [installed]
+core/grub (base)
+core/gzip (base) [installed]
+core/heirloom-mailx (base) [installed]
+core/initscripts (base) [installed]
+core/iputils (base) [installed]
+core/jfsutils (base) [installed]
+core/kernel26 (base) [installed]
+core/less (base) [installed]
+core/libpipeline (base) [installed]
+core/licenses (base) [installed]
+core/logrotate (base) [installed]
+core/lvm2 (base) [installed: 2.02.85-3]
+core/man-db (base) [installed]
+core/man-pages (base) [installed]
+core/mdadm (base) [installed: 3.2.2-2]
+core/nano (base)
+core/pacman (base) [installed]
+core/pciutils (base) [installed]
+core/pcmciautils (base) [installed]
+core/perl (base) [installed]
+core/ppp (base) [installed]
+core/procps (base) [installed]
+core/psmisc (base) [installed]
+core/reiserfsprogs (base) [installed]
+core/sed (base) [installed]
+core/shadow (base) [installed]
+core/sysfsutils (base) [installed]
+core/syslog-ng (base) [installed]
+core/sysvinit (base) [installed]
+core/tar (base) [installed]
+core/tcp_wrappers (base) [installed]
+core/texinfo (base) [installed]
+core/udev (base) [installed]
+core/usbutils (base) [installed]
+core/util-linux (base) [installed]
+core/vi (base)
+core/wget (base) [installed]
+core/which (base) [installed]
+core/wpa_supplicant (base) [installed]
+core/xfsprogs (base) [installed]
+core/autoconf (base-devel) [installed]
+core/automake (base-devel) [installed]
+core/bison (base-devel) [installed]
+core/fakeroot (base-devel) [installed]
+core/flex (base-devel) [installed]
+core/gcc (base-devel)
+core/libtool (base-devel)
+core/m4 (base-devel) [installed]
+core/make (base-devel) [installed]
+core/patch (base-devel) [installed]
+core/pkg-config (base-devel) [installed]
+extra/at-spi2-atk (gnome) [installed]
+extra/at-spi2-core (gnome) [installed]
+extra/epiphany (gnome)
+extra/gnome-applets (gnome) [installed]
+extra/gnome-backgrounds (gnome) [installed]
+extra/gnome-control-center (gnome) [installed]
+extra/gnome-desktop (gnome) [installed]
+extra/gnome-icon-theme (gnome) [installed]
+extra/gnome-icon-theme-extras (gnome) [installed]
+extra/gnome-icon-theme-symbolic (gnome) [installed]
+extra/gnome-keyring (gnome) [installed]
+extra/gnome-media (gnome) [installed]
+extra/gnome-panel (gnome) [installed]
+extra/gnome-power-manager (gnome) [installed]
+extra/gnome-screensaver (gnome) [installed]
+extra/gnome-session (gnome) [installed]
+extra/gnome-settings-daemon (gnome) [installed]
+extra/gnome-shell (gnome) [installed]
+extra/gnome-terminal (gnome) [installed]
+extra/gnome-themes-standard (gnome) [installed]
+extra/gnome-user-docs (gnome) [installed]
+extra/metacity (gnome) [installed]
+extra/mutter (gnome) [installed]
+extra/nautilus (gnome) [installed]
+extra/notification-daemon (gnome) [installed]
+extra/yelp (gnome) [installed]
+extra/bug-buddy (gnome-extra) [installed]
+extra/cheese (gnome-extra) [installed]
+extra/dasher (gnome-extra)
+extra/ekiga (gnome-extra)
+extra/empathy (gnome-extra) [installed]
+extra/eog (gnome-extra) [installed]
+extra/evince (gnome-extra) [installed]
+extra/evolution (gnome-extra) [installed]
+extra/evolution-webcal (gnome-extra) [installed]
+extra/file-roller (gnome-extra) [installed]
+extra/gcalctool (gnome-extra) [installed]
+extra/gconf-editor (gnome-extra) [installed]
+extra/gdm (gnome-extra) [installed]
+extra/gedit (gnome-extra) [installed]
+extra/gnome-games (gnome-extra)
+extra/gnome-games-extra-data (gnome-extra)
+extra/gnome-mag (gnome-extra)
+extra/gnome-nettool (gnome-extra) [installed]
+extra/gnome-system-monitor (gnome-extra) [installed]
+extra/gnome-utils (gnome-extra) [installed]
+extra/gok (gnome-extra)
+extra/gucharmap (gnome-extra) [installed]
+extra/mousetweaks (gnome-extra) [installed]
+extra/nautilus-sendto (gnome-extra) [installed]
+extra/orca (gnome-extra)
+extra/seahorse (gnome-extra) [installed]
+extra/sound-juicer (gnome-extra) [installed]
+extra/tomboy (gnome-extra) [installed]
+extra/totem (gnome-extra) [installed]
+extra/vinagre (gnome-extra) [installed]
+extra/vino (gnome-extra) [installed]
+extra/telepathy-butterfly (telepathy) [installed]
+extra/telepathy-gabble (telepathy) [installed]
+extra/telepathy-glib (telepathy) [installed]
+extra/telepathy-haze (telepathy) [installed]
+extra/telepathy-idle (telepathy) [installed]
+extra/telepathy-salut (telepathy) [installed]
+extra/telepathy-sofiasip (telepathy) [installed]
+extra/texlive-langcjk (texlive-lang) [installed: 2011.22725-1]
+extra/texlive-langcyrillic (texlive-lang) [installed: 2011.22650-1]
+extra/texlive-langextra (texlive-lang) [installed: 2011.22550-1]
+extra/texlive-langgreek (texlive-lang) [installed: 2011.22613-1]
+extra/texlive-bibtexextra (texlive-most) [installed: 2011.22499-1]
+extra/texlive-core (texlive-most) [installed: 2011.22722-1]
+extra/texlive-fontsextra (texlive-most) [installed: 2011.22691-1]
+extra/texlive-formatsextra (texlive-most) [installed: 2011.22650-1]
+extra/texlive-games (texlive-most) [installed]
+extra/texlive-genericextra (texlive-most) [installed: 2011.22511-1]
+extra/texlive-htmlxml (texlive-most) [installed: 2011.22546-1]
+extra/texlive-humanities (texlive-most) [installed]
+extra/texlive-latexextra (texlive-most) [installed: 2011.22673-1]
+extra/texlive-music (texlive-most) [installed: 2011.22568-1]
+extra/texlive-pictures (texlive-most) [installed: 2011.22509-1]
+extra/texlive-plainextra (texlive-most) [installed]
+extra/texlive-pstricks (texlive-most) [installed: 2011.22586-1]
+extra/texlive-publishers (texlive-most) [installed: 2011.22647-1]
+extra/texlive-science (texlive-most) [installed: 2011.22648-1]
+extra/libreoffice-extension-ct2n (libreoffice-extensions) [installed: 3.4.1rc3-1]
+extra/libreoffice-extension-diagram (libreoffice-extensions) [installed: 3.4.1rc3-1]
+extra/libreoffice-extension-google-docs (libreoffice-extensions)
+extra/libreoffice-extension-hunart (libreoffice-extensions) [installed: 3.4.1rc3-1]
+extra/libreoffice-extension-nlpsolver (libreoffice-extensions) [installed: 3.4.1rc3-1]
+extra/libreoffice-extension-numbertext (libreoffice-extensions) [installed: 3.4.1rc3-1]
+extra/libreoffice-extension-oooblogger (libreoffice-extensions) [installed: 3.4.1rc3-1]
+extra/libreoffice-extension-pdfimport (libreoffice-extensions) [installed: 3.4.1rc3-1]
+extra/libreoffice-extension-presentation-minimizer (libreoffice-extensions) [installed: 3.4.1rc3-1]
+extra/libreoffice-extension-presenter-screen (libreoffice-extensions) [installed: 3.4.1rc3-1]
+extra/libreoffice-extension-report-builder (libreoffice-extensions) [installed: 3.4.1rc3-1]
+extra/libreoffice-extension-scripting-beanshell (libreoffice-extensions)
+extra/libreoffice-extension-scripting-javascript (libreoffice-extensions)
+extra/libreoffice-extension-scripting-python (libreoffice-extensions)
+extra/libreoffice-extension-typo (libreoffice-extensions) [installed: 3.4.1rc3-1]
+extra/libreoffice-extension-validator (libreoffice-extensions)
+extra/libreoffice-extension-watch-window (libreoffice-extensions) [installed: 3.4.1rc3-1]
+extra/libreoffice-extension-wiki-publisher (libreoffice-extensions) [installed: 3.4.1rc3-1]
+extra/xf86-input-acecad (xorg-drivers xorg) [installed]
+extra/xf86-input-aiptek (xorg-drivers xorg) [installed]
+extra/xf86-input-evdev (xorg-drivers xorg) [installed]
+extra/xf86-input-joystick (xorg-drivers xorg) [installed]
+extra/xf86-input-keyboard (xorg-drivers xorg) [installed]
+extra/xf86-input-mouse (xorg-drivers xorg) [installed]
+extra/xf86-input-synaptics (xorg-drivers xorg) [installed]
+extra/xf86-input-vmmouse (xorg-drivers xorg)
+extra/xf86-input-void (xorg-drivers xorg)
+extra/xf86-video-apm (xorg-drivers xorg)
+extra/xf86-video-ark (xorg-drivers xorg)
+extra/xf86-video-ast (xorg-drivers xorg)
+extra/xf86-video-ati (xorg-drivers xorg) [installed: 6.14.2-1]
+extra/xf86-video-chips (xorg-drivers xorg)
+extra/xf86-video-cirrus (xorg-drivers xorg)
+extra/xf86-video-dummy (xorg-drivers xorg)
+extra/xf86-video-fbdev (xorg-drivers xorg)
+extra/xf86-video-glint (xorg-drivers xorg)
+extra/xf86-video-i128 (xorg-drivers xorg)
+extra/xf86-video-i740 (xorg-drivers xorg)
+extra/xf86-video-intel (xorg-drivers xorg)
+extra/xf86-video-mach64 (xorg-drivers xorg)
+extra/xf86-video-mga (xorg-drivers xorg)
+extra/xf86-video-neomagic (xorg-drivers xorg)
+extra/xf86-video-nv (xorg-drivers xorg)
+extra/xf86-video-r128 (xorg-drivers xorg)
+extra/xf86-video-rendition (xorg-drivers xorg)
+extra/xf86-video-s3 (xorg-drivers xorg)
+extra/xf86-video-s3virge (xorg-drivers xorg)
+extra/xf86-video-savage (xorg-drivers xorg)
+extra/xf86-video-siliconmotion (xorg-drivers xorg)
+extra/xf86-video-sis (xorg-drivers xorg)
+extra/xf86-video-sisusb (xorg-drivers xorg)
+extra/xf86-video-tdfx (xorg-drivers xorg)
+extra/xf86-video-trident (xorg-drivers xorg)
+extra/xf86-video-tseng (xorg-drivers xorg)
+extra/xf86-video-v4l (xorg-drivers xorg)
+extra/xf86-video-vesa (xorg-drivers xorg)
+extra/xf86-video-vmware (xorg-drivers xorg)
+extra/xf86-video-voodoo (xorg-drivers xorg)
+extra/xf86-video-xgi (xorg-drivers xorg)
+extra/xf86-video-xgixp (xorg-drivers xorg)
+extra/xorg-bdftopcf (xorg xorg-apps) [installed]
+extra/xorg-docs (xorg) [installed]
+extra/xorg-fonts-100dpi (xorg) [installed]
+extra/xorg-fonts-75dpi (xorg) [installed]
+extra/xorg-fonts-encodings (xorg-fonts xorg) [installed]
+extra/xorg-font-util (xorg-fonts xorg) [installed]
+extra/xorg-iceauth (xorg-apps xorg) [installed]
+extra/xorg-luit (xorg xorg-apps) [installed]
+extra/xorg-mkfontdir (xorg xorg-apps) [installed]
+extra/xorg-mkfontscale (xorg-apps xorg) [installed]
+extra/xorg-server (xorg) [installed: 1.10.2-2]
+extra/xorg-sessreg (xorg-apps xorg) [installed]
+extra/xorg-setxkbmap (xorg-apps xorg) [installed]
+extra/xorg-smproxy (xorg-apps xorg) [installed]
+extra/xorg-x11perf (xorg-apps xorg) [installed]
+extra/xorg-xauth (xorg-apps xorg) [installed]
+extra/xorg-xbacklight (xorg-apps xorg) [installed]
+extra/xorg-xcmsdb (xorg-apps xorg) [installed]
+extra/xorg-xcursorgen (xorg-apps xorg) [installed]
+extra/xorg-xdpyinfo (xorg-apps xorg) [installed]
+extra/xorg-xdriinfo (xorg-apps xorg) [installed]
+extra/xorg-xev (xorg-apps xorg) [installed]
+extra/xorg-xgamma (xorg-apps xorg) [installed]
+extra/xorg-xhost (xorg-apps xorg) [installed]
+extra/xorg-xinput (xorg-apps xorg) [installed]
+extra/xorg-xkbcomp (xorg-apps xorg) [installed]
+extra/xorg-xkbevd (xorg-apps xorg) [installed]
+extra/xorg-xkbutils (xorg-apps xorg) [installed]
+extra/xorg-xkill (xorg-apps xorg) [installed]
+extra/xorg-xlsatoms (xorg-apps xorg) [installed]
+extra/xorg-xlsclients (xorg-apps xorg) [installed]
+extra/xorg-xmodmap (xorg-apps xorg) [installed]
+extra/xorg-xpr (xorg-apps xorg) [installed]
+extra/xorg-xprop (xorg-apps xorg) [installed]
+extra/xorg-xrandr (xorg-apps xorg) [installed]
+extra/xorg-xrdb (xorg-apps xorg) [installed]
+extra/xorg-xrefresh (xorg-apps xorg) [installed]
+extra/xorg-xset (xorg-apps xorg) [installed]
+extra/xorg-xsetroot (xorg-apps xorg) [installed]
+extra/xorg-xvinfo (xorg-apps xorg) [installed]
+extra/xorg-xwd (xorg-apps xorg) [installed]
+extra/xorg-xwininfo (xorg-apps xorg) [installed]
+extra/xorg-xwud (xorg-apps xorg) [installed]
+extra/xorg-bdftopcf (xorg xorg-apps) [installed]
+extra/xorg-iceauth (xorg-apps xorg) [installed]
+extra/xorg-luit (xorg xorg-apps) [installed]
+extra/xorg-mkfontdir (xorg xorg-apps) [installed]
+extra/xorg-mkfontscale (xorg-apps xorg) [installed]
+extra/xorg-sessreg (xorg-apps xorg) [installed]
+extra/xorg-setxkbmap (xorg-apps xorg) [installed]
+extra/xorg-smproxy (xorg-apps xorg) [installed]
+extra/xorg-x11perf (xorg-apps xorg) [installed]
+extra/xorg-xauth (xorg-apps xorg) [installed]
+extra/xorg-xbacklight (xorg-apps xorg) [installed]
+extra/xorg-xcmsdb (xorg-apps xorg) [installed]
+extra/xorg-xcursorgen (xorg-apps xorg) [installed]
+extra/xorg-xdpyinfo (xorg-apps xorg) [installed]
+extra/xorg-xdriinfo (xorg-apps xorg) [installed]
+extra/xorg-xev (xorg-apps xorg) [installed]
+extra/xorg-xgamma (xorg-apps xorg) [installed]
+extra/xorg-xhost (xorg-apps xorg) [installed]
+extra/xorg-xinput (xorg-apps xorg) [installed]
+extra/xorg-xkbcomp (xorg-apps xorg) [installed]
+extra/xorg-xkbevd (xorg-apps xorg) [installed]
+extra/xorg-xkbutils (xorg-apps xorg) [installed]
+extra/xorg-xkill (xorg-apps xorg) [installed]
+extra/xorg-xlsatoms (xorg-apps xorg) [installed]
+extra/xorg-xlsclients (xorg-apps xorg) [installed]
+extra/xorg-xmodmap (xorg-apps xorg) [installed]
+extra/xorg-xpr (xorg-apps xorg) [installed]
+extra/xorg-xprop (xorg-apps xorg) [installed]
+extra/xorg-xrandr (xorg-apps xorg) [installed]
+extra/xorg-xrdb (xorg-apps xorg) [installed]
+extra/xorg-xrefresh (xorg-apps xorg) [installed]
+extra/xorg-xset (xorg-apps xorg) [installed]
+extra/xorg-xsetroot (xorg-apps xorg) [installed]
+extra/xorg-xvinfo (xorg-apps xorg) [installed]
+extra/xorg-xwd (xorg-apps xorg) [installed]
+extra/xorg-xwininfo (xorg-apps xorg) [installed]
+extra/xorg-xwud (xorg-apps xorg) [installed]
+extra/xf86-input-acecad (xorg-drivers xorg) [installed]
+extra/xf86-input-aiptek (xorg-drivers xorg) [installed]
+extra/xf86-input-evdev (xorg-drivers xorg) [installed]
+extra/xf86-input-joystick (xorg-drivers xorg) [installed]
+extra/xf86-input-keyboard (xorg-drivers xorg) [installed]
+extra/xf86-input-mouse (xorg-drivers xorg) [installed]
+extra/xf86-input-synaptics (xorg-drivers xorg) [installed]
+extra/xf86-input-vmmouse (xorg-drivers xorg)
+extra/xf86-input-void (xorg-drivers xorg)
+extra/xf86-video-apm (xorg-drivers xorg)
+extra/xf86-video-ark (xorg-drivers xorg)
+extra/xf86-video-ast (xorg-drivers xorg)
+extra/xf86-video-ati (xorg-drivers xorg) [installed: 6.14.2-1]
+extra/xf86-video-chips (xorg-drivers xorg)
+extra/xf86-video-cirrus (xorg-drivers xorg)
+extra/xf86-video-dummy (xorg-drivers xorg)
+extra/xf86-video-fbdev (xorg-drivers xorg)
+extra/xf86-video-glint (xorg-drivers xorg)
+extra/xf86-video-i128 (xorg-drivers xorg)
+extra/xf86-video-i740 (xorg-drivers xorg)
+extra/xf86-video-intel (xorg-drivers xorg)
+extra/xf86-video-mach64 (xorg-drivers xorg)
+extra/xf86-video-mga (xorg-drivers xorg)
+extra/xf86-video-neomagic (xorg-drivers xorg)
+extra/xf86-video-nv (xorg-drivers xorg)
+extra/xf86-video-r128 (xorg-drivers xorg)
+extra/xf86-video-rendition (xorg-drivers xorg)
+extra/xf86-video-s3 (xorg-drivers xorg)
+extra/xf86-video-s3virge (xorg-drivers xorg)
+extra/xf86-video-savage (xorg-drivers xorg)
+extra/xf86-video-siliconmotion (xorg-drivers xorg)
+extra/xf86-video-sis (xorg-drivers xorg)
+extra/xf86-video-sisusb (xorg-drivers xorg)
+extra/xf86-video-tdfx (xorg-drivers xorg)
+extra/xf86-video-trident (xorg-drivers xorg)
+extra/xf86-video-tseng (xorg-drivers xorg)
+extra/xf86-video-v4l (xorg-drivers xorg)
+extra/xf86-video-vesa (xorg-drivers xorg)
+extra/xf86-video-vmware (xorg-drivers xorg)
+extra/xf86-video-voodoo (xorg-drivers xorg)
+extra/xf86-video-xgi (xorg-drivers xorg)
+extra/xf86-video-xgixp (xorg-drivers xorg)
+extra/xorg-fonts-encodings (xorg-fonts xorg) [installed]
+extra/xorg-font-util (xorg-fonts xorg) [installed]
+multilib/binutils-multilib (multilib-devel) [installed]
+multilib/gcc-multilib (multilib-devel) [installed]
+multilib/libtool-multilib (multilib-devel) [installed]

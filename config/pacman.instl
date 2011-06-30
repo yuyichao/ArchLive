@@ -1,6 +1,8 @@
+basic: initscripts hal grub2 acpid kernel26 kernel26-headers crda ntfs-3g
+
+
 groups: base base-devel multilib-devel xorg texlive-most texlive-lang gnome gnome-extra gstreamer0.10-plugins
 
-basic: initscripts hal grub2 acpid kernel26 kernel26-headers crda ntfs-3g
 doc: kernel26-manpages kernel26-docs gtkmm-docs gtkmm3-docs opengl-man-pages
 net-connect: dhcpcd networkmanager ethtool netcfg yp-tools networkmanager-vpnc networkmanager-pptp networkmanager-openvpn networkmanager-openconnect network-manager-applet
 net-util: curl inetutils openssh netwatch samba mailutils mutt postfix w3m socat gvfs-smb netcat
