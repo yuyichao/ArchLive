@@ -12,6 +12,7 @@ usr/bin/db_printlog
 usr/bin/db_recover
 usr/bin/db_replicate
 usr/bin/db_stat
+usr/bin/db_tuner
 usr/bin/db_upgrade
 usr/bin/db_verify
 usr/include/
@@ -19,13 +20,13 @@ usr/include/db.h
 usr/include/db_185.h
 usr/include/db_cxx.h
 usr/lib/
-usr/lib/libdb-5.1.a
-usr/lib/libdb-5.1.so
+usr/lib/libdb-5.2.a
+usr/lib/libdb-5.2.so
 usr/lib/libdb-5.so
 usr/lib/libdb.a
 usr/lib/libdb.so
-usr/lib/libdb_cxx-5.1.a
-usr/lib/libdb_cxx-5.1.so
+usr/lib/libdb_cxx-5.2.a
+usr/lib/libdb_cxx-5.2.so
 usr/lib/libdb_cxx-5.so
 usr/lib/libdb_cxx.a
 usr/lib/libdb_cxx.so

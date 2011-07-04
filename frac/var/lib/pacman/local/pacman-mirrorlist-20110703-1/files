@@ -4,5 +4,5 @@ etc/pacman.d/
 etc/pacman.d/mirrorlist
 
 %BACKUP%
-etc/pacman.d/mirrorlist	fd88a0566142fe1ba4bddaa018b16e14
+etc/pacman.d/mirrorlist	ca0e563c08b633dd0bbf305519609a35
 

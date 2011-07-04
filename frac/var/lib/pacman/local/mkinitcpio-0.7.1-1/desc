@@ -2,7 +2,7 @@
 mkinitcpio
 
 %VERSION%
-0.7-1
+0.7.1-1
 
 %DESC%
 Modular initramfs image creation utility
@@ -26,10 +26,10 @@ GPL
 any
 
 %BUILDDATE%
-1309454978
+1309695962
 
 %INSTALLDATE%
-1309473638
+1309738661
 
 %PACKAGER%
 Thomas Bächler <thomas@archlinux.org>

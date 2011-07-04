@@ -2,7 +2,7 @@
 perl
 
 %VERSION%
-5.14.1-1
+5.14.1-3
 
 %DESC%
 A highly capable, feature-rich programming language
@@ -21,16 +21,16 @@ PerlArtistic
 x86_64
 
 %BUILDDATE%
-1308863318
+1309368065
 
 %INSTALLDATE%
-1308964096
+1309738661
 
 %PACKAGER%
-Angel Velásquez <angvp@archlinux.org>
+Evangelos Foutras <foutrelis@gmail.com>
 
 %SIZE%
-56979456
+50013184
 
 %REASON%
 1

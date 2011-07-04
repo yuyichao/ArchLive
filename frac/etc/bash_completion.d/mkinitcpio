@@ -1,7 +1,7 @@
+#!/bin/bash
 # mkinitcpio bash completion by Seblu <seblu@seblu.net>
 
-_lsinitcpio ()
-{
+_lsinitcpio() {
 	local action cur
 	action="-a -h -v -x"
 	_get_comp_words_by_ref cur
@@ -11,20 +11,35 @@ _lsinitcpio ()
 	esac
 }
 
-_mkinitcpio ()
-{
+_find_kernel_versions() {
+	local -a matches
+	local regex
+
+	regex="Linux kernel.*version"
+	while IFS=':' read -r file metadata; do
+		[[ $metadata =~ $regex ]] || continue
+		matches+=("$file")
+	done < <(file -e ascii /boot/*)
+
+	COMPREPLY=($(cd /lib/modules && compgen -d -- $cur)
+		$(compgen -W "${matches[*]}" -- $cur))
+}
+
+_mkinitcpio() {
 	local action cur prev
 	action="-c -k -s -b -g -p -S -v -M -L -H -h"
 	_get_comp_words_by_ref cur prev
 	case "$prev" in
 		-c|-g) _filedir;;
-		-k) COMPREPLY=($(cd /lib/modules && compgen -d -- $cur));;
+		-k) _find_kernel_versions;;
 		-b) COMPREPLY=($(compgen -d "$cur" -- $cur));;
-		-p) COMPREPLY=($(cd /etc/mkinitcpio.d/ && compgen -X '!*.preset' -f  -- $cur|sed 's/\.preset//'));;
+		-p) COMPREPLY=($(cd /etc/mkinitcpio.d/ && compgen -X '!*.preset' -f  -- $cur))
+			COMPREPLY=("${COMPREPLY[@]%.preset}");;
 		-H|-S) COMPREPLY=($(cd /lib/initcpio/install/ && compgen -f -- $cur));;
-		*)	COMPREPLY=($(compgen -W "${action}" -- "$cur"));;
+		*) COMPREPLY=($(compgen -W "${action}" -- "$cur"));;
 	esac
 }
+
 complete -F _mkinitcpio mkinitcpio
 complete -F _lsinitcpio lsinitcpio
 

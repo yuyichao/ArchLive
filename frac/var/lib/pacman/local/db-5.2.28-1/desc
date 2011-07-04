@@ -2,7 +2,7 @@
 db
 
 %VERSION%
-5.1.25-1
+5.2.28-1
 
 %DESC%
 The Berkeley DB embedded database system
@@ -17,16 +17,16 @@ custom
 x86_64
 
 %BUILDDATE%
-1296738648
+1308097283
 
 %INSTALLDATE%
-1308067379
+1309738659
 
 %PACKAGER%
-Allan McRae <allan@archlinux.org>
+Stéphane Gaudreault <stephane@archlinux.org>
 
 %SIZE%
-14311424
+15654912
 
 %REASON%
 1

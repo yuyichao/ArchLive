@@ -2,7 +2,7 @@
 iproute2
 
 %VERSION%
-2.6.38-3
+2.6.38-4
 
 %DESC%
 IP Routing Utilities
@@ -20,13 +20,13 @@ GPL2
 x86_64
 
 %BUILDDATE%
-1307224095
+1308315445
 
 %INSTALLDATE%
-1308067547
+1309738661
 
 %PACKAGER%
-Tom Gundersen <teg@jklm.no>
+Stéphane Gaudreault <stephane@archlinux.org>
 
 %SIZE%
 1400832

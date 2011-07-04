@@ -9,9 +9,9 @@
 
 /* Package name      : perl5
  * Source directory  : .
- * Configuration time: Thu Jun 23 21:03:28 UTC 2011
+ * Configuration time: Wed Jun 29 17:15:04 UTC 2011
  * Configured by     : nobody
- * Target system     : linux milano 2.6.39-arch #1 smp preempt mon jun 6 22:37:55 cest 2011 x86_64 intel(r) core(tm)2 duo cpu t7700 @ 2.40ghz genuineintel gnulinux 
+ * Target system     : linux foutbox 2.6.39-arch #1 smp preempt mon jun 27 21:26:22 cest 2011 x86_64 amd phenom(tm) ii x6 1090t processor authenticamd gnulinux 
  */
 
 #ifndef _config_h_
@@ -2477,7 +2477,7 @@
 #define HAS_UNAME		/**/
 /*#define HAS_PHOSTNAME	/ **/
 #ifdef HAS_PHOSTNAME
-#define PHOSTNAME "/bin/hostname"	/* How to get the host name */
+#define PHOSTNAME "/bin/uname -n"	/* How to get the host name */
 #endif
 
 /* HAS_GETNETBYADDR:
@@ -4004,8 +4004,8 @@
 #define DB_Hash_t	u_int32_t		/**/
 #define DB_Prefix_t	size_t  	/**/
 #define DB_VERSION_MAJOR_CFG	5  	/**/
-#define DB_VERSION_MINOR_CFG	1  	/**/
-#define DB_VERSION_PATCH_CFG	25  	/**/
+#define DB_VERSION_MINOR_CFG	2  	/**/
+#define DB_VERSION_PATCH_CFG	28  	/**/
 
 /* I_FP:
  *	This symbol, if defined, indicates that <fp.h> exists and

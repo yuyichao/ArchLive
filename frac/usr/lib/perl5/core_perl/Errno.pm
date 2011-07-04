@@ -153,6 +153,7 @@ BEGIN {
 	EOWNERDEAD => 130,
 	ENOTRECOVERABLE => 131,
 	ERFKILL => 132,
+	EHWPOISON => 133,
     );
     # Generate proxy constant subroutines for all the values.
     # Well, almost all the values. Unfortunately we can't assume that at this

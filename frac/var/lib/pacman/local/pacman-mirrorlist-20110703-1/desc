@@ -2,7 +2,7 @@
 pacman-mirrorlist
 
 %VERSION%
-20110324-1
+20110703-1
 
 %DESC%
 Arch Linux mirror list for use by pacman
@@ -17,10 +17,10 @@ GPL
 any
 
 %BUILDDATE%
-1300944337
+1309722871
 
 %INSTALLDATE%
-1308067381
+1309738661
 
 %PACKAGER%
 Dan McGee <dan@archlinux.org>
