@@ -20,6 +20,6 @@ Description: Transport Security Layer implementation for the GNU system
 URL: http://www.gnu.org/software/gnutls/
 Version: 2.12.7
 Libs: -L${libdir} -lgnutls
-Libs.private: -L/usr/lib -lgcrypt -L/usr/lib -lgpg-error 
+Libs.private:  -lgmp -lhogweed
 Requires.private: libtasn1 , zlib
 Cflags: -I${includedir}

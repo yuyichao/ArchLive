@@ -1,5 +1,5 @@
 Name: usbutils
 Description: USB device database
-Version: 002
+Version: 003
 
 usbids=/usr/share/hwdata/usb.ids

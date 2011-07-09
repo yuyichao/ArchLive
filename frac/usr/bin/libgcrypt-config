@@ -1,5 +1,5 @@
 #!/bin/sh
-# Copyright (C) 1999, 2002, 2003, 2004 Free Software Foundation, Inc.
+# Copyright (C) 1999, 2002, 2003, 2004, 2011 Free Software Foundation, Inc.
 #
 # This file is free software; as a special exception the author gives
 # unlimited permission to copy and/or distribute it, with or without
@@ -14,7 +14,7 @@
 # General.
 prefix="/usr"
 exec_prefix="${prefix}"
-version="1.4.6"
+version="1.5.0"
 includedir="${prefix}/include"
 libdir="${exec_prefix}/lib"
 gpg_error_libs="-lgpg-error"
@@ -26,6 +26,9 @@ cflags=""
 
 # API info
 api_version="1"
+
+# Configured for host
+my_host="x86_64-unknown-linux-gnu"
 
 # Misc information.
 symmetric_ciphers="arcfour blowfish cast5 des aes twofish serpent rfc2268 seed camellia"
@@ -40,6 +43,7 @@ echo_algorithms=no
 echo_exec_prefix=no
 echo_version=no
 echo_api_version=no
+echo_host=no
 
 # Prints usage information.
 usage()
@@ -54,6 +58,7 @@ Options:
 	[--libs]
 	[--cflags]
 	[--algorithms]
+        [--host]
 EOF
     exit $1
 }
@@ -106,6 +111,9 @@ while test $# -gt 0; do
 	--algorithms)
 	    echo_algorithms=yes
 	    ;;
+        --host)
+            echo_host=yes
+            ;;
 	*)
 	    usage 1 1>&2
 	    ;;
@@ -168,6 +176,10 @@ fi
 
 if test "$echo_api_version" = "yes"; then
     echo "$api_version"
+fi
+
+if test "$echo_host" = "yes"; then
+    echo "$my_host"
 fi
 
 if test "$echo_algorithms" = "yes"; then
