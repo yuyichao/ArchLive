@@ -73,7 +73,7 @@ Connects to a device event source.
 <a name="udev-monitor"></a><h3>struct udev_monitor</h3>
 <pre class="programlisting">struct udev_monitor;</pre>
 <p>
-Opaque object handling one event source.
+Opaque object handling an event source.
 </p>
 </div>
 <hr>
@@ -148,16 +148,11 @@ source. Valid sources identifiers are "udev" and "kernel".
 Applications should usually not connect directly to the
 "kernel" events, because the devices might not be useable
 at that time, before udev has configured them, and created
-device nodes.
-</p>
-<p>
-Accessing devices at the same time as udev, might result
-in unpredictable behavior.
-</p>
-<p>
-The "udev" events are sent out after udev has finished its
-event processing, all rules have been processed, and needed
-device nodes are created.
+device nodes. Accessing devices at the same time as udev,
+might result in unpredictable behavior. The "udev" events
+are sent out after udev has finished its event processing,
+all rules have been processed, and needed device nodes are
+created.
 </p>
 <p>
 The initial refcount is 1, and needs to be decremented to
@@ -187,7 +182,13 @@ release the resources of the udev monitor.
 <pre class="programlisting">struct <a class="link" href="libudev-udev-monitor.html#udev-monitor" title="struct udev_monitor"><span class="returnvalue">udev_monitor</span></a> * udev_monitor_new_from_socket      (<em class="parameter"><code><span class="type">struct udev</span> *udev</code></em>,
                                                          <em class="parameter"><code>const <span class="type">char</span> *socket_path</code></em>);</pre>
 <p>
-Create new udev monitor and connect to a specified socket. The
+This function should not be used in any new application. The
+kernel's netlink socket multiplexes messages to all interested
+clients. Creating custom sockets from udev to applications
+should be avoided.
+</p>
+<p>
+Create a new udev monitor and connect to a specified socket. The
 path to a socket either points to an existing socket file, or if
 the socket path starts with a '@' character, an abstract namespace
 socket will be used.
@@ -299,9 +300,7 @@ Receive data from the udev monitor socket, allocate a new udev
 device, fill in the received data, and return the device.
 </p>
 <p>
-Only socket connections with uid=0 are accepted. The caller
-needs to make sure that there is data to read from the socket.
-The call will block until the socket becomes readable.
+Only socket connections with uid=0 are accepted.
 </p>
 <p>
 The initial refcount is 1, and needs to be decremented to
@@ -329,7 +328,7 @@ release the resources of the udev device.
                                                          <em class="parameter"><code>const <span class="type">char</span> *subsystem</code></em>,
                                                          <em class="parameter"><code>const <span class="type">char</span> *devtype</code></em>);</pre>
 <p>
-This filer is efficiently executed inside the kernel, and libudev subscribers
+This filter is efficiently executed inside the kernel, and libudev subscribers
 will usually not be woken up for devices which do not match.
 </p>
 <p>
@@ -363,7 +362,7 @@ The filter must be installed before the monitor is switched to listening mode.
 <pre class="programlisting"><span class="returnvalue">int</span>                 udev_monitor_filter_add_match_tag   (<em class="parameter"><code><span class="type">struct udev_monitor</span> *udev_monitor</code></em>,
                                                          <em class="parameter"><code>const <span class="type">char</span> *tag</code></em>);</pre>
 <p>
-This filer is efficiently executed inside the kernel, and libudev subscribers
+This filter is efficiently executed inside the kernel, and libudev subscribers
 will usually not be woken up for devices which do not match.
 </p>
 <p>
@@ -392,7 +391,8 @@ The filter must be installed before the monitor is switched to listening mode.
 <a name="udev-monitor-filter-update"></a><h3>udev_monitor_filter_update ()</h3>
 <pre class="programlisting"><span class="returnvalue">int</span>                 udev_monitor_filter_update          (<em class="parameter"><code><span class="type">struct udev_monitor</span> *udev_monitor</code></em>);</pre>
 <p>
-Update the installed filter. This might only be needed, if the filter was removed or changed.
+Update the installed socket filter. This is only needed,
+if the filter was removed or changed.
 </p>
 <div class="variablelist"><table border="0">
 <col align="left" valign="top">

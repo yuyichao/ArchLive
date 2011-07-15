@@ -6714,6 +6714,7 @@ alias usb:v0403pBFD9d*dc*dsc*dp*ic*isc*ip* ftdi_sio
 alias usb:v0403pBFD8d*dc*dsc*dp*ic*isc*ip* ftdi_sio
 alias usb:v0403pFA10d*dc*dsc*dp*ic*isc*ip* ftdi_sio
 alias usb:v0403pCAA0d*dc*dsc*dp*ic*isc*ip* ftdi_sio
+alias usb:v0403p6014d*dc*dsc*dp*ic*isc*ip* ftdi_sio
 alias usb:v0403p6011d*dc*dsc*dp*ic*isc*ip* ftdi_sio
 alias usb:v0403p6010d*dc*dsc*dp*ic*isc*ip* ftdi_sio
 alias usb:v0403pFBFAd*dc*dsc*dp*ic*isc*ip* ftdi_sio
@@ -13000,6 +13001,7 @@ alias snd-hda-codec-id:14f150a1 snd_hda_codec_conexant
 alias snd-hda-codec-id:14f15098 snd_hda_codec_conexant
 alias snd-hda-codec-id:14f15097 snd_hda_codec_conexant
 alias snd-hda-codec-id:14f1506e snd_hda_codec_conexant
+alias snd-hda-codec-id:14f1506c snd_hda_codec_conexant
 alias snd-hda-codec-id:14f15069 snd_hda_codec_conexant
 alias snd-hda-codec-id:14f15068 snd_hda_codec_conexant
 alias snd-hda-codec-id:14f15067 snd_hda_codec_conexant

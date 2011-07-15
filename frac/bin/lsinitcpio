@@ -13,7 +13,7 @@ declare FUNCTIONS=/lib/initcpio/functions
 
 usage() {
     cat<<USAGE
-lsinitramfs 0.7.1
+lsinitramfs 0.7.2
 usage: ${0##*/} [options] <initramfs>
 
   Options:
@@ -87,7 +87,7 @@ readonly NC BOLD BLUE GREEN RED YELLOW
 
 # read compression type
 case "$(file -b "$image")" in
-    data|LZMA*) compress=lzma ;;
+    @(data|LZMA)*) compress=lzma ;;
     gzip*) compress=gzip ;;
     bzip2*) compress=bzip2 ;;
     lzop*) compress=lzop ;;

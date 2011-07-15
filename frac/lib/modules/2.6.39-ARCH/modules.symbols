@@ -787,6 +787,7 @@ alias symbol:uwb_rc_get_by_grandpa uwb
 alias symbol:snd_ak4117_build snd_ak4117
 alias symbol:snd_ak4113_build snd_ak4113
 alias symbol:snd_ak4114_build snd_ak4114
+alias symbol:__fscache_uncache_all_inode_pages fscache
 alias symbol:w1_ds2760_read w1_ds2760
 alias symbol:cx88_set_control cx8800
 alias symbol:videobuf_dma_free videobuf_dma_sg

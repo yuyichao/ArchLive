@@ -74,6 +74,11 @@ void dm_log_init(dm_log_fn fn);
  */
 int dm_log_is_non_default(void);
 
+/*
+ * Number of devices currently in suspended state (via the library).
+ */
+int dm_get_suspended_counter(void);
+
 enum {
 	DM_DEVICE_CREATE,
 	DM_DEVICE_RELOAD,
@@ -185,6 +190,12 @@ int dm_task_skip_lockfs(struct dm_task *dmt);
 int dm_task_query_inactive_table(struct dm_task *dmt);
 int dm_task_suppress_identical_reload(struct dm_task *dmt);
 int dm_task_secure_data(struct dm_task *dmt);
+
+/*
+ * Enable checks for common mistakes such as issuing ioctls in an unsafe order.
+ */
+int dm_task_enable_checks(struct dm_task *dmt);
+
 typedef enum {
 	DM_ADD_NODE_ON_RESUME, /* add /dev/mapper node with dmsetup resume */
 	DM_ADD_NODE_ON_CREATE  /* add /dev/mapper node with dmsetup create */

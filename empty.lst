@@ -1,6 +1,4 @@
 frac/var_cache_pacman_pkg
-frac/lib/udev/devices/pts
-frac/lib/udev/devices/shm
 frac/etc/udev/rules.d
 frac/etc/rc.d/functions.d
 frac/etc/polkit-1/localauthority/20-org.d
@@ -29,9 +27,9 @@ frac/usr/share/perl5/core_perl/CPAN/API
 frac/usr/share/perl5/core_perl/TAP/Harness
 frac/usr/share/doc/dbus/api
 frac/usr/share/doc/libX11/Compose
-frac/usr/share/man/man2
-frac/usr/share/man/man6
 frac/usr/lib/perl5/site_perl
+frac/usr/lib/dbus-1.0/test
+frac/root/.emacs.d
 frac/var/tmp
 frac/var/local
 frac/var/opt

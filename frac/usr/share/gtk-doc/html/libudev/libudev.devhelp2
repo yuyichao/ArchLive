@@ -60,6 +60,7 @@
     <keyword type="function" name="udev_device_get_sysattr_list_entry ()" link="libudev-udev-device.html#udev-device-get-sysattr-list-entry"/>
     <keyword type="function" name="udev_device_get_seqnum ()" link="libudev-udev-device.html#udev-device-get-seqnum"/>
     <keyword type="function" name="udev_device_get_usec_since_initialized ()" link="libudev-udev-device.html#udev-device-get-usec-since-initialized"/>
+    <keyword type="function" name="udev_device_has_tag ()" link="libudev-udev-device.html#udev-device-has-tag"/>
     <keyword type="struct" name="struct udev_monitor" link="libudev-udev-monitor.html#udev-monitor"/>
     <keyword type="function" name="udev_monitor_ref ()" link="libudev-udev-monitor.html#udev-monitor-ref"/>
     <keyword type="function" name="udev_monitor_unref ()" link="libudev-udev-monitor.html#udev-monitor-unref"/>
@@ -85,6 +86,7 @@
     <keyword type="function" name="udev_enumerate_add_nomatch_sysattr ()" link="libudev-udev-enumerate.html#udev-enumerate-add-nomatch-sysattr"/>
     <keyword type="function" name="udev_enumerate_add_match_property ()" link="libudev-udev-enumerate.html#udev-enumerate-add-match-property"/>
     <keyword type="function" name="udev_enumerate_add_match_tag ()" link="libudev-udev-enumerate.html#udev-enumerate-add-match-tag"/>
+    <keyword type="function" name="udev_enumerate_add_match_parent ()" link="libudev-udev-enumerate.html#udev-enumerate-add-match-parent"/>
     <keyword type="function" name="udev_enumerate_add_match_is_initialized ()" link="libudev-udev-enumerate.html#udev-enumerate-add-match-is-initialized"/>
     <keyword type="function" name="udev_enumerate_add_match_sysname ()" link="libudev-udev-enumerate.html#udev-enumerate-add-match-sysname"/>
     <keyword type="function" name="udev_enumerate_add_syspath ()" link="libudev-udev-enumerate.html#udev-enumerate-add-syspath"/>

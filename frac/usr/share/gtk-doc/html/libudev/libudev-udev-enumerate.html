@@ -58,6 +58,8 @@ struct <a class="link" href="libudev-udev-enumerate.html#udev-enumerate" title="
                                                          <em class="parameter"><code>const <span class="type">char</span> *value</code></em>);
 <span class="returnvalue">int</span>                 <a class="link" href="libudev-udev-enumerate.html#udev-enumerate-add-match-tag" title="udev_enumerate_add_match_tag ()">udev_enumerate_add_match_tag</a>        (<em class="parameter"><code><span class="type">struct udev_enumerate</span> *udev_enumerate</code></em>,
                                                          <em class="parameter"><code>const <span class="type">char</span> *tag</code></em>);
+<span class="returnvalue">int</span>                 <a class="link" href="libudev-udev-enumerate.html#udev-enumerate-add-match-parent" title="udev_enumerate_add_match_parent ()">udev_enumerate_add_match_parent</a>     (<em class="parameter"><code><span class="type">struct udev_enumerate</span> *udev_enumerate</code></em>,
+                                                         <em class="parameter"><code><span class="type">struct udev_device</span> *parent</code></em>);
 <span class="returnvalue">int</span>                 <a class="link" href="libudev-udev-enumerate.html#udev-enumerate-add-match-is-initialized" title="udev_enumerate_add_match_is_initialized ()">udev_enumerate_add_match_is_initialized</a>
                                                         (<em class="parameter"><code><span class="type">struct udev_enumerate</span> *udev_enumerate</code></em>);
 <span class="returnvalue">int</span>                 <a class="link" href="libudev-udev-enumerate.html#udev-enumerate-add-match-sysname" title="udev_enumerate_add_match_sysname ()">udev_enumerate_add_match_sysname</a>    (<em class="parameter"><code><span class="type">struct udev_enumerate</span> *udev_enumerate</code></em>,
@@ -304,6 +306,37 @@ all resources of the enumeration context will be released.
 <tr>
 <td><p><span class="term"><em class="parameter"><code>tag</code></em> :</span></p></td>
 <td>filter for a tag of the device to include in the list</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>0 on success, otherwise a negative error value.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="udev-enumerate-add-match-parent"></a><h3>udev_enumerate_add_match_parent ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>                 udev_enumerate_add_match_parent     (<em class="parameter"><code><span class="type">struct udev_enumerate</span> *udev_enumerate</code></em>,
+                                                         <em class="parameter"><code><span class="type">struct udev_device</span> *parent</code></em>);</pre>
+<p>
+Return the devices on the subtree of one given device. The parent
+itself is included in the list.
+</p>
+<p>
+A reference for the device is held until the udev_enumerate context
+is cleaned up.
+</p>
+<div class="variablelist"><table border="0">
+<col align="left" valign="top">
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>udev_enumerate</code></em> :</span></p></td>
+<td>context</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>parent</code></em> :</span></p></td>
+<td>parent device where to start searching</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>

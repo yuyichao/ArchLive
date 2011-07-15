@@ -57,6 +57,7 @@
 <ANCHOR id="udev-device-get-sysattr-list-entry" href="libudev/libudev-udev-device.html#udev-device-get-sysattr-list-entry">
 <ANCHOR id="udev-device-get-seqnum" href="libudev/libudev-udev-device.html#udev-device-get-seqnum">
 <ANCHOR id="udev-device-get-usec-since-initialized" href="libudev/libudev-udev-device.html#udev-device-get-usec-since-initialized">
+<ANCHOR id="udev-device-has-tag" href="libudev/libudev-udev-device.html#udev-device-has-tag">
 <ANCHOR id="libudev-udev-monitor" href="libudev/libudev-udev-monitor.html">
 <ANCHOR id="libudev-udev-monitor.synopsis" href="libudev/libudev-udev-monitor.html#libudev-udev-monitor.synopsis">
 <ANCHOR id="libudev-udev-monitor.description" href="libudev/libudev-udev-monitor.html#libudev-udev-monitor.description">
@@ -90,6 +91,7 @@
 <ANCHOR id="udev-enumerate-add-nomatch-sysattr" href="libudev/libudev-udev-enumerate.html#udev-enumerate-add-nomatch-sysattr">
 <ANCHOR id="udev-enumerate-add-match-property" href="libudev/libudev-udev-enumerate.html#udev-enumerate-add-match-property">
 <ANCHOR id="udev-enumerate-add-match-tag" href="libudev/libudev-udev-enumerate.html#udev-enumerate-add-match-tag">
+<ANCHOR id="udev-enumerate-add-match-parent" href="libudev/libudev-udev-enumerate.html#udev-enumerate-add-match-parent">
 <ANCHOR id="udev-enumerate-add-match-is-initialized" href="libudev/libudev-udev-enumerate.html#udev-enumerate-add-match-is-initialized">
 <ANCHOR id="udev-enumerate-add-match-sysname" href="libudev/libudev-udev-enumerate.html#udev-enumerate-add-match-sysname">
 <ANCHOR id="udev-enumerate-add-syspath" href="libudev/libudev-udev-enumerate.html#udev-enumerate-add-syspath">

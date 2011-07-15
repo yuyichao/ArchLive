@@ -82,6 +82,8 @@ struct <a class="link" href="libudev-udev-list.html#udev-list-entry" title="stru
 unsigned long long <span class="returnvalue">int</span>  <a class="link" href="libudev-udev-device.html#udev-device-get-seqnum" title="udev_device_get_seqnum ()">udev_device_get_seqnum</a>          (<em class="parameter"><code><span class="type">struct udev_device</span> *udev_device</code></em>);
 unsigned long long <span class="returnvalue">int</span>  <a class="link" href="libudev-udev-device.html#udev-device-get-usec-since-initialized" title="udev_device_get_usec_since_initialized ()">udev_device_get_usec_since_initialized</a>
                                                         (<em class="parameter"><code><span class="type">struct udev_device</span> *udev_device</code></em>);
+<span class="returnvalue">int</span>                 <a class="link" href="libudev-udev-device.html#udev-device-has-tag" title="udev_device_has_tag ()">udev_device_has_tag</a>                 (<em class="parameter"><code><span class="type">struct udev_device</span> *udev_device</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">char</span> *tag</code></em>);
 </pre>
 </div>
 <div class="refsect1">
@@ -794,6 +796,14 @@ in the udev database. All other devices return 0 here.
 </tr>
 </tbody>
 </table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="udev-device-has-tag"></a><h3>udev_device_has_tag ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>                 udev_device_has_tag                 (<em class="parameter"><code><span class="type">struct udev_device</span> *udev_device</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">char</span> *tag</code></em>);</pre>
+<p>
+</p>
 </div>
 </div>
 </div>
