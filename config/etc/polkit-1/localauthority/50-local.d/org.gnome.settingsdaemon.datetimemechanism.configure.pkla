@@ -1,0 +1,6 @@
+[org.gnome.settingsdaemon.datetimemechanism.configure]
+Identity=unix-user:yuyichao
+Action=org.gnome.settingsdaemon.datetimemechanism.configure
+ResultAny=no
+ResultInactive=no
+ResultActive=yes

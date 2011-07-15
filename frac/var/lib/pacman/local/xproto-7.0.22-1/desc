@@ -1,0 +1,33 @@
+%NAME%
+xproto
+
+%VERSION%
+7.0.22-1
+
+%DESC%
+X11 core wire protocol and auxiliary headers
+
+%URL%
+http://xorg.freedesktop.org/
+
+%LICENSE%
+custom
+
+%ARCH%
+any
+
+%BUILDDATE%
+1310078048
+
+%INSTALLDATE%
+1310175880
+
+%PACKAGER%
+Andreas Radke <andyrtr@archlinux.org>
+
+%SIZE%
+1266688
+
+%REASON%
+1
+

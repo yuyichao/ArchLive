@@ -1,0 +1,36 @@
+%NAME%
+libgcrypt
+
+%VERSION%
+1.5.0-1
+
+%DESC%
+a general purpose crypto library based on the code used
+
+%URL%
+http://www.gnupg.org
+
+%LICENSE%
+LGPL
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1310133719
+
+%INSTALLDATE%
+1310175880
+
+%PACKAGER%
+Andreas Radke <andyrtr@archlinux.org>
+
+%SIZE%
+713728
+
+%REASON%
+1
+
+%DEPENDS%
+libgpg-error>=1.9
+

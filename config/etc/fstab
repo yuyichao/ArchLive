@@ -4,5 +4,6 @@
 # <file system>        <dir>         <type>    <options>          <dump> <pass>
 devpts                 /dev/pts      devpts    defaults            0      0
 shm                    /dev/shm      tmpfs     nodev,nosuid,size=2G       0      0
-tmpfs 		       /tmp 	     tmpfs     defaults,nodev,nosuid,mode=1777,size=2G 0 0
-debugfs /sys/kernel/debug debugfs defaults 0 0
+tmpfs                  /tmp          tmpfs     defaults,nodev,nosuid,mode=1777,size=2G 0 0
+debugfs                /sys/kernel/debug debugfs defaults 0 0
+none                   /proc/bus/usb     usbfs   defaults 0 0

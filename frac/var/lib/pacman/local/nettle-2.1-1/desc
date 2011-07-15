@@ -1,0 +1,36 @@
+%NAME%
+nettle
+
+%VERSION%
+2.1-1
+
+%DESC%
+A low-level cryptographic library
+
+%URL%
+http://www.lysator.liu.se/~nisse/nettle/
+
+%LICENSE%
+GPL2
+
+%ARCH%
+x86_64
+
+%BUILDDATE%
+1310143799
+
+%INSTALLDATE%
+1310175879
+
+%PACKAGER%
+Andreas Radke <andyrtr@archlinux.org>
+
+%SIZE%
+504832
+
+%REASON%
+1
+
+%DEPENDS%
+gmp
+

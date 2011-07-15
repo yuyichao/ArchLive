@@ -7,12 +7,17 @@ local/gnome-shell-extension-weather-git
 local/google-talkplugin
 local/ibus-gjs-git
 local/ibus-sunpinyin-git
+local/jslint-git
+local/lib32-libjpeg6
+local/lib32-libpng12
+local/libjpeg6
 local/madedit
 local/mpdris2-git
 local/openfetion
 local/os-prober
 local/pidgin-openfetion-hg
 local/powertop2
+local/python3-lxml
 local/sunpinyin-git
 local/s-util-git
 local/ultimate-gnome-icon-theme

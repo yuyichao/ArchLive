@@ -1,0 +1,6 @@
+[org.opensuse.cupspkhelper.mechanism.all-edit]
+Identity=unix-user:yuyichao
+Action=org.opensuse.cupspkhelper.mechanism.all-edit
+ResultAny=no
+ResultInactive=no
+ResultActive=yes

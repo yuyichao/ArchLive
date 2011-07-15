@@ -1,0 +1,6 @@
+[org.gnome.cpufreqselector]
+Identity=unix-user:yuyichao
+Action=org.gnome.cpufreqselector
+ResultAny=no
+ResultInactive=no
+ResultActive=yes

@@ -1,0 +1,6 @@
+[org.freedesktop.NetworkManager.settings.modify.system]
+Identity=unix-user:yuyichao
+Action=org.freedesktop.NetworkManager.settings.modify.system
+ResultAny=no
+ResultInactive=no
+ResultActive=yes
